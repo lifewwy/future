@@ -1,0 +1,18 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20180716T001704.txt
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel>pushbutton40_Callback')" style="font-weight:bold">panel>pushbutton40_Callback</a>
+Too many output arguments.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gui_mainfcn', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m', 93)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m',93,0)">line 93</a>)
+        [varargout{1:nargout}] = feval(varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 40)" style="font-weight:bold">panel</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',40,0)">line 40</a>)
+    [varargout{1:nargout}] = gui_mainfcn(gui_State, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('runCallbackFunc2', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\runCallbackFunc2.m', 15)" style="font-weight:bold">runCallbackFunc2</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\runCallbackFunc2.m',15,0)">line 15</a>)
+        h = panel('pushbutton40_Callback',h.pushbutton40,[],guidata(h.pushbutton40));
+} 
+h = panel

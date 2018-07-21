@@ -1,0 +1,51 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20180715T073302.txt
+
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2935,1)">2935 </a>1
+if system_dependent('IsDebugMode')==1, dbquit; end
+读TB输出文件...
+读风险配置文件...
+读资金文件...
+输出订单文件...
+2018/07/15,L1809,开多,3
+2018/07/15,AL1809,平多,NaN
+订单文件更新成功！
+读TB输出文件...
+读风险配置文件...
+读资金文件...
+输出订单文件...
+2018/07/15,L1809,开多,3
+2018/07/15,AL1809,平多,NaN
+订单文件更新成功！
+读TB输出文件...
+读风险配置文件...
+读资金文件...
+输出订单文件...
+2018/07/15,L1809,开多,3
+2018/07/15,AL1809,平多,NaN
+订单文件更新成功！
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2935,1)">2935 </a>1
+sizeOrders = size(orders);
+nOrders = sizeOrders(1);
+orders
+
+orders = 
+
+    '2018/07/15'    'AL1809'    '平多'    [1]
+    '2018/07/15'    'L1809'     '开多'    [3]
+
+if system_dependent('IsDebugMode')==1, dbquit; end
+
+orders = 
+
+    '2018/07/15'    'AL1809'    '平多'    [1]
+    '2018/07/15'    'L1809'     '开多'    [3]
+
+
+orders = 
+
+    '2018/07/15'    'AL1809'    '平多'    [1]
+    '2018/07/15'    'L1809'     '开多'    [3]
+

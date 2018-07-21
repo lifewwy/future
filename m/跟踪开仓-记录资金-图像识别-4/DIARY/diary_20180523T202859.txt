@@ -1,0 +1,145 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20180523T202859.txt
+
+C:\D\xyz\future\数据维护\A888.csv 更新成功！
+C:\D\xyz\future\数据维护\C888.csv 更新成功！
+C:\D\xyz\future\数据维护\RB888.csv 更新成功！
+C:\D\xyz\future\数据维护\M888.csv 更新成功！
+C:\D\xyz\future\数据维护\P888.csv 更新成功！
+C:\D\xyz\future\数据维护\J888.csv 更新成功！
+C:\D\xyz\future\数据维护\ZN888.csv 更新成功！
+C:\D\xyz\future\数据维护\Y888.csv 更新成功！
+C:\D\xyz\future\数据维护\L888.csv 更新成功！
+C:\D\xyz\future\数据维护\AG888.csv 更新成功！
+C:\D\xyz\future\数据维护\TA888.csv 更新成功！
+C:\D\xyz\future\数据维护\SR888.csv 更新成功！
+C:\D\xyz\future\数据维护\AU888.csv 更新成功！
+C:\D\xyz\future\数据维护\FG888.csv 更新成功！
+C:\D\xyz\future\数据维护\MA888.csv 更新成功！
+C:\D\xyz\future\数据维护\RU888.csv 更新成功！
+C:\D\xyz\future\数据维护\AL888.csv 更新成功！
+C:\D\xyz\future\数据维护\OI888.csv 更新成功！
+C:\D\xyz\future\数据维护\RM888.csv 更新成功！
+C:\D\xyz\future\数据维护\CF888.csv 更新成功！
+C:\D\xyz\future\数据维护\I888.csv 更新成功！
+C:\D\xyz\future\数据维护\JM888.csv 更新成功！
+C:\D\xyz\future\数据维护\CU888.csv 更新成功！
+C:\D\xyz\future\数据维护\V888.csv 更新成功！
+C:\D\xyz\future\数据维护\IF888.csv 更新成功！
+Elapsed time is 1.123797 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 1.132912 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 1.778671 seconds.
+>>>>>>>>>>调用成功！
+账户资金:2024330
+持仓文件更新成功！
+ 资金文件更新成功！
+订单文件更新成功！
+Elapsed time is 1.131227 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 1.784398 seconds.
+>>>>>>>>>>调用成功！
+账户资金:2024330
+持仓文件更新成功！
+18*0.7
+
+ans =
+
+   12.6000
+
+
+ans = 
+
+    contract: 'RB1810'
+      action: 'Sell EvenUp'
+       hands: '11'
+           n: 1
+
+
+ans = 
+
+    contract: 'RB1810'
+      action: 'Sell Open'
+       hands: '13'
+           n: 2
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('timer/startat', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\iofun\@timer\startat.m', 112)" style="font-weight:bold">timer/startat</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\iofun\@timer\startat.m',112,0)">line 112</a>)
+The specified start time has already passed.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Open_CloseOut_func', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\Open_CloseOut_func.m', 55)" style="font-weight:bold">Open_CloseOut_func</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\Open_CloseOut_func.m',55,0)">line 55</a>)
+        startat(t1,'21:00:00');
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel>pushbutton3_Callback', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 772)" style="font-weight:bold">panel>pushbutton3_Callback</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',772,0)">line 772</a>)
+Open_CloseOut_func(orders,handles)
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gui_mainfcn', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
+        feval(varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 42)" style="font-weight:bold">panel</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',42,0)">line 42</a>)
+    gui_mainfcn(gui_State, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('@(hObject,eventdata)panel(''pushbutton3_Callback'',hObject,eventdata,guidata(hObject))')" style="font-weight:bold">@(hObject,eventdata)panel('pushbutton3_Callback',hObject,eventdata,guidata(hObject))</a>
+
+} 
+Error while evaluating UIControl Callback
+
+Elapsed time is 1.228113 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 1.758148 seconds.
+>>>>>>>>>>调用成功！
+账户资金:2013580
+持仓文件更新成功！
+
+ans = 
+
+    contract: 'RB1810'
+      action: 'Sell EvenUp'
+       hands: '11'
+           n: 1
+
+
+ans = 
+
+    contract: 'RB1810'
+      action: 'Sell Open'
+       hands: '13'
+           n: 2
+
+
+orderParameters = 
+
+    'RB1810'    'Sell EvenUp'    '11'
+
+Elapsed time is 0.807259 seconds.
+>>>>>>>>>>调用成功！
+Elapsed time is 2.438013 seconds.
+>>>>>>>>>>调用成功！
+全部成交
+
+ActionDoneFlg =
+
+     1     0
+
+
+orderParameters = 
+
+    'RB1810'    'Sell Open'    '13'
+
+Elapsed time is 0.757064 seconds.
+>>>>>>>>>>调用成功！
+Elapsed time is 1.668412 seconds.
+>>>>>>>>>>调用成功！
+全部成交
+
+ActionDoneFlg =
+
+     1     1
+
+--------------- 定时器关闭 01！--------------- 

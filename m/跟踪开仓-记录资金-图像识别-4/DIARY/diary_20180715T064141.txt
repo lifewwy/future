@@ -1,0 +1,7 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20180715T064141.txt
+
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',857,1)">857 </a>    readOrdersFile(hObject, eventdata, handles);
+if system_dependent('IsDebugMode')==1, dbquit; end

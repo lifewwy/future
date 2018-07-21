@@ -1,0 +1,91 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20180417T201634.txt
+
+C:\D\xyz\future\数据维护\A888.csv 更新成功！
+C:\D\xyz\future\数据维护\C888.csv 更新成功！
+C:\D\xyz\future\数据维护\RB888.csv 更新成功！
+C:\D\xyz\future\数据维护\M888.csv 更新成功！
+C:\D\xyz\future\数据维护\P888.csv 更新成功！
+C:\D\xyz\future\数据维护\J888.csv 更新成功！
+C:\D\xyz\future\数据维护\ZN888.csv 更新成功！
+C:\D\xyz\future\数据维护\Y888.csv 更新成功！
+C:\D\xyz\future\数据维护\L888.csv 更新成功！
+C:\D\xyz\future\数据维护\AG888.csv 更新成功！
+C:\D\xyz\future\数据维护\TA888.csv 更新成功！
+C:\D\xyz\future\数据维护\SR888.csv 更新成功！
+C:\D\xyz\future\数据维护\AU888.csv 更新成功！
+C:\D\xyz\future\数据维护\FG888.csv 更新成功！
+C:\D\xyz\future\数据维护\MA888.csv 更新成功！
+C:\D\xyz\future\数据维护\RU888.csv 更新成功！
+C:\D\xyz\future\数据维护\AL888.csv 更新成功！
+C:\D\xyz\future\数据维护\OI888.csv 更新成功！
+C:\D\xyz\future\数据维护\RM888.csv 更新成功！
+C:\D\xyz\future\数据维护\CF888.csv 更新成功！
+C:\D\xyz\future\数据维护\I888.csv 更新成功！
+C:\D\xyz\future\数据维护\JM888.csv 更新成功！
+C:\D\xyz\future\数据维护\CU888.csv 更新成功！
+C:\D\xyz\future\数据维护\V888.csv 更新成功！
+C:\D\xyz\future\数据维护\IF888.csv 更新成功！
+Elapsed time is 5.699055 seconds.
+>>>>>>>>>>调用成功！
+未登录成功!
+Elapsed time is 5.154110 seconds.
+>>>>>>>>>>调用成功！
+未登录成功!
+Elapsed time is 1.321583 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 1.328700 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 5.040404 seconds.
+>>>>>>>>>>调用成功！
+账户资金:2083980
+持仓文件更新成功！
+ 资金文件更新成功！
+订单文件更新成功！
+31*0.8
+
+ans =
+
+   24.8000
+
+31*0.85
+
+ans =
+
+   26.3500
+
+Elapsed time is 1.336259 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 2.414426 seconds.
+>>>>>>>>>>调用成功！
+账户资金:2083980
+持仓文件更新成功！
+
+ans = 
+
+    contract: 'MA1809'
+      action: 'Buy Open'
+       hands: '26'
+           n: 1
+
+
+orderParameters = 
+
+    'MA1809'    'Buy Open'    '26'
+
+Elapsed time is 1.271738 seconds.
+>>>>>>>>>>调用成功！
+Elapsed time is 6.077677 seconds.
+>>>>>>>>>>调用成功！
+全部成交
+
+ActionDoneFlg =
+
+     1
+
+--------------- 定时器关闭 01！--------------- 

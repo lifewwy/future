@@ -1,0 +1,21 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20180604T201335.txt
+
+Elapsed time is 1.120593 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 1.774985 seconds.
+>>>>>>>>>>调用成功！
+账户资金:1949610
+持仓文件更新成功！
+------------ 无交易！------------
+Elapsed time is 1.453150 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 1.655979 seconds.
+>>>>>>>>>>调用成功！
+账户资金:1949610
+<a href="matlab: opentoline('C:\Users\apple\Desktop\CTP\m 调用 exe\GetAccountInfo.m',63,1)">63  </a>for k = 1:nn+1
+if system_dependent('IsDebugMode')==1, dbquit; end

@@ -1,0 +1,187 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20180714T215239.txt
+
+t00 = timer;
+t00.StartDelay = 5;
+t00.TimerFcn = @(myTimerObj, thisEvent)x=rand(2)
+ t00.TimerFcn = @(myTimerObj, thisEvent)x=rand(2)
+                                         |
+{Error: The expression to the left of the equals sign is not a valid target for an assignment.
+} 
+help timer
+ MATLAB Timer Object Properties and Methods.
+ 
+  Timer properties.
+    AveragePeriod    - Average number of seconds between TimerFcn executions.
+    BusyMode         - Action taken when TimerFcn executions are in progress.
+    ErrorFcn         - Callback function executed when an error occurs.
+    ExecutionMode    - Mode used to schedule timer events.
+    InstantPeriod    - Elapsed time between the last two TimerFcn executions. 
+    Name             - Descriptive name of the timer object.
+    Period           - Seconds between TimerFcn executions.
+    Running          - Timer object running status.
+    StartDelay       - Delay between START and the first scheduled TimerFcn execution.
+    StartFcn         - Callback function executed when timer object starts.
+    StopFcn          - Callback function executed after timer object stops.
+    Tag              - Label for object.
+    TasksExecuted    - Number of TimerFcn executions that have occurred.
+    TasksToExecute   - Number of times to execute the TimerFcn callback.
+    TimerFcn         - Callback function executed when a timer event occurs.
+    Type             - Object type.
+    UserData         - User data for timer object.
+ 
+  timer methods:
+  Timer object construction:
+    @<a href="matlab:help timer/timer">timer/timer</a>            - Construct timer object.
+ 
+  Getting and setting parameters:
+    <a href="matlab:help timer/get">get</a>              - Get value of timer object property.
+    <a href="matlab:help timer/set">set</a>              - Set value of timer object property.
+ 
+  General:
+    <a href="matlab:help timer/delete">delete</a>           - Remove timer object from memory.
+    <a href="matlab:help timer/display">display</a>          - Display method for timer objects.
+    <a href="matlab:help timer/inspect">inspect</a>          - Open the inspector and inspect timer object properties.
+    <a href="matlab:help timer/isvalid">isvalid</a>          - True for valid timer objects.
+    <a href="matlab:help timer/length">length</a>           - Determine length of timer object array.
+    <a href="matlab:help timer/size">size</a>             - Determine size of timer object array.
+    <a href="matlab:help timer/timerfind">timerfind</a>        - Find visible timer objects with specified property values.
+    <a href="matlab:help timer/timerfindall">timerfindall</a>     - Find all timer objects with specified property values.
+ 
+  Execution:
+    <a href="matlab:help timer/start">start</a>            - Start timer object running.
+    <a href="matlab:help timer/startat">startat</a>          - Start timer object running at a specified time.
+    <a href="matlab:help timer/stop">stop</a>             - Stop timer object running.
+    <a href="matlab:help timer/waitfor">waitfor</a>          - Wait for timer object to stop running.
+
+    Reference page in Help browser
+       <a href="matlab:doc timer">doc timer</a>
+
+t00.TimerFcn = @(myTimerObj, thisEvent){rand(5),x}
+
+   Timer Object: timer-1
+
+   Timer Settings
+      ExecutionMode: singleShot
+             Period: 1
+           BusyMode: drop
+            Running: off
+
+   Callbacks
+           TimerFcn: @(myTimerObj,thisEvent){rand(5),x}
+           ErrorFcn: ''
+           StartFcn: ''
+            StopFcn: ''
+
+start(00)
+{Undefined function 'start' for input arguments of type 'double'.
+} 
+start(t00)
+Error while evaluating TimerFcn for timer 'timer-1' 
+
+Undefined function or variable 'x'.
+
+
+t00.TimerFcn = @(myTimerObj, thisEvent){@rand(5),x}
+ t00.TimerFcn = @(myTimerObj, thisEvent){@rand(5),x}
+                                              |
+{Error: Unbalanced or unexpected parenthesis or bracket.
+} 
+t00.TimerFcn = @(myTimerObj, thisEvent,x)rand(5)
+
+   Timer Object: timer-1
+
+   Timer Settings
+      ExecutionMode: singleShot
+             Period: 1
+           BusyMode: drop
+            Running: off
+
+   Callbacks
+           TimerFcn: @(myTimerObj,thisEvent,x)rand(5)
+           ErrorFcn: ''
+           StartFcn: ''
+            StopFcn: ''
+
+start(t00)
+t00 = timer;
+t00.StartDelay = 5;
+t00.TimerFcn = @(myTimerObj, thisEvent,x)rand(5)
+
+   Timer Object: timer-2
+
+   Timer Settings
+      ExecutionMode: singleShot
+             Period: 1
+           BusyMode: drop
+            Running: off
+
+   Callbacks
+           TimerFcn: @(myTimerObj,thisEvent,x)rand(5)
+           ErrorFcn: ''
+           StartFcn: ''
+            StopFcn: ''
+
+start(t00)
+clear
+t00 = timer;
+t00.StartDelay = 60*10; % seconds
+t00.StartDelay = 5;
+t00.TimerFcn = @(myTimerObj, thisEvent,x)rand(5)
+
+   Timer Object: timer-3
+
+   Timer Settings
+      ExecutionMode: singleShot
+             Period: 1
+           BusyMode: drop
+            Running: off
+
+   Callbacks
+           TimerFcn: @(myTimerObj,thisEvent,x)rand(5)
+           ErrorFcn: ''
+           StartFcn: ''
+            StopFcn: ''
+
+start(t00)
+clear all
+t00 = timer;
+t00.StartDelay = 5;
+t00.TimerFcn = @(myTimerObj, thisEvent)applyStrategies(h);
+t00.TimerFcn = {@(myTimerObj, thisEvent)rand(3),x};
+{Undefined function or variable 'x'.
+} 
+t = timer('TimerFcn',@(x,y)disp('Hello World!'),'StartDelay',5);
+start(t)
+Hello World!
+t = timer('TimerFcn',@(x,y)rand(8),'StartDelay',5);
+start(t)
+tic
+toc
+Elapsed time is 8.590492 seconds.
+t00 = timer; 
+% t00.StartDelay = 60*10; % seconds
+t00.StartDelay = 5;
+t00.TimerFcn = @(myTimerObj, thisEvent)fprintf('abc');
+start(t00);
+
+t01 = timer; 
+% t00.StartDelay = 60*10; % seconds
+t00.StartDelay = 5;
+t01.TimerFcn = @(myTimerObj, thisEvent)fprintf('efg');
+start(t01);
+efgabcclear
+t00 = timer; 
+% t00.StartDelay = 60*10; % seconds
+t00.StartDelay = 5;
+t00.TimerFcn = @(myTimerObj, thisEvent)fprintf('abc');
+start(t00);
+
+t01 = timer; 
+% t00.StartDelay = 60*10; % seconds
+t01.StartDelay = 5;
+t01.TimerFcn = @(myTimerObj, thisEvent)fprintf('efg');
+start(t01);
+abcefg

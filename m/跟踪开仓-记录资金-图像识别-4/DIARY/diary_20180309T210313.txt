@@ -1,0 +1,21 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20180309T210313.txt
+
+
+ans = 
+
+    contract: 'Y1805'
+      action: 'Sell EvenUp'
+       hands: '12'
+           n: 3
+
+
+ans = 
+
+    contract: 'Y1805'
+      action: 'Sell Open'
+       hands: '12'
+           n: 4
+

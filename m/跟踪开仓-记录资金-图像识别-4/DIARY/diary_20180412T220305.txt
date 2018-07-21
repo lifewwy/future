@@ -1,0 +1,213 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20180412T220305.txt
+
+Elapsed time is 1.547993 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 8.234898 seconds.
+>>>>>>>>>>调用成功！
+账户资金:2043720
+持仓文件更新成功！
+{Undefined variable "handels" or class "handels.text13".
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('GetAccount', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\GetAccount.m', 88)" style="font-weight:bold">GetAccount</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\GetAccount.m',88,0)">line 88</a>)
+set(handels.text13,'string',num2str(capital));
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel>pushbutton36_Callback', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 2707)" style="font-weight:bold">panel>pushbutton36_Callback</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2707,0)">line 2707</a>)
+GetAccount(handles)
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gui_mainfcn', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
+        feval(varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 42)" style="font-weight:bold">panel</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',42,0)">line 42</a>)
+    gui_mainfcn(gui_State, varargin{:});
+
+Error in
+<a href="matlab:matlab.internal.language.introspective.errorDocCallback('@(hObject,eventdata)panel(''pushbutton36_Callback'',hObject,eventdata,guidata(hObject))')" style="font-weight:bold">@(hObject,eventdata)panel('pushbutton36_Callback',hObject,eventdata,guidata(hObject))</a>
+
+} 
+Error while evaluating UIControl Callback
+
+Elapsed time is 2.971343 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 3.089611 seconds.
+>>>>>>>>>>调用成功！
+账户资金:2044640
+持仓文件更新成功！
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\GetAccount.m',88,1)">88  </a>set(handels.text13,'string',num2str(capital));
+handles
+
+handles = 
+
+                figure1: [1x1 Figure]
+                 text13: [1x1 UIControl]
+           pushbutton36: [1x1 UIControl]
+           pushbutton25: [1x1 UIControl]
+          radiobutton15: [1x1 UIControl]
+           pushbutton34: [1x1 UIControl]
+    ApplyStrategyButton: [1x1 UIControl]
+          radiobutton14: [1x1 UIControl]
+            popupmenu20: [1x1 UIControl]
+            popupmenu16: [1x1 UIControl]
+            popupmenu12: [1x1 UIControl]
+             popupmenu8: [1x1 UIControl]
+             popupmenu4: [1x1 UIControl]
+                  text8: [1x1 UIControl]
+           pushbutton24: [1x1 UIControl]
+           pushbutton23: [1x1 UIControl]
+                  text7: [1x1 UIControl]
+            TradeAccout: [1x1 UIControl]
+                  edit2: [1x1 UIControl]
+                  text6: [1x1 UIControl]
+                  edit1: [1x1 UIControl]
+               uipanel5: [1x1 Panel]
+              checkbox1: [1x1 UIControl]
+           pushbutton15: [1x1 UIControl]
+           pushbutton14: [1x1 UIControl]
+            popupmenu28: [1x1 UIControl]
+            popupmenu27: [1x1 UIControl]
+            popupmenu26: [1x1 UIControl]
+            popupmenu25: [1x1 UIControl]
+            popupmenu24: [1x1 UIControl]
+            popupmenu23: [1x1 UIControl]
+            popupmenu22: [1x1 UIControl]
+            popupmenu21: [1x1 UIControl]
+            pushbutton6: [1x1 UIControl]
+            pushbutton5: [1x1 UIControl]
+            pushbutton4: [1x1 UIControl]
+            pushbutton3: [1x1 UIControl]
+            pushbutton1: [1x1 UIControl]
+            popupmenu19: [1x1 UIControl]
+            popupmenu18: [1x1 UIControl]
+            popupmenu17: [1x1 UIControl]
+            popupmenu15: [1x1 UIControl]
+            popupmenu14: [1x1 UIControl]
+            popupmenu13: [1x1 UIControl]
+            popupmenu11: [1x1 UIControl]
+            popupmenu10: [1x1 UIControl]
+             popupmenu7: [1x1 UIControl]
+             popupmenu6: [1x1 UIControl]
+             popupmenu5: [1x1 UIControl]
+             popupmenu3: [1x1 UIControl]
+             popupmenu2: [1x1 UIControl]
+             popupmenu1: [1x1 UIControl]
+               uipanel2: [1x1 Panel]
+               uipanel6: [1x1 Panel]
+               uipanel7: [1x1 Panel]
+                startAt: [1x1 UIControl]
+               uitable2: [1x1 Table]
+          refreshButton: [1x1 UIControl]
+               uipanel9: [1x1 Panel]
+                 text10: [1x1 UIControl]
+                 text11: [1x1 UIControl]
+                  text9: [1x1 UIControl]
+           pushbutton31: [1x1 UIControl]
+           pushbutton30: [1x1 UIControl]
+           pushbutton29: [1x1 UIControl]
+           pushbutton28: [1x1 UIControl]
+           pushbutton27: [1x1 UIControl]
+           pushbutton26: [1x1 UIControl]
+          radiobutton13: [1x1 UIControl]
+          radiobutton12: [1x1 UIControl]
+          radiobutton11: [1x1 UIControl]
+          radiobutton10: [1x1 UIControl]
+           radiobutton9: [1x1 UIControl]
+           radiobutton8: [1x1 UIControl]
+            popupmenu51: [1x1 UIControl]
+            popupmenu52: [1x1 UIControl]
+            popupmenu50: [1x1 UIControl]
+            popupmenu49: [1x1 UIControl]
+            popupmenu47: [1x1 UIControl]
+            popupmenu48: [1x1 UIControl]
+            popupmenu46: [1x1 UIControl]
+            popupmenu45: [1x1 UIControl]
+            popupmenu43: [1x1 UIControl]
+            popupmenu44: [1x1 UIControl]
+            popupmenu42: [1x1 UIControl]
+            popupmenu41: [1x1 UIControl]
+            popupmenu39: [1x1 UIControl]
+            popupmenu40: [1x1 UIControl]
+            popupmenu38: [1x1 UIControl]
+            popupmenu37: [1x1 UIControl]
+            popupmenu35: [1x1 UIControl]
+            popupmenu36: [1x1 UIControl]
+            popupmenu34: [1x1 UIControl]
+            popupmenu33: [1x1 UIControl]
+            popupmenu31: [1x1 UIControl]
+            popupmenu32: [1x1 UIControl]
+            popupmenu30: [1x1 UIControl]
+            popupmenu29: [1x1 UIControl]
+                  text2: [1x1 UIControl]
+           radiobutton7: [1x1 UIControl]
+           radiobutton6: [1x1 UIControl]
+           radiobutton5: [1x1 UIControl]
+           radiobutton4: [1x1 UIControl]
+           radiobutton3: [1x1 UIControl]
+           radiobutton2: [1x1 UIControl]
+           radiobutton1: [1x1 UIControl]
+             popupmenu9: [1x1 UIControl]
+                  text3: [1x1 UIControl]
+            pushbutton9: [1x1 UIControl]
+           pushbutton10: [1x1 UIControl]
+           pushbutton11: [1x1 UIControl]
+           pushbutton12: [1x1 UIControl]
+           pushbutton13: [1x1 UIControl]
+            pushbutton8: [1x1 UIControl]
+            pushbutton7: [1x1 UIControl]
+               category: {23x1 cell}
+               Contract: {14x1 cell}
+                  hands: {50x1 cell}
+                 action: {5x1 cell}
+                      m: 4
+                      N: 13
+                  abPos: {25x6 cell}
+                 output: [1x1 Figure]
+
+handles.text13
+
+ans = 
+
+  <a href="matlab:helpPopup matlab.ui.control.UIControl" style="font-weight:bold">UIControl</a> (text13) with properties:
+
+              Style: 'text'
+             String: '当前资金'
+    BackgroundColor: [0.9400 0.9400 0.9400]
+           Callback: ''
+              Value: 0
+           Position: [102.4286 1.1111 18.8571 1.0556]
+              Units: 'characters'
+
+  Show <a href="matlab:if exist('ans', 'var'), matlab.graphics.internal.getForDisplay('ans', ans, 'matlab.ui.control.UIControl'), else, matlab.graphics.internal.getForDisplay('ans'), end">all properties</a>
+
+if system_dependent('IsDebugMode')==1, dbquit; end
+Elapsed time is 4.497361 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 4.178774 seconds.
+>>>>>>>>>>调用成功！
+账户资金:2043310
+持仓文件更新成功！
+Elapsed time is 1.551044 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 3.093376 seconds.
+>>>>>>>>>>调用成功！
+账户资金:2043030
+持仓文件更新成功！
+Elapsed time is 2.858789 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 9.859868 seconds.
+>>>>>>>>>>调用成功！
+账户资金:2042670
+持仓文件更新成功！
+Elapsed time is 1.554238 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 3.851777 seconds.
+>>>>>>>>>>调用成功！
+账户资金:2042870
+持仓文件更新成功！

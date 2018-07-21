@@ -1,0 +1,11 @@
+Params
+	Numeric Length(14); 
+Vars
+
+	Numeric apr;
+	
+Begin 
+	
+	apr = AvgTrueRange(Length)/Close*10000;
+	Return apr;   
+End

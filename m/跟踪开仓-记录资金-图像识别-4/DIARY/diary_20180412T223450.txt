@@ -1,0 +1,49 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20180412T223450.txt
+
+Elapsed time is 4.606295 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 10.292451 seconds.
+>>>>>>>>>>调用成功！
+账户资金:2038240
+持仓文件更新成功！
+Elapsed time is 1.552517 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 3.077402 seconds.
+>>>>>>>>>>调用成功！
+账户资金:2038970
+持仓文件更新成功！
+Elapsed time is 1.558722 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 3.075723 seconds.
+>>>>>>>>>>调用成功！
+账户资金:2040950
+持仓文件更新成功！
+Elapsed time is 5.189095 seconds.
+>>>>>>>>>>调用成功！
+未登录成功!
+Elapsed time is 5.154018 seconds.
+>>>>>>>>>>调用成功！
+未登录成功!
+Elapsed time is 1.661027 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 1.556115 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 7.559997 seconds.
+>>>>>>>>>>调用成功！
+账户资金:2040970
+持仓文件更新成功！
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\GetAccount.m',95,1)">95  </a>     for i = FIN-2:-3:2
+if system_dependent('IsDebugMode')==1, dbquit; end
+Error while evaluating TimerFcn for timer 'myMainTimer' 
+
+Undefined function or variable 'futureCode'.
+
+

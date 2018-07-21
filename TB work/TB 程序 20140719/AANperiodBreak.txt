@@ -1,0 +1,210 @@
+// N期突破 + 跟踪止损，止损条件优先于开仓条件。
+
+Params
+	Numeric nPeriodBreak(30); 
+	Numeric nATRExit(2); 
+
+vars 
+	NumericSeries myEntryPrice(0);
+	NumericSeries EntryBar(0);
+	NumericSeries HighestCloseFromEntry(0);
+	NumericSeries LowestCloseFromEntry(0);
+	NumericSeries EntryATR;
+	NumericSeries atr;
+	NumericSeries EntryFlag(0);
+	NumericSeries ExitFlag(0);
+	
+	NumericSeries InitRisk(0);
+	Numeric LatestRisk(0);
+	
+	NumericSeries StopPrice(0);
+
+	Bool EntryCondition1(False);
+	Bool EntryCondition2(False);
+	Bool ExitCondition(False);
+
+	
+Begin
+
+	atr = AvgTrueRange(15);    
+	
+	
+	//PlotString("CB",Text(CurrentBar),High,Red); 
+	
+//----------------------------- 平仓 --------------------------------
+	If (ExitFlag == 10)
+	{
+		Sell(1,Open); 	
+		ExitFlag = 0;
+	}
+
+	If (ExitFlag == 20)
+	{
+		BuyToCover(1,Open); 
+		ExitFlag = 0;
+	}
+
+	//----------------------------- 开仓 --------------------------------
+
+	If (EntryFlag == 10)
+	{
+		// 如有空仓 buy函数先平空仓再开多。
+		Buy(1,Open); 
+		
+		myEntryPrice = Open;                                               
+		EntryATR = atr[1];                                                    
+		EntryBar = CurrentBar;                                             
+		HighestCloseFromEntry = Open;  
+		EntryFlag = 0;	
+		
+		StopPrice = myEntryPrice-nATRExit*atr[1]; 
+	}
+	
+	If (EntryFlag == 20)
+	{
+	    // 如有多仓 SellShort函数先平多仓再开空。
+		SellShort(1,Open);  
+		
+		myEntryPrice = Open;
+		EntryATR = atr[1];
+		EntryBar = CurrentBar;
+		LowestCloseFromEntry = Open;
+		EntryFlag = 0;	
+		
+		StopPrice = myEntryPrice + nATRExit*atr[1]; 
+	}
+	
+	
+	if (BarStatus == 2 )
+	{  PlotString("CB0",Text(MarketPosition),low,Red); }
+	
+	//----------------------------- 平仓提示 --------------------------------
+	if (MarketPosition==1)
+	{
+		if (Close>HighestCloseFromEntry)
+		{	HighestCloseFromEntry = Close; }
+		
+		
+		// --------------------------- 20170702 -------------------//
+		if (close-nATRExit*atr > StopPrice)
+		{	StopPrice = close-nATRExit*atr; }
+		// -------------------------------------------------------//
+		
+		
+		
+		ExitCondition = (Close<=StopPrice);
+		If (ExitCondition)
+		{
+			PlotString("is2","平多"); 
+			Commentary("平多");
+			ExitFlag = 10;
+			if (CurrentDate() == Date())
+			{ 
+				FileAppend("C:\\D\\future\\交易"+Text(CurrentDate())+".txt",
+										Text(Date())+"  "+SymbolName()+" ：平多");
+			}
+		} 
+		
+		
+		if (BarStatus == 2)
+		{ 
+			LatestRisk = Round((StopPrice-myEntryPrice)*ContractUnit(),0);
+			If (LatestRisk<0)
+				PlotString("CB1",Text(LatestRisk),high+0.5*atr,Green); 
+			else
+			{ PlotString("CB2",Text(LatestRisk),high+0.5*atr,Red); }
+		}
+
+		
+	}  
+	else If(MarketPosition==-1)
+	{
+		if (Close<LowestCloseFromEntry)
+		{	LowestCloseFromEntry = Close; 
+			//PlotString("CurrentBar6",Text(1),high+0.5*atr,Red);
+		}
+		
+		
+		// --------------------------- 20170702 -------------------//
+		if (close+nATRExit*atr < StopPrice)
+		{	StopPrice = close+nATRExit*atr; }
+		
+		//PlotString("CurrentBar5",Text(LowestCloseFromEntry),high+0.5*atr,Red); 
+		// -------------------------------------------------------// 
+		
+		
+		
+		
+		ExitCondition = (Close>=StopPrice);				
+		If (ExitCondition)
+		{
+			PlotString("is3","平空");
+			Commentary("平空");
+			ExitFlag = 20; 
+			if (CurrentDate() == Date())
+			{ 
+				FileAppend("C:\\D\\future\\交易"+Text(CurrentDate())+".txt",
+										Text(Date())+"  "+SymbolName()+" ：平空");
+			}
+		}
+		
+
+		if (BarStatus == 2)
+		{ 
+			LatestRisk = Round((myEntryPrice-StopPrice)*ContractUnit(),0);
+			If (LatestRisk<0)
+			{	PlotString("CB3",Text(LatestRisk),high+0.5*atr,Green); }
+			else
+			{ PlotString("CB4",Text(LatestRisk),high+0.5*atr,Red); }
+		}
+
+		
+		
+	}
+	//-----------------------------------------------------------------------
+	
+	
+	//----------------------------- 开仓提示 --------------------------------
+	EntryCondition1 = (Highest(Close,nPeriodBreak)==Close); 
+	EntryCondition2 = (Lowest(Close,nPeriodBreak)==Close);
+	if (MarketPosition == 0 || ExitFlag == 10  || ExitFlag == 20) 
+	{
+		If (EntryCondition1==True)
+		{
+			PlotString("is1","开多"); 
+			Commentary("开多");
+			EntryFlag = 10;
+			if (CurrentDate() == Date())
+			{ 
+				InitRisk = Round(nATRExit*atr*ContractUnit(),0);
+				FileAppend("C:\\D\\future\\交易"+Text(CurrentDate())+".txt",
+										Text(Date())+"  "+SymbolName()+
+										" ：开多"+"  每手风险："+Text(InitRisk)); 
+			}
+		}
+		else If(EntryCondition2)
+		{
+			PlotString("is1","开空");   
+			Commentary("开空");
+			EntryFlag = 20;
+			
+			if (CurrentDate() == Date())
+			{ 
+				InitRisk = Round(nATRExit*atr*ContractUnit(),0);
+				FileAppend("C:\\D\\future\\交易"+Text(CurrentDate())+".txt",
+										Text(Date())+"  "+SymbolName()+
+										" ：开空"+"  每手风险："+Text(InitRisk));    
+			}
+		}
+	}
+	   
+end   
+
+
+
+
+
+
+
+
+

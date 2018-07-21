@@ -1,0 +1,36 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20180717T194417.txt
+
+
+ans = 
+
+    contract: 'AL1809'
+      action: 'Sell EvenUp'
+       hands: '1'
+           n: 1
+
+
+orderParameters = 
+
+    'AL1809'    'Sell EvenUp'    '1'
+
+Elapsed time is 1.244496 seconds.
+>>>>>>>>>>调用成功！
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('PlanceOrder1', 'C:\Users\apple\Desktop\CTP\m 调用 exe\PlanceOrder1.m', 52)" style="font-weight:bold">PlanceOrder1</a> (<a href="matlab: opentoline('C:\Users\apple\Desktop\CTP\m 调用 exe\PlanceOrder1.m',52,0)">line 52</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Testorder1FuncNew', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\图像识别\Testorder1FuncNew.m', 80)" style="font-weight:bold">Testorder1FuncNew</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\图像识别\Testorder1FuncNew.m',80,0)">line 80</a>)
+[Doneflg,results] = PlanceOrder1(Contract,Sell_Buy,Open_Close,...
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('RealTimeDataFunc1', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\RealTimeDataFunc1.m', 162)" style="font-weight:bold">RealTimeDataFunc1</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\RealTimeDataFunc1.m',162,0)">line 162</a>)
+        Doneflg = Testorder1FuncNew(orderParameters);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('timer/timercb', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\iofun\@timer\timercb.m', 18)" style="font-weight:bold">timer/timercb</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\iofun\@timer\timercb.m',18,0)">line 18</a>)
+        evalin('base',val);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('timercb', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\iofun\timercb.m', 13)" style="font-weight:bold">timercb</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\iofun\timercb.m',13,0)">line 13</a>)
+timercb(t, varargin{2:end});
+} 
+runCallbackFunc2

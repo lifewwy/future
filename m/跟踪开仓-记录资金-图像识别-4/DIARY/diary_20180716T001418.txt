@@ -1,0 +1,55 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20180716T001418.txt
+
+Elapsed time is 1.548033 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 1.654444 seconds.
+>>>>>>>>>>调用成功！
+账户资金:645219
+持仓文件更新成功！
+资金文件更新成功！
+
+ans = 
+
+  <a href="matlab:helpPopup matlab.ui.Figure" style="font-weight:bold">Figure</a> (1) with properties:
+
+      Number: 1
+        Name: ''
+       Color: [0.9400 0.9400 0.9400]
+    Position: [610 428 700 525]
+       Units: 'pixels'
+
+  Show <a href="matlab:if exist('ans', 'var'), matlab.graphics.internal.getForDisplay('ans', ans, 'matlab.ui.Figure'), else, matlab.graphics.internal.getForDisplay('ans'), end">all properties</a>
+
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\runCallbackFunc2.m',18,1)">18  </a>        h = panel; % 得到 h.Step1_GetMyAccount_Flg 的更新，否则 h 始终不变。
+gcf
+
+ans = 
+
+  <a href="matlab:helpPopup matlab.ui.Figure" style="font-weight:bold">Figure</a> (1) with properties:
+
+      Number: 1
+        Name: ''
+       Color: [0.9400 0.9400 0.9400]
+    Position: [610 428 700 525]
+       Units: 'pixels'
+
+  Show <a href="matlab:if exist('ans', 'var'), matlab.graphics.internal.getForDisplay('ans', ans, 'matlab.ui.Figure'), else, matlab.graphics.internal.getForDisplay('ans'), end">all properties</a>
+
+gco
+
+ans = 
+
+  0x0 empty <a href="matlab:helpPopup matlab.graphics.GraphicsPlaceholder" style="font-weight:bold">GraphicsPlaceholder</a> array.
+
+guidata(gcf)
+
+ans =
+
+     []
+
+if system_dependent('IsDebugMode')==1, dbquit; end
+runCallbackFunc2

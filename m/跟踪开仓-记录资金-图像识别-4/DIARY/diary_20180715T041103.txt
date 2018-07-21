@@ -1,0 +1,258 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20180715T041103.txt
+
+Elapsed time is 5.168734 seconds.
+>>>>>>>>>>调用成功！
+未登录成功!
+Elapsed time is 1.215677 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+switch 1
+case 1:
+ case 1:
+        |
+{Error: Expression or statement is incomplete or incorrect.
+} 
+switch 1:
+ switch 1:
+          |
+{Error: Expression or statement is incomplete or incorrect.
+} 
+clc
+switch 1
+case 1
+a
+case 2
+2
+end
+{Undefined function or variable 'a'.
+} 
+switch 1
+case 1
+5
+case 2
+2
+end
+
+ans =
+
+     5
+
+GetAccountInfo
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('GetAccountInfo', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\GetAccountInfo.m', 47)" style="font-weight:bold">GetAccountInfo</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\GetAccountInfo.m',47,0)">line 47</a>)
+Not enough input arguments.
+} 
+Elapsed time is 1.335631 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 1.210847 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 1.227939 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('GetAccountInfo')" style="font-weight:bold">GetAccountInfo</a>
+Too many input arguments.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('GetAccountInfo', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\GetAccountInfo.m', 87)" style="font-weight:bold">GetAccountInfo</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\GetAccountInfo.m',87,0)">line 87</a>)
+capital = GetAccountInfo(FRONT_ADDR_TD,BROKER_ID,...
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel>pushbutton40_Callback', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 2747)" style="font-weight:bold">panel>pushbutton40_Callback</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2747,0)">line 2747</a>)
+IsSuccessful = GetAccountInfo(handles);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gui_mainfcn', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
+        feval(varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 42)" style="font-weight:bold">panel</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',42,0)">line 42</a>)
+    gui_mainfcn(gui_State, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('@(hObject,eventdata)panel(''pushbutton40_Callback'',hObject,eventdata,guidata(hObject))')" style="font-weight:bold">@(hObject,eventdata)panel('pushbutton40_Callback',hObject,eventdata,guidata(hObject))</a>
+
+} 
+Error while evaluating UIControl Callback
+
+Elapsed time is 1.215342 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2747,1)">2747 </a>IsSuccessful = GetAccountInfo(handles);
+if system_dependent('IsDebugMode')==1, dbstep; end
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('GetAccountInfo')" style="font-weight:bold">GetAccountInfo</a>
+Too many input arguments.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('GetAccountInfo', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\GetAccountInfo.m', 87)" style="font-weight:bold">GetAccountInfo</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\GetAccountInfo.m',87,0)">line 87</a>)
+capital = GetAccountInfo(FRONT_ADDR_TD,BROKER_ID,...
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel>pushbutton40_Callback', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 2747)" style="font-weight:bold">panel>pushbutton40_Callback</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2747,0)">line 2747</a>)
+IsSuccessful = GetAccountInfo(handles);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gui_mainfcn', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
+        feval(varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 42)" style="font-weight:bold">panel</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',42,0)">line 42</a>)
+    gui_mainfcn(gui_State, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('@(hObject,eventdata)panel(''pushbutton40_Callback'',hObject,eventdata,guidata(hObject))')" style="font-weight:bold">@(hObject,eventdata)panel('pushbutton40_Callback',hObject,eventdata,guidata(hObject))</a>
+
+} 
+Error while evaluating UIControl Callback
+
+Elapsed time is 1.218419 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2747,1)">2747 </a>IsSuccessful = GetAccountInfo(handles);
+if system_dependent('IsDebugMode')==1, dbstep in; end
+if system_dependent('IsDebugMode')==1, dbstep in; end
+if system_dependent('IsDebugMode')==1, dbstep in; end
+if system_dependent('IsDebugMode')==1, dbstep in; end
+if system_dependent('IsDebugMode')==1, dbstep in; end
+if system_dependent('IsDebugMode')==1, dbstep in; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('GetAccountInfo')" style="font-weight:bold">GetAccountInfo</a>
+Too many input arguments.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('GetAccountInfo', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\GetAccountInfo.m', 87)" style="font-weight:bold">GetAccountInfo</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\GetAccountInfo.m',87,0)">line 87</a>)
+capital = GetAccountInfo(FRONT_ADDR_TD,BROKER_ID,...
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel>pushbutton40_Callback', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 2747)" style="font-weight:bold">panel>pushbutton40_Callback</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2747,0)">line 2747</a>)
+IsSuccessful = GetAccountInfo(handles);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gui_mainfcn', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
+        feval(varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 42)" style="font-weight:bold">panel</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',42,0)">line 42</a>)
+    gui_mainfcn(gui_State, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('@(hObject,eventdata)panel(''pushbutton40_Callback'',hObject,eventdata,guidata(hObject))')" style="font-weight:bold">@(hObject,eventdata)panel('pushbutton40_Callback',hObject,eventdata,guidata(hObject))</a>
+
+} 
+Error while evaluating UIControl Callback
+
+Elapsed time is 1.216305 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2747,1)">2747 </a>IsSuccessful = GetAccountInfo(handles);
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('GetAccountInfo')" style="font-weight:bold">GetAccountInfo</a>
+Too many input arguments.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('GetAccountInfo', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\GetAccountInfo.m', 87)" style="font-weight:bold">GetAccountInfo</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\GetAccountInfo.m',87,0)">line 87</a>)
+capital = GetAccountInfo(FRONT_ADDR_TD,BROKER_ID,...
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel>pushbutton40_Callback', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 2747)" style="font-weight:bold">panel>pushbutton40_Callback</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2747,0)">line 2747</a>)
+IsSuccessful = GetAccountInfo(handles);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gui_mainfcn', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
+        feval(varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 42)" style="font-weight:bold">panel</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',42,0)">line 42</a>)
+    gui_mainfcn(gui_State, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('@(hObject,eventdata)panel(''pushbutton40_Callback'',hObject,eventdata,guidata(hObject))')" style="font-weight:bold">@(hObject,eventdata)panel('pushbutton40_Callback',hObject,eventdata,guidata(hObject))</a>
+
+} 
+Error while evaluating UIControl Callback
+
+Elapsed time is 1.321172 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2747,1)">2747 </a>IsSuccessful = GetAccountInfo(handles);
+if system_dependent('IsDebugMode')==1, dbcont; end
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('GetAccountInfo', 'C:\Users\apple\Desktop\CTP\m 调用 exe\GetAccountInfo.m', 44)" style="font-weight:bold">GetAccountInfo</a> (<a href="matlab: opentoline('C:\Users\apple\Desktop\CTP\m 调用 exe\GetAccountInfo.m',44,0)">line 44</a>)
+Not enough input arguments.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel>pushbutton40_Callback', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 2747)" style="font-weight:bold">panel>pushbutton40_Callback</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2747,0)">line 2747</a>)
+IsSuccessful = GetAccountInfo(handles);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gui_mainfcn', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
+        feval(varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 42)" style="font-weight:bold">panel</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',42,0)">line 42</a>)
+    gui_mainfcn(gui_State, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('@(hObject,eventdata)panel(''pushbutton40_Callback'',hObject,eventdata,guidata(hObject))')" style="font-weight:bold">@(hObject,eventdata)panel('pushbutton40_Callback',hObject,eventdata,guidata(hObject))</a>
+
+} 
+Error while evaluating UIControl Callback
+
+Elapsed time is 1.230600 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 6.529795 seconds.
+账户资金:645297
+Elapsed time is 1.331534 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+{Undefined function or variable "capital".
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('GetMyAccount', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\GetMyAccount.m', 93)" style="font-weight:bold">GetMyAccount</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\GetMyAccount.m',93,0)">line 93</a>)
+capital = capital+70e4-12e4;
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel>pushbutton40_Callback', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 2747)" style="font-weight:bold">panel>pushbutton40_Callback</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2747,0)">line 2747</a>)
+IsSuccessful = GetMyAccount(handles);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gui_mainfcn', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
+        feval(varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 42)" style="font-weight:bold">panel</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',42,0)">line 42</a>)
+    gui_mainfcn(gui_State, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('@(hObject,eventdata)panel(''pushbutton40_Callback'',hObject,eventdata,guidata(hObject))')" style="font-weight:bold">@(hObject,eventdata)panel('pushbutton40_Callback',hObject,eventdata,guidata(hObject))</a>
+
+} 
+Error while evaluating UIControl Callback
+
+Elapsed time is 1.235449 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\GetMyAccount.m',169,1)">169 </a>fprintf(fid, '%s,', datestr(now,'yyyy/mm/dd HH:MM:SS'));
+[folder1, '资金-',adInfo,'.csv']
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\资金-SimNow2.csv
+
+if system_dependent('IsDebugMode')==1, dbcont; end
+{Undefined function or variable 'capital'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('GetMyAccount', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\GetMyAccount.m', 170)" style="font-weight:bold">GetMyAccount</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\GetMyAccount.m',170,0)">line 170</a>)
+fprintf(fid, '%f\n', capital);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel>pushbutton40_Callback', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 2747)" style="font-weight:bold">panel>pushbutton40_Callback</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2747,0)">line 2747</a>)
+IsSuccessful = GetMyAccount(handles);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gui_mainfcn', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
+        feval(varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 42)" style="font-weight:bold">panel</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',42,0)">line 42</a>)
+    gui_mainfcn(gui_State, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('@(hObject,eventdata)panel(''pushbutton40_Callback'',hObject,eventdata,guidata(hObject))')" style="font-weight:bold">@(hObject,eventdata)panel('pushbutton40_Callback',hObject,eventdata,guidata(hObject))</a>
+
+} 
+Error while evaluating UIControl Callback
+
+Elapsed time is 1.221647 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+ 资金文件更新成功！
+fclose(fid);
+{Undefined function or variable 'fid'.
+} 

@@ -1,0 +1,85 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20180716T003829.txt
+
+Elapsed time is 1.222269 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 1.666184 seconds.
+>>>>>>>>>>调用成功！
+账户资金:645144
+持仓文件更新成功！
+资金文件更新成功！
+请在正确时段进行数据维护！
+数据文件未更新，不能加载策略!
+数据文件未更新，不能加载策略!
+数据文件未更新，不能加载策略!
+数据文件未更新，不能加载策略!
+数据文件未更新，不能加载策略!
+数据文件未更新，不能加载策略!
+数据文件未更新，不能加载策略!
+数据文件未更新，不能加载策略!
+数据文件未更新，不能加载策略!
+数据文件未更新，不能加载策略!
+数据文件未更新，不能加载策略!
+数据文件未更新，不能加载策略!
+数据文件未更新，不能加载策略!
+数据文件未更新，不能加载策略!
+数据文件未更新，不能加载策略!
+数据文件未更新，不能加载策略!
+
+策略加载完成！
+读TB输出文件...
+------------ 无交易！------------
+if system_dependent('IsDebugMode')==1, dbquit; end
+close('panel')
+{Error using close (line 129)
+Specified window does not exist.
+} 
+ figHandles = findobj( 'name', 'panel');
+          close(figHandles);
+
+findobj( 'name', 'panel')
+
+ans = 
+
+  0x0 empty <a href="matlab:helpPopup matlab.graphics.GraphicsPlaceholder" style="font-weight:bold">GraphicsPlaceholder</a> array.
+
+findobj('type', 'figure', '-not', 'name', 'panel');
+findobj('type', 'figure', '-not', 'name', 'panel')
+
+ans = 
+
+  <a href="matlab:helpPopup matlab.ui.Figure" style="font-weight:bold">Figure</a> (1) with properties:
+
+      Number: 1
+        Name: ''
+       Color: [0.9400 0.9400 0.9400]
+    Position: [610 428 700 525]
+       Units: 'pixels'
+
+  Show <a href="matlab:if exist('ans', 'var'), matlab.graphics.internal.getForDisplay('ans', ans, 'matlab.ui.Figure'), else, matlab.graphics.internal.getForDisplay('ans'), end">all properties</a>
+
+aa = findobj('type', 'figure', '-not', 'name', 'panel')
+
+aa = 
+
+  <a href="matlab:helpPopup matlab.ui.Figure" style="font-weight:bold">Figure</a> (1) with properties:
+
+      Number: 1
+        Name: ''
+       Color: [0.9400 0.9400 0.9400]
+    Position: [610 428 700 525]
+       Units: 'pixels'
+
+  Show <a href="matlab:if exist('aa', 'var'), matlab.graphics.internal.getForDisplay('aa', aa, 'matlab.ui.Figure'), else, matlab.graphics.internal.getForDisplay('aa'), end">all properties</a>
+
+close(aa)
+aa = findobj('type', 'figure', 'name', 'panel')
+
+aa = 
+
+  0x0 empty <a href="matlab:helpPopup matlab.graphics.GraphicsPlaceholder" style="font-weight:bold">GraphicsPlaceholder</a> array.
+
+runCallbackFunc2

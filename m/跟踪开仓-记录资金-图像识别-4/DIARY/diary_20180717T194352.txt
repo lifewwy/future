@@ -1,0 +1,14 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20180717T194352.txt
+
+Elapsed time is 1.457150 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 8.214865 seconds.
+账户资金:645297
+持仓合约查询失败！
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('runCallbackFunc2', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\runCallbackFunc2.m', 51)" style="font-weight:bold">runCallbackFunc2</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\runCallbackFunc2.m',51,0)">line 51</a>)
+
+} 

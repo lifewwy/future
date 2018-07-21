@@ -1,0 +1,53 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20180704T210227.txt
+
+Elapsed time is 1.328284 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 1.340523 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 2.213467 seconds.
+>>>>>>>>>>调用成功！
+账户资金:1864300
+持仓文件更新成功！
+ 资金文件更新成功！
+订单文件更新成功！
+31*0.75
+
+ans =
+
+   23.2500
+
+31*0.8
+
+ans =
+
+   24.8000
+
+
+ans = 
+
+    contract: 'MA1809'
+      action: 'Buy Open'
+       hands: '25'
+           n: 3
+
+
+orderParameters = 
+
+    'MA1809'    'Buy Open'    '25'
+
+Elapsed time is 1.116249 seconds.
+>>>>>>>>>>调用成功！
+Elapsed time is 2.426737 seconds.
+>>>>>>>>>>调用成功！
+全部成交
+
+ActionDoneFlg =
+
+     1
+
+--------------- 定时器关闭 01！--------------- 

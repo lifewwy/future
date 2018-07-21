@@ -1,0 +1,24 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20180315T201339.txt
+
+Elapsed time is 0.789958 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 0.720991 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 1.561932 seconds.
+>>>>>>>>>>调用成功！
+账户资金:2088680
+持仓文件更新成功！
+ 资金文件更新成功！
+订单文件更新成功！
+Elapsed time is 0.729961 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 1.558503 seconds.
+>>>>>>>>>>调用成功！
+账户资金:2088680
+持仓文件更新成功！

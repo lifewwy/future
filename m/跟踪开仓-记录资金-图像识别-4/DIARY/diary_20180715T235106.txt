@@ -1,0 +1,13 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20180715T235106.txt
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('get')" style="font-weight:bold">get</a>
+Conversion to double from struct is not possible.
+} 
+guihandles('panel')
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('guihandles', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\uitools\guihandles.m', 67)" style="font-weight:bold">guihandles</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\uitools\guihandles.m',67,0)">line 67</a>)
+H must be the handle to a figure or figure descendent.
+} 
+h = panel

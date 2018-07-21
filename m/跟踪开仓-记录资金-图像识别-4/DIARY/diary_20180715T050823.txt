@@ -1,0 +1,20 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20180715T050823.txt
+
+Elapsed time is 1.220355 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 1.561505 seconds.
+>>>>>>>>>>调用成功！
+账户资金:645244
+持仓文件更新成功！
+Elapsed time is 1.228836 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 1.657681 seconds.
+>>>>>>>>>>调用成功！
+账户资金:645244
+持仓文件更新成功！
+ 资金文件更新成功！

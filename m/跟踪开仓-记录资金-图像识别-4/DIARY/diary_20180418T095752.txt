@@ -1,0 +1,198 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20180418T095752.txt
+
+Elapsed time is 1.330896 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 2.433027 seconds.
+>>>>>>>>>>调用成功！
+账户资金:2099670
+持仓文件更新成功！
+C:\D\xyz\future\数据维护\A888.csv 更新成功！
+C:\D\xyz\future\数据维护\C888.csv 更新成功！
+C:\D\xyz\future\数据维护\RB888.csv 更新成功！
+C:\D\xyz\future\数据维护\M888.csv 更新成功！
+C:\D\xyz\future\数据维护\P888.csv 更新成功！
+C:\D\xyz\future\数据维护\J888.csv 更新成功！
+C:\D\xyz\future\数据维护\ZN888.csv 更新成功！
+C:\D\xyz\future\数据维护\Y888.csv 更新成功！
+C:\D\xyz\future\数据维护\L888.csv 更新成功！
+C:\D\xyz\future\数据维护\AG888.csv 更新成功！
+C:\D\xyz\future\数据维护\TA888.csv 更新成功！
+C:\D\xyz\future\数据维护\SR888.csv 更新成功！
+C:\D\xyz\future\数据维护\AU888.csv 更新成功！
+C:\D\xyz\future\数据维护\FG888.csv 更新成功！
+C:\D\xyz\future\数据维护\MA888.csv 更新成功！
+C:\D\xyz\future\数据维护\RU888.csv 更新成功！
+C:\D\xyz\future\数据维护\AL888.csv 更新成功！
+C:\D\xyz\future\数据维护\OI888.csv 更新成功！
+C:\D\xyz\future\数据维护\RM888.csv 更新成功！
+C:\D\xyz\future\数据维护\CF888.csv 更新成功！
+C:\D\xyz\future\数据维护\I888.csv 更新成功！
+C:\D\xyz\future\数据维护\JM888.csv 更新成功！
+C:\D\xyz\future\数据维护\CU888.csv 更新成功！
+C:\D\xyz\future\数据维护\V888.csv 更新成功！
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('datenum', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\timefun\datenum.m', 178)" style="font-weight:bold">datenum</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\timefun\datenum.m',178,0)">line 178</a>)
+DATENUM failed.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('csv888Refresh', 'C:\D\xyz\future\数据维护\csv888Refresh.m', 40)" style="font-weight:bold">csv888Refresh</a> (<a href="matlab: opentoline('C:\D\xyz\future\数据维护\csv888Refresh.m',40,0)">line 40</a>)
+            Data((k+1)/2) = datenum(char(KLineData(pos(k)+1:pos(k+1)-1)));
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main_csv888Refresh_daily', 'C:\D\xyz\future\数据维护\main_csv888Refresh_daily.m', 87)" style="font-weight:bold">main_csv888Refresh_daily</a> (<a href="matlab: opentoline('C:\D\xyz\future\数据维护\main_csv888Refresh_daily.m',87,0)">line 87</a>)
+csv888Refresh('IF');
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel>pushbutton25_Callback', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 1739)" style="font-weight:bold">panel>pushbutton25_Callback</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',1739,0)">line 1739</a>)
+main_csv888Refresh_daily;
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gui_mainfcn', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
+        feval(varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 42)" style="font-weight:bold">panel</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',42,0)">line 42</a>)
+    gui_mainfcn(gui_State, varargin{:});
+
+Error in
+<a href="matlab:matlab.internal.language.introspective.errorDocCallback('@(hObject,eventdata)panel(''pushbutton25_Callback'',hObject,eventdata,guidata(hObject))')" style="font-weight:bold">@(hObject,eventdata)panel('pushbutton25_Callback',hObject,eventdata,guidata(hObject))</a>
+
+
+Caused by:
+    Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('datevec', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\timefun\datevec.p', 212)" style="font-weight:bold">datevec</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\timefun\datevec.p',212,0)">line 212</a>)
+    Failed to lookup month of year.
+} 
+Error while evaluating UIControl Callback
+
+csv888Refresh('if');
+C:\D\xyz\future\数据维护\if888.csv 更新成功！
+Elapsed time is 1.335600 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 1.333029 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 4.830507 seconds.
+>>>>>>>>>>调用成功！
+账户资金:2090970
+持仓文件更新成功！
+ 资金文件更新成功！
+订单文件更新成功！
+Elapsed time is 2.312527 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 8.653084 seconds.
+>>>>>>>>>>调用成功！
+账户资金:2090970
+持仓文件更新成功！
+
+ans = 
+
+    contract: 'CU1806'
+      action: 'Buy EvenUp'
+       hands: '2'
+           n: 1
+
+
+ans = 
+
+    contract: 'CU1806'
+      action: 'Buy Open'
+       hands: '2'
+           n: 2
+
+
+ans = 
+
+    contract: 'TA1809'
+      action: 'Buy EvenUp'
+       hands: '25'
+           n: 3
+
+
+orderParameters = 
+
+    'CU1806'    'Buy EvenUp'    '2'
+
+Elapsed time is 1.235425 seconds.
+>>>>>>>>>>调用成功！
+Elapsed time is 3.328817 seconds.
+>>>>>>>>>>调用成功！
+全部成交
+
+ActionDoneFlg =
+
+     1     0     0
+
+
+orderParameters = 
+
+    'CU1806'    'Buy Open'    '2'
+
+Elapsed time is 1.344773 seconds.
+>>>>>>>>>>调用成功！
+Elapsed time is 5.486972 seconds.
+>>>>>>>>>>调用成功！
+全部成交
+
+ActionDoneFlg =
+
+     1     1     0
+
+
+orderParameters = 
+
+    'TA1809'    'Buy EvenUp'    '25'
+
+Elapsed time is 20.113542 seconds.
+>>>>>>>>>>调用成功！
+Error while evaluating TimerFcn for timer 'myMainTimer' 
+
+Attempted to access pos1(0); index must be a positive integer or logical.
+
+
+
+ans = 
+
+    contract: 'TA1809'
+      action: 'Buy EvenUp'
+       hands: '25'
+           n: 3
+
+
+orderParameters = 
+
+    'TA1809'    'Buy EvenUp'    '25'
+
+Elapsed time is 20.110806 seconds.
+>>>>>>>>>>调用成功！
+Error while evaluating TimerFcn for timer 'myMainTimer' 
+
+Attempted to access pos1(0); index must be a positive integer or logical.
+
+
+Elapsed time is 1.338383 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 33.696014 seconds.
+账户资金:NaN
+持仓文件更新成功！
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.ui.control.UIControl/set')" style="font-weight:bold">matlab.ui.control.UIControl/set</a>
+Invalid or deleted object.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('GetAccount', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\GetAccount.m', 108)" style="font-weight:bold">GetAccount</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\GetAccount.m',108,0)">line 108</a>)
+set(handles.text13,'string',strCapital);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel>pushbutton34_Callback', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 2599)" style="font-weight:bold">panel>pushbutton34_Callback</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2599,0)">line 2599</a>)
+    GetAccount(handles);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gui_mainfcn', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
+        feval(varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 42)" style="font-weight:bold">panel</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',42,0)">line 42</a>)
+    gui_mainfcn(gui_State, varargin{:});
+
+Error in
+<a href="matlab:matlab.internal.language.introspective.errorDocCallback('@(hObject,eventdata)panel(''pushbutton34_Callback'',hObject,eventdata,guidata(hObject))')" style="font-weight:bold">@(hObject,eventdata)panel('pushbutton34_Callback',hObject,eventdata,guidata(hObject))</a>
+
+} 
+Error while evaluating DestroyedObject Callback
+

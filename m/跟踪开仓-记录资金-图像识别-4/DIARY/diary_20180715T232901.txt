@@ -1,0 +1,20 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20180715T232901.txt
+
+Elapsed time is 1.221685 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 1.552982 seconds.
+>>>>>>>>>>调用成功！
+账户资金:645219
+持仓文件更新成功！
+资金文件更新成功！
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('guidata', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\uitools\guidata.m', 87)" style="font-weight:bold">guidata</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\uitools\guidata.m',87,0)">line 87</a>)
+H must be the handle to a figure or figure descendent.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('runCallbackFunc2', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\runCallbackFunc2.m', 19)" style="font-weight:bold">runCallbackFunc2</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\runCallbackFunc2.m',19,0)">line 19</a>)
+guidata(h);
+} 
+runCallbackFunc2

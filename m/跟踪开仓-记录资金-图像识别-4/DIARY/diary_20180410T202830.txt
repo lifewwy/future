@@ -1,0 +1,125 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20180410T202830.txt
+
+75*6.5
+
+ans =
+
+  487.5000
+
+75*6.3
+
+ans =
+
+  472.5000
+
+
+ans = 
+
+    contract: 'AL1805'
+      action: 'Buy EvenUp'
+       hands: '6'
+           n: 1
+
+
+ans = 
+
+    contract: 'AL1806'
+      action: 'Sell Open'
+       hands: '6'
+           n: 2
+
+
+ans = 
+
+    contract: 'J1805'
+      action: 'Buy EvenUp'
+       hands: '2'
+           n: 3
+
+
+ans = 
+
+    contract: 'L1805'
+      action: 'Buy EvenUp'
+       hands: '10'
+           n: 5
+
+
+ans = 
+
+    contract: 'L1809'
+      action: 'Sell Open'
+       hands: '10'
+           n: 6
+
+
+orderParameters = 
+
+    'J1805'    'Buy EvenUp'    '2'
+
+Elapsed time is 1.655405 seconds.
+>>>>>>>>>>调用成功！
+Elapsed time is 2.763767 seconds.
+>>>>>>>>>>调用成功！
+全部成交
+
+ActionDoneFlg =
+
+     0     0     1     0     0
+
+
+orderParameters = 
+
+    'AL1805'    'Buy EvenUp'    '6'
+
+Elapsed time is 1.338296 seconds.
+>>>>>>>>>>调用成功！
+Elapsed time is 5.486362 seconds.
+>>>>>>>>>>调用成功！
+全部成交
+
+ActionDoneFlg =
+
+     1     0     1     0     0
+
+
+orderParameters = 
+
+    'AL1806'    'Sell Open'    '6'
+
+Elapsed time is 1.218975 seconds.
+>>>>>>>>>>调用成功！
+Elapsed time is 2.538816 seconds.
+>>>>>>>>>>调用成功！
+全部成交
+
+ActionDoneFlg =
+
+     1     1     1     0     0
+
+Elapsed time is 1.448870 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 2.764813 seconds.
+>>>>>>>>>>调用成功！
+账户资金:2023090
+持仓文件更新成功！
+Elapsed time is 1.334374 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 2.866314 seconds.
+>>>>>>>>>>调用成功！
+账户资金:2022950
+持仓文件更新成功！
+ 资金文件更新成功！
+订单文件更新成功！
+Elapsed time is 1.329024 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 2.641351 seconds.
+>>>>>>>>>>调用成功！
+账户资金:2023210
+持仓文件更新成功！

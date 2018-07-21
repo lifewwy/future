@@ -1,0 +1,16 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20180716T002605.txt
+
+Elapsed time is 1.220334 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 1.556421 seconds.
+>>>>>>>>>>调用成功！
+账户资金:645169
+持仓文件更新成功！
+资金文件更新成功！
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\runCallbackFunc2.m',26,1)">26  </a>panel('pushbutton25_Callback',h.pushbutton25,[],guidata(h.pushbutton25));
+if system_dependent('IsDebugMode')==1, dbquit; end
+runCallbackFunc2

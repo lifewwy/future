@@ -1,0 +1,11 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20180715T223102.txt
+
+Elapsed time is 1.234816 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbquit; end
+runCallbackFunc2

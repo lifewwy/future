@@ -1,0 +1,13 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20180715T064401.txt
+
+读TB输出文件...
+读风险配置文件...
+读资金文件...
+输出订单文件...
+订单文件更新成功！
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',857,1)">857 </a>    readOrdersFile(hObject, eventdata, handles);
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbquit; end

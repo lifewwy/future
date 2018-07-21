@@ -1,0 +1,6 @@
+Params
+	Numeric Length(15); 
+Begin
+	PlotNumeric("APR",AATRPriceRatio(Length));
+End 
+ 

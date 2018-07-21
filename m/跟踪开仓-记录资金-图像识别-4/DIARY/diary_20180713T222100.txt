@@ -1,0 +1,190 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20180713T222100.txt
+
+
+ans = 
+
+    contract: 'MA1810'
+      action: 'Buy Open'
+       hands: '1'
+           n: 1
+
+
+ans = 
+
+    contract: 'MA1810'
+      action: 'Buy Open'
+       hands: '1'
+           n: 2
+
+
+ans = 
+
+    contract: 'MA1810'
+      action: 'Buy Open'
+       hands: '1'
+           n: 3
+
+
+ans = 
+
+    contract: 'MA1810'
+      action: 'Buy Open'
+       hands: '1'
+           n: 4
+
+
+ans = 
+
+    contract: 'MA1810'
+      action: 'Buy Open'
+       hands: '1'
+           n: 5
+
+
+ans = 
+
+    contract: 'MA1810'
+      action: 'Buy Open'
+       hands: '1'
+           n: 6
+
+
+ans = 
+
+    contract: 'MA1810'
+      action: 'Buy Open'
+       hands: '1'
+           n: 7
+
+
+ans = 
+
+    contract: 'MA1810'
+      action: 'Buy Open'
+       hands: '1'
+           n: 8
+
+
+orderParameters = 
+
+    'MA1810'    'Buy Open'    '1'
+
+Elapsed time is 1.130924 seconds.
+>>>>>>>>>>调用成功！
+Elapsed time is 1.902105 seconds.
+>>>>>>>>>>调用成功！
+全部成交
+
+ActionDoneFlg =
+
+     1     0     0     0     0     0     0     0
+
+
+orderParameters = 
+
+    'MA1810'    'Buy Open'    '1'
+
+Elapsed time is 0.971695 seconds.
+>>>>>>>>>>调用成功！
+Elapsed time is 1.780006 seconds.
+>>>>>>>>>>调用成功！
+全部成交
+
+ActionDoneFlg =
+
+     1     1     0     0     0     0     0     0
+
+
+orderParameters = 
+
+    'MA1810'    'Buy Open'    '1'
+
+Elapsed time is 0.965126 seconds.
+>>>>>>>>>>调用成功！
+Elapsed time is 2.984594 seconds.
+>>>>>>>>>>调用成功！
+全部成交
+
+ActionDoneFlg =
+
+     1     1     0     1     0     0     0     0
+
+
+orderParameters = 
+
+    'MA1810'    'Buy Open'    '1'
+
+Elapsed time is 2.428687 seconds.
+>>>>>>>>>>调用成功！
+Elapsed time is 1.774796 seconds.
+>>>>>>>>>>调用成功！
+全部成交
+
+ActionDoneFlg =
+
+     1     1     0     1     1     0     0     0
+
+
+orderParameters = 
+
+    'MA1810'    'Buy Open'    '1'
+
+Elapsed time is 0.992274 seconds.
+>>>>>>>>>>调用成功！
+Elapsed time is 1.892051 seconds.
+>>>>>>>>>>调用成功！
+全部成交
+
+ActionDoneFlg =
+
+     1     1     0     1     1     0     1     0
+
+
+orderParameters = 
+
+    'MA1810'    'Buy Open'    '1'
+
+Elapsed time is 1.026626 seconds.
+>>>>>>>>>>调用成功！
+Elapsed time is 2.011758 seconds.
+>>>>>>>>>>调用成功！
+全部成交
+
+ActionDoneFlg =
+
+     1     1     1     1     1     0     1     0
+
+
+orderParameters = 
+
+    'MA1810'    'Buy Open'    '1'
+
+Elapsed time is 0.944361 seconds.
+>>>>>>>>>>调用成功！
+Elapsed time is 1.886466 seconds.
+>>>>>>>>>>调用成功！
+全部成交
+
+ActionDoneFlg =
+
+     1     1     1     1     1     0     1     1
+
+
+orderParameters = 
+
+    'MA1810'    'Buy Open'    '1'
+
+Elapsed time is 0.923675 seconds.
+>>>>>>>>>>调用成功！
+Elapsed time is 1.875147 seconds.
+>>>>>>>>>>调用成功！
+全部成交
+
+ActionDoneFlg =
+
+     1     1     1     1     1     1     1     1
+
+--------------- 定时器关闭 01！--------------- 

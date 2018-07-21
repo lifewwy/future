@@ -1,0 +1,61 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20180412T221424.txt
+
+Elapsed time is 1.561273 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 3.740301 seconds.
+>>>>>>>>>>调用成功！
+账户资金:2042710
+持仓文件更新成功！
+Elapsed time is 1.557407 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 4.724076 seconds.
+>>>>>>>>>>调用成功！
+账户资金:2043330
+持仓文件更新成功！
+Elapsed time is 2.873749 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 3.084416 seconds.
+>>>>>>>>>>调用成功！
+账户资金:2043260
+持仓文件更新成功！
+Elapsed time is 1.657010 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 3.074920 seconds.
+>>>>>>>>>>调用成功！
+账户资金:2037580
+持仓文件更新成功！
+{Undefined function or variable 'num2bankScalar'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('GetAccount/num2bank/@(x)num2bankScalar(x)')" style="font-weight:bold">GetAccount/num2bank/@(x)num2bankScalar(x)</a>
+
+
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('GetAccount/num2bank', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\GetAccount.m', 88)" style="font-weight:bold">GetAccount/num2bank</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\GetAccount.m',88,0)">line 88</a>)
+     str = arrayfun(@(x) num2bankScalar(x) , num, 'UniformOutput', false);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('GetAccount', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\GetAccount.m', 91)" style="font-weight:bold">GetAccount</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\GetAccount.m',91,0)">line 91</a>)
+strCapital = num2bank(capital);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel>pushbutton36_Callback', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 2707)" style="font-weight:bold">panel>pushbutton36_Callback</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2707,0)">line 2707</a>)
+GetAccount(handles)
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gui_mainfcn', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
+        feval(varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 42)" style="font-weight:bold">panel</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',42,0)">line 42</a>)
+    gui_mainfcn(gui_State, varargin{:});
+
+Error in
+<a href="matlab:matlab.internal.language.introspective.errorDocCallback('@(hObject,eventdata)panel(''pushbutton36_Callback'',hObject,eventdata,guidata(hObject))')" style="font-weight:bold">@(hObject,eventdata)panel('pushbutton36_Callback',hObject,eventdata,guidata(hObject))</a>
+
+} 
+Error while evaluating UIControl Callback
+
+panel

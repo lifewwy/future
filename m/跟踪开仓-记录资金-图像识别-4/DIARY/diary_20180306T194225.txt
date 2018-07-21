@@ -1,0 +1,117 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20180306T194225.txt
+
+C:\D\xyz\future\数据维护\A888.csv 更新成功！
+C:\D\xyz\future\数据维护\C888.csv 更新成功！
+C:\D\xyz\future\数据维护\RB888.csv 更新成功！
+C:\D\xyz\future\数据维护\M888.csv 更新成功！
+C:\D\xyz\future\数据维护\P888.csv 更新成功！
+C:\D\xyz\future\数据维护\J888.csv 更新成功！
+C:\D\xyz\future\数据维护\ZN888.csv 更新成功！
+2018-03-06: ZN1804 -> ZN1805
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fprintf')" style="font-weight:bold">fprintf</a>
+Invalid file identifier. Use fopen to generate a valid file identifier.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('GenCCorders', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\GenCCorders.m', 20)" style="font-weight:bold">GenCCorders</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\GenCCorders.m',20,0)">line 20</a>)
+fprintf(fid, '\n');
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('csv888RefreshOneDay', 'C:\D\xyz\future\数据维护\csv888RefreshOneDay.m', 159)" style="font-weight:bold">csv888RefreshOneDay</a> (<a href="matlab: opentoline('C:\D\xyz\future\数据维护\csv888RefreshOneDay.m',159,0)">line 159</a>)
+    GenCCorders(contract1,contract2);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main_csv888Refresh_daily', 'C:\D\xyz\future\数据维护\main_csv888Refresh_daily.m', 67)" style="font-weight:bold">main_csv888Refresh_daily</a> (<a href="matlab: opentoline('C:\D\xyz\future\数据维护\main_csv888Refresh_daily.m',67,0)">line 67</a>)
+csv888RefreshOneDay('ZN');
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel>pushbutton25_Callback', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 1739)" style="font-weight:bold">panel>pushbutton25_Callback</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',1739,0)">line 1739</a>)
+main_csv888Refresh_daily;
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gui_mainfcn', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
+        feval(varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 42)" style="font-weight:bold">panel</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',42,0)">line 42</a>)
+    gui_mainfcn(gui_State, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('@(hObject,eventdata)panel(''pushbutton25_Callback'',hObject,eventdata,guidata(hObject))')" style="font-weight:bold">@(hObject,eventdata)panel('pushbutton25_Callback',hObject,eventdata,guidata(hObject))</a>
+
+} 
+Error while evaluating UIControl Callback
+
+matlab.internal.language.introspective.errorDocCallback('fprintf')
+C:\D\xyz\future\数据维护\A888.csv 已经是最新文件！
+C:\D\xyz\future\数据维护\C888.csv 已经是最新文件！
+C:\D\xyz\future\数据维护\RB888.csv 已经是最新文件！
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('datevec', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\timefun\datevec.p', 172)" style="font-weight:bold">datevec</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\timefun\datevec.p',172,0)">line 172</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('datenum', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\timefun\datenum.m', 92)" style="font-weight:bold">datenum</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\timefun\datenum.m',92,0)">line 92</a>)
+                n = datenummx(datevec(arg1));
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('csv888RefreshOneDay', 'C:\D\xyz\future\数据维护\csv888RefreshOneDay.m', 67)" style="font-weight:bold">csv888RefreshOneDay</a> (<a href="matlab: opentoline('C:\D\xyz\future\数据维护\csv888RefreshOneDay.m',67,0)">line 67</a>)
+contractDate = datenum(dstruct.textdata);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main_csv888Refresh_daily', 'C:\D\xyz\future\数据维护\main_csv888Refresh_daily.m', 64)" style="font-weight:bold">main_csv888Refresh_daily</a> (<a href="matlab: opentoline('C:\D\xyz\future\数据维护\main_csv888Refresh_daily.m',64,0)">line 64</a>)
+csv888RefreshOneDay('M');
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel>pushbutton25_Callback', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 1739)" style="font-weight:bold">panel>pushbutton25_Callback</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',1739,0)">line 1739</a>)
+main_csv888Refresh_daily;
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gui_mainfcn', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
+        feval(varargin{:});
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 42)" style="font-weight:bold">panel</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',42,0)">line 42</a>)
+    gui_mainfcn(gui_State, varargin{:});
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('@(hObject,eventdata)panel(''pushbutton25_Callback'',hObject,eventdata,guidata(hObject))')" style="font-weight:bold">@(hObject,eventdata)panel('pushbutton25_Callback',hObject,eventdata,guidata(hObject))</a>
+
+} 
+Interrupt while evaluating UIControl Callback.
+
+C:\D\xyz\future\数据维护\A888.csv 已经是最新文件！
+C:\D\xyz\future\数据维护\C888.csv 已经是最新文件！
+C:\D\xyz\future\数据维护\RB888.csv 已经是最新文件！
+C:\D\xyz\future\数据维护\M888.csv 已经是最新文件！
+C:\D\xyz\future\数据维护\P888.csv 已经是最新文件！
+C:\D\xyz\future\数据维护\J888.csv 已经是最新文件！
+C:\D\xyz\future\数据维护\ZN888.csv 更新成功！
+2018-03-06: ZN1804 -> ZN1805
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\GenCCorders.m',21,1)">21  </a>folder1 = 'C:\D\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\';
+fp  = mfilename('fullpath');
+pp = strfind(fp,'\');
+directory = fp(1:pp(end))
+
+directory =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\
+
+if system_dependent('IsDebugMode')==1, dbquit; end
+C:\D\xyz\future\数据维护\A888.csv 已经是最新文件！
+C:\D\xyz\future\数据维护\C888.csv 已经是最新文件！
+C:\D\xyz\future\数据维护\RB888.csv 已经是最新文件！
+C:\D\xyz\future\数据维护\M888.csv 已经是最新文件！
+C:\D\xyz\future\数据维护\P888.csv 已经是最新文件！
+C:\D\xyz\future\数据维护\J888.csv 已经是最新文件！
+C:\D\xyz\future\数据维护\ZN888.csv 更新成功！
+2018-03-06: ZN1804 -> ZN1805
+订单文件更新成功！
+C:\D\xyz\future\数据维护\Y888.csv 更新成功！
+C:\D\xyz\future\数据维护\L888.csv 更新成功！
+C:\D\xyz\future\数据维护\AG888.csv 更新成功！
+C:\D\xyz\future\数据维护\TA888.csv 更新成功！
+C:\D\xyz\future\数据维护\SR888.csv 更新成功！
+C:\D\xyz\future\数据维护\AU888.csv 更新成功！
+C:\D\xyz\future\数据维护\FG888.csv 更新成功！
+C:\D\xyz\future\数据维护\MA888.csv 更新成功！
+C:\D\xyz\future\数据维护\RU888.csv 更新成功！
+C:\D\xyz\future\数据维护\AL888.csv 更新成功！
+2018-03-06: AL1804 -> AL1805
+订单文件更新成功！
+C:\D\xyz\future\数据维护\OI888.csv 更新成功！
+C:\D\xyz\future\数据维护\RM888.csv 更新成功！
+C:\D\xyz\future\数据维护\CF888.csv 更新成功！
+C:\D\xyz\future\数据维护\I888.csv 更新成功！
+C:\D\xyz\future\数据维护\JM888.csv 更新成功！
+C:\D\xyz\future\数据维护\CU888.csv 更新成功！
+2018-03-06: CU1804 -> CU1805
+订单文件更新成功！
+C:\D\xyz\future\数据维护\V8

@@ -1,0 +1,253 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20180715T043832.txt
+
+Elapsed time is 1.220102 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+ 资金文件更新成功！
+Elapsed time is 1.226327 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+ 资金文件更新成功！
+Elapsed time is 1.230810 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+<a href="matlab: opentoline('C:\Users\apple\Desktop\CTP\m 调用 exe\GetAccountInfo.m',42,1)">42  </a>cmd = 'C:\Users\apple\Desktop\CTP\交易账户查询_02\Bin\testTraderApi.exe ';
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+Elapsed time is 6.131440 seconds.
+results
+
+results =
+
+-------C:\Users\apple\Desktop\CTP\交易账户查询_02\Bin\testTraderApi.exe-------
+-------tcp://180.168.146.187:10030-------
+-------9999-------
+-------101042-------
+-------518888-------
+
+-----------------------------------------
+-----------------------------------------
+
+Connect to 180.168.146.187:10030
+Session 1608581121 Connected
+--->>> OnFrontConnected
+与服务器已建立连接, 开始登录
+CFtdcUserApiImplBase::RequestDirectly SessionID=1608581121
+CFtdcUserApiImplBase::RequestDirectly Send
+--->>> 发送用户登录请求: 成功
+Decompress, compress len=[152], orig len=[265]
+CFtdcUserApiImplBase::HandlePackage
+	FTDC PACKAGE HEADER
+	Version[0X0C],Chain[0X4C],SequenceSeries[0],TransactionId[0X00003001],SequenceNumber[0]
+	FieldCount[2],FTDCContentLength[245],RequestId[1]
+	FTDC PACKAGE CONTENT START
+	FIELD [CFTDRspInfoField] START
+			[ErrorID][2][0]
+			[ErrorMsg][0][CTP:正确小于2种字符:请注意修改]
+	FIELD [CFTDRspInfoField] END
+	FIELD [CFTDRspUserLoginField] START
+			[TradingDay][0][20180713]
+			[LoginTime][0][04:41:28]
+			[BrokerID][0][9999]
+			[UserID][0][101042]
+			[SystemName][0][TradingHosting]
+			[FrontID][2][1]
+			[SessionID][2][1609630807]
+			[MaxOrderRef][0][1]
+			[SHFETime][0][06:29:28]
+			[DCETime][0][06:29:28]
+			[CZCETime][0][06:29:28]
+			[FFEXTime][0][06:29:28]
+	FIELD [CFTDRspUserLoginField] END
+	FTDC PACKAGE CONTENT END
+--->>> OnRspUserLogin
+--->>> 获取当前交易日 = 20180713
+--->>> 投资者结算结果确认: 成功
+Decompress, compress len=[40], orig len=[60]
+CFtdcUserApiImplBase::HandlePackage
+	FTDC PACKAGE HEADER
+	Version[0X0C],Chain[0X4C],SequenceSeries[0],TransactionId[0X0000F102],SequenceNumber[0]
+	FieldCount[4],FTDCContentLength[40],RequestId[0]
+	FTDC PACKAGE CONTENT START
+	FIELD [CFTDDisseminationField] START
+			[SequenceSeries][1][1]
+			[SequenceNo][2][0]
+	FIELD [CFTDDisseminationField] END
+	FIELD [CFTDDisseminationField] START
+			[SequenceSeries][1][2]
+			[SequenceNo][2][0]
+	FIELD [CFTDDisseminationField] END
+	FIELD [CFTDDisseminationField] START
+			[SequenceSeries][1][3]
+			[SequenceNo][2][335]
+	FIELD [CFTDDisseminationField] END
+	FIELD [CFTDDisseminationField] START
+			[SequenceSeries][1][4]
+			[SequenceNo][2][0]
+	FIELD [CFTDDisseminationField] END
+	FTDC PACKAGE CONTENT END
+Decompress, compress len=[62], orig len=[155]
+CFtdcUserSubscriber::HandleMessage
+	FTDC PACKAGE HEADER
+	Version[0X0C],Chain[0X4C],SequenceSeries[1],TransactionId[0X00004014],SequenceNumber[1]
+	FieldCount[2],FTDCContentLength[135],RequestId[2]
+	FTDC PACKAGE CONTENT START
+	FIELD [CFTDRspInfoField] START
+			[ErrorID][2][0]
+			[ErrorMsg][0][正确]
+	FIELD [CFTDRspInfoField] END
+	FIELD [CFTDSettlementInfoConfirmField] START
+			[BrokerID][0][9999]
+			[InvestorID][0][101042]
+			[ConfirmDate][0][20180713]
+			[ConfirmTime][0][04:41:28]
+	FIELD [CFTDSettlementInfoConfirmField] END
+	FTDC PACKAGE CONTENT END
+--->>> OnRspSettlementInfoConfirm
+--->>> 请求查询资金账户: 成功
+Decompress, compress len=[119], orig len=[393]
+CFtdcUserSubscriber::HandleMessage
+	FTDC PACKAGE HEADER
+	Version[0X0C],Chain[0X4C],SequenceSeries[4],TransactionId[0X00008007],SequenceNumber[1]
+	FieldCount[1],FTDCContentLength[373],RequestId[3]
+	FTDC PACKAGE CONTENT START
+	FIELD [CFTDTradingAccountField] START
+			[BrokerID][0][9999]
+			[AccountID][0][101042]
+			[PreMortgage][4][0.000000]
+			[PreCredit][4][0.000000]
+			[PreDeposit][4][645297.240000]
+			[PreBalance][4][645297.240000]
+			[PreMargin][4][0.000000]
+			[InterestBase][4][0.000000]
+			[Interest][4][0.000000]
+			[Deposit][4][0.000000]
+			[Withdraw][4][0.000000]
+			[FrozenMargin][4][0.000000]
+			[FrozenCash][4][0.000000]
+			[FrozenCommission][4][0.000000]
+			[CurrMargin][4][0.000000]
+			[CashIn][4][0.000000]
+			[Commission][4][0.000000]
+			[CloseProfit][4][0.000000]
+			[PositionProfit][4][0.000000]
+			[Balance][4][645297.240000]
+			[Available][4][645297.240000]
+			[WithdrawQuota][4][645297.240000]
+			[Reserve][4][0.000000]
+			[TradingDay][0][20180713]
+			[SettlementID][2][1]
+			[Credit][4][0.000000]
+			[Mortgage][4][0.000000]
+			[ExchangeMargin][4][0.000000]
+	FIELD [CFTDTradingAccountField] END
+	FTDC PACKAGE CONTENT END
+--->>> OnRspQryTradingAccount
+--->>> 账户资金: 645297;         
+--->>> 请求查询投资者持仓: 成功
+Decompress, compress len=[11], orig len=[20]
+CFtdcUserSubscriber::HandleMessage
+	FTDC PACKAGE HEADER
+	Version[0X0C],Chain[0X4C],SequenceSeries[4],TransactionId[0X00008005],SequenceNumber[2]
+	FieldCount[0],FTDCContentLength[0],RequestId[4]
+	FTDC PACKAGE CONTENT START
+	FTDC PACKAGE CONTENT END
+--->>> OnRspQryInvestorPosition
+
+
+if system_dependent('IsDebugMode')==1, dbquit; end
+Elapsed time is 1.218945 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+<a href="matlab: opentoline('C:\Users\apple\Desktop\CTP\m 调用 exe\GetAccountInfo.m',42,1)">42  </a>cmd = 'C:\Users\apple\Desktop\CTP\交易账户查询_02\Bin\testTraderApi.exe ';
+if system_dependent('IsDebugMode')==1, dbcont; end
+Elapsed time is 11.277650 seconds.
+if system_dependent('IsDebugMode')==1, dbquit; end
+Elapsed time is 1.239661 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 3.943458 seconds.
+账户资金:645297
+Elapsed time is 1.229916 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+<a href="matlab: opentoline('C:\Users\apple\Desktop\CTP\m 调用 exe\GetAccountInfo1.m',6,1)">6   </a>balance = 0;
+if system_dependent('IsDebugMode')==1, dbquit; end
+Elapsed time is 1.225765 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+<a href="matlab: opentoline('C:\Users\apple\Desktop\CTP\m 调用 exe\GetAccountInfo1.m',6,1)">6   </a>balance = 0;
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+Elapsed time is 6.683410 seconds.
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+账户资金:645297
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbquit; end
+
+ans = 
+
+    contract: 'AL1809'
+      action: 'Buy Open'
+       hands: '1'
+           n: 1
+
+
+ans = 
+
+    contract: 'AL1809'
+      action: 'Buy Open'
+       hands: '1'
+           n: 1
+
+
+ans = 
+
+    contract: 'AL1809'
+      action: 'Buy Open'
+       hands: '1'
+           n: 1
+
+Elapsed time is 2.258812 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.ui.control.UIControl/set')" style="font-weight:bold">matlab.ui.control.UIControl/set</a>
+Invalid or deleted object.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel>pushbutton24_Callback', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 1728)" style="font-weight:bold">panel>pushbutton24_Callback</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',1728,0)">line 1728</a>)
+set(handles.text8,'string',LoginFlg);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel>pushbutton15_Callback', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 1464)" style="font-weight:bold">panel>pushbutton15_Callback</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',1464,0)">line 1464</a>)
+pushbutton24_Callback(hObject, eventdata, handles);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gui_mainfcn', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
+        feval(varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 42)" style="font-weight:bold">panel</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',42,0)">line 42</a>)
+    gui_mainfcn(gui_State, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('@(hObject,eventdata)panel(''pushbutton15_Callback'',hObject,eventdata,guidata(hObject))')" style="font-weight:bold">@(hObject,eventdata)panel('pushbutton15_Callback',hObject,eventdata,guidata(hObject))</a>
+
+} 
+Error while evaluating DestroyedObject Callback
+
+Error while evaluating TimerFcn for timer 'myMainTimer' 
+
+Invalid or deleted object.
+
+
+GetAccountInfo1
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('GetAccountInfo1', 'C:\Users\apple\Desktop\CTP\m 调用 exe\GetAccountInfo1.m', 44)" style="font-weight:bold">GetAccountInfo1</a> (<a href="matlab: opentoline('C:\Users\apple\Desktop\CTP\m 调用 exe\GetAccountInfo1.m',44,0)">line 44</a>)
+Not enough input arguments.
+} 

@@ -1,0 +1,59 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20180714T210016.txt
+
+Elapsed time is 5.380498 seconds.
+>>>>>>>>>>调用成功！
+未登录成功!
+Elapsed time is 5.151433 seconds.
+>>>>>>>>>>调用成功！
+未登录成功!
+Elapsed time is 5.159175 seconds.
+>>>>>>>>>>调用成功！
+未登录成功!
+strfind('ddd账户资金ddd' ,'账户资金')
+
+ans =
+
+     4
+
+strfind('dddddd' ,'账户资金')
+
+ans =
+
+     []
+
+if strfind('dddddd' ,'账户资金')
+1
+end
+if 5
+1
+end
+
+ans =
+
+     1
+
+if ~[]
+1
+end
+if strfind('dddddd' ,'账户资金')
+1
+end
+if ~strfind('dddddd' ,'账户资金')
+1
+end
+ isempty([])
+
+ans =
+
+     1
+
+isempty(5)
+
+ans =
+
+     0
+
+runCallbackFunc1

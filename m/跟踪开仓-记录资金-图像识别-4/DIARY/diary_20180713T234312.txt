@@ -1,0 +1,9 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20180713T234312.txt
+
+请在正确时段进行数据维护！
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\runCallbackFunc1.m',18,1)">18  </a>t00.TimerFcn = @(myTimerObj, thisEvent)applyStrategies;
+if system_dependent('IsDebugMode')==1, dbquit; end
+runCallbackFunc1

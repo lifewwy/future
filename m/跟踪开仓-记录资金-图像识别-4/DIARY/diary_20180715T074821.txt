@@ -1,0 +1,15 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20180715T074821.txt
+
+读TB输出文件...
+读风险配置文件...
+读资金文件...
+资金文件不存在！
+订单文件不存在！
+最终订单文件还未生成！
+GenOrders
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('GenOrders', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\GenOrders.m', 47)" style="font-weight:bold">GenOrders</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\GenOrders.m',47,0)">line 47</a>)
+Not enough input arguments.
+} 

@@ -1,0 +1,12 @@
+Begin
+
+	if(CurrentBar==0)
+	{
+	    FileAppend("C:\\D\\future\\BarData1\\K"+SymbolName()+Text(CurrentDate())+".csv","日期,"+"开盘价,"+"最高价,"+"最低价,"+"收盘价,"+"持仓量");
+	    FileAppend("C:\\D\\future\\BarData1\\K"+SymbolName()+Text(CurrentDate())+".csv",Text(date)+","+Text(Open)+","+Text(High)+","+Text(Low)+","+Text(Close)+","+Text(Vol));
+	}else
+	{
+	    FileAppend("C:\\D\\future\\BarData1\\K"+SymbolName()+Text(CurrentDate())+".csv",Text(date)+","+Text(Open)+","+Text(High)+","+Text(Low)+","+Text(Close)+","+Text(Vol));
+	}
+ 
+End 

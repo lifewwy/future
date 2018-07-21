@@ -1,0 +1,17 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20180223T162341.txt
+
+Elapsed time is 0.686775 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 1.570129 seconds.
+>>>>>>>>>>调用成功！
+账户资金:2072560
+持仓文件更新成功！
+<a href="matlab: opentoline('C:\Users\apple\Desktop\CTP\m 调用 exe\GetAccountInfo.m',69,1)">69  </a>fid = fopen(['C:\D\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\持仓', '.csv'], 'wt');
+if system_dependent('IsDebugMode')==1, dbquit; end
+Elapsed time is 0.673118 seconds.
+>>>>>>>>>>调用成功！
+登录成功!

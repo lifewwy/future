@@ -1,0 +1,156 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20180413T201916.txt
+
+C:\D\xyz\future\数据维护\A888.csv 更新成功！
+C:\D\xyz\future\数据维护\C888.csv 更新成功！
+C:\D\xyz\future\数据维护\RB888.csv 更新成功！
+C:\D\xyz\future\数据维护\M888.csv 更新成功！
+C:\D\xyz\future\数据维护\P888.csv 更新成功！
+C:\D\xyz\future\数据维护\J888.csv 更新成功！
+C:\D\xyz\future\数据维护\ZN888.csv 更新成功！
+C:\D\xyz\future\数据维护\Y888.csv 更新成功！
+C:\D\xyz\future\数据维护\L888.csv 更新成功！
+C:\D\xyz\future\数据维护\AG888.csv 更新成功！
+C:\D\xyz\future\数据维护\TA888.csv 更新成功！
+C:\D\xyz\future\数据维护\SR888.csv 更新成功！
+C:\D\xyz\future\数据维护\AU888.csv 更新成功！
+C:\D\xyz\future\数据维护\FG888.csv 更新成功！
+C:\D\xyz\future\数据维护\MA888.csv 更新成功！
+C:\D\xyz\future\数据维护\RU888.csv 更新成功！
+C:\D\xyz\future\数据维护\AL888.csv 更新成功！
+C:\D\xyz\future\数据维护\OI888.csv 更新成功！
+C:\D\xyz\future\数据维护\RM888.csv 更新成功！
+C:\D\xyz\future\数据维护\CF888.csv 更新成功！
+C:\D\xyz\future\数据维护\I888.csv 更新成功！
+C:\D\xyz\future\数据维护\JM888.csv 更新成功！
+C:\D\xyz\future\数据维护\CU888.csv 更新成功！
+C:\D\xyz\future\数据维护\V888.csv 更新成功！
+C:\D\xyz\future\数据维护\IF888.csv 更新成功！
+今天数据已经更新！
+Elapsed time is 2.427689 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 1.438998 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 2.968755 seconds.
+>>>>>>>>>>调用成功！
+账户资金:2044570
+持仓文件更新成功！
+ 资金文件更新成功！
+订单文件更新成功！
+Elapsed time is 4.274929 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 2.319208 seconds.
+>>>>>>>>>>调用成功！
+账户资金:2044570
+持仓文件更新成功！
+ 资金文件更新成功！
+订单文件更新成功！
+Elapsed time is 1.339255 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 2.314972 seconds.
+>>>>>>>>>>调用成功！
+账户资金:2044570
+持仓文件更新成功！
+Elapsed time is 1.330062 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 6.571339 seconds.
+>>>>>>>>>>调用成功！
+账户资金:2044570
+持仓文件更新成功！
+35/185
+
+ans =
+
+    0.1892
+
+Elapsed time is 1.331657 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 4.392865 seconds.
+>>>>>>>>>>调用成功！
+账户资金:2044570
+持仓文件更新成功！
+Elapsed time is 2.318060 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 2.435575 seconds.
+>>>>>>>>>>调用成功！
+账户资金:2044570
+持仓文件更新成功！
+
+ans = 
+
+    contract: 'AL1806'
+      action: 'Buy EvenUp'
+       hands: '6'
+           n: 1
+
+
+ans = 
+
+    contract: 'AL1806'
+      action: 'Buy Open'
+       hands: '4'
+           n: 2
+
+
+ans = 
+
+    contract: 'RB1810'
+      action: 'Buy Open'
+       hands: '11'
+           n: 3
+
+
+orderParameters = 
+
+    'AL1806'    'Buy EvenUp'    '6'
+
+Elapsed time is 6.606379 seconds.
+>>>>>>>>>>调用成功！
+Elapsed time is 2.672075 seconds.
+>>>>>>>>>>调用成功！
+全部成交
+
+ActionDoneFlg =
+
+     1     0     0
+
+
+orderParameters = 
+
+    'AL1806'    'Buy Open'    '4'
+
+Elapsed time is 1.213546 seconds.
+>>>>>>>>>>调用成功！
+Elapsed time is 2.421307 seconds.
+>>>>>>>>>>调用成功！
+全部成交
+
+ActionDoneFlg =
+
+     1     1     0
+
+
+orderParameters = 
+
+    'RB1810'    'Buy Open'    '11'
+
+Elapsed time is 1.226334 seconds.
+>>>>>>>>>>调用成功！
+Elapsed time is 2.098569 seconds.
+>>>>>>>>>>调用成功！
+全部成交
+
+ActionDoneFlg =
+
+     1     1     1
+
+--------------- 定时器关闭 01！--------------- 

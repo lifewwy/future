@@ -1,0 +1,33 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20180718T201930.txt
+
+
+orders = 
+
+    '2018/07/18'    'AU1812'    '平多'    [4]
+
+
+ans = 
+
+    contract: 'AU1812'
+      action: 'Sell EvenUp'
+       hands: '4'
+           n: 1
+
+
+orderParameters = 
+
+    'AU1812'    'Sell EvenUp'    '4'
+
+Elapsed time is 1.356963 seconds.
+>>>>>>>>>>调用成功！
+Elapsed time is 300.207808 seconds.
+>>>>>>>>>>调用成功！
+[ErrorMsg][0][正确]
+ActionDoneFlg =
+
+     1
+
+--------------- 定时器关闭 01！--------------- 
