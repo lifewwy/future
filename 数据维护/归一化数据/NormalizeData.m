@@ -7,7 +7,7 @@ pp = strfind(fp,'\');
 directory = fp(1:pp(end-1));
 
 if nargin == 0
-    futureCode = 'SR';
+    futureCode = 'RU';
 end
 
 filename = [directory,futureCode,'888' ,'.csv'];
@@ -38,6 +38,10 @@ o1 = (o-c)./c*N+c1;
 
 delta = c1(end)-c(end);
 c1 = c1-delta; h1 = h1-delta; l1 = l1-delta; o1 = o1-delta;
+
+minV = min([c1;h1;l1;o1]);
+c1 = c1-minV+500; h1 = h1-minV+500;
+l1 = l1-minV+500; o1 = o1-minV+500;
 
 candle(h1,l1,c1,o1); hold on; candle(h,l,c,o,'r');
 

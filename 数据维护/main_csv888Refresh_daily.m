@@ -64,12 +64,12 @@ if length(aa) > 2
     end
 end
 
-if length(aa) == 1
-    fprintf(2,'今天数据已经更新！\n');
-    IsDataUpdateCompleted = 1; 
-    save(filename00,'IsDataUpdateCompleted')
-    return;
-end
+% if length(aa) == 1
+%     fprintf(2,'今天数据已经更新！\n');
+%     IsDataUpdateCompleted = 1; 
+%     save(filename00,'IsDataUpdateCompleted')
+%     return;
+% end
 
 %% 更新数据
 fprintf('开始数据更新...\n\n');

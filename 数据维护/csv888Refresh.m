@@ -1,4 +1,4 @@
-function csv888Refresh(futureCode)
+function csv888Refresh(futureCode,handles)
 
 % clear all ; clc;  close all;
 
@@ -148,7 +148,7 @@ else
                 futureCode, num2str(csvData(end,end)),'\n']);
             contract1 = [futureCode, num2str(csvData(end-1,end))];
             contract2 = [futureCode, num2str(csvData(end,end))];
-            GenCCorders(contract1,contract2);
+            GenCCorders(contract1,contract2,handles);
         end
         
         currentContract = csvData(end,end);
