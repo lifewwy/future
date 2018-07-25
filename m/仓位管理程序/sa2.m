@@ -38,6 +38,8 @@ windev = std(win)        %#ok
 MAXDRAWDOWNTHRESHOLD = 0.8;
 % POSIZE = 3e-2;
 
+stem(ResultOfTrade);
+
 for POSIZE = 1e-3:1e-3:5e-2
     rob = pos_size_opt_func(MAXDRAWDOWNTHRESHOLD,wr,losemean,losedev,winmean,windev,POSIZE) %#ok
     if rob>=1e-3
