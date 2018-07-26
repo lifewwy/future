@@ -13,7 +13,7 @@ pp = strfind(fp,'\');
 directory = [fp(1:pp(end)),'eodhistoricaldata\'];
 
 %% 数据文件存储
-symbolName = 'AAPL';
+symbolName = 'NVDA';
 url = ['https://eodhistoricaldata.com/api/eod/',symbolName,'.US?api_token=',...
     token,'&period=d'];
 fileName = [directory,symbolName,'.US.csv'];
