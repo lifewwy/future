@@ -14,6 +14,9 @@ outfilename = websave('MSFT.US.csv',url); %#ok
 d = importdata('MSFT.US.csv');
 d = d.data;
 c = d(:,5); % Adjusted_close
+o = d(:,1).*(d(:,5)./d(:,4)); % Adjusted_open
+h = d(:,2).*(d(:,5)./d(:,4)); % Adjusted_high
+l = d(:,3).*(d(:,5)./d(:,4)); % Adjusted_low
 plot(c);
 
 url = 'https://eodhistoricaldata.com/api/eod/PEP.US?api_token=5b58b853733183.22292691&period=d';
