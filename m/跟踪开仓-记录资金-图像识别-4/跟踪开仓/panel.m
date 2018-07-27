@@ -2677,6 +2677,17 @@ if ~isempty(handles.abPos{1,1})
     [~,ia] = setdiff(cpd1,cpd2);
     [~,ib] = setdiff(cpd2,cpd1);
     
+    fprintf('\n');
+    if ~isempty(ia)
+        disp('应开仓而没有开的：');
+        disp(cpd1(ia));
+    end
+    if ~isempty(ib)
+        disp('不应开仓而开仓的：');
+        disp(cpd1(ib));
+    end
+    fprintf('\n');
+    
     if ~isempty(ia)
         for i = 1:length(ia)
             handles.abPos{ia(i),1} = ['<html><table><tr><td width=100 bgcolor="red">','<FONT face="Times New Roman"size="5"color=black">',handles.abPos{ia(i),1}, '</table></html>'];

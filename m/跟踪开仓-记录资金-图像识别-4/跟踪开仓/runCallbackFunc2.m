@@ -21,6 +21,8 @@ wt4 = 10;
 wt5 = 10;
 % 设置订单等待时间
 wt6 = 5;
+% 持仓查询等待时间
+wt7 = 60;
 
 % % 单次账户查询等待时间
 % wt1 = 10; % testTraderApi.exe 退出时间为 20s
@@ -70,6 +72,9 @@ end
 %% 加载策略
 panel('ApplyStrategyButton_Callback',h.ApplyStrategyButton,[],guidata(h.ApplyStrategyButton));
 pause(wt3);
+%% 持仓查询
+panel('pushbutton34_Callback',h.pushbutton34,[],guidata(h.pushbutton34));
+pause(wt7);
 %% 初始订单
 panel('pushbutton41_Callback',h.pushbutton41,[],guidata(h.pushbutton41));
 pause(wt4);

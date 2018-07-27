@@ -1,0 +1,249 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20180728T012704.txt
+
+数据文件未更新，不能加载策略!
+数据文件未更新，不能加载策略!
+数据文件未更新，不能加载策略!
+数据文件未更新，不能加载策略!
+数据文件未更新，不能加载策略!
+数据文件未更新，不能加载策略!
+数据文件未更新，不能加载策略!
+数据文件未更新，不能加载策略!
+数据文件未更新，不能加载策略!
+数据文件未更新，不能加载策略!
+数据文件未更新，不能加载策略!
+数据文件未更新，不能加载策略!
+数据文件未更新，不能加载策略!
+数据文件未更新，不能加载策略!
+数据文件未更新，不能加载策略!
+数据文件未更新，不能加载策略!
+
+策略加载完成！
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2562,1)">2562 </a>if ~isempty(PosStatus)
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+Elapsed time is 1.441767 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 2.427108 seconds.
+>>>>>>>>>>调用成功！
+账户资金:1927280
+持仓文件更新成功！
+数据文件未更新，不能加载策略!
+数据文件未更新，不能加载策略!
+数据文件未更新，不能加载策略!
+数据文件未更新，不能加载策略!
+数据文件未更新，不能加载策略!
+数据文件未更新，不能加载策略!
+数据文件未更新，不能加载策略!
+数据文件未更新，不能加载策略!
+数据文件未更新，不能加载策略!
+数据文件未更新，不能加载策略!
+数据文件未更新，不能加载策略!
+数据文件未更新，不能加载策略!
+数据文件未更新，不能加载策略!
+数据文件未更新，不能加载策略!
+数据文件未更新，不能加载策略!
+数据文件未更新，不能加载策略!
+
+策略加载完成！
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2562,1)">2562 </a>if ~isempty(PosStatus)
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+dbstep
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2586,1)">2586 </a>handles.abPos(1:strategyPosLen,1:2) = strategyPos;
+if system_dependent('IsDebugMode')==1, dbquit; end
+Elapsed time is 1.447163 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 2.326548 seconds.
+>>>>>>>>>>调用成功！
+账户资金:1927280
+持仓文件更新成功！
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2680,1)">2680 </a>    if ~isempty(ia)
+cpd1(ia)
+
+ans = 
+
+    'IF1808多'
+
+fprintf(cpd1(1:3))
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fprintf')" style="font-weight:bold">fprintf</a>
+Invalid file identifier.  Use fopen to generate a valid file identifier.
+} 
+fprintf(char(cpd1(1:3)))
+AACLUF111889010921空空空
+cpd1(1:3)
+
+ans = 
+
+    'AL1809空'
+    'AU1812空'
+    'CF1901空'
+
+cpd1{1:3}
+
+ans =
+
+AL1809空
+
+
+ans =
+
+AU1812空
+
+
+ans =
+
+CF1901空
+
+cpd1(1:3)
+
+ans = 
+
+    'AL1809空'
+    'AU1812空'
+    'CF1901空'
+
+char(cpd1(1:3))
+
+ans =
+
+AL1809空
+AU1812空
+CF1901空
+
+fprintf(ans)
+AACLUF111889010921空空空char(cpd1(1:3))
+
+ans =
+
+AL1809空
+AU1812空
+CF1901空
+
+display(ans)
+
+ans =
+
+AL1809空
+AU1812空
+CF1901空
+
+help display
+ <strong>display</strong> Display array.
+    <strong>display</strong>(X) is called for the object X when the semicolon is not used
+    to terminate a statement. 
+ 
+    For example,
+      X = inline('sin(x)')
+    calls <strong>display</strong>(X) while
+      X = inline('sin(x)');
+    does not.
+ 
+    A typical implementation of <strong>display</strong> calls DISP to do most of the work
+    and looks as follows.  Note that DISP does not display empty arrays.
+ 
+       function display(X)
+       if isequal(get(0,'FormatSpacing'),'compact')
+          disp([inputname(1) ' =']);
+          disp(X);
+       else
+          disp(' ');
+          disp([inputname(1) ' =']);
+          disp(' ');
+          disp(X);
+       end
+    
+    See also <a href="matlab:help inputname">inputname</a>, <a href="matlab:help disp">disp</a>, <a href="matlab:help evalc">evalc</a>.
+
+    <a href="matlab:matlab.internal.language.introspective.displayOverloads('display')">Other functions named display</a>
+
+    Reference page in Help browser
+       <a href="matlab:doc display">doc display</a>
+
+display(['df',ans])
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('horzcat')" style="font-weight:bold">horzcat</a>
+Dimensions of matrices being concatenated are not consistent.
+} 
+disp(cpd1(1:3))
+    'AL1809空'
+    'AU1812空'
+    'CF1901空'
+
+disp('应开仓而没有开的：');
+应开仓而没有开的：
+disp('应开仓而没有开的：');disp(cpd1(1:3))
+应开仓而没有开的：
+    'AL1809空'
+    'AU1812空'
+    'CF1901空'
+
+disp('应开仓而没有开的：');disp(cpd1(1:3));disp('应开仓而没有开的：');disp(cpd1(1:3))
+应开仓而没有开的：
+    'AL1809空'
+    'AU1812空'
+    'CF1901空'
+
+应开仓而没有开的：
+    'AL1809空'
+    'AU1812空'
+    'CF1901空'
+
+if ~isempty(ia)
+        disp('应开仓而没有开的：');
+        disp(cpd1(ia));
+    end
+应开仓而没有开的：
+    'IF1808多'
+
+    if ~isempty(ib)
+        disp('不应开仓而开仓的：');
+        disp(cpd1(ib));
+    end
+if ~isempty(ia)
+        disp('应开仓而没有开的：');
+        disp(cpd1(ia));
+    end
+应开仓而没有开的：
+    'IF1808多'
+
+    if ~isempty(ib)
+        disp('不应开仓而开仓的：');
+        disp(cpd1(ib));
+    end
+if system_dependent('IsDebugMode')==1, dbquit; end
+Elapsed time is 1.438989 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 2.323671 seconds.
+>>>>>>>>>>调用成功！
+账户资金:1927280
+持仓文件更新成功！
+应开仓而没有开的：
+    'IF1808多'
+
+disp('/n应开仓而没有开的：');
+/n应开仓而没有开的：
+fprintf('\n');
+
+Elapsed time is 1.334360 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 2.217351 seconds.
+>>>>>>>>>>调用成功！
+账户资金:1927280
+持仓文件更新成功！
+
+应开仓而没有开的：
+    'IF1808多'
+
+
