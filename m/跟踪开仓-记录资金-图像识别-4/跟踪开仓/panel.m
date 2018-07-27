@@ -2919,10 +2919,6 @@ warning('off'); %#ok
 [~,ia,~] = unique(tmpOrders,'rows');
 orders = orders(ia,:);
 
-% % 去除非持仓的平仓订单 2017.9.11
-NaNpos = find(isnan(cell2mat(orders(:,4))) == 1);
-orders(NaNpos(~ismember(orders(NaNpos,3),'(换合约)')),:) = [];
-
 % 处理换合约的开仓手数 2017.9.10
 sizeOrders = size(orders);
 nOrders = sizeOrders(1);
@@ -2932,6 +2928,33 @@ for i = 1:nOrders
     tmp = tmp(isletter(tmp));
     category(i) = {tmp};
 end
+
+
+% 20180727,换合约的同时，需要平仓或者反手
+TABLE = tabulate(category);
+p33 = find(cell2mat(TABLE(:,2))==3);
+p44 = find(cell2mat(TABLE(:,2))==4);
+p34 = [p33;p44];
+
+AA = zeros(length(p34),1);
+for i = 1:length(p34)
+    pp = find(strcmp(category,TABLE{p34(i),1})==1);
+    fprintf(2,[orders{pp(1),2},'   换合约&反手 ！\n']);
+    aa = strfind(orders(pp,3),'(换合约)');
+    aa = [{100};aa]; %#ok % 防止空cell不计入索引
+    index1 = find([aa{:}] == 1); % 只有 '(换合约)'
+    index3 = find([aa{:}] == 3); % '**(换合约)'
+    AA(i) = pp(index1-1);
+    % orders(pp(index1-1),:) = [];
+    tt = orders{pp(index3-1),3};
+    orders(pp(index3-1),3) = {tt(1:end-5)};
+end
+orders(AA,:) = [];
+
+% % 去除非持仓的平仓订单 2017.9.11
+NaNpos = find(isnan(cell2mat(orders(:,4))) == 1);
+orders(NaNpos(~ismember(orders(NaNpos,3),'(换合约)')),:) = [];
+
 NaNpos = find(isnan(cell2mat(orders(:,4))) == 1);
 
 for i = 1:length(NaNpos)

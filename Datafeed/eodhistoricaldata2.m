@@ -13,7 +13,7 @@ pp = strfind(fp,'\');
 directory = [fp(1:pp(end)),'eodhistoricaldata\'];
 
 %% 数据文件存储
-symbolName = 'NVDA';
+symbolName = 'BPI';
 url = ['https://eodhistoricaldata.com/api/eod/',symbolName,'.US?api_token=',...
     token,'&period=d'];
 fileName = [directory,symbolName,'.US.csv'];
@@ -46,6 +46,10 @@ if ~strcmp(fileName,outfilename)
 end
 
 d = importdata(outfilename);
+%% 最后一天的收盘价
+% url = ['https://eodhistoricaldata.com/api/eod/',...
+%     'AAPL','.US?','api_token=',token,...
+%     '&fmt=json&','filter=','last_close'];
 
 
 

@@ -1,0 +1,945 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20180727T210712.txt
+
+读TB输出文件...
+读风险配置文件...
+读资金文件...
+输出订单文件...
+2018/07/27,J1809,开多,2
+2018/07/27,Y1901,平空,NaN
+2018/07/27,Y1901,开多,16
+订单文件更新成功！
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2942,1)">2942 </a>    if strcmp(orders{pos,3}(end-4:end),orders{NaNpos(i),3})
+orders{pos,3}(end-4:end)
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('end')" style="font-weight:bold">end</a>
+Incorrect cell or structure reference involving "end".
+Most likely cause is a reference to multiple elements of a cell or structure
+followed by additional subscript or structure references.
+} 
+orders{pos,3}
+
+ans =
+
+平空(换合约)
+
+
+ans =
+
+开多
+
+if system_dependent('IsDebugMode')==1, dbquit; end
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2927,1)">2927 </a>sizeOrders = size(orders);
+if system_dependent('IsDebugMode')==1, dbquit; end
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2837,1)">2837 </a>orders = orders( datenum(orders(:,1)) == ...
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+orders{NaNpos(i),3}
+
+ans =
+
+(换合约)
+
+orders{pos,3}
+
+ans =
+
+平空(换合约)
+
+
+ans =
+
+开多
+
+NaNpos
+
+NaNpos =
+
+     3
+
+orders{pos,3}
+
+ans =
+
+平空(换合约)
+
+
+ans =
+
+开多
+
+if system_dependent('IsDebugMode')==1, dbquit; end
+clear all
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2914,1)">2914 </a>tmpOrders = cell(sizeOrders(1),1);
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbquit; end
+读TB输出文件...
+读风险配置文件...
+读资金文件...
+输出订单文件...
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fprintf')" style="font-weight:bold">fprintf</a>
+Invalid file identifier. Use fopen to generate a valid file identifier.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('GenOrders1', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\GenOrders1.m', 211)" style="font-weight:bold">GenOrders1</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\GenOrders1.m',211,0)">line 211</a>)
+fprintf(fid, '\n');
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel>pushbutton41_Callback', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 2781)" style="font-weight:bold">panel>pushbutton41_Callback</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2781,0)">line 2781</a>)
+IsSuccessful = GenOrders1(handles);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gui_mainfcn', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
+        feval(varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 42)" style="font-weight:bold">panel</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',42,0)">line 42</a>)
+    gui_mainfcn(gui_State, varargin{:});
+
+Error in
+<a href="matlab:matlab.internal.language.introspective.errorDocCallback('@(hObject,eventdata)panel(''pushbutton41_Callback'',hObject,eventdata,guidata(hObject))')" style="font-weight:bold">@(hObject,eventdata)panel('pushbutton41_Callback',hObject,eventdata,guidata(hObject))</a>
+
+} 
+Error while evaluating UIControl Callback
+
+读TB输出文件...
+读风险配置文件...
+读资金文件...
+输出订单文件...
+2018/07/27,J1809,开多,2
+2018/07/27,Y1901,平空,NaN
+2018/07/27,Y1901,开多,16
+订单文件更新成功！
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('end')" style="font-weight:bold">end</a>
+Incorrect cell or structure reference involving "end".
+Most likely cause is a reference to multiple elements of a cell or structure
+followed by additional subscript or structure references.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel>pushbutton42_Callback', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 2942)" style="font-weight:bold">panel>pushbutton42_Callback</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2942,0)">line 2942</a>)
+    if strcmp(orders{pos,3}(end-4:end),orders{NaNpos(i),3})
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gui_mainfcn', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
+        feval(varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 42)" style="font-weight:bold">panel</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',42,0)">line 42</a>)
+    gui_mainfcn(gui_State, varargin{:});
+
+Error in
+<a href="matlab:matlab.internal.language.introspective.errorDocCallback('@(hObject,eventdata)panel(''pushbutton42_Callback'',hObject,eventdata,guidata(hObject))')" style="font-weight:bold">@(hObject,eventdata)panel('pushbutton42_Callback',hObject,eventdata,guidata(hObject))</a>
+
+} 
+Error while evaluating UIControl Callback
+
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2927,1)">2927 </a>sizeOrders = size(orders);
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbquit; end
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2942,1)">2942 </a>    if strcmp(orders{pos,3}(end-4:end),orders{NaNpos(i),3})
+orders{pos,3}(end-4:end)
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('end')" style="font-weight:bold">end</a>
+Incorrect cell or structure reference involving "end".
+Most likely cause is a reference to multiple elements of a cell or structure
+followed by additional subscript or structure references.
+} 
+orders{pos,3}
+
+ans =
+
+平空(换合约)
+
+
+ans =
+
+开多
+
+if system_dependent('IsDebugMode')==1, dbquit; end
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2927,1)">2927 </a>sizeOrders = size(orders);
+orders(:,2)
+
+ans = 
+
+    'J1809'
+    'Y1809'
+    'Y1901'
+    'Y1901'
+
+tmp = orders{NaNpos(i),2}
+{Index exceeds matrix dimensions.
+} 
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbquit; end
+
+ans = 
+
+    'J1809'
+    'Y1809'
+    'Y1901'
+    'Y1901'
+
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2945,1)">2945 </a>    if strcmp(orders{pos,3}(end-4:end),orders{NaNpos(i),3})
+if system_dependent('IsDebugMode')==1, dbquit; end
+
+ans = 
+
+    'J1809'
+    'Y1809'
+    'Y1901'
+    'Y1901'
+
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2941,1)">2941 </a>    tmp = orders{NaNpos(i),2};
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbquit; end
+
+ans = 
+
+    'J1809'
+    'Y1809'
+    'Y1901'
+    'Y1901'
+
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2930,1)">2930 </a>sizeOrders = size(orders);
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbquit; end
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2938,1)">2938 </a>category
+unique(category)
+
+ans = 
+
+    'J'
+    'Y'
+
+help tabulate  
+ <strong>tabulate</strong> Frequency table.
+    TABLE = <strong>tabulate</strong>(X) takes a vector X and returns a matrix, TABLE.
+    The first column of TABLE contains the unique values of X.  The
+    second is the number of instances of each value.  The last column
+    contains the percentage of each value.  If the elements of X are
+    non-negative integers, then the output includes 0 counts for any
+    integers that are between 1 and max(X) but do not appear in X.
+ 
+    TABLE = <strong>tabulate</strong>(X), where X is a categorical variable, character
+    array, or a cell array of strings, returns TABLE as a cell array.  The
+    first column contains the unique string values in X, and the other two
+    columns are as above.
+ 
+    <strong>tabulate</strong> with no output arguments returns a formatted table
+    in the command window.
+ 
+    See also <a href="matlab:help pareto">pareto</a>.
+
+    Reference page in Help browser
+       <a href="matlab:doc tabulate">doc tabulate</a>
+
+TABLE = tabulate([1,2,3,4,1,1,3,4]) 
+
+TABLE =
+
+    1.0000    3.0000   37.5000
+    2.0000    1.0000   12.5000
+    3.0000    2.0000   25.0000
+    4.0000    2.0000   25.0000
+
+TABLE = tabulate([1,2,3,4,1,1,3,4,4,4,5,4])
+
+TABLE =
+
+    1.0000    3.0000   25.0000
+    2.0000    1.0000    8.3333
+    3.0000    2.0000   16.6667
+    4.0000    5.0000   41.6667
+    5.0000    1.0000    8.3333
+
+TABLE = tabulate(category)
+
+TABLE = 
+
+    'J'    [1]    [25]
+    'Y'    [3]    [75]
+
+find(TABLE(:,2),3)
+{Undefined function 'find' for input arguments of type 'cell'.
+} 
+strfind(TABLE(:,2),3)
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cell/strfind', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\strfun\@cell\strfind.m', 32)" style="font-weight:bold">cell/strfind</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\strfun\@cell\strfind.m',32,0)">line 32</a>)
+If any of the input arguments are cell arrays, the first must be a cell array
+of strings and the second must be a character array.
+} 
+TABLE
+
+TABLE = 
+
+    'J'    [1]    [25]
+    'Y'    [3]    [75]
+
+TABLE(:,2)
+
+ans = 
+
+    [1]
+    [3]
+
+TABLE(:,2)=={3}
+{Undefined operator '==' for input arguments of type
+'cell'.
+} 
+ismemeber(TABLE(:,2),2)
+{Undefined function or variable 'ismemeber'.
+} 
+ismember(TABLE(:,2),2)
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cell/ismember', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\ops\@cell\ismember.p', 34)" style="font-weight:bold">cell/ismember</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\ops\@cell\ismember.p',34,0)">line 34</a>)
+Input A of class cell and input B of class double must be
+cell arrays of strings, unless one is a string.
+} 
+ismember(TABLE(:,2),{2})
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cell/ismember', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\ops\@cell\ismember.p', 34)" style="font-weight:bold">cell/ismember</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\ops\@cell\ismember.p',34,0)">line 34</a>)
+Input A of class cell and input B of class cell must be
+cell arrays of strings, unless one is a string.
+} 
+cell2mat(TABLE(:,2))
+
+ans =
+
+     1
+     3
+
+find(cell2mat(TABLE(:,2)),3)
+
+ans =
+
+     1
+     2
+
+cell2mat(TABLE(:,2))
+
+ans =
+
+     1
+     3
+
+find([1,3],3)
+
+ans =
+
+     1     2
+
+find([1,3,3],3)
+
+ans =
+
+     1     2     3
+
+help find
+ <strong>find</strong>   Find indices of nonzero elements.
+    I = <strong>find</strong>(X) returns the linear indices corresponding to 
+    the nonzero entries of the array X.  X may be a logical expression. 
+    Use IND2SUB(SIZE(X),I) to calculate multiple subscripts from 
+    the linear indices I.
+  
+    I = <strong>find</strong>(X,K) returns at most the first K indices corresponding to 
+    the nonzero entries of the array X.  K must be a positive integer, 
+    but can be of any numeric type.
+ 
+    I = <strong>find</strong>(X,K,'first') is the same as I = <strong>find</strong>(X,K).
+ 
+    I = <strong>find</strong>(X,K,'last') returns at most the last K indices corresponding 
+    to the nonzero entries of the array X.
+ 
+    [I,J] = <strong>find</strong>(X,...) returns the row and column indices instead of
+    linear indices into X. This syntax is especially useful when working
+    with sparse matrices.  If X is an N-dimensional array where N > 2, then
+    J is a linear index over the N-1 trailing dimensions of X.
+ 
+    [I,J,V] = <strong>find</strong>(X,...) also returns a vector V containing the values
+    that correspond to the row and column indices I and J.
+ 
+    Example:
+       A = magic(3)
+       find(A > 5)
+ 
+    finds the linear indices of the 4 entries of the matrix A that are
+    greater than 5.
+ 
+       [rows,cols,vals] = find(speye(5))
+ 
+    finds the row and column indices and nonzero values of the 5-by-5
+    sparse identity matrix.
+ 
+    See also <a href="matlab:help sparse">sparse</a>, <a href="matlab:help ind2sub">ind2sub</a>, <a href="matlab:help relop">relop</a>, <a href="matlab:help nonzeros">nonzeros</a>.
+
+    <a href="matlab:matlab.internal.language.introspective.displayOverloads('find')">Other functions named find</a>
+
+    Reference page in Help browser
+       <a href="matlab:doc find">doc find</a>
+
+find([1,3]==3)
+
+ans =
+
+     2
+
+find(cell2mat(TABLE(:,2))==3)
+
+ans =
+
+     2
+
+category(cell2mat(TABLE(:,2))==3)
+
+ans = 
+
+    'Y'
+
+find(cell2mat(TABLE(:,2))==3)
+
+ans =
+
+     2
+
+p33 = find(cell2mat(TABLE(:,2))==3);
+TABLE(:,2)
+
+ans = 
+
+    [1]
+    [3]
+
+TABLE
+
+TABLE = 
+
+    'J'    [1]    [25]
+    'Y'    [3]    [75]
+
+p33 = find(cell2mat(TABLE(:,2))==3);
+TABLE(p33(1),1)
+
+ans = 
+
+    'Y'
+
+TABLE(p33(i),1)
+{Index exceeds matrix dimensions.
+} 
+TABLE(p33(1),1)
+
+ans = 
+
+    'Y'
+
+strfind(category,ans)
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cell/strfind', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\strfun\@cell\strfind.m', 32)" style="font-weight:bold">cell/strfind</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\strfun\@cell\strfind.m',32,0)">line 32</a>)
+If any of the input arguments are cell arrays, the first must be a cell array
+of strings and the second must be a character array.
+} 
+strfind(category,TABLE(p33,1){1})
+{Error: ()-indexing must appear last in an index expression.
+} 
+TABLE(p33,1){1}
+{Error: ()-indexing must appear last in an index expression.
+} 
+TABLE(p33,1)
+
+ans = 
+
+    'Y'
+
+ans{1}
+
+ans =
+
+Y
+
+TABLE{p33,1}
+
+ans =
+
+Y
+
+i = 1;
+strfind(category,TABLE{p33(i),1})
+
+ans = 
+
+    []
+    [1]
+    [1]
+    [1]
+
+char(category)
+
+ans =
+
+J
+Y
+Y
+Y
+
+strfind(char(category),TABLE{p33(i),1})
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('strfind')" style="font-weight:bold">strfind</a>
+Input strings must have one row.
+} 
+char(category)
+
+ans =
+
+J
+Y
+Y
+Y
+
+find(char(category)=='Y')
+
+ans =
+
+     2
+     3
+     4
+
+find(char(category)==TABLE{p33(i),1})
+
+ans =
+
+     2
+     3
+     4
+
+orders(pp,3)
+{Index exceeds matrix dimensions.
+} 
+if system_dependent('IsDebugMode')==1, dbquit; end
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2943,1)">2943 </a>orders(pp,3)
+orders(pp,3)
+{Index exceeds matrix dimensions.
+} 
+orders(p44,3)
+
+ans = 
+
+    '平空(换合约)'
+    '(换合约)'
+    '开多'
+
+strfind(orders{p44,3},'(换合约)')
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('strfind')" style="font-weight:bold">strfind</a>
+Too many input arguments.
+} 
+orders{p44,3}
+
+ans =
+
+平空(换合约)
+
+
+ans =
+
+(换合约)
+
+
+ans =
+
+开多
+
+orders(p44,3)
+
+ans = 
+
+    '平空(换合约)'
+    '(换合约)'
+    '开多'
+
+strcmp(orders(p44,3),'(换合约)')
+
+ans =
+
+     0
+     1
+     0
+
+find(strcmp(orders(p44,3),'(换合约)')==1)
+
+ans =
+
+     2
+
+orders(p44,3)
+
+ans = 
+
+    '平空(换合约)'
+    '(换合约)'
+    '开多'
+
+p44
+
+p44 =
+
+     2
+     3
+     4
+
+p44(find(strcmp(orders(p44,3),'(换合约)')==1))
+
+ans =
+
+     3
+
+orders(p44,3)
+
+ans = 
+
+    '平空(换合约)'
+    '(换合约)'
+    '开多'
+
+if system_dependent('IsDebugMode')==1, dbquit; end
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2943,1)">2943 </a>orders(p44((strcmp(orders(p44,3),'(换合约)')==1)),:) = [];
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbquit; end
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2946,1)">2946 </a>for i = 1:length(NaNpos)
+orders(p44,3)
+{Index exceeds matrix dimensions.
+} 
+if system_dependent('IsDebugMode')==1, dbquit; end
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2942,1)">2942 </a>    orders(p44((strcmp(orders(p44,3),'(换合约)')==1)),:) = [];
+orders(p44,3)
+
+ans = 
+
+    '平空(换合约)'
+    '(换合约)'
+    '开多'
+
+findstr(orders(p44,3),'(换合约)')
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('findstr')" style="font-weight:bold">findstr</a>
+Inputs must be character arrays.
+} 
+strfind(orders(p44,3),'(换合约)')
+
+ans = 
+
+    [3]
+    [1]
+    []
+
+strfind(orders(p44,3),'(换合约)')
+
+ans = 
+
+    [3]
+    [1]
+    []
+
+if system_dependent('IsDebugMode')==1, dbquit; end
+
+aa = 
+
+    [3]
+    [1]
+    []
+
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2943,1)">2943 </a>    orders(p44((strcmp(orders(p44,3),'(换合约)')==1)),:) = [];
+cell2mat(strfind(orders(p44,3),'(换合约)'))
+
+ans =
+
+     3
+     1
+
+strfind(orders(p44,3),'(换合约)')
+
+ans = 
+
+    [3]
+    [1]
+    []
+
+find(aa=={1})
+{Undefined operator '==' for input arguments of type 'cell'.
+} 
+ismember(aa,{1})
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cell/ismember', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\ops\@cell\ismember.p', 34)" style="font-weight:bold">cell/ismember</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\ops\@cell\ismember.p',34,0)">line 34</a>)
+Input A of class cell and input B of class cell must be cell arrays of
+strings, unless one is a string.
+} 
+aa
+
+aa = 
+
+    [3]
+    [1]
+    []
+
+aa=={3}
+{Undefined operator '==' for input arguments of type 'cell'.
+} 
+C = {1,5,3,4,2,3,4,5,2,1};
+index = find([C{:}] == 5)
+
+index =
+
+     2     8
+
+index = find([aa{:}] == 3)
+
+index =
+
+     1
+
+index = find([aa{:}] == 1)
+
+index =
+
+     2
+
+aa = [aa(3);aa]
+
+aa = 
+
+    []
+    [3]
+    [1]
+    []
+
+index = find([aa{:}] == 1)
+
+index =
+
+     2
+
+index = find([aa{:}] == 3)
+
+index =
+
+     1
+
+aa = [aa(3);aa]
+
+aa = 
+
+    [1]
+    []
+    [3]
+    [1]
+    []
+
+index = find([aa{:}] == 1)
+
+index =
+
+     1     3
+
+if system_dependent('IsDebugMode')==1, dbquit; end
+
+index1 =
+
+     3
+
+
+index3 =
+
+     2
+
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2947,1)">2947 </a>    orders(p44((strcmp(orders(p44,3),'(换合约)')==1)),:) = [];
+index1 = find([aa{:}] == 1)
+
+index1 =
+
+     3
+
+    index3 = find([aa{:}] == 3)
+
+index3 =
+
+     2
+
+    p44(index1-1)
+
+ans =
+
+     3
+
+tt = orders(p44(index3-1),3)
+
+tt = 
+
+    '平空(换合约)'
+
+if system_dependent('IsDebugMode')==1, dbquit; end
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2923,1)">2923 </a>NaNpos = find(isnan(cell2mat(orders(:,4))) == 1);
+if system_dependent('IsDebugMode')==1, dbquit; end
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2923,1)">2923 </a>NaNpos = find(isnan(cell2mat(orders(:,4))) == 1);
+if system_dependent('IsDebugMode')==1, dbcont; end
+
+index3 =
+
+     2
+
+orders(p44(index3-1),3)
+
+ans = 
+
+    '平空(换合约)'
+
+tt(end-4,end)
+{Undefined function or variable "tt".
+} 
+tt = orders(p44(index3-1),3),
+
+tt = 
+
+    '平空(换合约)'
+
+tt(end-4,end)
+{Subscript indices must either be real positive integers or logicals.
+} 
+{tt{end-4,end}}
+{Subscript indices must either be real positive integers or logicals.
+} 
+tt = {orders(p44(index3-1),3)}
+
+tt = 
+
+    {1x1 cell}
+
+tt = orders{p44(index3-1),3}
+
+tt =
+
+平空(换合约)
+
+{tt(end-4,end)}
+{Subscript indices must either be real positive integers or logicals.
+} 
+{tt(end-4:end)}
+
+ans = 
+
+    '(换合约)'
+
+tt(1:end-4)
+
+ans =
+
+平空(
+
+tt(1:end-3)
+
+ans =
+
+平空(换
+
+tt(1:end-5)
+
+ans =
+
+平空
+
+{tt(1:end-5)}
+
+ans = 
+
+    '平空'
+
+if system_dependent('IsDebugMode')==1, dbquit; end
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2952,1)">2952 </a>for i = 1:length(NaNpos)
+if system_dependent('IsDebugMode')==1, dbquit; end
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2952,1)">2952 </a>for i = 1:length(NaNpos)
+if system_dependent('IsDebugMode')==1, dbquit; end
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2924,1)">2924 </a>orders(NaNpos(~ismember(orders(NaNpos,3),'(换合约)')),:) = [];
+if system_dependent('IsDebugMode')==1, dbquit; end
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2933,1)">2933 </a>NaNpos = find(isnan(cell2mat(orders(:,4))) == 1);
+TABLE = tabulate(category);
+if system_dependent('IsDebugMode')==1, dbquit; end
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2937,1)">2937 </a>NaNpos = find(isnan(cell2mat(orders(:,4))) == 1);
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2935,1)">2935 </a>p33 = find(cell2mat(TABLE(:,2))==3);
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2935,1)">2935 </a>p33 = find(cell2mat(TABLE(:,2))==3);
+orders
+
+orders = 
+
+    '2018/07/27'    'J1809'    '开多'         [  2]
+    '2018/07/27'    'Y1809'    '平空(换合约)'    [  9]
+    '2018/07/27'    'Y1901'    '(换合约)'      [NaN]
+    '2018/07/27'    'Y1901'    '平空'         [NaN]
+    '2018/07/27'    'Y1901'    '开多'         [ 16]
+
+p33 = find(cell2mat(TABLE(:,2))==3)
+
+p33 =
+
+   Empty matrix: 0-by-1
+
+if system_dependent('IsDebugMode')==1, dbquit; end
+{Index exceeds matrix dimensions.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel>pushbutton42_Callback', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 2937)" style="font-weight:bold">panel>pushbutton42_Callback</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2937,0)">line 2937</a>)
+    p44 = find(char(category)==TABLE{p33(i),1});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gui_mainfcn', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
+        feval(varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 42)" style="font-weight:bold">panel</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',42,0)">line 42</a>)
+    gui_mainfcn(gui_State, varargin{:});
+
+Error in
+<a href="matlab:matlab.internal.language.introspective.errorDocCallback('@(hObject,eventdata)panel(''pushbutton42_Callback'',hObject,eventdata,guidata(hObject))')" style="font-weight:bold">@(hObject,eventdata)panel('pushbutton42_Callback',hObject,eventdata,guidata(hObject))</a>
+
+} 
+Error while evaluating UIControl Callback
+
+{Index exceeds matrix dimensions.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel>pushbutton42_Callback', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 2937)" style="font-weight:bold">panel>pushbutton42_Callback</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2937,0)">line 2937</a>)
+    p44 = find(char(category)==TABLE{p33(i),1});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gui_mainfcn', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
+        feval(varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 42)" style="font-weight:bold">panel</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',42,0)">line 42</a>)
+    gui_mainfcn(gui_State, varargin{:});
+
+Error in
+<a href="matlab:matlab.internal.language.introspective.errorDocCallback('@(hObject,eventdata)panel(''pushbutton42_Callback'',hObject,eventdata,guidata(hObject))')" style="font-weight:bold">@(hObject,eventdata)panel('pushbutton42_Callback',hObject,eventdata,guidata(hObject))</a>
+
+} 
+Error while evaluating UIControl Callback
+
+{Index exceeds matrix dimensions.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel>pushbutton42_Callback', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 2937)" style="font-weight:bold">panel>pushbutton42_Callback</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2937,0)">line 2937</a>)
+    p44 = find(char(category)==TABLE{p33(i),1});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gui_mainfcn', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
+        feval(varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 42)" style="font-weight:bold">panel</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',42,0)">line 42</a>)
+    gui_mainfcn(gui_State, varargin{:});
+
+Error in
+<a href="matlab:matlab.internal.language.introspective.errorDocCallback('@(hObject,eventdata)panel(''pushbutton42_Callback'',hObject,eventdata,guidata(hObject))')" style="font-weight:bold">@(hObject,eventdata)panel('pushbutton42_Callback',hObject,eventdata,guidata(hObject))</a>
+
+} 
+Error while evaluating UIControl Callback
+
+{Index exceeds matrix dimensions.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel>pushbutton42_Callback', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 2937)" style="font-weight:bold">panel>pushbutton42_Callback</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2937,0)">line 2937</a>)
+    p44 = find(char(category)==TABLE{p33(i),1});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gui_mainfcn', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
+        feval(varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 42)" style="font-weight:bold">panel</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',42,0)">line 42</a>)
+    gui_mainfcn(gui_State, varargin{:});
+
+Error in
+<a href="matlab:matlab.internal.language.introspective.errorDocCallback('@(hObject,eventdata)panel(''pushbutton42_Callback'',hObject,eventdata,guidata(hObject))')" style="font-weight:bold">@(hObject,eventdata)panel('pushbutton42_Callback',hObject,eventdata,guidata(hObject))</a>
+
+} 
+Error while evaluating UIControl Callback
+
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-
