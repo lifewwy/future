@@ -7,7 +7,8 @@ directory = [fp(1:pp(end)),'eodhistoricaldata\'];
 
 % symbolName = 'CHA';
 % symbolName = 'GOOG';
-symbolName = 'AAPL';
+% symbolName = 'AAPL';
+symbolName = 'MSFT';
 fileName = [directory,symbolName,'.US.csv'];
 dstruct = importdata(fileName);
 d = dstruct.data;

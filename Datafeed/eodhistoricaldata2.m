@@ -13,7 +13,7 @@ pp = strfind(fp,'\');
 directory = [fp(1:pp(end)),'eodhistoricaldata\'];
 
 %% 数据文件存储
-symbolName = 'BPI';
+symbolName = 'MSFT';
 url = ['https://eodhistoricaldata.com/api/eod/',symbolName,'.US?api_token=',...
     token,'&period=d'];
 fileName = [directory,symbolName,'.US.csv'];
@@ -23,13 +23,35 @@ if ~strcmp(fileName,outfilename)
     return;
 end
 
-d = importdata(outfilename);
-d = d.data;
+dstrct = importdata(outfilename);
+d = dstrct.data;
 c = d(:,5); % Adjusted_close
 o = d(:,1).*(d(:,5)./d(:,4)); % Adjusted_open
 h = d(:,2).*(d(:,5)./d(:,4)); % Adjusted_high
 l = d(:,3).*(d(:,5)./d(:,4)); % Adjusted_low
 plot(c);
+
+%% 写符合 TB 格式的 csv 文件
+directory1 = [fp(1:pp(end)),'eodhistoricaldata\ForTB\'];
+fileName = [directory1,symbolName,'.US.csv'];
+fid = fopen(fileName, 'wt');
+
+h = roundn(h*1000,0);
+o = roundn(o*1000,0);
+l = roundn(l*1000,0);
+c = roundn(c*1000,0);
+
+size_csvData = size(c);
+for k = 1:size_csvData(1)
+    fprintf(fid, '%s,', dstrct.textdata{k+1,1}(1:end-1));
+    fprintf(fid, '%f,', o(k));
+    fprintf(fid, '%f,', h(k));
+    fprintf(fid, '%f,', l(k));
+    fprintf(fid, '%f,', c(k));
+    fprintf(fid, '%f\n', d(k,6));
+end
+fclose(fid);
+disp([fileName,' 更新成功！'])
 
 %% 指定日期区间
 startDate = datestr(today-50,'yyyy-mm-dd');
