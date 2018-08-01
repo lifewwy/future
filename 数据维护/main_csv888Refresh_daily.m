@@ -100,7 +100,7 @@ csv888RefreshOneDay('CU',h);
 % csv888RefreshOneDay('RI');
 csv888RefreshOneDay('V',h);
 
-csv888Refresh('IF',h);
+csvIF888Refresh('IF',h);
 
 fprintf('\n数据更新完成！\n');
 %% 更新状态

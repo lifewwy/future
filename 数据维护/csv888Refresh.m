@@ -69,6 +69,7 @@ if isempty(kData)
 end
 
 kData = sortrows(kData);
+kData = unique(kData,'rows');
 %% 读 CSV 文件
 % directory = 'C:\D\future\数据维护\';
 fp  = mfilename('fullpath');
