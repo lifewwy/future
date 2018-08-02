@@ -1,0 +1,74 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20180802T195956.txt
+
+上次更新日期为: 2018-08-01 Wednesday
+
+开始数据更新...
+
+<a href="matlab: opentoline('C:\D\xyz\future\数据维护\csv888RefreshOneDay.m',53,1)">53  </a>kData = unique(kData,'rows');
+if system_dependent('IsDebugMode')==1, dbcont; end
+C:\D\xyz\future\数据维护\A888.csv 已经是最新文件！
+C:\D\xyz\future\数据维护\C888.csv 已经是最新文件！
+C:\D\xyz\future\数据维护\RB888.csv 已经是最新文件！
+C:\D\xyz\future\数据维护\M888.csv 更新成功！
+C:\D\xyz\future\数据维护\P888.csv 更新成功！
+C:\D\xyz\future\数据维护\J888.csv 更新成功！
+C:\D\xyz\future\数据维护\ZN888.csv 更新成功！
+C:\D\xyz\future\数据维护\Y888.csv 更新成功！
+C:\D\xyz\future\数据维护\L888.csv 更新成功！
+C:\D\xyz\future\数据维护\AG888.csv 更新成功！
+C:\D\xyz\future\数据维护\TA888.csv 更新成功！
+C:\D\xyz\future\数据维护\SR888.csv 更新成功！
+C:\D\xyz\future\数据维护\AU888.csv 更新成功！
+C:\D\xyz\future\数据维护\FG888.csv 更新成功！
+C:\D\xyz\future\数据维护\MA888.csv 更新成功！
+C:\D\xyz\future\数据维护\RU888.csv 更新成功！
+C:\D\xyz\future\数据维护\AL888.csv 更新成功！
+C:\D\xyz\future\数据维护\OI888.csv 更新成功！
+C:\D\xyz\future\数据维护\RM888.csv 更新成功！
+C:\D\xyz\future\数据维护\CF888.csv 更新成功！
+C:\D\xyz\future\数据维护\I888.csv 更新成功！
+C:\D\xyz\future\数据维护\JM888.csv 更新成功！
+C:\D\xyz\future\数据维护\CU888.csv 更新成功！
+C:\D\xyz\future\数据维护\V888.csv 更新成功！
+C:\D\xyz\future\数据维护\IF888.csv 更新成功！
+
+数据更新完成！
+
+策略加载完成！
+Elapsed time is 1.327218 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 2.203085 seconds.
+>>>>>>>>>>调用成功！
+账户资金:1984260
+持仓文件更新成功！
+资金文件更新成功！
+读TB输出文件...
+读风险配置文件...
+读资金文件...
+输出订单文件...
+2018/08/02,IF1808,平多,NaN
+2018/08/02,IF1808,开空,0
+订单文件更新成功！
+
+orders = 
+
+    '2018/08/02'    'A1809'     '(换合约)'    [NaN]
+    '2018/08/02'    'A1901'     '(换合约)'    [NaN]
+    '2018/08/02'    'IF1808'    '开空'       [  0]
+
+Elapsed time is 1.335480 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 2.208906 seconds.
+>>>>>>>>>>调用成功！
+账户资金:1984260
+持仓文件更新成功！
+
+应开仓而没有开的：
+    'IF1808空'
+
+

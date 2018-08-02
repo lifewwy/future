@@ -1,0 +1,78 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20180802T195450.txt
+
+上次更新日期为: 2018-08-01 Wednesday
+
+开始数据更新...
+
+C:\D\xyz\future\数据维护\A888.csv 已经是最新文件！
+C:\D\xyz\future\数据维护\C888.csv 已经是最新文件！
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('minus')" style="font-weight:bold"> - </a>
+Matrix dimensions must agree.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('csv888RefreshOneDay', 'C:\D\xyz\future\数据维护\csv888RefreshOneDay.m', 127)" style="font-weight:bold">csv888RefreshOneDay</a> (<a href="matlab: opentoline('C:\D\xyz\future\数据维护\csv888RefreshOneDay.m',127,0)">line 127</a>)
+asdf = max(abs(kData(pos,2:5) - csvData(end,2:5))) / csvData(end,2);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main_csv888Refresh_daily', 'C:\D\xyz\future\数据维护\main_csv888Refresh_daily.m', 79)" style="font-weight:bold">main_csv888Refresh_daily</a> (<a href="matlab: opentoline('C:\D\xyz\future\数据维护\main_csv888Refresh_daily.m',79,0)">line 79</a>)
+csv888RefreshOneDay('RB',h);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel>pushbutton25_Callback', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 1751)" style="font-weight:bold">panel>pushbutton25_Callback</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',1751,0)">line 1751</a>)
+IsDataUpdateCompleted = main_csv888Refresh_daily(handles);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gui_mainfcn', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
+        feval(varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 42)" style="font-weight:bold">panel</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',42,0)">line 42</a>)
+    gui_mainfcn(gui_State, varargin{:});
+
+Error in
+<a href="matlab:matlab.internal.language.introspective.errorDocCallback('@(hObject,eventdata)panel(''pushbutton25_Callback'',hObject,eventdata,guidata(hObject))')" style="font-weight:bold">@(hObject,eventdata)panel('pushbutton25_Callback',hObject,eventdata,guidata(hObject))</a>
+
+} 
+Error while evaluating UIControl Callback
+
+csv888RefreshOneDay('RB',0)
+<a href="matlab: opentoline('C:\D\xyz\future\数据维护\csv888RefreshOneDay.m',127,1)">127 </a>asdf = max(abs(kData(pos,2:5) - csvData(end,2:5))) / csvData(end,2);
+if system_dependent('IsDebugMode')==1, dbquit; end
+csv888RefreshOneDay('RB',0)
+<a href="matlab: opentoline('C:\D\xyz\future\数据维护\csv888RefreshOneDay.m',127,1)">127 </a>asdf = max(abs(kData(pos,2:5) - csvData(end,2:5))) / csvData(end,2);
+if system_dependent('IsDebugMode')==1, dbquit; end
+csv888RefreshOneDay('RB',0)
+<a href="matlab: opentoline('C:\D\xyz\future\数据维护\csv888RefreshOneDay.m',53,1)">53  </a>kData = unique(kData,'rows');
+if system_dependent('IsDebugMode')==1, dbcont; end
+kData
+
+kData =
+
+  Columns 1 through 6
+
+      737257        3500        3556        3478        3478          12
+      737274           0        4157        4157        4157           0
+      737274        3762        3809        3749        3798       69630
+      737274        3804        3859        3804        3859          64
+      737274        3839        3898        3839        3883          62
+      737274        3840        3858        3826        3858          28
+      737274        3940        3990        3923        3982     1368396
+      737274        3997        4051        3990        4042          28
+      737274        4061        4095        4036        4083         268
+      737274        4131        4148        4086        4136     3614314
+      737274        4205        4234        4189        4232        1802
+
+  Column 7
+
+        1807
+        1808
+        1905
+        1903
+        1902
+        1904
+        1901
+        1812
+        1811
+        1810
+        1809
+
+if system_dependent('IsDebugMode')==1, dbcont; end
+C:\D\xyz\future\数据维护\RB888.csv 更新成功！
