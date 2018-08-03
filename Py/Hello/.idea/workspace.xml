@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a5b18d3-238d-445b-a864-5f38fe2c01c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/apple.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JionQuant/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JionQuant/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JionQuant/JQData.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../TB 手册.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/Private.con" beforeDir="false" afterPath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/Private.con" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/Public.con" beforeDir="false" afterPath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/Public.con" afterDir="false" />
@@ -93,8 +88,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/psar.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="113" lean-forward="true" selection-start-line="113" selection-end-line="113" />
+            <state relative-caret-position="-1045">
+              <caret line="55" column="23" lean-forward="true" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
               <folding>
                 <element signature="e#369#388#0" expanded="true" />
               </folding>
@@ -122,7 +117,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="219" />
     <option name="y" value="18" />
     <option name="width" value="1400" />
@@ -233,7 +228,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1847" height="1098" extended-state="7" />
+    <frame x="-9" y="-9" width="1847" height="1098" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14769572" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -246,7 +241,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32939914" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.39592275" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.55364805" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.27575108" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -261,8 +256,8 @@
     <entry file="file://$PROJECT_DIR$/t1.py" />
     <entry file="file://$PROJECT_DIR$/psar.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="113" lean-forward="true" selection-start-line="113" selection-end-line="113" />
+        <state relative-caret-position="-1045">
+          <caret line="55" column="23" lean-forward="true" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
           <folding>
             <element signature="e#369#388#0" expanded="true" />
           </folding>
