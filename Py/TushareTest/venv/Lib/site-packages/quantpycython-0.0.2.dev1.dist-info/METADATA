@@ -1,0 +1,23 @@
+Metadata-Version: 2.0
+Name: quantpycython
+Version: 0.0.2.dev1
+Summary: QuantPy Plugin using Cython, that extends quantum Executor/Simulator.
+Home-page: http://quantpy.org
+Author: QuantPy development team
+Author-email: quantpy@openql.org
+License: Apache 2.0
+Description-Content-Type: UNKNOWN
+Keywords: Math Physics quantum quantpy
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+
+QuantPyCython is the QuantPy library Plugin using Cython for quantum computing.
+It aims to become extension library set of quantpy.
+

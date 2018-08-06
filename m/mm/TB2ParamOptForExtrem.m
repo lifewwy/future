@@ -1,4 +1,4 @@
-clear all ; clc; close all;
+clear  ; clc; close all;
 folder = 'C:\D\future\极值系统\';
 %% 分析 TB 参数报告
 clc;  clearvars -except folder

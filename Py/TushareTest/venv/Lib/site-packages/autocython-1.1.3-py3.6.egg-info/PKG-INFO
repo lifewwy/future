@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: autocython
+Version: 1.1.3
+Summary: Automatic cython compilation with multiplatform support.
+Home-page: https://bitbucket.org/cbillington/autocython/
+Author: Chris Billington
+Author-email: chrisjbillington@gmail.com
+License: BSD
+Description: UNKNOWN
+Platform: UNKNOWN

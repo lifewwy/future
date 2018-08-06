@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: CythonGSL
+Version: 0.2.2
+Summary: Cython declarations for the Gnu Scientific Library.
+Home-page: http://github.com/twiecki/CythonGSL
+Author: Thomas V. Wiecki
+Author-email: thomas.wiecki@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering

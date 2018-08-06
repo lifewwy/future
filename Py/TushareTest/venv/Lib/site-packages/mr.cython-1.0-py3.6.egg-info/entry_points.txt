@@ -1,0 +1,4 @@
+
+      [zc.buildout.extension]
+      default = mr.cython:extension
+      

@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: pypy-fix-cython-warning
+Version: 0.1
+Summary: Ignore the spurious and annoying Cython warnings in PyPy 6.0
+Home-page: http://github.com/antocuni/pypy-fix-cython-warning
+Author: Antonio Cuni
+Author-email: anto.cuni@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: pypy cython
+Platform: UNKNOWN

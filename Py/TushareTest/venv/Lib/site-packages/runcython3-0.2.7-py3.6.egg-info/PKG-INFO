@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: runcython3
+Version: 0.2.7
+Summary: compile and run cython in one line
+Home-page: https://github.com/Russell91/runcython
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: MIT
+Description: https://github.com/Russell91/runcython
+Platform: UNKNOWN

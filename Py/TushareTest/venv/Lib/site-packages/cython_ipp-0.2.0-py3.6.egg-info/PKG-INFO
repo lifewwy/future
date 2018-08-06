@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: cython-ipp
+Version: 0.2.0
+Summary: Cython definitions for the Intel Integrated Performance Primitives (Intel IPP) library
+Home-page: https://github.com/strawlab/cython_ipp
+Author: Andrew Straw
+Author-email: strawman@astraw.com
+License: BSD
+Description: UNKNOWN
+Platform: UNKNOWN

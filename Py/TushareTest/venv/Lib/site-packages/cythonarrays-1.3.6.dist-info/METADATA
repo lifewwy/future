@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: cythonarrays
+Version: 1.3.6
+Summary: cython cdef-class to facilitate numpy-arrays as attributes
+Home-page: https://maxbo.github.io/cythonarrays/
+Author: Max Bohnet
+Author-email: bohnet@ggr-planung.de
+License: UNKNOWN
+Keywords: cython numpy
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Cython
+Provides-Extra: docs
+Provides-Extra: test
+Provides-Extra: extra
+Requires-Dist: cythoninstallhelpers
+Requires-Dist: cython
+Requires-Dist: numpy
+Requires-Dist: xarray
+Provides-Extra: docs
+Requires-Dist: z3c.recipe.sphinxdoc; extra == 'docs'
+Requires-Dist: sphinxcontrib-requirements; extra == 'docs'
+Provides-Extra: extra
+Provides-Extra: test
+
+UNKNOWN
+
+

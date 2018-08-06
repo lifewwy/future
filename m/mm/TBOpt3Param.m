@@ -1,4 +1,4 @@
-clear all ; clc; %close all;
+clear  ; clc; %close all;
 folder = 'C:\D\future\优化记录\';
 %% 读数据
 clc;  clearvars -except folder

@@ -1,4 +1,4 @@
-clear all; close all; clc;
+clear ; close all; clc;
 
 x = rand(20,50,30,40);
 

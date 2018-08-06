@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+makecython3++ () {
+    if [ `echo $1 | sed -n '/\.pyx/p' | wc -l` == 1 ]; then
+        cython $1 --cplus $2
+    else
+        echo 'makecython3++ requires a *.pyx file.
+Usage: makecython3++ sourcefile.pyx "<cython-options>" "<gcc-options>"' 1>&2
+        exit 1
+    fi
+    local BASE_NAME=`echo $1 | sed -e 's/\.pyx$//'`
+    local SO_NAME=`echo $1 | sed -e 's/\.pyx$/.so/'`
+    local CPP_NAME=`echo $1 | sed -e 's/\.pyx$/.cpp/'`
+    local API_NAME=`echo $1 | sed -e 's/\.pyx$/_api.h/'`
+    local D_NAME=`echo $1 | sed -e 's/\.pyx$/.d/'`
+    export PKG_CONFIG_PATH=$(python3 -c 'import sys; import os; print(os.path.dirname(sys.executable) + "/../lib/pkgconfig")'):$PKG_CONFIG_PATH
+    g++ -shared -pthread -fPIC -fwrapv -O2 -Wall -Wno-unused-function -fno-strict-aliasing `pkg-config python3 --libs --cflags` -o $SO_NAME $CPP_NAME $3 && \
+    rm $CPP_NAME && \
+    rm -f $API_NAME && \
+    rm -f $D_NAME
+}
+
+makecython3++ "$@"

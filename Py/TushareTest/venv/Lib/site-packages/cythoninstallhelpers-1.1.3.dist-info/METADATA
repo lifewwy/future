@@ -1,0 +1,22 @@
+Metadata-Version: 2.0
+Name: cythoninstallhelpers
+Version: 1.1.3
+Summary: helper for cython installation
+Home-page: https://maxbo.github.io/cythonarrays/
+Author: Max Bohnet
+Author-email: bohnet@ggr-planung.de
+License: UNKNOWN
+Keywords: cython setuptools
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Cython
+Requires-Dist: numpy
+Requires-Dist: cython
+
+UNKNOWN
+
+

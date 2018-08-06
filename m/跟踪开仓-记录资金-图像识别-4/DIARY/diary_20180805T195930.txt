@@ -1,0 +1,32 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20180805T195930.txt
+
+Elapsed time is 1.508428 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+
+ans = 
+
+    contract: 'TA1901'
+      action: 'Buy Open'
+       hands: '1'
+           n: 1
+
+
+orderParameters = 
+
+    'TA1901'    'Buy Open'    '1'
+
+Elapsed time is 1.319863 seconds.
+>>>>>>>>>>调用成功！
+Elapsed time is 1.852744 seconds.
+>>>>>>>>>>调用成功！
+全部成交
+
+ActionDoneFlg =
+
+     1
+
+--------------- 定时器关闭 01！--------------- 

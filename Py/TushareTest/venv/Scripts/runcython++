@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+runcython++ () {
+    local BASE_NAME=`echo $1 | sed -e 's/\.pyx$//'`
+    local SO_NAME=`echo $1 | sed -e 's/\.pyx$/.so/'`
+    local tmpdir=`mktemp -d -t .runcython++.XXX`
+    if [ `ls | sed -n "/$BASE_NAME\.pyc\?$/p" | wc -l` -ge 1 ]; then
+        echo "ERROR: current directory contains a .py file of same name:" `ls | sed -n "/$BASE_NAME\.pyc\?$/p" | head -1` 1>&2
+        exit
+    fi
+    trap "rm -r $tmpdir" 0
+
+    makecython++ "$@" && \
+    mv $SO_NAME $tmpdir && \
+    PYTHONPATH=$tmpdir:$PYTHONPATH python -c "
+import $BASE_NAME
+if hasattr($BASE_NAME, 'main'):
+    $BASE_NAME.main()"
+}
+
+runcython++ "$@"
