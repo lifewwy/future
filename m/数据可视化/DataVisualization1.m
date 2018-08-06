@@ -13,7 +13,7 @@ clear; clc; close all;
 
 %% 读数据
 folder = 'C:\D\xyz\future\优化记录\';
-filename = [folder '优化记录交易策略参数优化[SR1809 - 1日线].csv'];
+filename = [folder '优化记录交易策略参数优化[ru1809 - 1日线].csv'];
 
 dstruct = importdata(filename);
 display(dstruct.textdata(1,:));
@@ -52,7 +52,7 @@ param2 = ParaSegment(param2,N,alpha);
 param3 = ParaSegment(param3,N,alpha);
 
 s1 = size(param1);s2 = size(param2);s3 = size(param3);
-threshold = 0.5;
+threshold = 0.55;
 for i = 1:s1(2)
     for j = 1:s2(2)
         for k=1:s3(2)
