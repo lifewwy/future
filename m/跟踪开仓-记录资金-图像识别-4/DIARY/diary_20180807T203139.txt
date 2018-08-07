@@ -1,0 +1,175 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20180807T203139.txt
+
+
+策略加载完成！
+Elapsed time is 4.281304 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 2.209180 seconds.
+>>>>>>>>>>调用成功！
+账户资金:2162520
+持仓文件更新成功！
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2680,1)">2680 </a>    fprintf('\n');
+if system_dependent('IsDebugMode')==1, dbcont; end
+
+应开仓而没有开的：
+    'IF1808空'
+    'L1901多'
+    'RU1901多'
+
+不应开仓而开仓的：
+    'L1809多'
+    'RU1809空'
+
+
+RU1809   换合约&反手 ！
+
+orders = 
+
+    '2018/08/07'    'I1809'     '(换合约)'      [NaN]
+    '2018/08/07'    'I1901'     '(换合约)'      [NaN]
+    '2018/08/07'    'L1809'     '平多(换合约)'    [ 12]
+    '2018/08/07'    'L1901'     '开多(换合约)'    [ 12]
+    '2018/08/07'    'RM1809'    '(换合约)'      [NaN]
+    '2018/08/07'    'RM1901'    '(换合约)'      [NaN]
+    '2018/08/07'    'RU1809'    '平空'         [  3]
+    '2018/08/07'    'RU1901'    '开多'         [  5]
+
+5*0.7
+
+ans =
+
+    3.5000
+
+
+ans = 
+
+    contract: 'L1809'
+      action: 'Sell EvenUp'
+       hands: '12'
+           n: 3
+
+
+ans = 
+
+    contract: 'L1901'
+      action: 'Buy Open'
+       hands: '12'
+           n: 4
+
+
+ans = 
+
+    contract: 'RU1809'
+      action: 'Buy EvenUp'
+       hands: '3'
+           n: 7
+
+
+ans = 
+
+    contract: 'RU1901'
+      action: 'Buy Open'
+       hands: '3'
+           n: 8
+
+
+ans = 
+
+    contract: 'L1809'
+      action: 'Sell EvenUp'
+       hands: '12'
+           n: 3
+
+
+ans = 
+
+    contract: 'L1901'
+      action: 'Buy Open'
+       hands: '12'
+           n: 4
+
+
+ans = 
+
+    contract: 'RU1809'
+      action: 'Buy EvenUp'
+       hands: '3'
+           n: 7
+
+
+ans = 
+
+    contract: 'RU1901'
+      action: 'Buy Open'
+       hands: '3'
+           n: 8
+
+
+orderParameters = 
+
+    'RU1901'    'Buy Open'    '3'
+
+Elapsed time is 1.385033 seconds.
+>>>>>>>>>>调用成功！
+Elapsed time is 2.129529 seconds.
+>>>>>>>>>>调用成功！
+全部成交
+
+ActionDoneFlg =
+
+     0     0     0     1
+
+
+orderParameters = 
+
+    'RU1809'    'Buy EvenUp'    '3'
+
+Elapsed time is 0.995223 seconds.
+>>>>>>>>>>调用成功！
+Elapsed time is 300.149009 seconds.
+>>>>>>>>>>调用成功！
+[ErrorMsg][0][CTP:平昨仓位不足]
+ActionDoneFlg =
+
+     0     0     1     1
+
+
+ans = 
+
+    contract: 'RU1809'
+      action: 'Buy EvenUp'
+       hands: '3'
+           n: 7
+
+
+ans = 
+
+    contract: 'RU1901'
+      action: 'Buy Open'
+       hands: '3'
+           n: 8
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('timer/startat', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\iofun\@timer\startat.m', 112)" style="font-weight:bold">timer/startat</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\iofun\@timer\startat.m',112,0)">line 112</a>)
+The specified start time has already passed.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Open_CloseOut_func', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\Open_CloseOut_func.m', 55)" style="font-weight:bold">Open_CloseOut_func</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\Open_CloseOut_func.m',55,0)">line 55</a>)
+        startat(t1,'21:00:00');
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel>pushbutton3_Callback', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 779)" style="font-weight:bold">panel>pushbutton3_Callback</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',779,0)">line 779</a>)
+Open_CloseOut_func(orders,handles)
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gui_mainfcn', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
+        feval(varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 42)" style="font-weight:bold">panel</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',42,0)">line 42</a>)
+    gui_mainfcn(gui_State, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('@(hObject,eventdata)panel(''pushbutton3_Callback'',hObject,eventdata,guidata(hObject))')" style="font-weight:bold">@(hObject,eventdata)panel('pushbutton3_Callback',hObject,eventdata,guidata(hObject))</a>
+
+} 
+Error while evaluating UIControl Callback
+
