@@ -1,0 +1,92 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20180807T154010.txt
+
+Elapsed time is 5.500996 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 3.548124 seconds.
+>>>>>>>>>>调用成功！
+账户资金:2147950
+持仓文件更新成功！
+资金文件更新成功！
+上次更新日期为: 2018-08-06 Monday
+
+开始数据更新...
+
+C:\D\xyz\future\数据维护\A888.csv 更新成功！
+C:\D\xyz\future\数据维护\C888.csv 更新成功！
+C:\D\xyz\future\数据维护\RB888.csv 更新成功！
+C:\D\xyz\future\数据维护\M888.csv 更新成功！
+C:\D\xyz\future\数据维护\P888.csv 更新成功！
+C:\D\xyz\future\数据维护\J888.csv 更新成功！
+C:\D\xyz\future\数据维护\ZN888.csv 更新成功！
+C:\D\xyz\future\数据维护\Y888.csv 更新成功！
+C:\D\xyz\future\数据维护\L888.csv 更新成功！
+2018-08-07: L1809 -> L1901
+订单文件更新成功！
+C:\D\xyz\future\数据维护\AG888.csv 更新成功！
+C:\D\xyz\future\数据维护\TA888.csv 更新成功！
+C:\D\xyz\future\数据维护\SR888.csv 更新成功！
+C:\D\xyz\future\数据维护\AU888.csv 更新成功！
+C:\D\xyz\future\数据维护\FG888.csv 更新成功！
+C:\D\xyz\future\数据维护\MA888.csv 更新成功！
+C:\D\xyz\future\数据维护\RU888.csv 更新成功！
+2018-08-07: RU1809 -> RU1901
+订单文件更新成功！
+C:\D\xyz\future\数据维护\AL888.csv 更新成功！
+C:\D\xyz\future\数据维护\OI888.csv 更新成功！
+C:\D\xyz\future\数据维护\RM888.csv 更新成功！
+2018-08-07: RM1809 -> RM1901
+订单文件更新成功！
+C:\D\xyz\future\数据维护\CF888.csv 更新成功！
+C:\D\xyz\future\数据维护\I888.csv 更新成功！
+2018-08-07: I1809 -> I1901
+订单文件更新成功！
+C:\D\xyz\future\数据维护\JM888.csv 更新成功！
+C:\D\xyz\future\数据维护\CU888.csv 更新成功！
+C:\D\xyz\future\数据维护\V888.csv 更新成功！
+C:\D\xyz\future\数据维护\IF888.csv 更新成功！
+
+数据更新完成！
+
+策略加载完成！
+Elapsed time is 2.432127 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 2.426849 seconds.
+>>>>>>>>>>调用成功！
+账户资金:2147950
+持仓文件更新成功！
+
+应开仓而没有开的：
+    'IF1808空'
+    'L1901多'
+    'RU1901多'
+
+不应开仓而开仓的：
+    'J1809多'
+    'RB1810多'
+
+
+读TB输出文件...
+读风险配置文件...
+读资金文件...
+输出订单文件...
+2018/08/07,RU1901,平空,NaN
+2018/08/07,RU1901,开多,5
+订单文件更新成功！
+RU1809   换合约&反手 ！
+
+orders = 
+
+    '2018/08/07'    'I1809'     '(换合约)'      [NaN]
+    '2018/08/07'    'I1901'     '(换合约)'      [NaN]
+    '2018/08/07'    'L1809'     '平多(换合约)'    [ 12]
+    '2018/08/07'    'L1901'     '开多(换合约)'    [ 12]
+    '2018/08/07'    'RM1809'    '(换合约)'      [NaN]
+    '2018/08/07'    'RM1901'    '(换合约)'      [NaN]
+    '2018/08/07'    'RU1809'    '平空'         [  3]
+    '2018/08/07'    'RU1901'    '开多'         [  5]
+

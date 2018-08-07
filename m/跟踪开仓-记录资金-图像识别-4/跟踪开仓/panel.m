@@ -2684,7 +2684,7 @@ if ~isempty(handles.abPos{1,1})
     end
     if ~isempty(ib)
         disp('不应开仓而开仓的：');
-        disp(cpd1(ib));
+        disp(cpd2(ib));
     end
     fprintf('\n');
     
