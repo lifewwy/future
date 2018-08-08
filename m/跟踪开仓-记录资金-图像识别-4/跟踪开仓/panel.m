@@ -193,7 +193,7 @@ rowname ={'1','2','3','4','5','6','7','8',...
     '9','10','11','12','13','14','15','16','17','18', ...
     '19','20','21','22'};  
 
-columnname ={'合约', '持仓状态','','合约', '持仓状态','持仓手数'}; 
+columnname ={'策略', '持仓状态','','持仓', '持仓状态','持仓手数'}; 
 set(handles.uitable2,'columnname',columnname) 
 set(handles.uitable2,'rowname',rowname) 
 
@@ -2679,11 +2679,11 @@ if ~isempty(handles.abPos{1,1})
     
     fprintf('\n');
     if ~isempty(ia)
-        disp('应开仓而没有开的：');
+        disp('少开的：');
         disp(cpd1(ia));
     end
     if ~isempty(ib)
-        disp('不应开仓而开仓的：');
+        disp('多开的：');
         disp(cpd2(ib));
     end
     fprintf('\n');
