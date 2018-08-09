@@ -22,7 +22,7 @@ function varargout = panel(varargin)
 
 % Edit the above text to modify the response to help panel
 
-% Last Modified by GUIDE v2.5 15-Jul-2018 07:04:16
+% Last Modified by GUIDE v2.5 09-Aug-2018 21:08:09
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -2961,10 +2961,13 @@ for i = 1:length(p34)
     orders(pp(index3-1),3) = {tt(1:end-5)};
 end
 orders(AA,:) = [];
+category(AA) = [];
 
 % % 去除非持仓的平仓订单 2017.9.11
 NaNpos = find(isnan(cell2mat(orders(:,4))) == 1);
-orders(NaNpos(~ismember(orders(NaNpos,3),'(换合约)')),:) = [];
+pnp = NaNpos(~ismember(orders(NaNpos,3),'(换合约)'));
+orders(pnp,:) = [];
+category(pnp) = [];
 
 NaNpos = find(isnan(cell2mat(orders(:,4))) == 1);
 
@@ -3048,3 +3051,40 @@ for n = 1:N
     set(eval(h4),'value',value4);
     
 end
+
+
+% --- Executes on button press in pushbutton44.
+function pushbutton44_Callback(hObject, eventdata, handles)
+% hObject    handle to pushbutton44 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+fp  = mfilename('fullpath');
+pp = strfind(fp,'\');
+directory = fp(1:pp(end));
+fn1 = [directory,'strategyPos.mat'];
+fn2 = [directory,'strategyPosLen.mat'];
+
+load(fn1);
+load(fn2);
+
+handles.abPos(1:strategyPosLen,1:2) = strategyPos;
+handles.abPosLen1 = strategyPosLen;
+
+% Update handles structure
+guidata(hObject, handles);
+
+set(handles.uitable2,'Data',handles.abPos)
+
+% rowname ={'1','2','3','4','5','6','7','8',...
+%     '9','10','11','12','13','14','15','16','17','18', ...
+%     '19','20','21','22'};  
+% set(handles.uitable2,'rowname',rowname(1:length(PosStatus))); 
+
+1;
+
+
+
+
+
+
