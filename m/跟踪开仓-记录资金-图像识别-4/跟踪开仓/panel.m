@@ -2679,11 +2679,11 @@ if ~isempty(handles.abPos{1,1})
     
     fprintf('\n');
     if ~isempty(ia)
-        disp('少开的：');
+        fprintf(2,'少开的：\n');
         disp(cpd1(ia));
     end
     if ~isempty(ib)
-        disp('多开的：');
+        fprintf(2,'多开的：\n');
         disp(cpd2(ib));
     end
     fprintf('\n');
