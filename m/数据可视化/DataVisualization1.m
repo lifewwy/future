@@ -12,7 +12,7 @@ data = dstruct.data;
 param1 = data(:,1); param2 = data(:,2); param3 = data(:,3);
 param1 = unique(param1);  param2 = unique(param2); param3 = unique(param3);
 
-maxPara = [max(param1),max(param2),max(param1)];
+maxPara = [max(param1),max(param2),max(param3)];
 
 % % 将每个参数分N段,每段交叠比例为alpha
 N = 6;

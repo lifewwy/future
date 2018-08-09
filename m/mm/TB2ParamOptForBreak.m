@@ -1,4 +1,4 @@
-clear all ; clc; close all;
+clear ; clc; close all;
 folder = 'D:\future\突破-跟踪止损 优化记录 （两参数）\';
 %% 分析 TB 参数报告
 clc;  clearvars -except folder

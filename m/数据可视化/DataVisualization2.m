@@ -16,7 +16,8 @@ folder = 'C:\D\xyz\future\优化记录\';
 filename = [folder '优化记录交易策略参数优化[SR1809 - 1日线].csv'];
 
 dstruct = importdata(filename);
-display(dstruct.textdata(1,:));
+td = dstruct.textdata(1,:);
+display(td);
 data = dstruct.data;
 %% montage
 data = sortrows(data);
@@ -50,6 +51,9 @@ end
 montage(x,jet(R));
 colorbar;
 
+xlabel([td{3},'  ',num2str(param2(1)),'~',num2str(param2(end))]);
+ylabel([td{4},'  ',num2str(param3(1)),'~',num2str(param3(end))]);
+title([td{2},'  ',num2str(param1(1)),'~',num2str(param1(end))]);
 
 
 
