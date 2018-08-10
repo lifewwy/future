@@ -1,4 +1,5 @@
 clear; clc; close all;
+% 3¸ö²ÎÊý
 
 %% montage
 % load mri
