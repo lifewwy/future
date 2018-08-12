@@ -52,8 +52,8 @@ surf(param1,param2,wr);  view(2); axis tight;
 figure('Name','赔率','NumberTitle','off');
 surf(param1,param2,odds);  view(2); axis tight;
 
-figure; plot(param2,profit(1,:)); grid;
-figure; plotyy(param2,wr(1,:),param2,odds(1,:)); grid;
+figure; plot(param2,profit(:,1)); grid;
+figure; plotyy(param2,wr(:,1),param2,odds(:,1)); grid;
 
 %% 选定参数的雷达图
 % [~,ind,~] = intersect(data(:,1:2),[10,2.6],'rows');
