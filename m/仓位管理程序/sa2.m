@@ -5,7 +5,7 @@ clear; clc ; close all;
 %     filename = f(i).name;
 % end
 
-[ndata, text, alldata] =  xlsread('SR1.xlsx');
+[ndata, text, alldata] =  xlsread('zn.xlsx');
 nYeas = (datenum(text(end,7))-datenum(text(2,5)))/365;
 ResultOfTrade = ndata(:,11);
 TotalNumOfTrade = length(ndata);

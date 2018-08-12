@@ -3,7 +3,7 @@ clear; clc; close all;
 
 %% 读数据
 folder = 'C:\D\xyz\future\优化记录\TwoParameters\';
-filename = [folder '优化记录交易策略参数优化[y1901 - 1日线].csv'];
+filename = [folder '优化记录交易策略参数优化[AA_MSFT - 1日线].csv'];
 
 dstruct = importdata(filename);
 td = dstruct.textdata(1,:)';
@@ -18,21 +18,42 @@ param1 = unique(param1);  param2 = unique(param2);
 
 
 ar = data(:,3)./data(:,7)./(-data(:,30));
+% ar(ar<max(ar)*0.5) = NaN;
 ar = reshape(ar,[],length(param1));
 
-profit = data(:,find(strcmp(td,'净利润'),1)-1);
-profit = reshape(profit,[],length(param1));
+profit1 = data(:,find(strcmp(td,'净利润'),1)-1);
+% profit1(profit1<max(profit1)*0.3) = NaN;
+profit = reshape(profit1,[],length(param1));
 
 MaxDown = data(:,find(strcmp(td,'最大资产回撤比率%'),1)-1);
 MaxDown = reshape(MaxDown,[],length(param1));
+
+wr = data(:,find(strcmp(td,'盈利比率'),1)-1);
+wr = reshape(wr,[],length(param1));
+
+odds = data(:,find(strcmp(td,'盈亏比'),1)-1); % 赔率
+odds = reshape(odds,[],length(param1));
 %% surf
-figure; surf(param1,param2,profit);view(2); axis tight;
+
+figure('Name','净利润','NumberTitle','off');
+surf(param1,param2,profit);view(2); axis tight;
 map = mycolormap(profit); colormap(map);
-figure; surf(param1,param2,ar);  view(2); axis tight;
+
+% figure; surf(param1,param2,ar);  view(2); axis tight;
 % map = mycolormap(ar); colormap(map);
-figure; surf(param1,param2,MaxDown);  view(2); axis tight;
+
+figure('Name','最大资产回撤','NumberTitle','off');
+surf(param1,param2,MaxDown);  view(2); axis tight;
 % map = mycolormap(MaxDown); colormap(map);
-title('最大资产回撤')
+
+figure('Name','胜率','NumberTitle','off');
+surf(param1,param2,wr);  view(2); axis tight;
+
+figure('Name','赔率','NumberTitle','off');
+surf(param1,param2,odds);  view(2); axis tight;
+
+figure; plot(param2,profit(1,:)); grid;
+figure; plotyy(param2,wr(1,:),param2,odds(1,:)); grid;
 
 %% 选定参数的雷达图
 % [~,ind,~] = intersect(data(:,1:2),[10,2.6],'rows');
