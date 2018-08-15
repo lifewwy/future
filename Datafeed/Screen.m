@@ -13,7 +13,7 @@ listing = dir([directory,'*csv']);
 % symbolName = 'AAPL';
 % symbolName = 'MSFT';
 
-N = 800;
+N = 2000;
 for i=1:length(listing)
     fileName = [directory,listing(i).name];
  

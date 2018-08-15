@@ -49133,4 +49133,1313 @@ td =
     '总亏损'
     '盈利手数'
     '亏损手数'
-    '连续盈利手
+    '连续盈利手数'
+    '连续亏损手数'
+    '最大盈利'
+    '最大亏损'
+    '平均盈利'
+    '平均亏损'
+    '平均盈利周期'
+    '平均亏损周期'
+    '盈利因子'
+
+if system_dependent('IsDebugMode')==1, dbcont; end
+TwoParam
+
+td = 
+
+    '#'
+    'P:nPeriodBreak'
+    'P:nATRExit'
+    '净利润'
+    '年化收益'
+    '盈利比率'
+    '平均利润'
+    '交易手数'
+    '最大资产回撤'
+    'TB系数'
+    '增长系数'
+    '收益风险比'
+    'R平方值'
+    '头寸系数'
+    '资产回撤计数'
+    '平均资产回撤'
+    '调整收益风险比'
+    '单日最大资产回撤比率%'
+    '最大资产回撤比率%'
+    '夏普比率'
+    '盈亏比'
+    '总盈利'
+    '总亏损'
+    '盈利手数'
+    '亏损手数'
+    '连续盈利手数'
+    '连续亏损手数'
+    '最大盈利'
+    '最大亏损'
+    '平均盈利'
+    '平均亏损'
+    '平均盈利周期'
+    '平均亏损周期'
+    '盈利因子'
+
+TwoParam
+
+td = 
+
+    '#'
+    'P:nPeriodBreak'
+    'P:nATRExit'
+    '净利润'
+    '年化收益'
+    '盈利比率'
+    '平均利润'
+    '交易手数'
+    '最大资产回撤'
+    'TB系数'
+    '增长系数'
+    '收益风险比'
+    'R平方值'
+    '头寸系数'
+    '资产回撤计数'
+    '平均资产回撤'
+    '调整收益风险比'
+    '单日最大资产回撤比率%'
+    '最大资产回撤比率%'
+    '夏普比率'
+    '盈亏比'
+    '总盈利'
+    '总亏损'
+    '盈利手数'
+    '亏损手数'
+    '连续盈利手数'
+    '连续亏损手数'
+    '最大盈利'
+    '最大亏损'
+    '平均盈利'
+    '平均亏损'
+    '平均盈利周期'
+    '平均亏损周期'
+    '盈利因子'
+
+TwoParam
+
+td = 
+
+    '#'
+    'P:nPeriodBreak'
+    'P:nATRExit'
+    '净利润'
+    '年化收益'
+    '盈利比率'
+    '平均利润'
+    '交易手数'
+    '最大资产回撤'
+    'TB系数'
+    '增长系数'
+    '收益风险比'
+    'R平方值'
+    '头寸系数'
+    '资产回撤计数'
+    '平均资产回撤'
+    '调整收益风险比'
+    '单日最大资产回撤比率%'
+    '最大资产回撤比率%'
+    '夏普比率'
+    '盈亏比'
+    '总盈利'
+    '总亏损'
+    '盈利手数'
+    '亏损手数'
+    '连续盈利手数'
+    '连续亏损手数'
+    '最大盈利'
+    '最大亏损'
+    '平均盈利'
+    '平均亏损'
+    '平均盈利周期'
+    '平均亏损周期'
+    '盈利因子'
+
+TwoParam
+
+td = 
+
+    '#'
+    'P:nPeriodBreak'
+    'P:nATRExit'
+    '净利润'
+    '年化收益'
+    '盈利比率'
+    '平均利润'
+    '交易手数'
+    '最大资产回撤'
+    'TB系数'
+    '增长系数'
+    '收益风险比'
+    'R平方值'
+    '头寸系数'
+    '资产回撤计数'
+    '平均资产回撤'
+    '调整收益风险比'
+    '单日最大资产回撤比率%'
+    '最大资产回撤比率%'
+    '夏普比率'
+    '盈亏比'
+    '总盈利'
+    '总亏损'
+    '盈利手数'
+    '亏损手数'
+    '连续盈利手数'
+    '连续亏损手数'
+    '最大盈利'
+    '最大亏损'
+    '平均盈利'
+    '平均亏损'
+    '平均盈利周期'
+    '平均亏损周期'
+    '盈利因子'
+
+if system_dependent('IsDebugMode')==1, dbquit; end
+TwoParam
+
+td = 
+
+    '#'
+    'P:nPeriodBreak'
+    'P:nATRExit'
+    '净利润'
+    '年化收益'
+    '盈利比率'
+    '平均利润'
+    '交易手数'
+    '最大资产回撤'
+    'TB系数'
+    '增长系数'
+    '收益风险比'
+    'R平方值'
+    '头寸系数'
+    '资产回撤计数'
+    '平均资产回撤'
+    '调整收益风险比'
+    '单日最大资产回撤比率%'
+    '最大资产回撤比率%'
+    '夏普比率'
+    '盈亏比'
+    '总盈利'
+    '总亏损'
+    '盈利手数'
+    '亏损手数'
+    '连续盈利手数'
+    '连续亏损手数'
+    '最大盈利'
+    '最大亏损'
+    '平均盈利'
+    '平均亏损'
+    '平均盈利周期'
+    '平均亏损周期'
+    '盈利因子'
+
+{Undefined function or variable 'nPeriodBreak'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('TwoParam', 'C:\D\xyz\future\m\数据可视化\TwoParam.m', 57)" style="font-weight:bold">TwoParam</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\数据可视化\TwoParam.m',57,0)">line 57</a>)
+for i=nPeriodBreak:10
+} 
+nPeriodBreak
+{Undefined function or variable 'nPeriodBreak'.
+} 
+TwoParam
+
+td = 
+
+    '#'
+    'P:nPeriodBreak'
+    'P:nATRExit'
+    '净利润'
+    '年化收益'
+    '盈利比率'
+    '平均利润'
+    '交易手数'
+    '最大资产回撤'
+    'TB系数'
+    '增长系数'
+    '收益风险比'
+    'R平方值'
+    '头寸系数'
+    '资产回撤计数'
+    '平均资产回撤'
+    '调整收益风险比'
+    '单日最大资产回撤比率%'
+    '最大资产回撤比率%'
+    '夏普比率'
+    '盈亏比'
+    '总盈利'
+    '总亏损'
+    '盈利手数'
+    '亏损手数'
+    '连续盈利手数'
+    '连续亏损手数'
+    '最大盈利'
+    '最大亏损'
+    '平均盈利'
+    '平均亏损'
+    '平均盈利周期'
+    '平均亏损周期'
+    '盈利因子'
+
+if system_dependent('IsDebugMode')==1, dbquit; end
+TwoParam
+
+td = 
+
+    '#'
+    'P:nPeriodBreak'
+    'P:nATRExit'
+    '净利润'
+    '年化收益'
+    '盈利比率'
+    '平均利润'
+    '交易手数'
+    '最大资产回撤'
+    'TB系数'
+    '增长系数'
+    '收益风险比'
+    'R平方值'
+    '头寸系数'
+    '资产回撤计数'
+    '平均资产回撤'
+    '调整收益风险比'
+    '单日最大资产回撤比率%'
+    '最大资产回撤比率%'
+    '夏普比率'
+    '盈亏比'
+    '总盈利'
+    '总亏损'
+    '盈利手数'
+    '亏损手数'
+    '连续盈利手数'
+    '连续亏损手数'
+    '最大盈利'
+    '最大亏损'
+    '平均盈利'
+    '平均亏损'
+    '平均盈利周期'
+    '平均亏损周期'
+    '盈利因子'
+
+TwoParam
+
+td = 
+
+    '#'
+    'P:nPeriodBreak'
+    'P:nATRExit'
+    '净利润'
+    '年化收益'
+    '盈利比率'
+    '平均利润'
+    '交易手数'
+    '最大资产回撤'
+    'TB系数'
+    '增长系数'
+    '收益风险比'
+    'R平方值'
+    '头寸系数'
+    '资产回撤计数'
+    '平均资产回撤'
+    '调整收益风险比'
+    '单日最大资产回撤比率%'
+    '最大资产回撤比率%'
+    '夏普比率'
+    '盈亏比'
+    '总盈利'
+    '总亏损'
+    '盈利手数'
+    '亏损手数'
+    '连续盈利手数'
+    '连续亏损手数'
+    '最大盈利'
+    '最大亏损'
+    '平均盈利'
+    '平均亏损'
+    '平均盈利周期'
+    '平均亏损周期'
+    '盈利因子'
+
+if system_dependent('IsDebugMode')==1, dbquit; end
+TwoParam
+
+td = 
+
+    '#'
+    'P:nPeriodBreak'
+    'P:nATRExit'
+    '净利润'
+    '年化收益'
+    '盈利比率'
+    '平均利润'
+    '交易手数'
+    '最大资产回撤'
+    'TB系数'
+    '增长系数'
+    '收益风险比'
+    'R平方值'
+    '头寸系数'
+    '资产回撤计数'
+    '平均资产回撤'
+    '调整收益风险比'
+    '单日最大资产回撤比率%'
+    '最大资产回撤比率%'
+    '夏普比率'
+    '盈亏比'
+    '总盈利'
+    '总亏损'
+    '盈利手数'
+    '亏损手数'
+    '连续盈利手数'
+    '连续亏损手数'
+    '最大盈利'
+    '最大亏损'
+    '平均盈利'
+    '平均亏损'
+    '平均盈利周期'
+    '平均亏损周期'
+    '盈利因子'
+
+if system_dependent('IsDebugMode')==1, dbquit; end
+(45000-37000)/45000
+
+ans =
+
+    0.1778
+
+TwoParam
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('importdata', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\iofun\importdata.p', 136)" style="font-weight:bold">importdata</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\iofun\importdata.p',136,0)">line 136</a>)
+Unable to open file.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('TwoParam', 'C:\D\xyz\future\m\数据可视化\TwoParam.m', 8)" style="font-weight:bold">TwoParam</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\数据可视化\TwoParam.m',8,0)">line 8</a>)
+dstruct = importdata(filename);
+} 
+TwoParam
+
+td = 
+
+    '#'
+    'P:nPeriodBreak'
+    'P:nATRExit'
+    '净利润'
+    '年化收益'
+    '盈利比率'
+    '平均利润'
+    '交易手数'
+    '最大资产回撤'
+    'TB系数'
+    '增长系数'
+    '收益风险比'
+    'R平方值'
+    '头寸系数'
+    '资产回撤计数'
+    '平均资产回撤'
+    '调整收益风险比'
+    '单日最大资产回撤比率%'
+    '最大资产回撤比率%'
+    '夏普比率'
+    '盈亏比'
+    '总盈利'
+    '总亏损'
+    '盈利手数'
+    '亏损手数'
+    '连续盈利手数'
+    '连续亏损手数'
+    '最大盈利'
+    '最大亏损'
+    '平均盈利'
+    '平均亏损'
+    '平均盈利周期'
+    '平均亏损周期'
+    '盈利因子'
+
+if system_dependent('IsDebugMode')==1, dbquit; end
+TwoParam
+
+td = 
+
+    '#'
+    'P:nPeriodBreak'
+    'P:nATRExit'
+    '净利润'
+    '年化收益'
+    '盈利比率'
+    '平均利润'
+    '交易手数'
+    '最大资产回撤'
+    'TB系数'
+    '增长系数'
+    '收益风险比'
+    'R平方值'
+    '头寸系数'
+    '资产回撤计数'
+    '平均资产回撤'
+    '调整收益风险比'
+    '单日最大资产回撤比率%'
+    '最大资产回撤比率%'
+    '夏普比率'
+    '盈亏比'
+    '总盈利'
+    '总亏损'
+    '盈利手数'
+    '亏损手数'
+    '连续盈利手数'
+    '连续亏损手数'
+    '最大盈利'
+    '最大亏损'
+    '平均盈利'
+    '平均亏损'
+    '平均盈利周期'
+    '平均亏损周期'
+    '盈利因子'
+
+TwoParam
+
+td = 
+
+    '#'
+    'P:nPeriodBreak'
+    'P:nATRExit'
+    '净利润'
+    '年化收益'
+    '盈利比率'
+    '平均利润'
+    '交易手数'
+    '最大资产回撤'
+    'TB系数'
+    '增长系数'
+    '收益风险比'
+    'R平方值'
+    '头寸系数'
+    '资产回撤计数'
+    '平均资产回撤'
+    '调整收益风险比'
+    '单日最大资产回撤比率%'
+    '最大资产回撤比率%'
+    '夏普比率'
+    '盈亏比'
+    '总盈利'
+    '总亏损'
+    '盈利手数'
+    '亏损手数'
+    '连续盈利手数'
+    '连续亏损手数'
+    '最大盈利'
+    '最大亏损'
+    '平均盈利'
+    '平均亏损'
+    '平均盈利周期'
+    '平均亏损周期'
+    '盈利因子'
+
+TwoParam
+
+td = 
+
+    '#'
+    'P:nPeriodBreak'
+    'P:nATRExit'
+    '净利润'
+    '年化收益'
+    '盈利比率'
+    '平均利润'
+    '交易手数'
+    '最大资产回撤'
+    'TB系数'
+    '增长系数'
+    '收益风险比'
+    'R平方值'
+    '头寸系数'
+    '资产回撤计数'
+    '平均资产回撤'
+    '调整收益风险比'
+    '单日最大资产回撤比率%'
+    '最大资产回撤比率%'
+    '夏普比率'
+    '盈亏比'
+    '总盈利'
+    '总亏损'
+    '盈利手数'
+    '亏损手数'
+    '连续盈利手数'
+    '连续亏损手数'
+    '最大盈利'
+    '最大亏损'
+    '平均盈利'
+    '平均亏损'
+    '平均盈利周期'
+    '平均亏损周期'
+    '盈利因子'
+
+plotyy(param1,profit(param2==3,:),param2,profit(:,param1==30));
+TwoParam
+
+td = 
+
+    '#'
+    'P:nPeriodBreak'
+    'P:nATRExit'
+    '净利润'
+    '年化收益'
+    '盈利比率'
+    '平均利润'
+    '交易手数'
+    '最大资产回撤'
+    'TB系数'
+    '增长系数'
+    '收益风险比'
+    'R平方值'
+    '头寸系数'
+    '资产回撤计数'
+    '平均资产回撤'
+    '调整收益风险比'
+    '单日最大资产回撤比率%'
+    '最大资产回撤比率%'
+    '夏普比率'
+    '盈亏比'
+    '总盈利'
+    '总亏损'
+    '盈利手数'
+    '亏损手数'
+    '连续盈利手数'
+    '连续亏损手数'
+    '最大盈利'
+    '最大亏损'
+    '平均盈利'
+    '平均亏损'
+    '平均盈利周期'
+    '平均亏损周期'
+    '盈利因子'
+
+plotyy(param1,profit(param2==3,:),param2,profit(:,param1==30));
+figure; grid;hold on;
+plot(param2,profit(:,param1==30));
+plot(param1,profit(param2==3,:));
+TwoParam
+
+td = 
+
+    '#'
+    'P:nPeriodBreak'
+    'P:nATRExit'
+    '净利润'
+    '年化收益'
+    '盈利比率'
+    '平均利润'
+    '交易手数'
+    '最大资产回撤'
+    'TB系数'
+    '增长系数'
+    '收益风险比'
+    'R平方值'
+    '头寸系数'
+    '资产回撤计数'
+    '平均资产回撤'
+    '调整收益风险比'
+    '单日最大资产回撤比率%'
+    '最大资产回撤比率%'
+    '夏普比率'
+    '盈亏比'
+    '总盈利'
+    '总亏损'
+    '盈利手数'
+    '亏损手数'
+    '连续盈利手数'
+    '连续亏损手数'
+    '最大盈利'
+    '最大亏损'
+    '平均盈利'
+    '平均亏损'
+    '平均盈利周期'
+    '平均亏损周期'
+    '盈利因子'
+
+TwoParam
+
+td = 
+
+    '#'
+    'P:nPeriodBreak'
+    'P:nATRExit'
+    '净利润'
+    '年化收益'
+    '盈利比率'
+    '平均利润'
+    '交易手数'
+    '最大资产回撤'
+    'TB系数'
+    '增长系数'
+    '收益风险比'
+    'R平方值'
+    '头寸系数'
+    '资产回撤计数'
+    '平均资产回撤'
+    '调整收益风险比'
+    '单日最大资产回撤比率%'
+    '最大资产回撤比率%'
+    '夏普比率'
+    '盈亏比'
+    '总盈利'
+    '总亏损'
+    '盈利手数'
+    '亏损手数'
+    '连续盈利手数'
+    '连续亏损手数'
+    '最大盈利'
+    '最大亏损'
+    '平均盈利'
+    '平均亏损'
+    '平均盈利周期'
+    '平均亏损周期'
+    '盈利因子'
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('surf', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\graph3d\surf.m', 57)" style="font-weight:bold">surf</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\graph3d\surf.m',57,0)">line 57</a>)
+X, Y, Z, and C cannot be complex.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('TwoParam', 'C:\D\xyz\future\m\数据可视化\TwoParam.m', 39)" style="font-weight:bold">TwoParam</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\数据可视化\TwoParam.m',39,0)">line 39</a>)
+surf(param1,param2,log(profit));view(2); axis tight;
+} 
+TwoParam
+
+td = 
+
+    '#'
+    'P:nPeriodBreak'
+    'P:nATRExit'
+    '净利润'
+    '年化收益'
+    '盈利比率'
+    '平均利润'
+    '交易手数'
+    '最大资产回撤'
+    'TB系数'
+    '增长系数'
+    '收益风险比'
+    'R平方值'
+    '头寸系数'
+    '资产回撤计数'
+    '平均资产回撤'
+    '调整收益风险比'
+    '单日最大资产回撤比率%'
+    '最大资产回撤比率%'
+    '夏普比率'
+    '盈亏比'
+    '总盈利'
+    '总亏损'
+    '盈利手数'
+    '亏损手数'
+    '连续盈利手数'
+    '连续亏损手数'
+    '最大盈利'
+    '最大亏损'
+    '平均盈利'
+    '平均亏损'
+    '平均盈利周期'
+    '平均亏损周期'
+    '盈利因子'
+
+TwoParam
+
+td = 
+
+    '#'
+    'P:nPeriodBreak'
+    'P:nATRExit'
+    '净利润'
+    '年化收益'
+    '盈利比率'
+    '平均利润'
+    '交易手数'
+    '最大资产回撤'
+    'TB系数'
+    '增长系数'
+    '收益风险比'
+    'R平方值'
+    '头寸系数'
+    '资产回撤计数'
+    '平均资产回撤'
+    '调整收益风险比'
+    '单日最大资产回撤比率%'
+    '最大资产回撤比率%'
+    '夏普比率'
+    '盈亏比'
+    '总盈利'
+    '总亏损'
+    '盈利手数'
+    '亏损手数'
+    '连续盈利手数'
+    '连续亏损手数'
+    '最大盈利'
+    '最大亏损'
+    '平均盈利'
+    '平均亏损'
+    '平均盈利周期'
+    '平均亏损周期'
+    '盈利因子'
+
+TwoParam
+
+td = 
+
+    '#'
+    'P:nPeriodBreak'
+    'P:nATRExit'
+    '净利润'
+    '年化收益'
+    '盈利比率'
+    '平均利润'
+    '交易手数'
+    '最大资产回撤'
+    'TB系数'
+    '增长系数'
+    '收益风险比'
+    'R平方值'
+    '头寸系数'
+    '资产回撤计数'
+    '平均资产回撤'
+    '调整收益风险比'
+    '单日最大资产回撤比率%'
+    '最大资产回撤比率%'
+    '夏普比率'
+    '盈亏比'
+    '总盈利'
+    '总亏损'
+    '盈利手数'
+    '亏损手数'
+    '连续盈利手数'
+    '连续亏损手数'
+    '最大盈利'
+    '最大亏损'
+    '平均盈利'
+    '平均亏损'
+    '平均盈利周期'
+    '平均亏损周期'
+    '盈利因子'
+
+TwoParam
+
+td = 
+
+    '#'
+    'P:nPeriodBreak'
+    'P:nATRExit'
+    '净利润'
+    '年化收益'
+    '盈利比率'
+    '平均利润'
+    '交易手数'
+    '最大资产回撤'
+    'TB系数'
+    '增长系数'
+    '收益风险比'
+    'R平方值'
+    '头寸系数'
+    '资产回撤计数'
+    '平均资产回撤'
+    '调整收益风险比'
+    '单日最大资产回撤比率%'
+    '最大资产回撤比率%'
+    '夏普比率'
+    '盈亏比'
+    '总盈利'
+    '总亏损'
+    '盈利手数'
+    '亏损手数'
+    '连续盈利手数'
+    '连续亏损手数'
+    '最大盈利'
+    '最大亏损'
+    '平均盈利'
+    '平均亏损'
+    '平均盈利周期'
+    '平均亏损周期'
+    '盈利因子'
+
+TwoParam
+
+td = 
+
+    '#'
+    'P:nPeriodBreak'
+    'P:nATRExit'
+    '净利润'
+    '年化收益'
+    '盈利比率'
+    '平均利润'
+    '交易手数'
+    '最大资产回撤'
+    'TB系数'
+    '增长系数'
+    '收益风险比'
+    'R平方值'
+    '头寸系数'
+    '资产回撤计数'
+    '平均资产回撤'
+    '调整收益风险比'
+    '单日最大资产回撤比率%'
+    '最大资产回撤比率%'
+    '夏普比率'
+    '盈亏比'
+    '总盈利'
+    '总亏损'
+    '盈利手数'
+    '亏损手数'
+    '连续盈利手数'
+    '连续亏损手数'
+    '最大盈利'
+    '最大亏损'
+    '平均盈利'
+    '平均亏损'
+    '平均盈利周期'
+    '平均亏损周期'
+    '盈利因子'
+
+figure; grid; plot(param1,profit(param2==2,:));
+TwoParam
+
+td = 
+
+    '#'
+    'P:nPeriodBreak'
+    'P:nATRExit'
+    '净利润'
+    '年化收益'
+    '盈利比率'
+    '平均利润'
+    '交易手数'
+    '最大资产回撤'
+    'TB系数'
+    '增长系数'
+    '收益风险比'
+    'R平方值'
+    '头寸系数'
+    '资产回撤计数'
+    '平均资产回撤'
+    '调整收益风险比'
+    '单日最大资产回撤比率%'
+    '最大资产回撤比率%'
+    '夏普比率'
+    '盈亏比'
+    '总盈利'
+    '总亏损'
+    '盈利手数'
+    '亏损手数'
+    '连续盈利手数'
+    '连续亏损手数'
+    '最大盈利'
+    '最大亏损'
+    '平均盈利'
+    '平均亏损'
+    '平均盈利周期'
+    '平均亏损周期'
+    '盈利因子'
+
+eodhistoricaldata2
+plot(log(c))
+help log
+ <strong>log</strong>    Natural logarithm.
+    <strong>log</strong>(X) is the natural logarithm of the elements of X.
+    Complex results are produced if X is not positive.
+ 
+    See also <a href="matlab:help log1p">log1p</a>, <a href="matlab:help log2">log2</a>, <a href="matlab:help log10">log10</a>, <a href="matlab:help exp">exp</a>, <a href="matlab:help logm">logm</a>, <a href="matlab:help reallog">reallog</a>.
+
+    <a href="matlab:matlab.internal.language.introspective.displayOverloads('log')">Other functions named log</a>
+
+    Reference page in Help browser
+       <a href="matlab:doc log">doc log</a>
+
+help logm
+ <strong>logm</strong>   Matrix logarithm.
+    L = <strong>logm</strong>(A) is the principal matrix logarithm of A, the inverse of EXPM(A).
+    L is the unique logarithm for which every eigenvalue has imaginary part
+    lying strictly between -PI and PI.  If A is singular or has any eigenvalues
+    on the negative real axis, then the principal logarithm is undefined,
+    a non-principal logarithm is computed, and a warning message is printed.
+ 
+    [L,EXITFLAG] = <strong>logm</strong>(A) returns a scalar EXITFLAG that describes
+    the exit condition of <strong>logm</strong>:
+    EXITFLAG = 0: successful completion of algorithm.
+    EXITFLAG = 1: too many matrix square roots needed.
+                  Computed L may still be accurate, however.
+ 
+    Class support for input A:
+       float: double, single
+ 
+    See also <a href="matlab:help expm">expm</a>, <a href="matlab:help sqrtm">sqrtm</a>, <a href="matlab:help funm">funm</a>.
+
+    <a href="matlab:matlab.internal.language.introspective.displayOverloads('logm')">Other functions named logm</a>
+
+    Reference page in Help browser
+       <a href="matlab:doc logm">doc logm</a>
+
+if system_dependent('IsDebugMode')==1, dbquit; end
+eodhistoricaldata2
+plot(log(c))
+if system_dependent('IsDebugMode')==1, dbquit; end
+Screen
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbquit; end
+Screen
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbquit; end
+TwoParam
+
+td = 
+
+    '#'
+    'P:nPeriodBreak'
+    'P:nATRExit'
+    '净利润'
+    '年化收益'
+    '盈利比率'
+    '平均利润'
+    '交易手数'
+    '最大资产回撤'
+    'TB系数'
+    '增长系数'
+    '收益风险比'
+    'R平方值'
+    '头寸系数'
+    '资产回撤计数'
+    '平均资产回撤'
+    '调整收益风险比'
+    '单日最大资产回撤比率%'
+    '最大资产回撤比率%'
+    '夏普比率'
+    '盈亏比'
+    '总盈利'
+    '总亏损'
+    '盈利手数'
+    '亏损手数'
+    '连续盈利手数'
+    '连续亏损手数'
+    '最大盈利'
+    '最大亏损'
+    '平均盈利'
+    '平均亏损'
+    '平均盈利周期'
+    '平均亏损周期'
+    '盈利因子'
+
+TwoParam
+
+td = 
+
+    '#'
+    'P:nPeriodBreak'
+    'P:nATRExit'
+    '净利润'
+    '年化收益'
+    '盈利比率'
+    '平均利润'
+    '交易手数'
+    '最大资产回撤'
+    'TB系数'
+    '增长系数'
+    '收益风险比'
+    'R平方值'
+    '头寸系数'
+    '资产回撤计数'
+    '平均资产回撤'
+    '调整收益风险比'
+    '单日最大资产回撤比率%'
+    '最大资产回撤比率%'
+    '夏普比率'
+    '盈亏比'
+    '总盈利'
+    '总亏损'
+    '盈利手数'
+    '亏损手数'
+    '连续盈利手数'
+    '连续亏损手数'
+    '最大盈利'
+    '最大亏损'
+    '平均盈利'
+    '平均亏损'
+    '平均盈利周期'
+    '平均亏损周期'
+    '盈利因子'
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('surf', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\graph3d\surf.m', 57)" style="font-weight:bold">surf</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\graph3d\surf.m',57,0)">line 57</a>)
+X, Y, Z, and C cannot be complex.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('TwoParam', 'C:\D\xyz\future\m\数据可视化\TwoParam.m', 39)" style="font-weight:bold">TwoParam</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\数据可视化\TwoParam.m',39,0)">line 39</a>)
+surf(param1,param2,log(profit));view(2); axis tight;
+} 
+TwoParam
+
+td = 
+
+    '#'
+    'P:nPeriodBreak'
+    'P:nATRExit'
+    '净利润'
+    '年化收益'
+    '盈利比率'
+    '平均利润'
+    '交易手数'
+    '最大资产回撤'
+    'TB系数'
+    '增长系数'
+    '收益风险比'
+    'R平方值'
+    '头寸系数'
+    '资产回撤计数'
+    '平均资产回撤'
+    '调整收益风险比'
+    '单日最大资产回撤比率%'
+    '最大资产回撤比率%'
+    '夏普比率'
+    '盈亏比'
+    '总盈利'
+    '总亏损'
+    '盈利手数'
+    '亏损手数'
+    '连续盈利手数'
+    '连续亏损手数'
+    '最大盈利'
+    '最大亏损'
+    '平均盈利'
+    '平均亏损'
+    '平均盈利周期'
+    '平均亏损周期'
+    '盈利因子'
+
+TwoParam
+
+td = 
+
+    '#'
+    'P:nPeriodBreak'
+    'P:nATRExit'
+    '净利润'
+    '年化收益'
+    '盈利比率'
+    '平均利润'
+    '交易手数'
+    '最大资产回撤'
+    'TB系数'
+    '增长系数'
+    '收益风险比'
+    'R平方值'
+    '头寸系数'
+    '资产回撤计数'
+    '平均资产回撤'
+    '调整收益风险比'
+    '单日最大资产回撤比率%'
+    '最大资产回撤比率%'
+    '夏普比率'
+    '盈亏比'
+    '总盈利'
+    '总亏损'
+    '盈利手数'
+    '亏损手数'
+    '连续盈利手数'
+    '连续亏损手数'
+    '最大盈利'
+    '最大亏损'
+    '平均盈利'
+    '平均亏损'
+    '平均盈利周期'
+    '平均亏损周期'
+    '盈利因子'
+
+TwoParam
+
+td = 
+
+    '#'
+    'P:nPeriodBreak'
+    'P:nATRExit'
+    '净利润'
+    '年化收益'
+    '盈利比率'
+    '平均利润'
+    '交易手数'
+    '最大资产回撤'
+    'TB系数'
+    '增长系数'
+    '收益风险比'
+    'R平方值'
+    '头寸系数'
+    '资产回撤计数'
+    '平均资产回撤'
+    '调整收益风险比'
+    '单日最大资产回撤比率%'
+    '最大资产回撤比率%'
+    '夏普比率'
+    '盈亏比'
+    '总盈利'
+    '总亏损'
+    '盈利手数'
+    '亏损手数'
+    '连续盈利手数'
+    '连续亏损手数'
+    '最大盈利'
+    '最大亏损'
+    '平均盈利'
+    '平均亏损'
+    '平均盈利周期'
+    '平均亏损周期'
+    '盈利因子'
+
+figure; grid; plot(param2,profit(:,param1==58));
+figure; grid; plot(param1,profit(param2==4.1,:));
+TwoParam
+
+td = 
+
+    '#'
+    'P:nPeriodBreak'
+    'P:nATRExit'
+    '净利润'
+    '年化收益'
+    '盈利比率'
+    '平均利润'
+    '交易手数'
+    '最大资产回撤'
+    'TB系数'
+    '增长系数'
+    '收益风险比'
+    'R平方值'
+    '头寸系数'
+    '资产回撤计数'
+    '平均资产回撤'
+    '调整收益风险比'
+    '单日最大资产回撤比率%'
+    '最大资产回撤比率%'
+    '夏普比率'
+    '盈亏比'
+    '总盈利'
+    '总亏损'
+    '盈利手数'
+    '亏损手数'
+    '连续盈利手数'
+    '连续亏损手数'
+    '最大盈利'
+    '最大亏损'
+    '平均盈利'
+    '平均亏损'
+    '平均盈利周期'
+    '平均亏损周期'
+    '盈利因子'
+
+2000/80
+
+ans =
+
+    25
+
+25*109
+
+ans =
+
+        2725
+
+TwoParam
+
+td = 
+
+    '#'
+    'P:nPeriodBreak'
+    'P:nATRExit'
+    '净利润'
+    '年化收益'
+    '盈利比率'
+    '平均利润'
+    '交易手数'
+    '最大资产回撤'
+    'TB系数'
+    '增长系数'
+    '收益风险比'
+    'R平方值'
+    '头寸系数'
+    '资产回撤计数'
+    '平均资产回撤'
+    '调整收益风险比'
+    '单日最大资产回撤比率%'
+    '最大资产回撤比率%'
+    '夏普比率'
+    '盈亏比'
+    '总盈利'
+    '总亏损'
+    '盈利手数'
+    '亏损手数'
+    '连续盈利手数'
+    '连续亏损手数'
+    '最大盈利'
+    '最大亏损'
+    '平均盈利'
+    '平均亏损'
+    '平均盈利周期'
+    '平均亏损周期'
+    '盈利因子'
+
+grid;
+figure; grid; plot(param2,profit(:,param1==30)); grid;
+figure; grid; plot(param1,profit(param2==4,:)); grid;
+TwoParam
+
+td = 
+
+    '#'
+    'P:nPeriodBreak'
+    'P:nATRExit'
+    '净利润'
+    '年化收益'
+    '盈利比率'
+    '平均利润'
+    '交易手数'
+    '最大资产回撤'
+    'TB系数'
+    '增长系数'
+    '收益风险比'
+    'R平方值'
+    '头寸系数'
+    '

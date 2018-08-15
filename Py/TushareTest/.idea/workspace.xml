@@ -2,15 +2,57 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d1f713c-872e-4784-b46c-04efc27ed568" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/FastMA.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JionQuant/Bokeh/candlestick.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datafeed/Screen.m" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datafeed/Screen.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datafeed/eodhistoricaldata/MSFT.US.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datafeed/eodhistoricaldata/MSFT.US.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JionQuant/.idea/JionQuant.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../JionQuant/.idea/JionQuant.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JionQuant/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JionQuant/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../JionQuant/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JionQuant/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/TushareTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TushareTest.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JionQuant/venv/Lib/site-packages/easy-install.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../JionQuant/venv/Lib/site-packages/easy-install.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JionQuant/venv/pip-selfcheck.json" beforeDir="false" afterPath="$PROJECT_DIR$/../JionQuant/venv/pip-selfcheck.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/跟踪开仓/AccountSelection.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/跟踪开仓/AccountSelection.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/跟踪开仓/Private.con" beforeDir="false" afterPath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/跟踪开仓/Private.con" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/跟踪开仓/Public.con" beforeDir="false" afterPath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/跟踪开仓/Public.con" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/跟踪开仓/TradingDay.con" beforeDir="false" afterPath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/跟踪开仓/TradingDay.con" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TB work/美股/MSFT.wsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../TB work/美股/MSFT.wsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../m/数据可视化/TwoParam.m" beforeDir="false" afterPath="$PROJECT_DIR$/../../m/数据可视化/TwoParam.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/DIARY/diary_20180811T013953.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/DIARY/diary_20180811T013953.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/DialogRsp.con" beforeDir="false" afterPath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/DialogRsp.con" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/Private.con" beforeDir="false" afterPath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/Private.con" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/Public.con" beforeDir="false" afterPath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/Public.con" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/QueryRsp.con" beforeDir="false" afterPath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/QueryRsp.con" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/TradingDay.con" beforeDir="false" afterPath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/TradingDay.con" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/持仓-国贸期货.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/持仓-国贸期货.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/持仓.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/持仓.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/资金-国贸期货.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/资金-国贸期货.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/跟踪开仓/IsDataUpdateCompleted.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/跟踪开仓/IsDataUpdateCompleted.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/跟踪开仓/panel.fig" beforeDir="false" afterPath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/跟踪开仓/panel.fig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/跟踪开仓/strategyPos.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/跟踪开仓/strategyPos.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/跟踪开仓/strategyPosLen.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/跟踪开仓/strategyPosLen.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../优化记录/TwoParameters/优化记录交易策略参数优化[AA_MSFT - 1日线].csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../优化记录/TwoParameters/优化记录交易策略参数优化[AA_MSFT - 1日线].csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../数据维护/A888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/A888.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../数据维护/AG888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/AG888.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../数据维护/AL888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/AL888.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../数据维护/AU888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/AU888.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../数据维护/C888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/C888.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../数据维护/CF888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/CF888.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../数据维护/CU888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/CU888.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../数据维护/FG888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/FG888.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../数据维护/I888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/I888.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../数据维护/IF888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/IF888.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../数据维护/J888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/J888.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../数据维护/JM888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/JM888.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../数据维护/L888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/L888.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../数据维护/M888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/M888.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../数据维护/MA888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/MA888.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../数据维护/OI888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/OI888.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../数据维护/P888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/P888.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../数据维护/RB888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/RB888.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../数据维护/RM888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/RM888.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../数据维护/RU888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/RU888.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../数据维护/SR888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/SR888.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../数据维护/TA888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/TA888.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../数据维护/V888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/V888.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../数据维护/Y888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/Y888.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../数据维护/ZN888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/ZN888.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/future.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/future.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,9 +64,10 @@
     <session id="659711155">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="21" />
+          <entry key="project.closed" value="23" />
           <entry key="project.open.time.0" value="3" />
-          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.102" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.15" value="1" />
@@ -40,13 +83,13 @@
           <entry key="project.open.time.72" value="1" />
           <entry key="project.open.time.81" value="1" />
           <entry key="project.open.time.87" value="1" />
-          <entry key="project.opened" value="23" />
+          <entry key="project.opened" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="c" value="1" />
-          <entry key="py" value="14" />
+          <entry key="py" value="18" />
           <entry key="pyx" value="5" />
         </counts>
       </usages-collector>
@@ -54,7 +97,7 @@
         <counts>
           <entry key="C++" value="1" />
           <entry key="PLAIN_TEXT" value="5" />
-          <entry key="Python" value="14" />
+          <entry key="Python" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -73,12 +116,12 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TushareT1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="368">
+              <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -129,11 +172,6 @@
               <item name="TushareTest" type="b2602c69:ProjectViewProjectNode" />
               <item name="TushareTest" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="TushareTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TushareTest" type="462c0819:PsiDirectoryNode" />
-              <item name="CythonTest" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -144,7 +182,7 @@
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="domestic.py&#9;FILE&#9;file://C:/D/xyz/future/Py/TushareTest/venv/Lib/site-packages/tushare/futures/domestic.py" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/CythonTest" />
-    <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -256,13 +294,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1847" height="1098" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14103276" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6757357" weight="0.555914" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6757357" weight="0.50107527" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -287,13 +326,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/integ.pyx" />
     <entry file="file://$PROJECT_DIR$/venv/setup.py" />
-    <entry file="file://$PROJECT_DIR$/psar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1886">
-          <caret line="84" selection-start-line="84" selection-end-line="84" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CythonTest/integ.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2691" />
@@ -322,15 +354,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/FastMA.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-184">
-          <caret line="36" column="50" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
+        <state relative-caret-position="1035">
+          <caret line="47" column="32" lean-forward="true" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/psar.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1545">
+          <caret line="84" selection-start-line="84" selection-end-line="84" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TushareT1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="368">
+          <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
         </state>
       </provider>
     </entry>
