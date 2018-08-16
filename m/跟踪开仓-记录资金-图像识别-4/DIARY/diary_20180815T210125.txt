@@ -1,0 +1,225 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20180815T210125.txt
+
+读TB输出文件...
+读风险配置文件...
+读资金文件...
+输出订单文件...
+2018/08/15,CF1901,平多,NaN
+2018/08/15,CF1901,开空,6
+2018/08/15,CU1810,开空,2
+2018/08/15,ZN1810,平多,NaN
+2018/08/15,ZN1810,开空,3
+2018/08/15,SR1901,开空,17
+订单文件更新成功！
+
+orders = 
+
+    '2018/08/15'    'CF1901'    '平多'    [ 6]
+    '2018/08/15'    'CF1901'    '开空'    [ 6]
+    '2018/08/15'    'CU1810'    '开空'    [ 2]
+    '2018/08/15'    'SR1901'    '开空'    [17]
+    '2018/08/15'    'ZN1810'    '平多'    [ 2]
+    '2018/08/15'    'ZN1810'    '开空'    [ 3]
+
+
+ans = 
+
+    contract: 'CF1901'
+      action: 'Sell EvenUp'
+       hands: '6'
+           n: 1
+
+
+ans = 
+
+    contract: 'CF1901'
+      action: 'Sell Open'
+       hands: '6'
+           n: 2
+
+
+ans = 
+
+    contract: 'CU1810'
+      action: 'Sell Open'
+       hands: '2'
+           n: 3
+
+
+ans = 
+
+    contract: 'SR1901'
+      action: 'Sell Open'
+       hands: '13'
+           n: 4
+
+
+ans = 
+
+    contract: 'ZN1810'
+      action: 'Sell EvenUp'
+       hands: '2'
+           n: 5
+
+
+ans = 
+
+    contract: 'ZN1810'
+      action: 'Sell Open'
+       hands: '3'
+           n: 6
+
+
+orderParameters = 
+
+    'SR1901'    'Sell Open'    '13'
+
+Elapsed time is 20.415760 seconds.
+>>>>>>>>>>调用成功！
+Error while evaluating TimerFcn for timer 'myMainTimer' 
+
+Attempted to access pos1(0); index must be a positive integer or logical.
+
+
+
+ans = 
+
+    contract: 'CF1901'
+      action: 'Sell EvenUp'
+       hands: '6'
+           n: 1
+
+
+ans = 
+
+    contract: 'CF1901'
+      action: 'Sell Open'
+       hands: '6'
+           n: 2
+
+
+ans = 
+
+    contract: 'CU1810'
+      action: 'Sell Open'
+       hands: '2'
+           n: 3
+
+
+ans = 
+
+    contract: 'SR1901'
+      action: 'Sell Open'
+       hands: '13'
+           n: 4
+
+
+ans = 
+
+    contract: 'ZN1810'
+      action: 'Sell EvenUp'
+       hands: '2'
+           n: 5
+
+
+ans = 
+
+    contract: 'ZN1810'
+      action: 'Sell Open'
+       hands: '3'
+           n: 6
+
+
+orderParameters = 
+
+    'CF1901'    'Sell EvenUp'    '6'
+
+Elapsed time is 5.385508 seconds.
+>>>>>>>>>>调用成功！
+Elapsed time is 3.376295 seconds.
+>>>>>>>>>>调用成功！
+全部成交
+
+ActionDoneFlg =
+
+     1     0     0     0     0     0
+
+
+orderParameters = 
+
+    'ZN1810'    'Sell EvenUp'    '2'
+
+Elapsed time is 1.988167 seconds.
+>>>>>>>>>>调用成功！
+Elapsed time is 3.201728 seconds.
+>>>>>>>>>>调用成功！
+全部成交
+
+ActionDoneFlg =
+
+     1     0     0     0     1     0
+
+
+orderParameters = 
+
+    'SR1901'    'Sell Open'    '13'
+
+Elapsed time is 4.167296 seconds.
+>>>>>>>>>>调用成功！
+Elapsed time is 2.639101 seconds.
+>>>>>>>>>>调用成功！
+全部成交
+
+ActionDoneFlg =
+
+     1     0     0     1     1     0
+
+
+orderParameters = 
+
+    'ZN1810'    'Sell Open'    '3'
+
+Elapsed time is 2.216188 seconds.
+>>>>>>>>>>调用成功！
+Elapsed time is 3.077309 seconds.
+>>>>>>>>>>调用成功！
+全部成交
+
+ActionDoneFlg =
+
+     1     0     0     1     1     1
+
+
+orderParameters = 
+
+    'CF1901'    'Sell Open'    '6'
+
+Elapsed time is 4.246377 seconds.
+>>>>>>>>>>调用成功！
+Elapsed time is 2.428392 seconds.
+>>>>>>>>>>调用成功！
+全部成交
+
+ActionDoneFlg =
+
+     1     1     0     1     1     1
+
+
+orderParameters = 
+
+    'CU1810'    'Sell Open'    '2'
+
+Elapsed time is 5.273898 seconds.
+>>>>>>>>>>调用成功！
+Elapsed time is 4.946937 seconds.
+>>>>>>>>>>调用成功！
+全部成交
+
+ActionDoneFlg =
+
+     1     1     1     1     1     1
+
+--------------- 定时器关闭 01！--------------- 

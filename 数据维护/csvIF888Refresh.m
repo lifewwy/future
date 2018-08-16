@@ -23,7 +23,7 @@ sizet = size(t);
 kData = [];
 for nn = 1:sizet(1)
     
-    clearvars -except nn futureCode t kData;
+    % clearvars -except nn futureCode t kData;
     
     if strcmp(futureCode , 'if')||strcmp(futureCode , 'IF')
         url1 = 'http://stock2.finance.sina.com.cn/futures/api/json.php/CffexFuturesService.getCffexFuturesDailyKLine?symbol=';

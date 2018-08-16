@@ -2,57 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d1f713c-872e-4784-b46c-04efc27ed568" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../JionQuant/Bokeh/candlestick.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Datafeed/Screen.m" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datafeed/Screen.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Datafeed/eodhistoricaldata/MSFT.US.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datafeed/eodhistoricaldata/MSFT.US.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JionQuant/TushareT1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../JionQuant/.idea/JionQuant.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../JionQuant/.idea/JionQuant.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JionQuant/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JionQuant/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../JionQuant/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JionQuant/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JionQuant/venv/Lib/site-packages/easy-install.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../JionQuant/venv/Lib/site-packages/easy-install.pth" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JionQuant/venv/pip-selfcheck.json" beforeDir="false" afterPath="$PROJECT_DIR$/../JionQuant/venv/pip-selfcheck.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TB work/美股/MSFT.wsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../TB work/美股/MSFT.wsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../m/数据可视化/TwoParam.m" beforeDir="false" afterPath="$PROJECT_DIR$/../../m/数据可视化/TwoParam.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/DIARY/diary_20180811T013953.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/DIARY/diary_20180811T013953.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JionQuant/Bokeh/candlestick.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JionQuant/Bokeh/candlestick.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JionQuant/Bokeh/candlestick.py" beforeDir="false" afterPath="$PROJECT_DIR$/../JionQuant/Bokeh/candlestick.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/DIARY/diary_20180815T194730.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/DIARY/diary_20180815T194730.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/图像识别/Private.con" beforeDir="false" afterPath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/图像识别/Private.con" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/图像识别/QueryRsp.con" beforeDir="false" afterPath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/图像识别/QueryRsp.con" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/图像识别/TradingDay.con" beforeDir="false" afterPath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/图像识别/TradingDay.con" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/DialogRsp.con" beforeDir="false" afterPath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/DialogRsp.con" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/Private.con" beforeDir="false" afterPath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/Private.con" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/Public.con" beforeDir="false" afterPath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/Public.con" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/QueryRsp.con" beforeDir="false" afterPath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/QueryRsp.con" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/TradingDay.con" beforeDir="false" afterPath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/TradingDay.con" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/持仓-国贸期货.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/持仓-国贸期货.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/持仓.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/持仓.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/订单-国贸期货.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/订单-国贸期货.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/资金-国贸期货.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/资金-国贸期货.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/跟踪开仓/IsDataUpdateCompleted.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/跟踪开仓/IsDataUpdateCompleted.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/跟踪开仓/panel.fig" beforeDir="false" afterPath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/跟踪开仓/panel.fig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/跟踪开仓/startAt.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/跟踪开仓/startAt.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/跟踪开仓/strategyPos.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/跟踪开仓/strategyPos.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/跟踪开仓/strategyPosLen.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/跟踪开仓/strategyPosLen.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../优化记录/TwoParameters/优化记录交易策略参数优化[AA_MSFT - 1日线].csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../优化记录/TwoParameters/优化记录交易策略参数优化[AA_MSFT - 1日线].csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../数据维护/A888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/A888.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../数据维护/AG888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/AG888.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../数据维护/AL888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/AL888.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../数据维护/AU888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/AU888.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../数据维护/C888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/C888.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../数据维护/CF888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/CF888.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../数据维护/CU888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/CU888.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../数据维护/FG888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/FG888.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../数据维护/I888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/I888.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../数据维护/IF888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/IF888.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../数据维护/J888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/J888.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../数据维护/JM888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/JM888.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../数据维护/L888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/L888.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../数据维护/M888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/M888.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../数据维护/MA888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/MA888.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../数据维护/OI888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/OI888.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../数据维护/P888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/P888.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../数据维护/RB888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/RB888.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../数据维护/RM888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/RM888.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../数据维护/RU888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/RU888.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../数据维护/SR888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/SR888.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../数据维护/TA888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/TA888.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../数据维护/V888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/V888.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../数据维护/Y888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/Y888.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../数据维护/ZN888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/ZN888.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../笔记/future.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../笔记/future.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../交易20180815.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../交易20180815.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +34,7 @@
     <session id="659711155">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="23" />
+          <entry key="project.closed" value="24" />
           <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.10" value="1" />
@@ -73,6 +43,7 @@
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.51" value="1" />
           <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.60" value="2" />
@@ -83,7 +54,7 @@
           <entry key="project.open.time.72" value="1" />
           <entry key="project.open.time.81" value="1" />
           <entry key="project.open.time.87" value="1" />
-          <entry key="project.opened" value="25" />
+          <entry key="project.opened" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -165,6 +136,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -176,7 +148,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
