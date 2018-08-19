@@ -10,6 +10,7 @@ celldisp(c)
 %% 2 
 cmdString = 'python C:\D\xyz\future\Py\JionQuant\Bokeh\candlestick.py';
 [status,result]=system(cmdString);
+status %#ok 0:success
 
 
 

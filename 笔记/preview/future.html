@@ -1,0 +1,193 @@
+<html>
+  <head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>i5ting_ztree_toc:future</title>
+		<link href="toc/style/github-bf51422f4bb36427d391e4b75a1daa083c2d840e.css" media="all" rel="stylesheet" type="text/css"/>
+		<link href="toc/style/github2-d731afd4f624c99a4b19ad69f3083cd6d02b81d5.css" media="all" rel="stylesheet" type="text/css"/>
+		<link href="toc/css/zTreeStyle/zTreeStyle.css" media="all" rel="stylesheet" type="text/css"/>
+	  <style>
+		pre {
+		    counter-reset: line-numbering;
+		    border: solid 1px #d9d9d9;
+		    border-radius: 0;
+		    background: #fff;
+		    padding: 0;
+		    line-height: 23px;
+		    margin-bottom: 30px;
+		    white-space: pre;
+		    overflow-x: auto;
+		    word-break: inherit;
+		    word-wrap: inherit;
+		}
+
+		pre a::before {
+		  content: counter(line-numbering);
+		  counter-increment: line-numbering;
+		  padding-right: 1em; /* space after numbers */
+		  width: 25px;
+		  text-align: right;
+		  opacity: 0.7;
+		  display: inline-block;
+		  color: #aaa;
+		  background: #eee;
+		  margin-right: 16px;
+		  padding: 2px 10px;
+		  font-size: 13px;
+		  -webkit-touch-callout: none;
+		  -webkit-user-select: none;
+		  -khtml-user-select: none;
+		  -moz-user-select: none;
+		  -ms-user-select: none;
+		  user-select: none;
+		}
+
+		pre a:first-of-type::before {
+		  padding-top: 10px;
+		}
+
+		pre a:last-of-type::before {
+		  padding-bottom: 10px;
+		}
+
+		pre a:only-of-type::before {
+		  padding: 10px;
+		}
+
+		.highlight { background-color: #ffffcc } /* RIGHT */
+		</style>
+  </head>
+  <body>
+	  <div>
+				<div style='width:25%;'>
+						<ul id="tree" class="ztree" style='width:100%'>
+
+						</ul>
+				</div>
+        <div id='readme' style='width:70%;margin-left:20%;'>
+          	<article class='markdown-body'>
+            	<h2 id="-">量化交易</h2>
+<p>由于多数期货交易技术分析有相似之处，目前市场上存在大量使用相似进场点和止损点作为交易指标的量化交易系统。  </p>
+<p>冯正平认为，量化交易只是工具，如果迷信量化的历史测试结果，被动等待历史重演，那么将看不到<strong>市场博弈的本质</strong>，结果就必然导致交易程序高度相似。  </p>
+<p>“你的交易对手是人，而不是K线图。当你在认真的研究K线图的时候，你的对手在研究你。”  </p>
+<p>他表示，市场的任何量化特征都会改变，<strong>唯独博弈本质不会改变</strong>。不能从博弈的视角来审视量化研究，就是在玩数字游戏。目前很多量化研究都是在玩数字游戏，因为他们脱离了市场的本质。  </p>
+<p>“很明显，市场上量化交易者的增加，让不同量化交易者之间的竞争更加激烈。”刘先生认为，最初量化交易者的对手是一些主观交易者，量化交易用数据统计和计算机的一致性获得了胜利，但在现阶段，不同量化交易者之间开始通过相互之间的角力，从对方手中争夺利润。  </p>
+<p>“要避免被‘反量化’者捕杀，就要建立不同的策略组合，实现不同策略之间的低相关性、异构性与丰富性。”冯正平认为，未来量化交易者要建立行情分析系统，最好要有多种算法分析平台，而不以K线图为唯一分析对象。  </p>
+<p>刘先生也认为，未来期货公司资管部门的交易策略将以收益较为稳定的量化交易为主，各个机构<strong>量化模型</strong>之间的比拼将更加激烈。只有充分研究<strong>市场形态</strong>与变化特征，开发出具有不同收益特征的策略组合，才能在竞争中占据一席之地。</p>
+<h2 id="-">数据可视化</h2>
+<ul>
+<li>matlab montage  </li>
+<li>平行坐标  </li>
+</ul>
+<h2 id="-">收益与胜率、赔率的关系</h2>
+<p>胜率 \(\alpha\)：<br>赔率 \(\beta\)：</p>
+<hr>
+<div style="float:right;border:solid 5px;margin:1px;">
+<img src="https://i.imgur.com/JSgZR1k.jpg"  width="300" height="" >
+</div>  
+
+<p>由图中的公式可见  </p>
+<ul>
+<li>胜率 × ( 1 + 赔率 ) &gt; 1  : 收益为正  </li>
+</ul>
+<hr>
+<p>重要</p>
+<h2 id="-">模型与参数</h2>
+<p>模型可以理解为交易策略在数学上的术语，也可以称为<strong>策略模型</strong>。
+模型选择与参数调优哪个更重要？
+模型正确时，对参数的敏感度就会低么？</p>
+<h2 id="-">指标的特征是具有 <code>滞后性</code></h2>
+<h2 id="-">形态观察，形态特点</h2>
+<p>根据不同的形态，采用不同的策略。</p>
+<div align=right>
+<img src="https://i.imgur.com/6MqfB9m.png" width = "500" height = ""/>
+</div>
+
+
+<h2 id="-">多品种组合</h2>
+<p>单品种有回撤期，多品种组合就比较重要，可以优化总的资金曲线。</p>
+<h2 id="-preview-in-brower-">公式  <!--Preview in Brower 可正确显示公式--></h2>
+<p>这是行间公式
+$$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$</p>
+<p>这是行内公式\(E = mc^2\)这里是行内公式</p>
+<h2 id="-">理想的单边行情</h2>
+<p>在理想的单边行情下，nPeriodBreak越小越好,<strong>当取1时就等于不止损</strong>。
+如果单边行情结束，也会始终不止损。</p>
+<h2 id="-tb-">设置TB参数的默认优化范围</h2>
+<hr>
+<div style="float:right;border:solid 1px;margin:1px;">
+<img src="https://i.imgur.com/UvvckG6.png" width = "500" height = ""/>
+</div>
+
+<p>属性设置</p>
+<hr>
+<h2 id="-">道琼斯指数</h2>
+<p>道琼斯指数最早是在1884年由道琼斯公司的创始人查尔斯·亨利·道（Charles Henry Dow 1851-1902年）开始编制的一种算术<strong>平均股价</strong>指数。道琼斯指数是世界上历史最为悠久的股票指数，它的全称为<strong>股票价格平均指数</strong>。</p>
+<h2 id="-">对数化</h2>
+<p>将指数增长变为线性增长。</p>
+<p>迭代式
+$$ x = (1+0.3)x $$<br>等价于<br>$$ y = x_0\cdot1.3^{n} $$  </p>
+<p>其对数化后的形式为<br>$$ \log\left(x_0\right)+n\cdot\log\left(1.3\right) $$   </p>
+<p>变为一条直线，该直线的斜率为 \(\log_{a}\left(1.3\right)\)。</p>
+<h2 id="-">风险控制</h2>
+<p>如果亏损50%，则需要盈利100%才能恢复。
+如果亏损80%，则需要盈利400%才能恢复。</p>
+<h2 id="-">在线作图</h2>
+<p>Lucidchart
+<a href="https://www.lucidchart.com">https://www.lucidchart.com</a></p>
+<h2 id="-">止损宽度与胜率</h2>
+<div style="float:right;margin:1px;">
+<img src="https://i.imgur.com/pYSZTlA.png " width = "800" height = ""/>
+</div>
+
+
+<hr>
+<h2 id="-">止损宽度与赔率</h2>
+<div style="float:right;margin:1px;">
+<img src="https://i.imgur.com/DL6DWso.png " width = "400" height = ""/>
+</div>
+
+<p>止损变宽时，赔率的分子部分不一定变大。要看趋势能走多远，还要看次级波动的深度。</p>
+<hr>
+<h2 id="-">参数的优化方法</h2>
+<p>以下方法是否可行？</p>
+<ol>
+<li>随机入场，优化出场参数。</li>
+<li>按照优化好的出场参数，再优化入场参数。</li>
+</ol>
+<h2 id="-vs-">根据模型找市场 VS 根据市场找模型</h2>
+<p>是根据自己已有的策略模型去找市场呢？
+还是<br>根据市场的形态，想办法寻找策略模型。</p>
+<h2 id="-">入场条件和出场条件冲突时的选择</h2>
+<p>当满足入场条件时，还未达到出场条件怎么办？</p>
+<ol>
+<li>等到出场条件满足时，再看入场条件。</li>
+<li>入场条件满足时，立即出场并反向入场。</li>
+<li>各管各的。比如，场内是多单时仍然持仓，并入场开空单。</li>
+</ol>
+<h2 id="markdown-toc">markdown toc</h2>
+<p>生成侧边栏目录<br>toc: Table of Contents<br><a href="https://github.com/i5ting/tocmd.npm">https://github.com/i5ting/tocmd.npm</a></p>
+<p></br></br></br></br></br></br></br></br>
+</br></br></br></br></br></br></br></br>
+</br></br></br></br></br></br></br></br></p>
+
+          	</article>
+        </div>
+		</div>
+  </body>
+</html>
+<script type="text/javascript" src="toc/js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="toc/js/jquery.ztree.all-3.5.min.js"></script>
+<script type="text/javascript" src="toc/js/ztree_toc.js"></script>
+<script type="text/javascript" src="toc_conf.js"></script>
+
+<SCRIPT type="text/javascript" >
+<!--
+$(document).ready(function(){
+    var css_conf = eval(markdown_panel_style);
+    $('#readme').css(css_conf)
+    
+    var conf = eval(jquery_ztree_toc_opts);
+		$('#tree').ztree_toc(conf);
+});
+//-->
+</SCRIPT>

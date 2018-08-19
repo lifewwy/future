@@ -3,7 +3,7 @@
 tasklist /fi "imagename eq MATLAB.exe" |find ":" > nul
 if errorlevel 1 (
 	taskkill /f /t /im "MATLAB.exe" 
-	ping 127.0.0.1 -n 5 > nul % 等5秒时间 %
+	ping 127.0.0.1 -n 10 > nul % 等一段时间 %
 )
 start "" "C:\Program Files\MATLAB\R2015a\bin\matlab.exe" -nosplash -r "run('C:\D\xyz\future\AutoRun\Main_AutoRun.m')"
 

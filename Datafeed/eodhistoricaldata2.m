@@ -36,19 +36,28 @@ directory1 = [fp(1:pp(end)),'eodhistoricaldata\ForTB\'];
 fileName = [directory1,symbolName,'.US.csv'];
 fid = fopen(fileName, 'wt');
 
-h = roundn(h*1000,0);
-o = roundn(o*1000,0);
-l = roundn(l*1000,0);
-c = roundn(c*1000,0);
+% h = roundn(h*1000,0);
+% o = roundn(o*1000,0);
+% l = roundn(l*1000,0);
+% c = roundn(c*1000,0);
 
 size_csvData = size(c);
+for i = 1:length(dstrct.textdata(1,:))
+    if i~= length(dstrct.textdata(1,:))
+        fprintf(fid, '%s,', dstrct.textdata{1,i});
+    else
+        fprintf(fid, '%s\n', dstrct.textdata{1,i});
+    end
+end
+
 for k = 1:size_csvData(1)
     fprintf(fid, '%s,', dstrct.textdata{k+1,1}(1:end-1));
     fprintf(fid, '%f,', o(k));
     fprintf(fid, '%f,', h(k));
     fprintf(fid, '%f,', l(k));
     fprintf(fid, '%f,', c(k));
-    fprintf(fid, '%f\n', d(k,6));
+    fprintf(fid, '%f,', c(k));
+    fprintf(fid, '%d\n', d(k,6));
 end
 fclose(fid);
 disp([fileName,' 更新成功！'])

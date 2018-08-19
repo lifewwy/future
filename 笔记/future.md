@@ -13,12 +13,12 @@
 
 刘先生也认为，未来期货公司资管部门的交易策略将以收益较为稳定的量化交易为主，各个机构**量化模型**之间的比拼将更加激烈。只有充分研究**市场形态**与变化特征，开发出具有不同收益特征的策略组合，才能在竞争中占据一席之地。
 
-## 数据可视化  
+## 数据可视化 ##   
 
 - matlab montage  
 - 平行坐标  
   
-## 收益与胜率、赔率的关系  
+## 收益与胜率、赔率的关系 ## 
 
 胜率 \\(\alpha\\)：  
 赔率 \\(\beta\\)：
@@ -38,11 +38,13 @@
 
 ## 模型与参数 ##
 模型可以理解为交易策略在数学上的术语，也可以称为**策略模型**。
+模型选择与参数调优哪个更重要？
+模型正确时，对参数的敏感度就会低么？
 
 
-## 指标的特征是具有 `滞后性`  
+## 指标的特征是具有 `滞后性` ## 
   
-## 形态观察，形态特点。
+## 形态观察，形态特点 ##
 根据不同的形态，采用不同的策略。
 
 <div align=right>
@@ -50,10 +52,10 @@
 </div>
 
 
-## 多品种组合 
+## 多品种组合 ##
 单品种有回撤期，多品种组合就比较重要，可以优化总的资金曲线。
 
-## 公式 <!--Preview in Brower 可正确显示公式-->
+## 公式  <!--Preview in Brower 可正确显示公式--> ##
 
 
 这是行间公式
@@ -71,7 +73,7 @@ $$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
 ----------
 
 <div style="float:right;border:solid 1px;margin:1px;">
-<img src="https://i.imgur.com/UvvckG6.png" width = "500" height = ""/>
+<img src="https://i.imgur.com/UvvckG6.png" width = "400" height = ""/>
 </div>
 
 属性设置
@@ -99,8 +101,100 @@ $$ \log\left(x_0\right)+n\cdot\log\left(1.3\right) $$
 如果亏损50%，则需要盈利100%才能恢复。
 如果亏损80%，则需要盈利400%才能恢复。
 
+## 在线作图 ##
+Lucidchart
+https://www.lucidchart.com
+
+## 止损宽度与胜率 ##
+
+<div style="float:right;margin:1px;">
+<img src="https://i.imgur.com/pYSZTlA.png " width = "800" height = ""/>
+</div>
 
 
+----------
+
+
+## 止损宽度与赔率 ##
+
+<div style="float:right;margin:1px;">
+<img src="https://i.imgur.com/DL6DWso.png " width = "400" height = ""/>
+</div>
+
+止损变宽时，赔率的分子部分不一定变大。要看趋势能走多远，还要看次级波动的深度。
+
+----------
+
+## 参数的优化方法 ##
+以下方法是否可行？
+1. 随机入场，优化出场参数。
+2. 按照优化好的出场参数，再优化入场参数。
+
+## 根据模型找市场 VS 根据市场找模型 ##
+是根据自己已有的策略模型去找市场呢？
+还是  
+根据市场的形态，想办法寻找策略模型。
+
+## 入场条件和出场条件冲突时的选择 ##
+当满足入场条件时，还未达到出场条件怎么办？
+1. 等到出场条件满足时，再看入场条件。
+2. 入场条件满足时，立即出场并反向入场。
+3. 各管各的。比如，场内是多单时仍然持仓，并入场开空单。
+
+## markdown toc ##
+生成侧边栏目录  
+toc: Table of Contents  
+https://github.com/i5ting/tocmd.npm
+
+## 波动的作用 ##
+
+<div style="float:right;margin:1px;">
+<img src="https://i.imgur.com/D7r1GLN.png " width = "400" height = ""/>
+</div>
+
+如果在每一个波动的拐点上都开对方向，在两条线上的收益相同。
+只有
+
+
+1. 止盈加反趋势
+2. 或者反趋势加开仓优先
+
+才能达到这种效果。
+
+----------
+
+## TB 批量导入/导出数据 ##
+
+格式为*.dat
+但不知道具体格式，没法读取与编辑。
+
+论坛上管理员回答都是暂时不提供该数据读取服务
+http://bbs.tb18.net/thread-110691-1-1.html
+http://bbs.tb18.net/thread-18086-1-1.html
+http://bbs.tb18.net/thread-19629-1-1.html
+
+## TB数据格式为7列 ##
+<div style="float:right;margin:1px;">
+<img src="https://i.imgur.com/i5kcaVt.png " width = "400" height = ""/>
+</div>
+
+
+1. TB数据格式为7列
+2. 它决定了批量导出的DAT文件格式
+3. date double double double double int32 int32
+4. date 占12个字节
+5. 每个合约第一条记录date的前4个字节int32格式放置该合约的记录数。
+6. 每条记录为56个字节。
+7. 第一个int32占8个字节，其本身占4个字节，补4个字节的0。
+8. 最末int32占4个字节。
+
+----------
+
+<div style="float:right;margin:1px;">
+<img src="https://i.imgur.com/314kcGN.png " width = "400" height = ""/>
+</div>
+
+导入数据只会覆盖相同日期的数据，原有的其他日期的数据被保留，不会被删除。要想完全清空数据，只能删除商品，然后重新自定义商品，再进行数据导入。
 
 </br></br></br></br></br></br></br></br>
 </br></br></br></br></br></br></br></br>
