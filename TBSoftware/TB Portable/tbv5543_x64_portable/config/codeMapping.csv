@@ -1,0 +1,276 @@
+//codeMapping ver1
+//原交易所,原代码,简写,类别,TB交易所,TB代码
+SHFE,al,沪铝,沪铝(al),SHFE,
+SHFE,cu,沪铜,沪铜(cu),SHFE,
+SHFE,fu,燃油,沪燃油(fu),SHFE,
+SHFE,ru,天胶,沪天胶(ru),SHFE,
+SHFE,zn,沪锌,沪锌(zn),SHFE,
+SHFE,au,黄金,沪黄金(au),SHFE,
+SHFE,ag,白银,沪白银(ag),SHFE,
+SHFE,rb,螺纹钢,沪螺纹钢(rb),SHFE,
+SHFE,wr,线材,沪线材(wr),SHFE,
+SHFE,pb,沪铅,沪铅(pb),SHFE,
+SHFE,bu,沪沥青,沪沥青(bu),SHFE,
+SHFE,hc,热轧卷板,热轧卷板(hc),SHFE,
+SHFE,ni,沪镍,沪镍(ni),SHFE,
+SHFE,sn,沪锡,沪锡(sn),SHFE,
+DCE,a,豆一,连大豆1号(a),DCE,
+DCE,b,豆二,连大豆2号(b),DCE,
+DCE,c,玉米,连玉米(c),DCE,
+DCE,cs,玉米淀粉,连玉米淀粉(cs),DCE,
+DCE,l,塑料,连塑料(l),DCE,
+DCE,jm,焦煤,连焦煤(jm),DCE,
+DCE,m,豆粕,连豆粕(m),DCE,
+DCE,y,豆油,连豆油(y),DCE,
+DCE,v,PVC,连PVC(v),DCE,
+DCE,p,棕榈油,连棕榈油(p),DCE,
+DCE,j,焦炭,连焦炭(j),DCE,
+DCE,pp,聚丙烯,连聚丙烯(pp),DCE,
+DCE,i,铁矿石,连铁矿石(i),DCE,
+DCE,jd,鸡蛋,连鸡蛋(jd),DCE,
+DCE,fb,纤维板,连纤维板(fb),DCE,
+DCE,bb,胶合板,连胶合板(bb),DCE,
+DCE,pp,聚丙烯,连聚丙烯(pp),DCE,
+CZCE,CF,棉花,郑棉花(CF),ZCE,
+CZCE,CY,棉纱,郑棉纱(CY),ZCE,
+CZCE,SR,白糖,郑白糖(SR),ZCE,
+CZCE,RO,菜籽油,郑菜籽油(RO),ZCE,
+CZCE,TA,PTA,郑PTA(TA),ZCE,
+CZCE,ER,稻谷,郑稻谷(ER),ZCE,
+CZCE,ME,甲醇,郑甲醇(ME),ZCE,
+CZCE,WT,硬麦,郑硬麦(WT),ZCE,
+CZCE,WS,强麦,郑强麦(WS),ZCE,
+CZCE,OI,菜籽油,郑菜籽油(OI),ZCE,
+CZCE,RI,稻谷,郑稻谷(RI),ZCE,
+CZCE,PM,普麦,郑普麦(PM),ZCE,
+CZCE,WH,强麦,郑强麦(WH),ZCE,
+CZCE,FG,玻璃,郑玻璃(FG),ZCE,
+CZCE,RS,油菜籽,郑油菜籽(RS),ZCE,
+CZCE,RM,菜籽粕,郑菜籽粕(RM),ZCE,
+CZCE,TC,动力煤,郑动力煤(TC),ZCE,
+CZCE,ZC,动力煤,郑动力煤(ZC),ZCE,
+CZCE,JR,粳稻,郑粳稻(JR),ZCE,
+CZCE,MA,甲醇,郑甲醇(MA),ZCE,
+CZCE,LR,晚籼稻,郑晚籼稻(LR),ZCE,
+CZCE,SF,硅铁,郑硅铁(SF),ZCE,
+CZCE,SM,锰硅,郑锰硅(SM),ZCE,
+CZCE,AP,苹果,苹果(AP),ZCE,
+CFFEX,IF,股指,沪深300股指(IF),CFFE,
+CFFEX,IH,上证50股指,上证50股指(IH),CFFE,
+CFFEX,IC,中证500股指,中证500股指(IC),CFFE,
+CFFEX,TF,国债,国债(TF),CFFE,
+CFFEX,T,国债,国债(T),CFFE,
+INE,sc,原油,原油(sc),INE,
+SHFE2,sc,原油,原油(sc),SHFE2,
+DCE,SP a&a,,连豆1跨期(a&a),DCE,
+DCE,SP b&b,,连豆2跨期(b&b),DCE,
+DCE,SP c&c,,连玉米跨期(c&c),DCE,
+DCE,SP l&l,,连塑料跨期(l&l),DCE,
+DCE,SP m&m,,连豆粕跨期(m&m),DCE,
+DCE,SP p&p,,连棕榈油跨期(p&p),DCE,
+DCE,SP v&v,,连PVC跨期(v&v),DCE,
+DCE,SP y&y,,连豆油跨期(y&y),DCE,
+DCE,SP j&j,,连焦炭跨期(j&j),DCE,
+DCE,SP jm&jm,,连焦煤跨期(jm&jm),DCE,
+DCE,SP pp&pp,,连聚丙烯跨期(pp&pp),DCE,
+DCE,SP i&i,,连铁矿石跨期(i&i),DCE,
+DCE,SP jd&jd,,连鸡蛋跨期(jd&jd),DCE,
+DCE,SP fb&fb,,连纤维板跨期(fb&fb),DCE,
+DCE,SP bb&bb,,连胶合板跨期(bb&bb),DCE,
+DCE,SP pp&pp,,连聚丙烯跨期(pp&pp),DCE,
+DCE,SPC y&p,,连豆棕跨品种(y&p),DCE,
+DCE,SPC a&m,,连豆粕跨品种(a&m),DCE,
+DCE,SPC l&v,,连塑料PVC跨品种(l&v),DCE,
+DCE,SPC j&jm,,连焦炭焦煤跨品种(j&jm),DCE,
+DCE,SPC fb&bb,,连纤维板胶合板跨品种(fb&bb),DCE,
+CZCE,SPD CF&CF,,郑棉花跨期(CF&CF),ZCE,
+CZCE,SPD RO&RO,,郑菜籽油跨期(RO&RO),ZCE,
+CZCE,SPD OI&OI,,郑菜籽油跨期(OI&OI),ZCE,
+CZCE,SPD SR&SR,,郑白糖跨期(SR&SR),ZCE,
+CZCE,SPD TA&TA,,郑PTA跨期(TA&TA),ZCE,
+CZCE,SPD ER&ER,,郑稻谷跨期(ER&ER),ZCE,
+CZCE,SPD RI&RI,,郑稻谷跨期(RI&RI),ZCE,
+CZCE,SPD ME&ME,,郑甲醇跨期(ME&ME),ZCE,
+CZCE,SPD MA&MA,,郑甲醇跨期(MA&MA),ZCE,
+CZCE,SPD WT&WT,,郑硬麦跨期(WT&WT),ZCE,
+CZCE,SPD WS&WS,,郑强麦跨期(WS&WS),ZCE,
+CZCE,SPD PM&PM,,郑普麦跨期(PM&PM),ZCE,
+CZCE,SPD WH&WH,,郑强麦跨期(WH&WH),ZCE,
+CZCE,SPD FG&FG,,郑玻璃跨期(FG&FG),ZCE,
+CZCE,SPD RS&RS,,郑油菜籽跨期(RS&RS),ZCE,
+CZCE,SPD RM&RM,,郑菜籽粕跨期(RM&RM),ZCE,
+CZCE,SPD TC&TC,,郑动力煤跨期(TC&TC),ZCE,
+CZCE,SPD JR&JR,,郑粳稻跨期(JR&JR),ZCE,
+DCE,r999,r999,r999,DCE,r999
+BOCE,BBF,黑木耳,黑木耳(BBF),BOCE,
+BOCE,BCC,焦煤,焦煤(BCC),BOCE,
+BOCE,BPB,铅锭,铅锭(BPB),BOCE,
+BOCE,BAG,白银,白银(BAG),BOCE,
+BOCE,BPVAXW,PVC湘维,PVC湘维(BPVAXW),BOCE,
+BOCE,BQT,球墨铸铁,球墨铸铁(BQT),BOCE,
+BOCE,BOLL,原酒邛崃,原酒邛崃(BOLL),BOCE,
+BOCE,BXCDZ,线材鼎众,线材鼎众(BXCDZ),BOCE,
+BOCE,BTI,宝钛钛材,宝钛钛材(BTI),BOCE,
+BOCE,BTH,宝钛海绵钛,宝钛海绵钛(BTH),BOCE,
+BOCE,BCYDE,羊绒纱线德爱尔,羊绒纱线德爱尔(BCYDE),
+BOCE,BMU,香菇,香菇(BMU),BOCE,
+BOCE,BRURV,天胶橡胶谷,天胶橡胶谷(BRURV),BOCE,
+BOCE,BROH,菜籽油红蜻蜓,菜籽油红蜻蜓(BROH),BOCE,
+BOCE,BAPYT,苹果烟台,苹果烟台(BAPYT),BOCE,
+BOCE,BCEC,棉花华东,棉花华东(BCEC),BOCE,
+BOCE,BCK,焦炭,焦炭(BCK),BOCE,
+BOCE,BCO,原油,原油(BCO),BOCE,
+BOCE,BCUSH,阴极铜上海,阴极铜上海(BCUSH),BOCE,
+BOCE,BCXJ,棉花新疆,棉花新疆(BCXJ),BOCE,
+BOCE,BGR,脂松香,脂松香(BGR),BOCE,
+BOCE,BLC,碳酸锂,碳酸锂(BLC),BOCE,
+BOCE,BMADD,玉米丹东,玉米丹东(BMADD),BOCE,
+BOCE,BMEG,乙二醇,乙二醇(BMEG),BOCE,
+BOCE,BMG,金属镁锭,金属镁锭(BMG),BOCE,
+BOCE,BMPHD,中厚板邯郸,中厚板邯郸(BMPHD),BOCE,
+BOCE,BNI,电解镍,电解镍(BNI),BOCE,
+BOCE,BPBCD,线材成都,线材成都(BPBCD),BOCE,
+BOCE,BPBCQ,线材重庆,线材重庆(BPBCQ),BOCE,
+BOCE,BPBLZ,线材兰州,线材兰州(BPBLZ),BOCE,
+BOCE,BPBXA,线材西安,线材西安(BPBXA),BOCE,
+BOCE,BPEMM,聚乙烯茂名,聚乙烯茂名(BPEMM),BOCE,
+BOCE,BPET,聚酯切片,聚酯切片(BPET),BOCE,
+BOCE,BPPMM,聚丙烯茂名,聚丙烯茂名(BPPMM),BOCE,
+BOCE,BPTA,PTA,PTA(BPTA),BOCE,
+BOCE,BPVCSD,PVC山东,PVC山东(BPVCSD),BOCE,
+BOCE,BRBCF,螺纹钢赤峰,螺纹钢赤峰(BRBCF),BOCE,
+BOCE,BRBCQ,螺纹钢重庆,螺纹钢重庆(BRBCQ),BOCE,
+BOCE,BRBCW,螺纹钢川威,螺纹钢川威(BRBCW),BOCE,
+BOCE,BRBSD,螺纹钢山东,螺纹钢山东(BRBSD),BOCE,
+BOCE,BRBSY,螺纹钢沈阳,螺纹钢沈阳(BRBSY),BOCE,
+BOCE,BRBTY,螺纹钢太原,螺纹钢太原(BRBTY),BOCE,
+BOCE,BRBW,螺纹钢西部,螺纹钢西部(BRBW),BOCE,
+BOCE,BRBWX,螺纹钢无锡,螺纹钢无锡(BRBWX),BOCE,
+BOCE,BRC,热卷板,热卷板(BRC),BOCE,
+BOCE,BRCM,热卷板中原,热卷板中原(BRCM),BOCE,
+BOCE,BRCYK,热卷板营口,热卷板营口(BRCYK),BOCE,
+BOCE,BSC,动力煤,动力煤(BSC),BOCE,
+BOCE,BWGS,白砂糖,白砂糖(BWGS),BOCE,
+BOCE,BWSS,绵白糖,绵白糖(BWSS),BOCE,
+BOCE,BXCDZ,线材鼎众,线材鼎众(BXCDZ),BOCE,
+BOCE,C20004,新疆枣好牌,新疆枣好牌(C20004),BOCE,
+BOCE,C50001,香茶松阳,香茶松阳(C50001),BOCE,
+BOCE,CM0001,枸杞,枸杞(CM0001),BOCE,
+BOCE,CM0002,大红八角,大红八角(CM0002),BOCE,
+BOCE,B10008,钼精矿,钼精矿(B10008),BOCE,
+BOCE,B30021,热轧卷板武汉,热轧卷板武汉(B30021),BOCE,
+BOCE,B40017,钼铁,钼铁(B40017),BOCE,
+BOCE,B50017,竹炭,竹炭(B50017),BOCE,
+BOCE,C50002,葡萄酒酒联,葡萄酒酒联(C50002),BOCE,
+BOCE,CM0004,文山三七,文山三七(CM0004),BOCE,
+BOCE,CT0005,安化黑茶,安化黑茶(CT0005),BOCE,
+BOCE,CT0007,普洱茶,普洱茶(CT0007),BOCE,
+BOCE,C30002,安岳柠檬,安岳柠檬(C30002),BOCE,
+BOCE,C50003,蜂王浆,蜂王浆(C50003),BOCE,
+BOCE,CM0006,茯苓,茯苓(CM0006),BOCE,
+BOCE,CT0008,工夫红茶,工夫红茶(CT0008),BOCE,
+BOCE,G10001,铁矿石,铁矿石(G10001),BOCE,
+BOCE,C10006,粉丝,粉丝(C10006),BOCE,
+BOCE,C50005,茅台镇基酒,茅台镇基酒(C50005),BOCE,
+BOCE,G20001,聚丙烯拉丝级,聚丙烯拉丝级(G20001),BOCE,
+BOCE,B50018,松木板材太仓港,松木板材太仓港(B50018),BOCE,
+BOCE,B20011,PVC华东,PVC华东(B20011),BOCE,
+BOCE,B40016,稀土镨钕,稀土镨钕(B40016),BOCE,
+BOCE,CM0011,冬虫夏草西藏,冬虫夏草西藏(CM0011),BOCE,
+CME,6A,澳元,澳元(6A),CME,6A
+CME,6B,英镑,英镑(6B),CME,6B
+CME,6C,加元,加元(6C),CME,6C
+CME,6E,欧元,欧元(6E),CME,6E
+CME,6J,日元,日元(6J),CME,6J
+CME,6M,比索,比索(6M),CME,6M
+CME,6N,纽元,纽元(6N),CME,6N
+CME,6S,瑞郎,瑞郎(6S),CME,6S
+CME,BK,原油-布兰特原油价差,原油-布兰特原油价差(BK),CME,BK
+CME,BZ,CME布兰特原油,CME布兰特原油(BZ),CME,BZ
+CME,CL,原油,原油(CL),CME,CL
+CME,ED,欧元-美元,欧元-美元(ED),CME,ED
+CME,ES,小标普,小标普(ES),CME,ES
+CME,FT5,迷你富时中国50指数,迷你富时中国50指数(FT5),CME,FT5
+CME,GC,纽期金,纽期金(GC),CME,GC
+CME,GCK,黄金,黄金(GCK),CME,GCK
+CME,GF,饲牛,饲牛(GF),CME,GF
+CME,HE,瘦猪,瘦猪(HE),CME,HE
+CME,HG,美精铜,美精铜(HG),CME,HG
+CME,HO,热燃油,热燃油(HO),CME,HO
+CME,J7,小型日元,小型日元(J7),CME,J7
+CME,LBS,木材,木材(LBS),CME,LBS
+CME,LE,活牛,活牛(LE),CME,LE
+CME,M6A,微型澳币,微型澳币(M6A),CME,M6A
+CME,M6B,微型英镑,微型英镑(M6B),CME,M6B
+CME,M6E,微型欧元,微型欧元(M6E),CME,M6E
+CME,ND,纳指,纳指(ND),CME,ND
+CME,NG,天然气,天然气(NG),CME,NG
+CME,NKD,日经225,日经225(NKD),CME,NKD
+CME,NQ,小纳指,小纳指(NQ),CME,NQ
+CME,PA,钯金,钯金(PA),CME,PA
+CME,PL,白金,白金(PL),CME,PL
+CME,QG,小天然气,小天然气(QG),CME,QG
+CME,QM,小原油,小原油(QM),CME,QM
+CME,RB,汽油,汽油(RB),CME,RB
+CME,RMB,人民币,人民币(RMB),CME,RMB
+CME,RS1,罗素1000指数,罗素1000指数(RS1),CME,RS1
+CME,RSG,罗素1000增长指数,罗素1000增长指数(RSG),CME,RSG
+CME,RSV,罗素1000价值指数,罗素1000价值指数(RSV),CME,RSV
+CME,SI,白银,白银(SI),CME,SI
+CME,SP,标普,标普(SP),CME,SP
+CME,TIO,铁矿石,铁矿石(TIO),CME,TIO
+CME,ZNC,锌,锌(ZNC),CME,ZNC
+CBOT,DD,大道指,大道指(DD),CBOT,DD
+CBOT,XC,小玉米,小玉米(XC),CBOT,XC
+CBOT,XK,小大豆,小大豆(XK),CBOT,XK
+CBOT,XW,小小麦,小小麦(XW),CBOT,XW
+CBOT,YM,小道指,小道指(YM),CBOT,YM
+CBOT,ZB,30年国债,30年国债(ZB),CBOT,ZB
+CBOT,ZC,玉米,玉米(ZC),CBOT,ZC
+CBOT,ZD,道指,道指(ZD),CBOT,ZD
+CBOT,ZF,5年国债,5年国债(ZF),CBOT,ZF
+CBOT,ZL,豆油,豆油(ZL),CBOT,ZL
+CBOT,ZM,豆粕,豆粕(ZM),CBOT,ZM
+CBOT,ZN,10年国债,10年国债(ZN),CBOT,ZN
+CBOT,ZO,燕麦,燕麦(ZO),CBOT,ZO
+CBOT,ZR,糙米,糙米(ZR),CBOT,ZR
+CBOT,ZS,大豆,大豆(ZS),CBOT,ZS
+CBOT,ZT,2年国债,2年国债(ZT),CBOT,ZT
+CBOT,ZW,小麦,小麦(ZW),CBOT,ZW
+NYBOT,C-YG,小黄金,小黄金(C-YG),NYBOT,C-YG
+NYBOT,C-YI,小白银,小白银(C-YI),NYBOT,C-YI
+HKFE,CHH,中华120,中华120(CHH),HKFE,CHH
+HKFE,CUS,人民币期货,人民币期货(CUS),HKFE,CUS
+HKFE,HHI,国企指数,国企指数(HHI),HKFE,HHI
+HKFE,HSI,恒指,恒指(HSI),HKFE,HSI
+HKFE,MCH,小国企指数,小国企指数(MCH),HKFE,MCH
+HKFE,MHI,小恒指,小恒指(MHI),HKFE,MHI
+IPE,BRN,布兰特原油,布兰特原油(BRN),IPE,BRN
+IPE,GAS,柴油,柴油(GAS),IPE,GAS
+IPE,I-TF,罗素2000迷你指数,罗素2000迷你指数(I-TF),IPE,I-TF
+IPE,WBS,WTI原油,WTI原油(WBS),IPE,WBS
+LME,AH,伦铝3M,伦铝3M(AH),LME,AH
+LME,CA,伦铜3M,伦铜3M(CA),LME,CA
+LME,L-ZS,伦锌3M,伦锌3M(L-ZS),LME,L-ZS
+LME,NI,伦镍3M,伦镍3M(NI),LME,NI
+LME,PB,伦铅3M,伦铅3M(PB),LME,PB
+LME,SN,伦锡3M,伦锡3M(SN),LME,SN
+NYBOT,CC,可可,可可(CC),NYBOT,CC
+NYBOT,CT,棉花,棉花(CT),NYBOT,CT
+NYBOT,DX,美指,美指(DX),NYBOT,DX
+NYBOT,KC,咖啡,咖啡(KC),NYBOT,KC
+NYBOT,OJ,橙汁,橙汁(OJ),NYBOT,OJ
+NYBOT,SB,11号糖,11号糖(SB),NYBOT,SB
+SGX,CN,A50,A50(CN),SGX,CN
+SGX,CY,人民币/美元期货,人民币/美元期货(CY),SGX,CY
+SGX,FEF,TSI铁矿石,TSI铁矿石(FEF),SGX,FEF
+SGX,FEF-NLT,铁矿石NLT1501,铁矿石NLT1501(FEF-NLT),SGX,FEF-NLT
+SGX,IN,印度Nifty 50,印度Nifty 50(IN),SGX,IN
+SGX,JB,小型日本国债,小型日本国债(JB),SGX,JB
+SGX,MXMY,摩根马来西亚指数,摩根马来西亚指数(MXMY),SGX,MXMY
+SGX,NK,日经225,日经225(NK),SGX,NK
+SGX,SG,摩根新加坡指数,摩根新加坡指数(SG),SGX,SG
+SGX,TF,SICOM 20号标准胶,20号标准胶(TF),SGX,TF
+SGX,TW,摩台,摩台(TW),SGX,TW
+SGX,UC,美元/离岸人民币期货,美元/离岸人民币期货(UC),SGX,UC
+JPE,RSS3,日胶,日胶(RSS3),JPE,RSS3

@@ -1,388 +1,0 @@
-If-Else/*条件模板*/For-To/*循环模板*/For-DownTo/*循环模板*/While-Break/*循环模板*/Params/*参数模板*/Vars/*变量模板*/Begin-End/*正文模板*/DataData0Data1Data2Data3Data4Data5Data6Data7Data8Data9Data10Data11Data12Data13Data14Data15Data16Data17Data18Data19Data20Data21Data22Data23Data24Data25Data26Data27Data28Data29Data30Data31Data32Data33Data34Data35Data36Data37Data38Data39Data40Data41Data42Data43Data44Data45Data46Data47Data48Data49ParamsVarsBeginEndAndOrBoolBoolRefBoolSeriesBoolArrayBoolArrayRefNotNumericNumericRefNumericSeriesNumericArrayNumericArrayRefStringStringRefStringSeriesStringArrayStringArrayRefIfElseForToDownToWhileContinueBreakTrueFalseReturnA_AccountID
-A_BrokerID
-A_BuyAvgPrice
-A_BuyPosition
-A_BuyProfitLoss
-A_CurrentEquity
-A_DeleteOrder(String strContractNo="")
-A_FreeMargin
-A_GetLastOpenOrderIndex(Integer BuyOrSell,Integer EntryOrExit)
-A_GetLastOrderIndex(Integer BuyOrSell,Integer EntryOrExit)
-A_GetOpenOrderCount
-A_GetOrderCount
-A_OpenOrderBuyOrSell(Integer Index=0)
-A_OpenOrderComment(Integer Index=0)
-A_OpenOrderContractNo(Integer Index=0)
-A_OpenOrderEntryOrExit(Integer Index=0)
-A_OpenOrderFilledLot(Integer Index=0)
-A_OpenOrderFilledPrice(Integer Index=0)
-A_OpenOrderLot(Integer Index=0)
-A_OpenOrderPrice(Integer Index=0)
-A_OpenOrderStatus(Integer Index=0)
-A_OpenOrderTime(Integer Index=0)
-A_OrderBuyOrSell(Integer Index=0)
-A_OrderCanceledLot(Integer Index=0)
-A_OrderComment(Integer Index=0)
-A_OrderContractNo(Integer Index=0)
-A_OrderEntryOrExit(Integer Index=0)
-A_OrderFilledLot(Integer Index=0)
-A_OrderFilledPrice(Integer Index=0)
-A_OrderLot(Integer Index=0)
-A_OrderPrice(Integer Index=0)
-A_OrderStatus(Integer Index=0)
-A_OrderTime(Integer Index=0)
-A_PositionProfitLoss
-A_PreviousEquity
-A_ProfitLoss
-A_SellAvgPrice
-A_SellPosition
-A_SellProfitLoss
-A_SendOrder(Integer BuyOrSell,Integer EntryOrExit,Numeric Lot,Numeric Price,Numeric StopPrice=0,Numeric ProfitPrice=0)
-A_TodayBuyPosition
-A_TodayDeposit
-A_TodayDrawing
-A_TodaySellPosition
-A_TotalAvgPrice
-A_TotalFreeze
-A_TotalMargin
-A_TotalPosition
-Abs(Numeric Number)
-AccountDataExist
-Acos(Numeric Number)
-Acosh(Numeric Number)
-Alert(String AlertInfo)
-AlertEnabled
-Asin(Numeric Number)
-Asinh(Numeric Number)
-Atan(Numeric Number)
-Atan2(Numeric X_num,Numeric Y_num)
-Atanh(Numeric Number)
-AvgBarsEvenTrade
-AvgBarsLosTrade
-AvgBarsWinTrade
-AvgEntryPrice
-BarCount
-BarInterval
-BarsSinceEntry
-BarsSinceExit
-BarsSinceLastEntry
-BarStatus
-BarType
-BidAskSize
-BigPointValue
-Black
-Blue
-BoolArrayClear(BoolArrayRef arr)
-BoolArrayCompare(BoolArrayRef lh,Integer pos,BoolArrayRef rh,Integer startIndex,Integer count)
-BoolArrayCopy(BoolArrayRef src,BoolArrayRef dst)
-BoolArrayEqual(BoolArrayRef lh,BoolArrayRef rh)
-BoolArrayErase(BoolArrayRef arr,Integer pos,Integer count)
-BoolArrayInsert(BoolArrayRef arr,Integer pos,Bool val)
-BoolArrayInsertRange(BoolArrayRef arr,Integer pos,BoolArrayRef src,Integer startIndex,Integer count)
-BoolArraySort(BoolArrayRef arr,Bool ascending)
-BoolArraySwap(BoolArrayRef lh,BoolArrayRef rh)
-Buy(Numeric Share=0,Numeric Price=0)
-BuyToCover(Numeric Share=0,Numeric Price=0)
-C
-CanMarketOrder
-CanShortTrade
-CanStopOrder
-CanTrade
-Category
-Ceiling(Numeric Number,Numeric Significance)
-Close
-Combin(Integer Number,Integer Number_chosen)
-Commentary(String strTip)
-ContractProfit
-ContractSize
-ContractUnit
-Cos(Numeric Number)
-Cosh(Numeric Number)
-Ctan(Numeric Number)
-CurrencyName
-CurrencySymbol
-CurrentBar
-CurrentContracts
-CurrentDate
-CurrentEntries
-CurrentTime
-Cyan
-D
-DarkBrown
-DarkCyan
-DarkGray
-DarkGreen
-DarkMagenta
-DarkRed
-DataSourceSize
-Date
-DateAdd(Integer date,Integer number)
-DateDiff(Integer date1,Integer date2)
-DateTimeToString(Numeric DateTime)
-DateToString(Integer Date)
-Day
-DayFromDateTime(Numeric x)
-DefaultColor
-EntryDate
-EntryPrice
-EntryTime
-Enum_AmericanOption
-Enum_Buy
-Enum_CallOption
-Enum_Canceled
-Enum_Canceling
-Enum_Declare
-Enum_Declared
-Enum_Deleted
-Enum_Entry
-Enum_EuropeanOption
-Enum_Exit
-Enum_ExitToday
-Enum_Filled
-Enum_FillPart
-Enum_PutOption
-Enum_Sell
-Enum_SPFlat
-Enum_SPLong
-Enum_SPNone
-Enum_SPShort
-Even(Numeric Number)
-Exact(String String1,String String2)
-ExchangeName
-ExitDate
-ExitPrice
-ExitTime
-Exp(Numeric Number)
-ExpiredDate
-Fact(Integer Number)
-FileAppend(String strPath,String strText)
-FileDelete(String strPath)
-Floor(Numeric Number,Numeric Significance)
-FormulaName
-FracPart(Numeric Number)
-Friday
-GetBoolArraySize(BoolArrayRef arr)
-GetGlobalVar(Integer Index)
-GetGlobalVar2(String strKey)
-GetNumericArraySize(NumericArrayRef arr)
-GetSessionCount
-GetSessionEndTime(Integer Index)
-GetSessionStartTime(Integer Index)
-GetSPSortRanking(Integer Index)
-GetStringArraySize(StringArrayRef arr)
-GetTBProfileString(String strSection,String strKey)
-GetTBProfileString2File(String strPath,String strSection,String strKey)
-GetUserID
-Green
-GrossLoss
-GrossProfit
-H
-High
-HistoryDataExist
-Hour
-HourFromDateTime(Numeric x)
-IIF(Bool Conditon,Numeric TrueValue,Numeric FalseValue)
-IIFString(Bool Conditon,String TrueValue,String FalseValue)
-InitialMargin
-IntPart(Numeric Number)
-InvalidInteger
-InvalidNumeric
-InvalidString
-L
-LargestLosTrade
-LargestWinTrade
-LastEntryDate
-LastEntryPrice
-LastEntryTime
-Left(String str,Integer lCount)
-Len(String str)
-LightGray
-Ln(Numeric Number)
-Log(Numeric Number,Numeric Base=0)
-Low
-Lower(String str)
-Magenta
-MaintenanceMargin
-MakeDate(Integer Year,Integer Month,Integer Day)
-MakeDateTime(Integer Date,Numeric Time)
-MakeTime(Integer Hour,Integer Minute,Integer Second)
-MarginRatio
-MarketPosition
-MaxBarsBack
-MaxConsecLosers
-MaxConsecWinners
-MaxContracts
-MaxContractsHeld
-MaxEntries
-MaxPositionLoss
-MaxPositionProfit
-MaxSingleTradeSize
-Mid(String str,Integer lFirst,Integer lCount)
-MilliSecond
-MilliSecondFromDateTime(Numeric x)
-MinMove
-Minute
-MinuteFromDateTime(Numeric x)
-Mod(Integer Number,Integer Divisor)
-Monday
-Month
-MonthFromDateTime(Numeric x)
-Neg(Numeric Number)
-NetProfit
-normdist(Numeric Price,Numeric Num)
-NumericArrayClear(NumericArrayRef arr)
-NumericArrayCompare(NumericArrayRef lh,Integer pos,NumericArrayRef rh,Integer startIndex,Integer count)
-NumericArrayCopy(NumericArrayRef src,NumericArrayRef dst)
-NumericArrayEqual(NumericArrayRef lh,NumericArrayRef rh)
-NumericArrayErase(NumericArrayRef arr,Integer pos,Integer count)
-NumericArrayInsert(NumericArrayRef arr,Integer pos,Numeric val)
-NumericArrayInsertRange(NumericArrayRef arr,Integer pos,NumericArrayRef src,Integer startIndex,Integer count)
-NumericArraySort(NumericArrayRef arr,Bool ascending)
-NumericArraySwap(NumericArrayRef lh,NumericArrayRef rh)
-NumEvenTrades
-NumLosTrades
-NumWinTrades
-O
-Odd(Numeric Number)
-Open
-OpenInt
-option_42strikeprice(Numeric optionprice,Numeric s0,Numeric maxk,Numeric tdays,Numeric r,Numeric v100,Numeric dv,Numeric flag)
-option_42time(Numeric optionprice,Numeric s0,Numeric k,Numeric maxt,Numeric r,Numeric v100,Numeric dv,Numeric flag)
-Option_BinomialAmer(Numeric s0,Numeric k,Numeric tdays,Numeric r,Numeric v100,Numeric dv,Numeric flag)
-option_delta(Numeric s0,Numeric k,Numeric tdays,Numeric r,Numeric v100,Numeric dv,Numeric flag)
-option_delta2strikeprice(Numeric mydelta,Numeric s0,Numeric maxk,Numeric tdays,Numeric r,Numeric v100,Numeric dv,Numeric flag)
-OptionStyle
-OptionType
-PercentProfit
-Pi
-PlayWavSound(String strPath)
-PlotBool(String Name,Bool bPlot,Numeric Locator=0,Integer Color=-1,Integer BarsBack=0)
-PlotNumeric(String Name,Numeric Number,Numeric Locator=0,Integer Color=-1,Integer BarsBack=0)
-PlotString(String Name,String str,Numeric Locator=0,Integer Color=-1,Integer BarsBack=0)
-Portfolio_CurrentCapital
-Portfolio_CurrentEntries
-Portfolio_CurrentEquity
-Portfolio_GrossLoss
-Portfolio_GrossProfit
-Portfolio_InitCapital
-Portfolio_MaxDrawDown
-Portfolio_MaxDrawDownRatio
-Portfolio_NetProfit
-Portfolio_NumLossTrades
-Portfolio_NumWinTrades
-Portfolio_PercentProfit
-Portfolio_PositionProfit
-Portfolio_TotalProfit
-Portfolio_TotalTrades
-Portfolio_UsedMargin
-PositionProfit
-Power(Numeric Number,Numeric Power)
-PriceScale
-Q_AskPrice(Integer Index=0)
-Q_AskPriceFlag
-Q_AskVol(Integer Index=0)
-Q_AvgPrice
-Q_BidPrice(Integer Index=0)
-Q_BidPriceFlag
-Q_BidVol(Integer Index=0)
-Q_Close
-Q_High
-Q_HisHigh
-Q_HisLow
-Q_InsideVol
-Q_Last
-Q_LastDate
-Q_LastFlag
-Q_LastTime
-Q_LastVol
-Q_Low
-Q_LowerLimit
-Q_Open
-Q_OpenInt
-Q_OpenIntFlag
-Q_Oscillation
-Q_OutsideVol
-Q_PreOpenInt
-Q_PreSettlePrice
-Q_PriceChg
-Q_PriceChgRatio
-Q_TickChg
-Q_TodayEntryVol
-Q_TodayExitVol
-Q_TotalVol
-Q_TurnOver
-Q_UpperLimit
-QuoteDataExist
-Rand(Numeric Bottom,Numeric Top)
-Red
-RelativeSymbol
-Rgb(Integer Red,Integer Green,Integer Blue)
-Right(String str,Integer lCount)
-Round(Numeric Number,Integer digits)
-RoundDown(Numeric Number,Integer Num_digits)
-RoundUp(Numeric Number,Integer Num_digits)
-Saturday
-Second
-SecondFromDateTime(Numeric x)
-Sell(Numeric Share=0,Numeric Price=0)
-SellShort(Numeric Share=0,Numeric Price=0)
-SetBoolArraySize(BoolArrayRef arr,Integer count,Numeric defaultValue=0)
-SetGlobalVar(Integer Index,Numeric fVal)
-SetGlobalVar2(String strKey,Numeric fVal)
-SetNumericArraySize(NumericArrayRef arr,Integer count,Numeric defaultValue=0)
-SetSPSortValue(Integer Index,Numeric Value,Bool asc=False)
-SetStringArraySize(StringArrayRef arr,Integer count,Numeric defaultValue=0)
-SetTBProfileString(String strSection,String strKey,String strValue)
-SetTBProfileString2File(String strPath,String strSection,String strKey,String strValue)
-Sign(Numeric Number)
-Sin(Numeric Number)
-Sinh(Numeric Number)
-Sqr(Numeric Number)
-Sqrt(Numeric Number)
-StockPickingCheckPoint(Integer Position,Bool DoubleCheck=True)
-StockPoolSize
-StrikePrice
-StringArrayClear(StringArrayRef arr)
-StringArrayCompare(StringArrayRef lh,Integer pos,StringArrayRef rh,Integer startIndex,Integer count)
-StringArrayCopy(StringArrayRef src,StringArrayRef dst)
-StringArrayEqual(StringArrayRef lh,StringArrayRef rh)
-StringArrayErase(StringArrayRef arr,Integer pos,Integer count)
-StringArrayInsert(StringArrayRef arr,Integer pos,String val)
-StringArrayInsertRange(StringArrayRef arr,Integer pos,StringArrayRef src,Integer startIndex,Integer count)
-StringArraySort(StringArrayRef arr,Bool ascending)
-StringArraySwap(StringArrayRef lh,StringArrayRef rh)
-StringToDate(String str)
-StringToDateTime(String str)
-StringToTime(String str)
-Sunday
-Symbol
-SymbolName
-SymbolType
-SystemDateTime
-T
-Tan(Numeric Number)
-Tanh(Numeric Number)
-Text(Numeric value)
-Thursday
-Time
-TimeDiff(Numeric Time1,Numeric Time2)
-TimeToString(Numeric time)
-TotalBarsEvenTrades
-TotalBarsLosTrades
-TotalBarsWinTrades
-TotalTrades
-TradingDayLeft
-Trim(String str)
-Tuesday
-Unplot(String Name,Integer BarsBack=0)
-Upper(String str)
-V
-Value(String str)
-Vol
-Wednesday
-Weekday
-WeekdayFromDateTime(Numeric x)
-White
-Year
-YearFromDateTime(Numeric x)
-Yellow
