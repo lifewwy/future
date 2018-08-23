@@ -42,13 +42,17 @@ fid = fopen(fileName, 'wt');
 % c = roundn(c*1000,0);
 
 size_csvData = size(c);
-for i = 1:length(dstrct.textdata(1,:))
-    if i~= length(dstrct.textdata(1,:))
-        fprintf(fid, '%s,', dstrct.textdata{1,i});
-    else
-        fprintf(fid, '%s\n', dstrct.textdata{1,i});
-    end
-end
+% for i = 1:length(dstrct.textdata(1,:))
+%     if i~= length(dstrct.textdata(1,:))
+%         fprintf(fid, '%s,', dstrct.textdata{1,i});
+%     else
+%         fprintf(fid, '%s\n', dstrct.textdata{1,i});
+%     end
+% end
+
+% 成交量可能超出int32的表示范围
+% 将成交量按比例缩小
+v = round(d(:,6)/max(d(:,6))*1e4);
 
 for k = 1:size_csvData(1)
     fprintf(fid, '%s,', dstrct.textdata{k+1,1}(1:end-1));
@@ -56,11 +60,12 @@ for k = 1:size_csvData(1)
     fprintf(fid, '%f,', h(k));
     fprintf(fid, '%f,', l(k));
     fprintf(fid, '%f,', c(k));
-    fprintf(fid, '%f,', c(k));
-    fprintf(fid, '%d\n', d(k,6));
+    fprintf(fid, '%d,', v(k));
+    fprintf(fid, '%d\n', v(k));
 end
 fclose(fid);
 disp([fileName,' 更新成功！'])
+
 
 %% 指定日期区间
 startDate = datestr(today-50,'yyyy-mm-dd');

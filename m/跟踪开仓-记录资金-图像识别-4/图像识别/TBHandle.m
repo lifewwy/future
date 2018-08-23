@@ -1,21 +1,34 @@
-clc; close all; clear;
+function TBHandle()
+% clc; close all; clear;
 % TB: tbv5543_x64_portable 
+
+% 事先确实按钮或者选项卡的位置，将鼠标移过去，发鼠标点击消息。
+offset1 = [130,55]; % 数据维护选项卡
+offset2 = [310,430]; % 批量导入按钮的相对位置
+offset3 = [19,143] + [40,10];  % *.wrm 的位置
 
 datFileName = 'C:\D\xyz\future\数据维护\TB批量导入导出\importToTB.dat';
 
-title = '交易开拓者平台(旗舰版) 64位';
-hwin = findWindows(title);
-SetForegroundWindowAndMaxmize(hwin);
 
-moveMouseTime = 2;
-openDiaglogTime = 2;
-switchTabTime = 2;
-copyTime = 3;
-pasteTime = 3;
-importFileTime = 3;
-closeMessageBoxTime = 1;
-closeDiaglogTime = 2;
-openWorkRoomTime = 5;
+MainWinTitle1 = '交易开拓者平台(旗舰版) 64位';
+MainWinTitle2 = '交易开拓者平台(旗舰版) 64位 (未响应)';
+hMainWin1 = findWindows(MainWinTitle1);
+hMainWin2 = findWindows(MainWinTitle2);
+if (hMainWin1==0)||(hMainWin2==1)
+    fprintf(2,'TB主窗口加载失败！\n');
+    return;
+end
+
+alpha = 2;
+moveMouseTime = 2*alpha;
+openDiaglogTime = 2*alpha;
+switchTabTime = 2*alpha;
+copyTime = 3*alpha;
+pasteTime = 3*alpha;
+importFileTime = 3*alpha;
+closeMessageBoxTime = 1*alpha;
+closeDiaglogTime = 2*alpha;
+openWorkRoomTime = 5*alpha;
 
 % 快捷键打开数据管理对话框
 CtrlplusM; pause(openDiaglogTime);
@@ -27,14 +40,13 @@ if hwin == 0
 end
 rect =  GetWindowPosition(hwin);
 WinLeftTop = [rect(1,1),rect(2,1)];
-offset = [130,55]; % 数据维护选项卡
-SetCursorPos(WinLeftTop + offset); 
+% offset1 = [130,55]; % 数据维护选项卡
+SetCursorPos(WinLeftTop + offset1); 
 pause(moveMouseTime);
 LeftClick; pause(switchTabTime);
 
 % 批量导入按钮
-offset = [310,430]; % 批量导入按钮的相对位置
-SetCursorPos(WinLeftTop + offset); 
+SetCursorPos(WinLeftTop + offset2); 
 pause(moveMouseTime);
 LeftClick; pause(openDiaglogTime);
 
@@ -74,12 +86,12 @@ end
 rect =  GetWindowPosition(hwin);
 WinLeftTop = [rect(1,1),rect(2,1)];
 
-% *.wrm 的位置
-offset = [40,10];
-SetCursorPos(WinLeftTop + [19,143] + offset)
+SetCursorPos(WinLeftTop + offset3)
 pause(moveMouseTime);
 LeftClick; LeftClick; % 双击打开工作室
 pause(openWorkRoomTime);
+
+end
 
 
 

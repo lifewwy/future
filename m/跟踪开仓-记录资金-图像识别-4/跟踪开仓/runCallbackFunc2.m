@@ -84,6 +84,8 @@ pause(wt5);
 %% 设置订单
 panel('pushbutton43_Callback',h.pushbutton43,[],guidata(h.pushbutton43));
 pause(wt6);
+%% TB操作 20180823
+startTB;
 %% 发邮件
 SendEmailFunc;
 %% 设置交易账户，1：国贸期货，2：新湖期货，3：SimNow1，4：SimNow2

@@ -103,6 +103,9 @@ csv888RefreshOneDay('V',h);
 csvIF888Refresh('IF',h);
 
 fprintf('\n数据更新完成！\n');
+
+GenerateImportFile;  % 20180822
+
 %% 更新状态
 IsDataUpdateCompleted = 1; 
 save(filename00,'IsDataUpdateCompleted')

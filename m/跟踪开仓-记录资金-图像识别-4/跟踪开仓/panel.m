@@ -22,7 +22,7 @@ function varargout = panel(varargin)
 
 % Edit the above text to modify the response to help panel
 
-% Last Modified by GUIDE v2.5 09-Aug-2018 21:08:09
+% Last Modified by GUIDE v2.5 23-Aug-2018 02:46:48
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -3061,13 +3061,35 @@ function pushbutton44_Callback(hObject, eventdata, handles)
 
 fp  = mfilename('fullpath');
 pp = strfind(fp,'\');
-directory = fp(1:pp(end));
-fn1 = [directory,'strategyPos.mat'];
-fn2 = [directory,'strategyPosLen.mat'];
 
-load(fn1);
-load(fn2);
+flg = get(handles.radiobutton17,'value');
+if flg == 1
+    directory2 = fp(1:pp(end-3));
+    fileStruct = dir([directory2,'TB持仓\TB持仓情况*.csv']);
+    dstrcut = importdata([directory2,'TB持仓\',fileStruct.name]);
+    Position = dstrcut.data(:,2);
+    if Position(1)~=100
+        fprintf(2,'持仓文件内容格式不正确!\n');
+        return;
+    end
+    PositionCell = cell(length(Position),2);
+    PositionCell(:,1) = dstrcut.textdata;
+    PositionCell(Position==1,2) = {'多'};
+    PositionCell(Position==-1,2) = {'空'};
+    PositionCell(Position==0,:) = [];
+    PositionCell(Position==100,:) = [];
+    strategyPos = sortrows(PositionCell,1);
+    sp = size(strategyPos);
+    strategyPosLen = sp(1);
+else
+    directory1 = fp(1:pp(end));
+    fn1 = [directory1,'strategyPos.mat'];
+    fn2 = [directory1,'strategyPosLen.mat'];
+    load(fn1);
+    load(fn2);
+end
 
+handles.abPos(:,1:2) = {[]};
 handles.abPos(1:strategyPosLen,1:2) = strategyPos;
 handles.abPosLen1 = strategyPosLen;
 
@@ -3084,7 +3106,10 @@ set(handles.uitable2,'Data',handles.abPos)
 1;
 
 
+% --- Executes on button press in radiobutton17.
+function radiobutton17_Callback(hObject, eventdata, handles)
+% hObject    handle to radiobutton17 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
 
-
-
-
+% Hint: get(hObject,'Value') returns toggle state of radiobutton17

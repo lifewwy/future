@@ -7,9 +7,9 @@ function TBcreateContract(v)
 
 moveMouseTime = .2;
 openDiaglogTime = .5;
-copyTime = .01;
-pasteTime = .01;
-TabKeyTime = .01;
+copyTime = .1;
+pasteTime = .1;
+TabKeyTime = .1;
 
 hwin = findWindows('交易开拓者平台(旗舰版) 64位');
 SetForegroundWindowAndMaxmize(hwin);
@@ -40,21 +40,15 @@ end
 clipboard('copy', v{1}); pause(copyTime);
 paste; pause(pasteTime);
 Tabkey; pause(TabKeyTime);
-clipboard('copy', v{1}); pause(copyTime);
-paste; pause(pasteTime);
-Tabkey; pause(TabKeyTime);
-clipboard('copy', v{1}); pause(copyTime);
-paste; pause(pasteTime);
-Tabkey; pause(TabKeyTime);
 clipboard('copy', v{2}); pause(copyTime);
 paste; pause(pasteTime);
-Tabkey; pause(TabKeyTime);
 Tabkey; pause(TabKeyTime);
 clipboard('copy', v{3}); pause(copyTime);
 paste; pause(pasteTime);
 Tabkey; pause(TabKeyTime);
 clipboard('copy', v{4}); pause(copyTime);
 paste; pause(pasteTime);
+Tabkey; pause(TabKeyTime);
 Tabkey; pause(TabKeyTime);
 clipboard('copy', v{5}); pause(copyTime);
 paste; pause(pasteTime);
@@ -63,6 +57,12 @@ clipboard('copy', v{6}); pause(copyTime);
 paste; pause(pasteTime);
 Tabkey; pause(TabKeyTime);
 clipboard('copy', v{7}); pause(copyTime);
+paste; pause(pasteTime);
+Tabkey; pause(TabKeyTime);
+clipboard('copy', v{8}); pause(copyTime);
+paste; pause(pasteTime);
+Tabkey; pause(TabKeyTime);
+clipboard('copy', v{9}); pause(copyTime);
 paste; pause(pasteTime);
 returnKey;
 

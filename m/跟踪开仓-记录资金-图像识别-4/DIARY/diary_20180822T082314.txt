@@ -1,0 +1,7 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20180822T082314.txt
+
+startTB
+主窗口加载成功！

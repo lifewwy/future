@@ -3,7 +3,7 @@ clear; clc; close all;
 
 %% 读数据
 folder = 'C:\D\xyz\future\优化记录\TwoParameters\';
-filename = [folder '优化记录交易策略参数优化[m1901 - 1日线].csv'];
+filename = [folder '优化记录交易策略参数优化[L1 - 1日线].csv'];
 
 dstruct = importdata(filename);
 td = dstruct.textdata(1,:)';
@@ -22,7 +22,7 @@ ar = data(:,3)./data(:,7)./(-data(:,30));
 ar = reshape(ar,[],length(param1));
 
 profit1 = data(:,find(strcmp(td,'净利润'),1)-1);
-profit1(profit1<max(profit1)*0.2) = NaN;
+profit1(profit1<max(profit1)*0) = NaN;
 profit = reshape(profit1,[],length(param1));
 
 MaxDown = data(:,find(strcmp(td,'最大资产回撤比率%'),1)-1);
@@ -62,8 +62,8 @@ surf(param1,param2,odds);  view(2); axis tight;
 
 
 % 一个参数固定
-figure; grid; plot(param2,profit(:,param1==42)); grid;
-figure; grid; plot(param1,profit(param2==2.9,:)); grid;
+figure; grid; plot(param2,profit(:,param1==9)); grid;
+figure; grid; plot(param1,profit(param2==3.4,:)); grid;
 
 
 
