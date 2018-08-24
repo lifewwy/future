@@ -22,7 +22,7 @@ MainWinTitle1 = '交易开拓者平台(旗舰版) 64位';
 MainWinTitle2 = '交易开拓者平台(旗舰版) 64位 (未响应)';
 hMainWin1 = findWindows(MainWinTitle1);
 hMainWin2 = findWindows(MainWinTitle2);
-if (hMainWin1==0)||(hMainWin2==1)
+if (hMainWin1==0)||(hMainWin2~=0)
     fprintf(2,'TB主窗口加载失败！\n');
     return;
 end

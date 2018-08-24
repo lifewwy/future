@@ -3065,20 +3065,30 @@ pp = strfind(fp,'\');
 flg = get(handles.radiobutton17,'value');
 if flg == 1
     directory2 = fp(1:pp(end-3));
-    fileStruct = dir([directory2,'TB持仓\TB持仓情况*.csv']);
+    fileStruct = dir([directory2,'TB持仓\TB持仓情况.csv']);
     dstrcut = importdata([directory2,'TB持仓\',fileStruct.name]);
+    sized = size(dstrcut.data);
+    
     Position = dstrcut.data(:,2);
+    PositionCell = cell(sized(1),3);
+    PositionCell(:,1) = dstrcut.textdata;
+    PositionCell(:,2:3) = num2cell(dstrcut.data);
+
     if Position(1)~=100
         fprintf(2,'持仓文件内容格式不正确!\n');
         return;
     end
-    PositionCell = cell(length(Position),2);
-    PositionCell(:,1) = dstrcut.textdata;
-    PositionCell(Position==1,2) = {'多'};
-    PositionCell(Position==-1,2) = {'空'};
+    
+    td = table(dstrcut.textdata,dstrcut.data(:,1:2));
+    [~,ia,~] = unique(td);
+    PositionCell = PositionCell(ia,:);
+    Position = Position(ia,:);
+    
+    PositionCell(Position==1,3) = {'多'};
+    PositionCell(Position==-1,3) = {'空'};
     PositionCell(Position==0,:) = [];
     PositionCell(Position==100,:) = [];
-    strategyPos = sortrows(PositionCell,1);
+    strategyPos = sortrows(PositionCell(:,[1,3]),1);
     sp = size(strategyPos);
     strategyPosLen = sp(1);
 else

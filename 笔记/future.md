@@ -144,7 +144,10 @@ https://www.lucidchart.com
 ## markdown toc ##
 生成侧边栏目录  
 toc: Table of Contents  
-https://github.com/i5ting/tocmd.npm
+https://github.com/i5ting/tocmd.npm  
+
+运行本笔记文件夹下面的批处理文件 tocmd.bat 
+可以生成具有侧边栏目录的html文件。
 
 ## 波动的作用 ##
 
@@ -165,13 +168,13 @@ https://github.com/i5ting/tocmd.npm
 
 ## TB 批量导入/导出数据 ##
 
-格式为*.dat
+格式为*.dat  
 但不知道具体格式，没法读取与编辑。
 
-论坛上管理员回答都是暂时不提供该数据读取服务
-http://bbs.tb18.net/thread-110691-1-1.html
-http://bbs.tb18.net/thread-18086-1-1.html
-http://bbs.tb18.net/thread-19629-1-1.html
+论坛上管理员回答都是暂时不提供该数据读取服务  
+http://bbs.tb18.net/thread-110691-1-1.html  
+http://bbs.tb18.net/thread-18086-1-1.html  
+http://bbs.tb18.net/thread-19629-1-1.html  
 
 ## TB数据格式为7列 ##
 <div style="float:right;margin:1px;">
@@ -241,24 +244,24 @@ end
 
 ## TB 自动操作 ##
 
-自定义商品
-可以用**程序实现**  
-...\图像识别\TBcreateContractMain.m
+自定义商品  
+可以用**程序实现**    
+...\图像识别\TBcreateContractMain.m  
+  
+自动批量导入，自动打开工作室。  
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\图像识别\TBHandle.m  
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\图像识别\TBHandle1.m  
 
-自动批量导入，自动打开工作室。
-C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\图像识别\TBHandle.m
-C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\图像识别\TBHandle1.m
+输入父窗口的句柄和子窗口的标题，来得到子窗口的句柄。  
+查找子窗口必须逐层查找，每次只能查找位于下一层的子窗口  
+按钮也是一个子窗口，可以通过其父窗口的句柄和按钮标题查找  
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\图像识别\findChildWin.c  
 
-输入父窗口的句柄和子窗口的标题，来得到子窗口的句柄。
-查找子窗口必须逐层查找，每次只能查找位于下一层的子窗口
-按钮也是一个子窗口，可以通过其父窗口的句柄和按钮标题查找
-C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\图像识别\findChildWin.c
-
-通过按钮句柄，点击按钮。按钮窗体需要位于屏幕前台。
-C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\图像识别\ClickButton.c
+通过按钮句柄，点击按钮。按钮窗体需要位于屏幕前台。  
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\图像识别\ClickButton.c  
 
 ## matlab 调用外部bat文件 ##
-matlab的m文件中调用外部bat文件，并确定bat运行结束以后，再接着运行剩下的代码，这样的m语句怎么写？
+matlab的m文件中调用外部bat文件，并确定bat运行结束以后，再接着运行剩下的代码，这样的m语句怎么写？ 
 
 直接用dos函数执行就可以了。
 
@@ -276,6 +279,64 @@ matlab的m文件中调用外部bat文件，并确定bat运行结束以后，再�
 
 ## TB工作区的打开顺序 ##
 TB工作室的各个工作区打开有固定顺序。可以在第一个打开的工作区加载公式，执行一些预处理工作，比如文件清理等。
+
+## TB中画竖直线 ##
+<div style="float:right;margin:1px;">
+<img src="https://i.imgur.com/gat4VmK.png " width = "400" height = ""/>
+</div>
+
+PlotNumeric ("OpenToClose",Open,Close);  
+PlotNumeric ("OpenToClose",Open*0.5,Close*1.5);  
+输出开盘价与收盘价的连线。（需要在公式属性的输出线形选择柱状图）
+
+
+----------
+
+## MATLAB 的 unique 与 table ##
+去除重复的行  
+列的数据类型不同  
+这时需要使用 table 函数。  
+```
+x = {'a','b','c','a'}';
+y = [1 2 3 1; 1 2 3 1]';
+t = table(x,y);
+[C,IA,IC] = unique(t);
+```
+t = 
+
+     x       y   
+    ___    ______
+
+    'a'    1    1
+    'b'    2    2
+    'c'    3    3
+    'a'    1    1
+
+C = 
+
+     x       y   
+    ___    ______
+
+    'a'    1    1
+    'b'    2    2
+    'c'    3    3
+
+
+```
+x = {'a',1;'b',2;'a',1};  
+t  =cell2table(x);  
+ut = unique(t);  
+```
+ut = 
+
+    x1     x2
+    ___    __
+
+    'a'    1 
+    'b'    2 
+
+
+
 
 </br></br></br></br></br></br></br></br>
 </br></br></br></br></br></br></br></br>

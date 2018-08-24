@@ -115,7 +115,7 @@ $$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$</p>
 <h2 id="-tb-">设置TB参数的默认优化范围</h2>
 <hr>
 <div style="float:right;border:solid 1px;margin:1px;">
-<img src="https://i.imgur.com/UvvckG6.png" width = "500" height = ""/>
+<img src="https://i.imgur.com/UvvckG6.png" width = "400" height = ""/>
 </div>
 
 <p>属性设置</p>
@@ -165,8 +165,134 @@ $$ x = (1+0.3)x $$<br>等价于<br>$$ y = x_0\cdot1.3^{n} $$  </p>
 <li>各管各的。比如，场内是多单时仍然持仓，并入场开空单。</li>
 </ol>
 <h2 id="markdown-toc">markdown toc</h2>
-<p>生成侧边栏目录<br>toc: Table of Contents<br><a href="https://github.com/i5ting/tocmd.npm">https://github.com/i5ting/tocmd.npm</a></p>
-<p></br></br></br></br></br></br></br></br>
+<p>生成侧边栏目录<br>toc: Table of Contents<br><a href="https://github.com/i5ting/tocmd.npm">https://github.com/i5ting/tocmd.npm</a>  </p>
+<p>运行本笔记文件夹下面的批处理文件 tocmd.bat 
+可以生成具有侧边栏目录的html文件。</p>
+<h2 id="-">波动的作用</h2>
+<div style="float:right;margin:1px;">
+<img src="https://i.imgur.com/D7r1GLN.png " width = "400" height = ""/>
+</div>
+
+<p>如果在每一个波动的拐点上都开对方向，在两条线上的收益相同。
+只有</p>
+<ol>
+<li>止盈加反趋势</li>
+<li>或者反趋势加开仓优先</li>
+</ol>
+<p>才能达到这种效果。</p>
+<hr>
+<h2 id="tb-">TB 批量导入/导出数据</h2>
+<p>格式为*.dat<br>但不知道具体格式，没法读取与编辑。</p>
+<p>论坛上管理员回答都是暂时不提供该数据读取服务<br><a href="http://bbs.tb18.net/thread-110691-1-1.html">http://bbs.tb18.net/thread-110691-1-1.html</a><br><a href="http://bbs.tb18.net/thread-18086-1-1.html">http://bbs.tb18.net/thread-18086-1-1.html</a><br><a href="http://bbs.tb18.net/thread-19629-1-1.html">http://bbs.tb18.net/thread-19629-1-1.html</a>  </p>
+<h2 id="tb-7-">TB数据格式为7列</h2>
+<div style="float:right;margin:1px;">
+<img src="https://i.imgur.com/i5kcaVt.png " width = "400" height = ""/>
+</div>
+
+
+<ol>
+<li>TB数据格式为7列</li>
+<li>它决定了批量导出的DAT文件格式</li>
+<li>date double double double double int32 int32</li>
+<li>date 占12个字节</li>
+<li>每个合约第一条记录date的前4个字节int32格式放置该合约的记录数。</li>
+<li>每条记录为56个字节。</li>
+<li>第一个int32占8个字节，其本身占4个字节，补4个字节的0。</li>
+<li>最末int32占4个字节。</li>
+<li>整个文件的末尾要添加4个字节。</li>
+<li>...\future\数据维护\TB批量导入导出\GenerateImportFile.m</li>
+</ol>
+<hr>
+<div style="float:right;margin:1px;">
+<img src="https://i.imgur.com/314kcGN.png " width = "400" height = ""/>
+</div>
+
+<p>导入数据只会覆盖相同日期的数据，原有的其他日期的数据被保留，不会被删除。要想完全清空数据，只能删除商品，然后重新自定义商品，再进行数据导入。</p>
+<hr>
+<h2 id="-">确定窗口和按钮的位置</h2>
+<ol>
+<li>打开Spy++</li>
+<li>Ctrl+F,打开查找窗口</li>
+<li>拖动射击靶图标到窗口或者按钮上
+<img src="https://i.imgur.com/C3LVSd7.png" alt=""></li>
+</ol>
+<h2 id="-">设置进程的优先级</h2>
+<p>在MATLAB一段时间不使用后，再次使用时似乎需要一点时间才能进行流畅状态。可能是在其空闲一段时间后，原先占用的资源被系统收回，分配给其他进程使用。</p>
+<p>优先级设置时提示拒绝访问，怎么办？
+给一个进程设置优先级时，提示说拒绝访问，怎么办？
+用管理员模式打开任务管理器。就是你先搜索taskmgr然后再用右键 以管理员身份运行。</p>
+<h2 id="-">期货合约最小变动</h2>
+<p><strong>最小变动价位</strong>：是指在期货交易所的公开竞价过程中，对合约标的每单位价格报价的最小变动数值。最小变动价位乘以交易单位，就是该合约价格的<strong>最小变动值</strong>。例如，大连商品交易所豆粕期货合约的最小变动价位是1元/吨，即每手合约的<strong>最小变动值</strong>是1元/吨×10吨=10元。<br>在期货交易中，每次报价必须是其合约规定的最小变动价位的整数倍。期货合约最小变动价位的确定，通常取决于该合约标的商品的种类、性质、市场价格波动情况和商业规范等。</p>
+<p><strong>报价精度</strong>：最小变动价位的精度。比如黄金的报价最小变动价位为0.05元，报价精度为0.01元，表示精确到小数点后面两位。黄金合约价格的最小变动值为5元。</p>
+<h2 id="matlab-try-catch">MATLAB try ... catch</h2>
+<pre><code>try
+    outfilename = websave(fileName,url);
+
+catch ErrorInfo % 捕获到的错误是一个MException对象
+    disp(ErrorInfo);
+    % 发生错误时的其他动作
+end
+</code></pre><h2 id="-">精易编程助手</h2>
+<p>它是一个<strong>免安装</strong>软件。功能类似于与 <strong>Microsoft Spy++</strong>
+它的功能包括</p>
+<ol>
+<li>窗口探测</li>
+<li>屏幕取色</li>
+</ol>
+<h2 id="tb-">TB 自动操作</h2>
+<p>自定义商品<br>可以用<strong>程序实现</strong><br>...\图像识别\TBcreateContractMain.m  </p>
+<p>自动批量导入，自动打开工作室。<br>C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\图像识别\TBHandle.m<br>C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\图像识别\TBHandle1.m  </p>
+<p>输入父窗口的句柄和子窗口的标题，来得到子窗口的句柄。<br>查找子窗口必须逐层查找，每次只能查找位于下一层的子窗口<br>按钮也是一个子窗口，可以通过其父窗口的句柄和按钮标题查找<br>C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\图像识别\findChildWin.c  </p>
+<p>通过按钮句柄，点击按钮。按钮窗体需要位于屏幕前台。<br>C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\图像识别\ClickButton.c  </p>
+<h2 id="matlab-bat-">matlab 调用外部bat文件</h2>
+<p>matlab的m文件中调用外部bat文件，并确定bat运行结束以后，再接着运行剩下的代码，这样的m语句怎么写？ </p>
+<p>直接用dos函数执行就可以了。</p>
+<p>举例说，如果批处理文件名 test_bat.bat，则</p>
+<pre><code>[s,e]=dos(&#39;test_bat&#39;);
+</code></pre><p>就会执行批处理文件，<strong>直到其结束才返回</strong>。这里之所以让dos返回两个参数，是为了避免标准输出信息在命令窗口中回显。 </p>
+<p><strong>如果不希望等待执行完毕才返回</strong>，可以在命令后加一个“&amp;”，例如：</p>
+<pre><code>[s,e]=dos(&#39;test_bat &amp;&#39;);
+</code></pre><p>会打开一个cmd窗口去执行批处理，不需要等待批处理执行完毕就会直接返回，接下来继续执行M文件的后续部分。</p>
+<h2 id="tb-">TB工作区的打开顺序</h2>
+<p>TB工作室的各个工作区打开有固定顺序。可以在第一个打开的工作区加载公式，执行一些预处理工作，比如文件清理等。</p>
+<h2 id="tb-">TB中画竖直线</h2>
+<div style="float:right;margin:1px;">
+<img src="https://i.imgur.com/gat4VmK.png " width = "400" height = ""/>
+</div>
+
+<p>PlotNumeric (&quot;OpenToClose&quot;,Open,Close);<br>PlotNumeric (&quot;OpenToClose&quot;,Open<em>0.5,Close</em>1.5);<br>输出开盘价与收盘价的连线。（需要在公式属性的输出线形选择柱状图）</p>
+<hr>
+<h2 id="matlab-unique-table">MATLAB 的 unique 与 table</h2>
+<p>去除重复的行<br>列的数据类型不同<br>这时需要使用 table 函数。  </p>
+<pre><code>x = {&#39;a&#39;,&#39;b&#39;,&#39;c&#39;,&#39;a&#39;}&#39;;
+y = [1 2 3 1; 1 2 3 1]&#39;;
+t = table(x,y);
+[C,IA,IC] = unique(t);
+</code></pre><p>t = </p>
+<pre><code> x       y   
+___    ______
+
+&#39;a&#39;    1    1
+&#39;b&#39;    2    2
+&#39;c&#39;    3    3
+&#39;a&#39;    1    1
+</code></pre><p>C = </p>
+<pre><code> x       y   
+___    ______
+
+&#39;a&#39;    1    1
+&#39;b&#39;    2    2
+&#39;c&#39;    3    3
+</code></pre><pre><code>x = {&#39;a&#39;,1;&#39;b&#39;,2;&#39;a&#39;,1};  
+t  =cell2table(x);  
+ut = unique(t);  
+</code></pre><p>ut = </p>
+<pre><code>x1     x2
+___    __
+
+&#39;a&#39;    1 
+&#39;b&#39;    2 
+</code></pre><p></br></br></br></br></br></br></br></br>
 </br></br></br></br></br></br></br></br>
 </br></br></br></br></br></br></br></br></p>
 

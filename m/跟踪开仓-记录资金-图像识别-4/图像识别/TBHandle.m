@@ -9,16 +9,6 @@ offset3 = [19,143] + [40,10];  % *.wrm 的位置
 
 datFileName = 'C:\D\xyz\future\数据维护\TB批量导入导出\importToTB.dat';
 
-
-MainWinTitle1 = '交易开拓者平台(旗舰版) 64位';
-MainWinTitle2 = '交易开拓者平台(旗舰版) 64位 (未响应)';
-hMainWin1 = findWindows(MainWinTitle1);
-hMainWin2 = findWindows(MainWinTitle2);
-if (hMainWin1==0)||(hMainWin2==1)
-    fprintf(2,'TB主窗口加载失败！\n');
-    return;
-end
-
 alpha = 2;
 moveMouseTime = 2*alpha;
 openDiaglogTime = 2*alpha;
@@ -29,6 +19,17 @@ importFileTime = 3*alpha;
 closeMessageBoxTime = 1*alpha;
 closeDiaglogTime = 2*alpha;
 openWorkRoomTime = 5*alpha;
+
+MainWinTitle1 = '交易开拓者平台(旗舰版) 64位';
+MainWinTitle2 = '交易开拓者平台(旗舰版) 64位 (未响应)';
+hMainWin1 = findWindows(MainWinTitle1);
+hMainWin2 = findWindows(MainWinTitle2);
+if (hMainWin1==0)||(hMainWin2~=0)
+    fprintf(2,'TB主窗口加载失败！\n');
+    return;
+end
+
+SetForegroundWindowAndMaxmize(hMainWin1);
 
 % 快捷键打开数据管理对话框
 CtrlplusM; pause(openDiaglogTime);
