@@ -1,0 +1,268 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20180825T221106.txt
+
+RB1901   换合约&反手 ！
+
+orders = 
+
+    '2018/8/25'    'RB1901'    '平多'    [12]
+    '2018/8/25'    'RB1903'    '开空'    [10]
+
+RB1901   换合约&反手 ！
+
+orders = 
+
+    '2018/8/25'    'RB1901'    '平多'    [12]
+    '2018/8/25'    'RB1903'    '开多'    [10]
+
+RB1901   换合约&反手 ！
+
+orders = 
+
+    '2018/8/25'    'RB1901'    '平多'    [12]
+    '2018/8/25'    'RB1903'    '开多'    [10]
+
+readStrategyOutputFile
+if system_dependent('IsDebugMode')==1, dbcont; end
+读TB输出文件...
+------------ 无交易！------------
+
+ans =
+
+     0
+
+readStrategyOutputFile
+读TB输出文件...
+
+ans =
+
+     1
+
+readStrategyOutputFile
+读TB输出文件...
+contract
+
+contract = 
+
+    'J1901'
+    'M1901'
+    'M1901'
+
+risk
+
+risk =
+
+         NaN
+         NaN
+        1560
+
+action
+
+action = 
+
+    '平多'
+    '平多'
+    '开空'
+
+if system_dependent('IsDebugMode')==1, dbquit; end
+risk
+{Undefined function or variable 'risk'.
+} 
+readStrategyOutputFile
+读TB输出文件...
+risk
+
+risk =
+
+         NaN
+         NaN
+        1560
+
+if system_dependent('IsDebugMode')==1, dbquit; end
+读TB输出文件...
+读风险配置文件...
+{Undefined function or variable 'nOrders'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('GenOrders1', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\GenOrders1.m', 169)" style="font-weight:bold">GenOrders1</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\GenOrders1.m',169,0)">line 169</a>)
+riskPCT = zeros(nOrders,1);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel>pushbutton41_Callback', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 2792)" style="font-weight:bold">panel>pushbutton41_Callback</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2792,0)">line 2792</a>)
+IsSuccessful = GenOrders1(handles);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gui_mainfcn', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
+        feval(varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 42)" style="font-weight:bold">panel</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',42,0)">line 42</a>)
+    gui_mainfcn(gui_State, varargin{:});
+
+Error in
+<a href="matlab:matlab.internal.language.introspective.errorDocCallback('@(hObject,eventdata)panel(''pushbutton41_Callback'',hObject,eventdata,guidata(hObject))')" style="font-weight:bold">@(hObject,eventdata)panel('pushbutton41_Callback',hObject,eventdata,guidata(hObject))</a>
+
+} 
+Error while evaluating UIControl Callback
+
+读TB输出文件...
+读风险配置文件...
+读资金文件...
+输出订单文件...
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fprintf')" style="font-weight:bold">fprintf</a>
+Invalid file identifier. Use fopen to generate a valid file identifier.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('GenOrders1', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\GenOrders1.m', 213)" style="font-weight:bold">GenOrders1</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\GenOrders1.m',213,0)">line 213</a>)
+fprintf(fid, '\n');
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel>pushbutton41_Callback', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 2792)" style="font-weight:bold">panel>pushbutton41_Callback</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2792,0)">line 2792</a>)
+IsSuccessful = GenOrders1(handles);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gui_mainfcn', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
+        feval(varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 42)" style="font-weight:bold">panel</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',42,0)">line 42</a>)
+    gui_mainfcn(gui_State, varargin{:});
+
+Error in
+<a href="matlab:matlab.internal.language.introspective.errorDocCallback('@(hObject,eventdata)panel(''pushbutton41_Callback'',hObject,eventdata,guidata(hObject))')" style="font-weight:bold">@(hObject,eventdata)panel('pushbutton41_Callback',hObject,eventdata,guidata(hObject))</a>
+
+} 
+Error while evaluating UIControl Callback
+
+读TB输出文件...
+{Undefined function or variable 'folder2'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('GenOrders1', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\GenOrders1.m', 100)" style="font-weight:bold">GenOrders1</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\GenOrders1.m',100,0)">line 100</a>)
+filename = [folder2,'交易',yyyymmdd,'.txt'];
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel>pushbutton41_Callback', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 2792)" style="font-weight:bold">panel>pushbutton41_Callback</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2792,0)">line 2792</a>)
+IsSuccessful = GenOrders1(handles);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gui_mainfcn', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
+        feval(varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 42)" style="font-weight:bold">panel</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',42,0)">line 42</a>)
+    gui_mainfcn(gui_State, varargin{:});
+
+Error in
+<a href="matlab:matlab.internal.language.introspective.errorDocCallback('@(hObject,eventdata)panel(''pushbutton41_Callback'',hObject,eventdata,guidata(hObject))')" style="font-weight:bold">@(hObject,eventdata)panel('pushbutton41_Callback',hObject,eventdata,guidata(hObject))</a>
+
+} 
+Error while evaluating UIControl Callback
+
+读TB输出文件...
+{Undefined function or variable 'folder2'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('GenOrders1', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\GenOrders1.m', 100)" style="font-weight:bold">GenOrders1</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\GenOrders1.m',100,0)">line 100</a>)
+filename = [folder2,'交易',yyyymmdd,'.txt'];
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel>pushbutton41_Callback', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 2792)" style="font-weight:bold">panel>pushbutton41_Callback</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2792,0)">line 2792</a>)
+IsSuccessful = GenOrders1(handles);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gui_mainfcn', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
+        feval(varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 42)" style="font-weight:bold">panel</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',42,0)">line 42</a>)
+    gui_mainfcn(gui_State, varargin{:});
+
+Error in
+<a href="matlab:matlab.internal.language.introspective.errorDocCallback('@(hObject,eventdata)panel(''pushbutton41_Callback'',hObject,eventdata,guidata(hObject))')" style="font-weight:bold">@(hObject,eventdata)panel('pushbutton41_Callback',hObject,eventdata,guidata(hObject))</a>
+
+} 
+Error while evaluating UIControl Callback
+
+读TB输出文件...
+读风险配置文件...
+读资金文件...
+输出订单文件...
+2018/08/25,J1901,平多,NaN
+2018/08/25,M1901,平多,NaN
+2018/08/25,M1901,开空,14
+订单文件更新成功！
+读风险配置文件...
+{Undefined function or variable "contract".
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('GenOrders1', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\GenOrders1.m', 169)" style="font-weight:bold">GenOrders1</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\GenOrders1.m',169,0)">line 169</a>)
+nOrders = length(contract);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel>pushbutton41_Callback', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 2792)" style="font-weight:bold">panel>pushbutton41_Callback</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2792,0)">line 2792</a>)
+IsSuccessful = GenOrders1(handles);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gui_mainfcn', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
+        feval(varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 42)" style="font-weight:bold">panel</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',42,0)">line 42</a>)
+    gui_mainfcn(gui_State, varargin{:});
+
+Error in
+<a href="matlab:matlab.internal.language.introspective.errorDocCallback('@(hObject,eventdata)panel(''pushbutton41_Callback'',hObject,eventdata,guidata(hObject))')" style="font-weight:bold">@(hObject,eventdata)panel('pushbutton41_Callback',hObject,eventdata,guidata(hObject))</a>
+
+} 
+Error while evaluating UIControl Callback
+
+读TB输出文件...
+读风险配置文件...
+读资金文件...
+输出订单文件...
+2018/08/25,J1901,平多,NaN
+2018/08/25,M1901,平多,NaN
+2018/08/25,M1901,开空,14
+订单文件更新成功！
+读TB输出文件...
+读风险配置文件...
+读资金文件...
+输出订单文件...
+2018/08/25,J1901,平多,NaN
+2018/08/25,M1901,平多,NaN
+2018/08/25,M1901,开空,14
+订单文件更新成功！
+读TB输出文件...
+读风险配置文件...
+读资金文件...
+输出订单文件...
+2018/08/25,J1901,平多,NaN
+2018/08/25,M1901,平多,NaN
+2018/08/25,M1901,开空,14
+订单文件更新成功！
+
+orders = 
+
+    '2018/08/25'    'M1901'    '开空'    [14]
+
+
+orders = 
+
+    '2018/08/25'    'M1901'    '开空'    [14]
+
+读TB输出文件...
+读风险配置文件...
+读资金文件...
+输出订单文件...
+2018/08/25,J1901,平多,NaN
+2018/08/25,M1901,平多,NaN
+2018/08/25,M1901,开空,14
+订单文件更新成功！
+
+orders = 
+
+    '2018/08/25'    'M1901'    '开空'    [14]
+
+读TB输出文件...
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\readStrategyOutputFile.m',31,1)">31  </a>cy = {'豆一','A'; '沪铝','AL'; '黄金','AU'; '玉米','C'; '棉花','CF'; '沪铜','CU'; 
+d1
+
+d1 = 
+
+    '20180823  焦炭1901 ：平多'
+    ''
+    '20180823  豆粕1901 ：开空  每手风险：1560'
+    ''
+    '20180823  豆粕1901 ：平多'
+    ''
+    '20180823  焦炭1901 ：平多'
+    ''
+    '20180823  豆粕1901 ：开空  每手风险：1560'
+    ''
+    '20180823  豆粕1901 ：平多'
+
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMo
