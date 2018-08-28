@@ -1,6 +1,0 @@
-
-ans =
-
-C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20180716T012404.txt
-
-WaitForMatlabStartup

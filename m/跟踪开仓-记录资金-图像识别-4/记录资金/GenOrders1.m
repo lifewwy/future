@@ -95,6 +95,10 @@ AccountSelection = get(handles.TradeAccout,'value');
 %% 读TB输出文件
 % [contract,action,risk] = readStrategyOutputFile();
 [contract,action,risk] = readStrategyOutputFile1(TBStrategyFlg);
+
+if isempty(contract)
+    return;
+end
 %% 账户名称信息
 
 switch AccountSelection

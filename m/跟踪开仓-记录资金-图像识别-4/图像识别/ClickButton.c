@@ -18,9 +18,9 @@ void mexFunction(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[])
     Sleep(20);*/ 
     
     PostMessage(hwnd, WM_LBUTTONDOWN, 0, 0);  //Êó±ê×ó¼ü°´ÏÂ  
-    Sleep(20);  
+    Sleep(100);  
     PostMessage(hwnd, WM_LBUTTONUP, 0, 0);   
-    Sleep(20);
+    Sleep(100);
  
 }
 

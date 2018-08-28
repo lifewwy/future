@@ -61,15 +61,18 @@ if hwin == 0
     return;
 end
 
-ClickButton(hwin);
-pause(openDiaglogTime);
-% % 通过按钮句柄，确定按钮位置
-% rect = GetWindowPosition(hwin);
-% % 批量导入按钮
-% cp = mean(transpose(reshape(rect,2,2)));
-% SetCursorPos(cp); 
-% pause(moveMouseTime);
-% LeftClick; pause(openDiaglogTime);
+% % 通过按钮句柄，直接给按钮发单击消息
+% % 有时会不成功，原因不明
+% ClickButton(hwin);
+% pause(openDiaglogTime);
+
+% 通过按钮句柄，确定按钮位置
+rect = GetWindowPosition(hwin);
+% 批量导入按钮
+cp = mean(transpose(reshape(rect,2,2)));
+SetCursorPos(cp); 
+pause(moveMouseTime);
+LeftClick; pause(openDiaglogTime);
 
 hwinTmp = findWindows('选择批量导入数据文件');
 if hwinTmp==0
