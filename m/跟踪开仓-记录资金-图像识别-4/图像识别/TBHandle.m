@@ -84,9 +84,10 @@ if hwin == 0
     fprintf(2,'打开工作室对话框打开失败！\n');
     return;
 end
+
+
 rect =  GetWindowPosition(hwin);
 WinLeftTop = [rect(1,1),rect(2,1)];
-
 SetCursorPos(WinLeftTop + offset3)
 pause(moveMouseTime);
 LeftClick; LeftClick; % 双击打开工作室

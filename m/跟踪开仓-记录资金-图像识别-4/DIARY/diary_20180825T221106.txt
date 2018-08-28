@@ -265,4 +265,347 @@ d1 =
     '20180823  豆粕1901 ：平多'
 
 if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMo
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbquit; end
+MainWinTitle1 = '交易开拓者平台(旗舰版) 64位';
+MainWinTitle2 = '交易开拓者平台(旗舰版) 64位 (未响应)';
+hMainWin1 = findWindows(MainWinTitle1)
+
+hMainWin1 =
+
+     1117512
+
+h1 = findChildWinByClassName(hMainWin1,0,'MDIClient','')
+
+h1 =
+
+     0
+
+h1 = findChildWinByClassName(hMainWin1,0,'MDIClient','')
+
+h1 =
+
+     0
+
+hMainWin1
+
+hMainWin1 =
+
+     1117512
+
+MainWinTitle1 = '交易开拓者平台(旗舰版) 64位';
+hMainWin1 = findWindows(MainWinTitle1)
+
+hMainWin1 =
+
+     2493598
+
+h1 = findChildWinByClassName(hMainWin1,0,'MDIClient','')
+
+h1 =
+
+     0
+
+mex findChildWinByClassName
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mex')" style="font-weight:bold">mex</a>
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\图像识别\findChildWinByClassName not found;
+check that you are in the correct current folder, and check the spelling of
+'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\图像识别\findChildWinByClassName'.
+} 
+mex findChildWinByClassName.c
+Building with 'Microsoft Visual C++ 2012 (C)'.
+MEX completed successfully.
+h1 = findChildWinByClassName(hMainWin1,0,'MDIClient','')
+The converted string is MDIC.
+
+h1 =
+
+     0
+
+mex findChildWinByClassName.c
+Building with 'Microsoft Visual C++ 2012 (C)'.
+MEX completed successfully.
+h1 = findChildWinByClassName(hMainWin1,0,'MDIClient','')
+The converted string is MDIClient.
+
+h1 =
+
+     0
+
+mex findChildWinByClassName.c
+Building with 'Microsoft Visual C++ 2012 (C)'.
+MEX completed successfully.
+h1 = findChildWinByClassName(hMainWin1,0,'MDIClient','')
+The converted ClassName string is .
+The converted Title string is MDIClient.
+
+h1 =
+
+     0
+
+h1 = findChildWinByClassName(hMainWin1,'MDIClient','')
+The converted ClassName string is MDIClient.
+The converted Title string is (null).
+
+h1 =
+
+      986294
+
+mex findChildWinByClassName.c
+Building with 'Microsoft Visual C++ 2012 (C)'.
+MEX completed successfully.
+h2 = findChildWinByClassName(h1,'','ZN')
+The converted ClassName string is (null).
+The converted Title string is ZN.
+
+h2 =
+
+     0
+
+
+hMainWin1 =
+
+     2493598
+
+
+hMainWin1 =
+
+     2493598
+
+The converted ClassName string is MDIClient.
+The converted Title string is (null).
+
+h1 =
+
+      986294
+
+
+hMainWin1 =
+
+     2493598
+
+The converted ClassName string is MDIClient.
+The converted Title string is (null).
+
+h1 =
+
+      986294
+
+The converted ClassName string is Afx.
+The converted Title string is (null).
+
+h2 =
+
+     0
+
+
+hMainWin1 =
+
+     2493598
+
+The converted ClassName string is MDIClient.
+The converted Title string is (null).
+
+h1 =
+
+      986294
+
+The converted ClassName string is (null).
+The converted Title string is ZN.
+
+h2 =
+
+     0
+
+
+hMainWin1 =
+
+     2493598
+
+The converted ClassName string is MDIClient.
+The converted Title string is (null).
+
+h1 =
+
+      986294
+
+The converted ClassName string is (null).
+The converted Title string is TA PTA-TA 1日线.
+
+h2 =
+
+     4197424
+
+
+hMainWin1 =
+
+     2493598
+
+The converted ClassName string is MDIClient.
+The converted Title string is (null).
+
+h1 =
+
+      986294
+
+The converted ClassName string is (null).
+The converted Title string is TA.
+
+h2 =
+
+     0
+
+
+hMainWin1 =
+
+     2493598
+
+The converted ClassName string is MDIClient.
+The converted Title string is (null).
+
+h1 =
+
+      986294
+
+The converted ClassName string is (null).
+The converted Title string is TA PTA-TA 1日线.
+
+h2 =
+
+     4197424
+
+The converted ClassName string is AfxFrameOrView110.
+The converted Title string is (null).
+
+h1 =
+
+     2297322
+
+
+hMainWin1 =
+
+     2493598
+
+The converted ClassName string is MDIClient.
+The converted Title string is (null).
+
+h1 =
+
+      986294
+
+The converted ClassName string is (null).
+The converted Title string is TA PTA-TA 1日线.
+
+h2 =
+
+     4197424
+
+The converted ClassName string is AfxFrameOrView110.
+The converted Title string is (null).
+
+h3 =
+
+     2297322
+
+
+hMainWin1 =
+
+     2493598
+
+The converted ClassName string is MDIClient.
+The converted Title string is (null).
+
+h1 =
+
+      986294
+
+The converted ClassName string is (null).
+The converted Title string is TA PTA-TA 1日线.
+
+h2 =
+
+     4197424
+
+The converted ClassName string is AfxFrameOrView110.
+The converted Title string is (null).
+
+h3 =
+
+     2297322
+
+The converted ClassName string is (null).
+The converted Title string is TA 1日线.
+
+h4 =
+
+     2691444
+
+The converted ClassName string is MDIClient.
+The converted Title string is (null).
+The converted ClassName string is (null).
+The converted Title string is TA PTA-TA 1日线.
+The converted ClassName string is AfxFrameOrView110.
+The converted Title string is (null).
+The converted ClassName string is (null).
+The converted Title string is TA 1日线.
+
+h4 =
+
+     2691444
+
+mex findChildWinByClassName.c
+Building with 'Microsoft Visual C++ 2012 (C)'.
+MEX completed successfully.
+startTB
+1...TB主窗口加载失败！
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('startTB', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\startTB.m', 19)" style="font-weight:bold">startTB</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\startTB.m',19,0)">line 19</a>)
+
+} 
+edit startTB
+startTB
+1...TB主窗口加载失败！
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('startTB', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\startTB.m', 19)" style="font-weight:bold">startTB</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\startTB.m',19,0)">line 19</a>)
+
+} 
+hWin = findChildWinByClassName(0,'Ghost','');
+hWin = findChildWinByClassName(0,'Ghost','')
+
+hWin =
+
+     0
+
+startTB
+TB主窗口加载成功！
+findSuperChartWnd
+findSuperChartWnd
+
+H4 =
+
+     3804354
+
+findSuperChartWnd
+
+H4 =
+
+     3804354
+
+findSuperChartWnd
+
+H4 =
+
+     3804354
+
+findSuperChartWnd
+
+H4 =
+
+     3804354
+
+findSuperChartWnd
+
+H4 =
+
+     3804354
+
+startTB
+TB主窗口加载成功！

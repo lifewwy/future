@@ -43,10 +43,10 @@ void mexFunction(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[])
     Title = (char*)mxCalloc(buflen1, sizeof(char));
     
     status = mxGetString(prhs[1], ClassName, buflen);
-    //mexPrintf("The converted string is %s.\n", ClassName);
+    //mexPrintf("The converted ClassName string is %s.\n", ClassName);
     
-    status1 = mxGetString(prhs[2], Title, buflen);
-    //mexPrintf("The converted string is %s.\n", Title);
+    status1 = mxGetString(prhs[2], Title, buflen1);
+    //mexPrintf("The converted Title string is %s.\n", Title);
 
     hChildWnd = FindWindowEx(hwnd,0,ClassName,Title);
     hh = (int)hChildWnd;

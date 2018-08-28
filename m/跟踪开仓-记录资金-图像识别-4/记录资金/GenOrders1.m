@@ -1,4 +1,4 @@
-function IsSuccessful = GenOrders1(handles)
+function IsSuccessful = GenOrders1(handles,TBStrategyFlg)
 % clear; 
 clc;
 
@@ -93,7 +93,8 @@ AccountSelection = get(handles.TradeAccout,'value');
 % capital = capital+70e4-12e4;
 
 %% 读TB输出文件
-[contract,action,risk] = readStrategyOutputFile();
+% [contract,action,risk] = readStrategyOutputFile();
+[contract,action,risk] = readStrategyOutputFile1(TBStrategyFlg);
 %% 账户名称信息
 
 switch AccountSelection
@@ -141,7 +142,11 @@ end
 %% 输出订单文件
 fprintf('输出订单文件...\n');
 
-filename = [folder1,'订单-',adInfo,'.csv'];
+if TBStrategyFlg==0
+    filename = [folder1,'订单-',adInfo,'.csv'];
+else
+    filename = [folder1,'订单TB-',adInfo,'.csv'];
+end
 
 % 2017.09.11 注释掉，换合约时可能写入订单。
 % if exist(filename,'file') == 2

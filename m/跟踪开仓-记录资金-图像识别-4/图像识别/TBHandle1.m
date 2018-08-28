@@ -4,7 +4,7 @@ function TBHandle1()
 
 datFileName = 'C:\D\xyz\future\数据维护\TB批量导入导出\importToTB.dat';
 
-offset3 = [19,143] + [40,10];  % *.wrm 的位置
+% offset3 = [19,143] + [40,10];  % *.wrm 的位置
 
 alpha = 5;
 moveMouseTime = 2*alpha;
@@ -104,13 +104,18 @@ if hwin == 0
     fprintf(2,'打开工作室对话框打开失败！\n');
     return;
 end
-rect =  GetWindowPosition(hwin);
-WinLeftTop = [rect(1,1),rect(2,1)];
 
-SetCursorPos(WinLeftTop + offset3)
+DownArrow; % 选中工作室
 pause(moveMouseTime);
-LeftClick; LeftClick; % 双击打开工作室
+returnKey;
 pause(openWorkRoomTime);
+
+% rect =  GetWindowPosition(hwin);
+% WinLeftTop = [rect(1,1),rect(2,1)];
+% SetCursorPos(WinLeftTop + offset3)
+% pause(moveMouseTime);
+% LeftClick; LeftClick; % 双击打开工作室
+% pause(openWorkRoomTime);
 
 end
 

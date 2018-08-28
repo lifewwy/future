@@ -22,7 +22,7 @@ function varargout = panel(varargin)
 
 % Edit the above text to modify the response to help panel
 
-% Last Modified by GUIDE v2.5 23-Aug-2018 02:46:48
+% Last Modified by GUIDE v2.5 28-Aug-2018 11:44:29
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -2789,7 +2789,8 @@ function pushbutton41_Callback(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 
-IsSuccessful = GenOrders1(handles);
+TBStrategyFlg = get(handles.radiobutton18,'value');
+IsSuccessful = GenOrders1(handles,TBStrategyFlg);
 
 % --- Executes on button press in pushbutton42.
 function pushbutton42_Callback(hObject, eventdata, handles)
@@ -2816,7 +2817,14 @@ switch AccountSelection
         adInfo = 'SimNow2';
 end
 
-filename = [directory1,'订单-',adInfo,'.csv'];
+TBStrategyFlg = get(handles.radiobutton18,'value');
+if TBStrategyFlg==0
+    filename = [directory1,'订单-',adInfo,'.csv'];
+else
+    filename = [directory1,'订单TB-',adInfo,'.csv'];
+end
+
+
 if exist(filename,'file') ~= 2
     fprintf(2,'订单文件不存在！\n');
     return;
@@ -3123,3 +3131,12 @@ function radiobutton17_Callback(hObject, eventdata, handles)
 % handles    structure with handles and user data (see GUIDATA)
 
 % Hint: get(hObject,'Value') returns toggle state of radiobutton17
+
+
+% --- Executes on button press in radiobutton18.
+function radiobutton18_Callback(hObject, eventdata, handles)
+% hObject    handle to radiobutton18 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hint: get(hObject,'Value') returns toggle state of radiobutton18

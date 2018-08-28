@@ -15,8 +15,8 @@ i = strfind(pp,'\');
 % folder2 = 'C:\D\future\';
 % 20180214
 folder2 = pp(1:i(end-3));
-%% 读TB输出文件
-fprintf('读TB输出文件...\n');
+%% 读MATLAB策略输出文件
+fprintf('读MATLAB策略输出文件...\n');
 
 yyyymmdd = datestr(now,'yyyymmdd');
 % filename = [directory2,'交易','20161212','.txt'];
@@ -46,6 +46,7 @@ risk = zeros(nOrders,1);
 action = cell(nOrders,1); 
 for n = 1:nOrders
     pos1 = strfind( d1{n}, ' ');
+    
     contract(n) = {d1{n}(pos1(2)+1:pos1(3)-1)};
     [p1,~] = find(strcmp(contract{n}(1:end-4),cy) == 1);
     contract(n) = {[cy{p1,2},contract{n}(end-3:end)]};
