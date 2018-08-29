@@ -122,4 +122,7 @@ ImpliedVolatility(Numeric DaysLeft=0,Numeric StrikePr=0,Numeric AssetPr=0,Numeri
 BlackScholes(Numeric DaysLeft=0,Numeric StrikePr=0,Numeric AssetPr=0,Numeric Rate100=0,Numeric Volty100=0,Numeric PutCall=0)
 Intrinsic(Numeric AssetPr=0,Numeric PutCall=0,Numeric StrikePr=0)
 AAParabolicSAR(Numeric AfStep=0.02,Numeric EntryBar=217,Numeric LongShortFlg=0,Numeric risk=300,NumericRef oParClose,NumericRef oParOpen,NumericRef oPosition,NumericRef oTransition)
-AATRPriceRatio(Numeric Length=14)
+AATRPriceRatio(Numeric Length=14)
+EvenUp(NumericSeries ExitFlag=0,StringRef tips1,NumericSeries TradeResult=0,NumericSeries myEntryPrice=0,NumericRef ExitFlagRef,NumericRef TradeResultRef)
+OpenPosition(NumericSeries EntryFlag=0,NumericSeries Position=0,Numeric nATRExit=0,NumericSeries atr=0,NumericSeries myEntryPrice=0,NumericSeries EntryATR=0,NumericSeries EntryBar=0,NumericSeries HighestCloseFromEntry=0,NumericSeries StopPrice=0,NumericSeries LowestCloseFromEntry=0,NumericRef myEntryPriceRef,NumericRef EntryATRRef,NumericRef EntryBarRef,NumericRef HighestCloseFromEntryRef,NumericRef EntryFlagRef,NumericRef StopPriceRef,NumericRef LowestCloseFromEntryRef,StringRef tips1)
+EvenUpNotice(NumericSeries HighestCloseFromEntry=0,NumericRef HighestCloseFromEntryRef,Numeric TrailingATR=0,Numeric nATRExit=0,NumericSeries atr=0,NumericSeries EntryATR=0,NumericSeries StopPrice=0,NumericRef StopPriceRef,NumericSeries EvenFlg=0,Numeric oTransition=0,NumericRef ExitFlagRef,StringRef tips,NumericSeries myEntryPrice=0,NumericSeries AntiTrendFlg=0,NumericRef AntiTrendFlgRef,NumericRef LatestRiskRef,NumericSeries LowestCloseFromEntry=0,NumericRef LowestCloseFromEntryRef)

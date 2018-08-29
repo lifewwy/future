@@ -1,0 +1,64 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20180829T033734.txt
+
+edit startTB
+TBHandle1
+TB主窗口加载失败！
+startTB
+TB主窗口加载成功！
+ClickButton(hwin)
+pause(5);ClickButton(hwin)
+pause(5);ClickButton(hwin)
+if system_dependent('IsDebugMode')==1, dbquit; end
+TBHandle1
+TBHandle1
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\图像识别\TBHandle1.m',78,1)">78  </a>if hwinTmp==0
+hwinTmp
+
+hwinTmp =
+
+     1511216
+
+if system_dependent('IsDebugMode')==1, dbquit; end
+if system_dependent('IsDebugMode')==1, dbquit; end
+TBHandle1
+TBHandle1
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\图像识别\TBHandle1.m',78,1)">78  </a>if hwinTmp==0
+if system_dependent('IsDebugMode')==1, dbquit; end
+if system_dependent('IsDebugMode')==1, dbquit; end
+TBHandle1
+if system_dependent('IsDebugMode')==1, dbquit; end
+TBHandle1
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('TBHandle1', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\图像识别\TBHandle1.m', 103)" style="font-weight:bold">TBHandle1</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\图像识别\TBHandle1.m',103,0)">line 103</a>)
+
+} 
+TBHandle1
+if system_dependent('IsDebugMode')==1, dbquit; end
+TBHandle1
+if system_dependent('IsDebugMode')==1, dbquit; end
+TBHandle1
+if system_dependent('IsDebugMode')==1, dbquit; end
+TBHandle1
+if system_dependent('IsDebugMode')==1, dbquit; end
+mex ClickButton.c
+Building with 'Microsoft Visual C++ 2012 (C)'.
+MEX completed successfully.
+TBHandle1
+if system_dependent('IsDebugMode')==1, dbquit; end
+TBHandle1
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbquit; end
+mex ClickButton.c
+Building with 'Microsoft Visual C++ 2012 (C)'.
+MEX completed successfully.
+TBHandle1
+if system_dependent('IsDebugMode')==1, dbquit; end
+TBHandle1
+if system_dependent('IsDebugMode')==1, dbquit; end
+TBHandle1
+if system_dependent('IsDebugMode')==1, dbquit; end
+TBHandle1
+startTB
+TB主窗口加载成功！

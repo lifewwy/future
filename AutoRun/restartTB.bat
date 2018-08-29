@@ -1,25 +1,38 @@
 
 @echo off
-tasklist /fi "imagename eq TradeBlazer.exe" |find "TradeBlazer.exe" > nul
-if errorlevel 0 (
-	taskkill /f /t /im "TradeBlazer.exe" 
-	ping 127.0.0.1 -n 10 > nul % 等一段时间 %
-)
 
-tasklist /fi "imagename eq TBDatabase.exe" |find "TBDatabase.exe" > nul
-if errorlevel 0 (
-	taskkill /f /t /im "TBDatabase.exe" 
-	ping 127.0.0.1 -n 10 > nul % 等一段时间 %
-)
+taskkill /f /t /im "TradeBlazer.exe" 
+ping 127.0.0.1 -n 10 > nul % 等一段时间 %
 
-tasklist /fi "imagename eq TBDdataCenter.exe" |find "TBDdataCenter.exe" > nul
-if errorlevel 0 (
-	taskkill /f /t /im "TBDdataCenter.exe" 
-	ping 127.0.0.1 -n 10 > nul % 等一段时间 %
-)
+taskkill /f /t /im "TBDatabase.exe" 
+ping 127.0.0.1 -n 10 > nul % 等一段时间 %
+
+taskkill /f /t /im "TBDataCenter.exe" 
+ping 127.0.0.1 -n 10 > nul % 等一段时间 %
 
 cd C:\D\xyz\future\TBSoftware\tbv5543_x64_portable
 start "" "TradeBlazer.exe"
+
+::tasklist /fi "imagename eq TradeBlazer.exe" |find "TradeBlazer.exe" > nul
+::if errorlevel 0 (
+::	taskkill /f /t /im "TradeBlazer.exe" 
+::	ping 127.0.0.1 -n 10 > nul % 等一段时间 %
+::)
+
+::tasklist /fi "imagename eq TBDatabase.exe" |find "TBDatabase.exe" > nul
+::if errorlevel 0 (
+::	taskkill /f /t /im "TBDatabase.exe" 
+::	ping 127.0.0.1 -n 10 > nul % 等一段时间 %
+::)
+
+::tasklist /fi "imagename eq TBDdataCenter.exe" |find "TBDataCenter.exe" > nul
+::if errorlevel 0 (
+::	taskkill /f /t /im "TBDataCenter.exe" 
+::	ping 127.0.0.1 -n 10 > nul % 等一段时间 %
+::)
+
+::cd C:\D\xyz\future\TBSoftware\tbv5543_x64_portable
+::start "" "TradeBlazer.exe"
 
 
 :: 1

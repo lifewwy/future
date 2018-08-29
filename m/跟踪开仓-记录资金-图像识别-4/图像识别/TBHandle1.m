@@ -6,13 +6,13 @@ datFileName = 'C:\D\xyz\future\数据维护\TB批量导入导出\importToTB.dat';
 
 % offset3 = [19,143] + [40,10];  % *.wrm 的位置
 
-alpha = 5;
+alpha = 3;
 moveMouseTime = 2*alpha;
 openDiaglogTime = 5*alpha;
 switchTabTime = 2*alpha;
 copyTime = 3*alpha;
 pasteTime = 3*alpha;
-importFileTime = 5*alpha;
+importFileTime = 10*alpha;
 closeMessageBoxTime = 1*alpha;
 closeDiaglogTime = 2*alpha;
 openWorkRoomTime = 5*alpha;
