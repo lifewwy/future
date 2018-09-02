@@ -1,6 +1,8 @@
-function TBHandle1()
+function status = TBHandle1()
 % clc; close all; clear;
 % TB: tbv5543_x64_portable 
+
+status = 0;
 
 datFileName = 'C:\D\xyz\future\数据维护\TB批量导入导出\importToTB.dat';
 
@@ -119,6 +121,8 @@ pause(openWorkRoomTime);
 % pause(moveMouseTime);
 % LeftClick; LeftClick; % 双击打开工作室
 % pause(openWorkRoomTime);
+
+status = 1;
 
 end
 

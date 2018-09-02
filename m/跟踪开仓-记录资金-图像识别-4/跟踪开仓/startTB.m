@@ -34,7 +34,10 @@ for i = 1:10  % 如果主窗口加载不成功，重复尝试。
     hWin = findChildWinByClassName(0,'Ghost','');
     if (hMainWin1~=0)&&(hMainWin2==0)&&(hWin==0)
         fprintf('TB主窗口加载成功！\n');
-        TBHandle1;
+        status = TBHandle1;
+        if status==1
+            findSuperChartWnd;
+        end
         break;
     else
         fprintf(2,[num2str(i),'...TB主窗口加载失败！\n']);
