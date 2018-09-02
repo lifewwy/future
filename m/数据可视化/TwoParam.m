@@ -3,7 +3,7 @@ clear; clc; close all;
 
 %% 读数据
 folder = 'C:\D\xyz\future\优化记录\TwoParameters\';
-filename = [folder '优化记录交易策略参数优化[IF - 1日线].csv'];
+filename = [folder '优化记录交易策略参数优化[ZN - 1日线].csv'];
 
 dstruct = importdata(filename);
 td = dstruct.textdata(1,:)';
