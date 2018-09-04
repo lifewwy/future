@@ -1,5 +1,6 @@
 from jqdatasdk import *
 import datetime
+import sys
 
 
 def time_in_range(start, end, x):
@@ -32,9 +33,10 @@ def main(N):
     # print(get_trade_days(start_date=None, end_date=None, count=1))
     # print(get_trade_days(start_date='2018-09-02', end_date='2018-09-02'))
     # if not get_trade_days(start_date='2018-09-02', end_date='2018-09-02'):
+    # print(get_trade_days(start_date=None, end_date=None, count=1))
     if not get_trade_days(start_date=None, end_date=None, count=1):
         print('今天不是交易日！')
-        return(0)
+        # return(0)
 
     # 判断时间段是否合适
     start = datetime.time(15, 30, 0)
@@ -42,7 +44,7 @@ def main(N):
     now_time = datetime.datetime.now().time()
     if not time_in_range(start, end, now_time):
         print('请在正确的时间段运行！')
-        return (0)
+        # return (0)
 
 
     # 某一期货品种在指定日期下的可交易合约标的列表
@@ -99,6 +101,32 @@ def main(N):
     # import os
     # # print("\n当前工作路径为： ",os.getcwd()) #获取当前工作路径
 
+    return(1)
+
+# ----------------------------------------------------------------------------------------------------------------------
+
 if __name__=='__main__':
     N = 8
-    main(N)
+    if len(sys.argv) < 2:
+        print('N is not specified.')
+    else:
+        N = int(sys.argv[1])
+
+
+    status = main(N)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
