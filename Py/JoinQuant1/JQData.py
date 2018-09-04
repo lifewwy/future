@@ -36,7 +36,7 @@ def main(N):
     # print(get_trade_days(start_date=None, end_date=None, count=1))
     if not get_trade_days(start_date=None, end_date=None, count=1):
         print('今天不是交易日！')
-        # return(0)
+        return(0)
 
     # 判断时间段是否合适
     start = datetime.time(15, 30, 0)
@@ -44,7 +44,7 @@ def main(N):
     now_time = datetime.datetime.now().time()
     if not time_in_range(start, end, now_time):
         print('请在正确的时间段运行！')
-        # return (0)
+        return (0)
 
 
     # 某一期货品种在指定日期下的可交易合约标的列表
@@ -52,9 +52,9 @@ def main(N):
     # x = get_future_contracts('SR') + get_future_contracts('RU') + get_future_contracts('L')
     # print(x)
 
-    # futureCode = ['A','C','RB','M','P','J','ZN','Y','L','AG','TA','CF'
-    #     ,'SR','AU','FG','MA','AL','OI','RM','I','JM','CU','V','RU','IF']
-    futureCode = ['A']
+    futureCode = ['A','C','RB','M','P','J','ZN','Y','L','AG','TA','CF'
+        ,'SR','AU','FG','MA','AL','OI','RM','I','JM','CU','V','RU','IF']
+    # futureCode = ['A','RB']
     # print(len(futureCode))
     contracts = []
     for fc in futureCode:
@@ -106,7 +106,7 @@ def main(N):
 # ----------------------------------------------------------------------------------------------------------------------
 
 if __name__=='__main__':
-    N = 8
+    N = 1
     if len(sys.argv) < 2:
         print('N is not specified.')
     else:
