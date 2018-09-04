@@ -1,0 +1,59 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20180904T090012.txt
+
+Elapsed time is 2.087391 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 2.651344 seconds.
+>>>>>>>>>>调用成功！
+账户资金:2128440
+持仓文件更新成功！
+
+ans = 
+
+    contract: 'L1901'
+      action: 'Sell EvenUp'
+       hands: '12'
+           n: 1
+
+
+ans = 
+
+    contract: 'L1901'
+      action: 'Sell Open'
+       hands: '8'
+           n: 2
+
+
+orderParameters = 
+
+    'L1901'    'Sell EvenUp'    '12'
+
+Elapsed time is 1.403680 seconds.
+>>>>>>>>>>调用成功！
+Elapsed time is 2.616872 seconds.
+>>>>>>>>>>调用成功！
+全部成交
+
+ActionDoneFlg =
+
+     1     0
+
+
+orderParameters = 
+
+    'L1901'    'Sell Open'    '8'
+
+Elapsed time is 1.224739 seconds.
+>>>>>>>>>>调用成功！
+Elapsed time is 2.532519 seconds.
+>>>>>>>>>>调用成功！
+全部成交
+
+ActionDoneFlg =
+
+     1     1
+
+--------------- 定时器关闭 01！--------------- 
