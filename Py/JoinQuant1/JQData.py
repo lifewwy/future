@@ -24,7 +24,7 @@ def time_in_range(start, end, x):
 
 
 def main(N):
-    # 从当前日期前 N 天开始读取数据
+    # 读取 N 个交易日的数据
 
     auth('18019099175', 'wangxichen75')
 
@@ -82,7 +82,9 @@ def main(N):
     # yesterday = (datetime.date.today() + datetime.timedelta(days=-1)).strftime('%Y-%m-%d')
     # print(yesterday)
 
-    start_date = (datetime.date.today() + datetime.timedelta(days=-N)).strftime('%Y-%m-%d')
+    # start_date = (datetime.date.today() + datetime.timedelta(days=-N)).strftime('%Y-%m-%d')
+    # print(get_trade_days(start_date=None, end_date=None, count=5))
+    start_date = get_trade_days(start_date=None, end_date=None, count=N)[0].strftime('%Y-%m-%d')
 
     # panel  = get_price(contracts, start_date='2018-09-02', end_date='2018-09-03', frequency='daily')
     # print(panel['open'][:])
@@ -98,5 +100,5 @@ def main(N):
     # # print("\n当前工作路径为： ",os.getcwd()) #获取当前工作路径
 
 if __name__=='__main__':
-    N = 5
+    N = 8
     main(N)
