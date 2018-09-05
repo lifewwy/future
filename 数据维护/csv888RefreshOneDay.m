@@ -1,4 +1,4 @@
-function csv888RefreshOneDay(futureCode,handles)
+function csv888RefreshOneDay(futureCode,handles,fc,kDataJoinQuant)
 
 
 % clear all ; clc;  close all;
@@ -76,7 +76,7 @@ csvData = [contractDate, csvData];
 % csv 文件已经最新，不用再更新
 if csvData(end,1) == datenum(date)
     disp([filename,' 已经是最新文件！'])
-    return;
+%     return;
 end
 
 
@@ -136,6 +136,15 @@ end
 deltaOpen = kData(pos,2) - kDataTmp(2);
 csvData(:,2:5) = csvData(:,2:5) + deltaOpen;
 csvData =  [csvData ; kData(pos,:)];
+
+%% 比较 Sina Data 和 JoinQuant Data 20180905
+
+if ~isempty(fc)
+    commonData = intersect(kDataJoinQuant{strcmp(fc,futureCode)},kData(pos,:),'rows');
+    if isempty(commonData)
+        fprintf(2,'数据源冲突!\n');
+    end
+end
 
 %% 写 csv 文件
 % directory = 'C:\D\future\数据维护\';

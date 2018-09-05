@@ -72,43 +72,25 @@ end
 % end
 
 %% 更新数据
+
+% N个交易日的JoinQuant Data 20180905
+[fc,kDataJoinQuant] = JoinQuantData(3,1); 
+
 fprintf('开始数据更新...\n\n');
 
-csv888RefreshOneDay('A',h);
-csv888RefreshOneDay('C',h);
-csv888RefreshOneDay('RB',h);
-csv888RefreshOneDay('M',h);
-csv888RefreshOneDay('P',h);
-csv888RefreshOneDay('J',h);
-csv888RefreshOneDay('ZN',h);
-csv888RefreshOneDay('Y',h);
-csv888RefreshOneDay('L',h);
-csv888RefreshOneDay('AG',h);
-csv888RefreshOneDay('TA',h);
-csv888RefreshOneDay('SR',h);
-csv888RefreshOneDay('AU',h);
-csv888RefreshOneDay('FG',h);
-csv888RefreshOneDay('MA',h);
-csv888RefreshOneDay('RU',h);
-csv888RefreshOneDay('AL',h);
-csv888RefreshOneDay('OI',h);
-csv888RefreshOneDay('RM',h);
-csv888RefreshOneDay('CF',h);
-csv888RefreshOneDay('I',h);
-csv888RefreshOneDay('JM',h);
-csv888RefreshOneDay('CU',h);
-% csv888RefreshOneDay('RI');
-csv888RefreshOneDay('V',h);
+futureCode = {'A','C','RB','M','P','J','ZN','Y','L','AG','TA' ...
+    ,'SR','AU','FG','MA','RU','AL','OI','RM','CF','I','JM','CU','V','IF'};
 
-csvIF888Refresh('IF',h);
+for i = 1:length(futureCode)-1
+    csv888RefreshOneDay(futureCode{i},h,fc,kDataJoinQuant);
+end
+csv888Refresh('IF',h,fc,kDataJoinQuant);
 
 fprintf('\n数据更新完成！\n');
 
-% TB批量导入文件更新
-GenerateImportFile;  % 20180822
+% TB批量导入文件更新 20180822
+GenerateImportFile;  
 
-% N个交易日的JoinQuant Data
-[C,kData] = JoinQuantData(3); %#ok
 
 %% 更新状态
 IsDataUpdateCompleted = 1; 
