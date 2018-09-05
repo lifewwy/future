@@ -104,7 +104,11 @@ csvIF888Refresh('IF',h);
 
 fprintf('\n数据更新完成！\n');
 
+% TB批量导入文件更新
 GenerateImportFile;  % 20180822
+
+% N个交易日的JoinQuant Data
+[C,kData] = JoinQuantData(3); %#ok
 
 %% 更新状态
 IsDataUpdateCompleted = 1; 

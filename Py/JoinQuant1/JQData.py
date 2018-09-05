@@ -115,9 +115,9 @@ if __name__=='__main__':
     status = main(N)
 
     if status==1:
-        print('文件存储完成！')
+        print('JoinQuantData文件存储完成！')
     else:
-        print('未存储文件！')
+        print('未存储JoinQuantData文件！')
 
 
 

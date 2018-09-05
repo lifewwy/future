@@ -17,6 +17,8 @@ cmdString =  [pythonEXE,pyFile,num2str(N)];
 
 % status %#ok 0:success ，即py文件运行没有出现错误。
 % result %#ok py文件中print的内容，以及程序出错信息。
+fprintf(['status: ', num2str(status),'\n']);
+fprintf(['result: ', result,'\n']);
 
 
 

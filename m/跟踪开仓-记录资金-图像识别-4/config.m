@@ -13,5 +13,7 @@ addpath([dir1,'AutoRun']);
 addpath([dir1,'m\CmdWinTool_20151220']);
 addpath([dir1,'myMatlabFunctions']);
 addpath([dir1,'m\TabDemoMine']);
+addpath([dir1,'Êý¾ÝÎ¬»¤\JoinQuantData']); % 20180822
+
 
 

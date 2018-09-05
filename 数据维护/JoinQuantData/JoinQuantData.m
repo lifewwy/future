@@ -1,4 +1,4 @@
-function  [C,kData] = JoinQuantData()
+function  [C,kData] = JoinQuantData(N)
 % clc; clear; close all; 
 
 C = [];
@@ -14,7 +14,9 @@ directory1 = [directory1 'm\mCallPy'];
 addpath(directory1);
 
 %% 读取 N 个交易日的数据，并存为csv文件
-N = 3;
+if nargin==0
+    N = 3;
+end
 [status,result] = getJoinQuantData(N);
 if status==1 || isempty(strfind(result,'文件存储完成！'))
     return;
