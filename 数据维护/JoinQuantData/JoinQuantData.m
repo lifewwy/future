@@ -1,10 +1,25 @@
 function  [C,kData] = JoinQuantData()
 % clc; clear; close all; 
 
+C = [];
+kData = [];
+%% 文件目录
 fp  = mfilename('fullpath');
 pp = strfind(fp,'\');
 directory = fp(1:pp(end));
 
+directory1 = fp(1:pp(end-2));
+directory1 = [directory1 'm\mCallPy'];
+% C:\D\xyz\future\m\mCallPy\getJoinQuantData.m
+addpath(directory1);
+
+%% 读取 N 个交易日的数据，并存为csv文件
+N = 3;
+[status,result] = getJoinQuantData(N);
+if status==1 || isempty(strfind(result,'文件存储完成！'))
+    return;
+end
+%% 读取并处理数据
 filenameOpen = [directory,'OPEN.csv'];
 filenameHIGH = [directory,'HIGH.csv'];
 filenameLOW = [directory,'LOW.csv'];

@@ -112,9 +112,12 @@ if __name__=='__main__':
     else:
         N = int(sys.argv[1])
 
-
     status = main(N)
 
+    if status==1:
+        print('文件存储完成！')
+    else:
+        print('未存储文件！')
 
 
 
