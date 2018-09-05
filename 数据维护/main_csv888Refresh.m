@@ -1,4 +1,6 @@
-clear; clc;  close all;
+function main_csv888Refresh()
+
+% clear; clc;  close all;
 
 %% 历史数据更新 20180905
 % N个交易日的JoinQuant Data 20180905
