@@ -28,18 +28,18 @@
       <change beforePath="$PROJECT_DIR$/../../TBSoftware/tbv5543_x64_portable/cache/__dbp.KLine.025" beforeDir="false" afterPath="$PROJECT_DIR$/../../TBSoftware/tbv5543_x64_portable/cache/__dbp.KLine.025" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../TBSoftware/tbv5543_x64_portable/cache/__dbp.KLine.028" beforeDir="false" afterPath="$PROJECT_DIR$/../../TBSoftware/tbv5543_x64_portable/cache/__dbp.KLine.028" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../TBSoftware/tbv5543_x64_portable/cache/__dbp.KLine.029" beforeDir="false" afterPath="$PROJECT_DIR$/../../TBSoftware/tbv5543_x64_portable/cache/__dbp.KLine.029" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TBSoftware/tbv5543_x64_portable/userop/20180905.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../TBSoftware/tbv5543_x64_portable/userop/20180905.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../TB持仓/TB持仓情况.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TB持仓/TB持仓情况.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/DialogRsp.con" beforeDir="false" afterPath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/DialogRsp.con" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/Private.con" beforeDir="false" afterPath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/Private.con" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/Public.con" beforeDir="false" afterPath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/Public.con" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/QueryRsp.con" beforeDir="false" afterPath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/QueryRsp.con" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/TradingDay.con" beforeDir="false" afterPath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/TradingDay.con" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/持仓-国贸期货.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/持仓-国贸期货.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/持仓.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/持仓.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/订单-国贸期货.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/订单-国贸期货.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/资金-国贸期货.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/记录资金/资金-国贸期货.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/跟踪开仓/IsDataUpdateCompleted.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/跟踪开仓/IsDataUpdateCompleted.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/跟踪开仓/strategyPos.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/跟踪开仓/strategyPos.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/跟踪开仓/strategyPosLen.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../../m/跟踪开仓-记录资金-图像识别-4/跟踪开仓/strategyPosLen.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../交易位置/交易位置_20180905.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../交易位置/交易位置_20180905.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../交易位置/合约信息_20180905.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../交易位置/合约信息_20180905.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../数据维护/A888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/A888.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../数据维护/AG888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/AG888.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../数据维护/AL888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/AL888.csv" afterDir="false" />
@@ -54,7 +54,6 @@
       <change beforePath="$PROJECT_DIR$/../../数据维护/JM888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/JM888.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../数据维护/JoinQuantData/CLOSE.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/JoinQuantData/CLOSE.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../数据维护/JoinQuantData/HIGH.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/JoinQuantData/HIGH.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../数据维护/JoinQuantData/JoinQuantData.m" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/JoinQuantData/JoinQuantData.m" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../数据维护/JoinQuantData/LOW.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/JoinQuantData/LOW.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../数据维护/JoinQuantData/OPEN.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/JoinQuantData/OPEN.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../数据维护/JoinQuantData/VOLUME.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/JoinQuantData/VOLUME.csv" afterDir="false" />
@@ -72,8 +71,6 @@
       <change beforePath="$PROJECT_DIR$/../../数据维护/V888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/V888.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../数据维护/Y888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/Y888.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../数据维护/ZN888.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/ZN888.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../数据维护/csv888RefreshOneDay.m" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/csv888RefreshOneDay.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../数据维护/main_csv888Refresh_daily.m" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据维护/main_csv888Refresh_daily.m" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -85,8 +82,10 @@
     <session id="803060975">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="12" />
           <entry key="project.open.time.0" value="3" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.44" value="1" />
           <entry key="project.open.time.45" value="1" />
           <entry key="project.open.time.48" value="1" />
           <entry key="project.open.time.49" value="1" />
@@ -95,7 +94,7 @@
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.76" value="1" />
           <entry key="project.open.time.80" value="1" />
-          <entry key="project.opened" value="11" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -121,12 +120,12 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/JQData.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="52" column="14" lean-forward="true" selection-start-line="52" selection-start-column="14" selection-end-line="52" selection-end-column="14" />
+            <state relative-caret-position="23">
+              <caret line="52" column="14" selection-start-line="52" selection-start-column="14" selection-end-line="52" selection-end-column="14" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -146,7 +145,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="582" />
     <option name="y" value="185" />
     <option name="width" value="1400" />
@@ -238,8 +237,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1847" height="1098" extended-state="7" />
-    <editor active="true" />
+    <frame x="-9" y="-9" width="1847" height="1098" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22376457" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -266,8 +264,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/JQData.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="52" column="14" lean-forward="true" selection-start-line="52" selection-start-column="14" selection-end-line="52" selection-end-column="14" />
+        <state relative-caret-position="23">
+          <caret line="52" column="14" selection-start-line="52" selection-start-column="14" selection-end-line="52" selection-end-column="14" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>

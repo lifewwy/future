@@ -301,61 +301,6 @@ ___    __
 
 <p>Alt+字母</p>
 <hr>
-<h2 id="3gpp">3GPP</h2>
-<p><a href="http://www.3gpp.org/">http://www.3gpp.org/</a>  </p>
-<p>3GPP是个什么组织 为啥5G标准离不开它?<br>时光飞逝，转眼到了2017年，从1998年成立以来，3GPP不断扩大、由成员驱动，涉及数百家公司的大量工作和协作，包括网络运营商、终端制造商、芯片制造商、基础设施制造商、学术界、研究机构、政府机构，累积到2017年会议参与者突破6000多人，好家伙，厉害了。<br><a href="http://news.mydrivers.com/1/562/562043.htm">http://news.mydrivers.com/1/562/562043.htm</a></p>
-<h2 id="-">接入网与核心网</h2>
-<p>从3G演进到4G，接入网与核心网“整体演进”到4G时代。<br>到了5G就不一样了，3GPP组织把接入网(5G NR)和核心网(5G Core)拆开了，要各自独立演进到5G时代。</p>
-<p>4G的无线接入称为eLTE，5G基站的无线接入叫 <strong>New Radio</strong>，简称 <strong>NR</strong>。<br>在5G的第一阶段，eLTE与NR将沿用和共用4G的核心网。然后网络慢慢演进，NR将接入到自己的核心网，这可能发生在5G的第二阶段。</p>
-<h2 id="5g-3-">5G的3大场景</h2>
-<ol>
-<li>eMBB: 增强型移动宽带(6GHz以下及以上频段)</li>
-<li>URLLC: 超可靠低时延通信(6GHz以下频段)，例如无人驾驶等业务。</li>
-<li>mMTC: 大规模机器通信/大规模物联网(6GHz以下频段)</li>
-</ol>
-<p>注意这3个术语，在未来通信中将广泛使用。</p>
-<h2 id="5g-nr">5G NR</h2>
-<p>3G基站叫NodeB(NB)<br>4G基站叫eNB  (enhanced NB)</p>
-<p>那5G基站叫什么？<br>3GPP给它取了个名，gNB  </p>
-<p>5G基站的无线接入叫 <strong>New Radio</strong>，简称 <strong>NR</strong></p>
-<p>5G NR的“自我介绍”
-<a href="http://www.eefocus.com/communication/408007">http://www.eefocus.com/communication/408007</a></p>
-<h2 id="ldpc-polar">LDPC/Polar</h2>
-<p>不知道朋友们记不记得2017年11月下旬，华为公司主推的<strong>Polar Code</strong>（极化码）方案拿下5G，作为控制信道的编码方案，这个方案便是3PGG制定的三个场景之一的<strong>eMBB</strong>场景，而高通主导的<strong>LDPC</strong>码作为数据信道的编码方案。</p>
-<p>根据华为的实际测试来看，Polar码可以同时满足超高速率、低时延、大连接场景的需求，并且能够使蜂窝网络的频谱提升10%左右，与毫米波结合可以达到27Gbps的速率。</p>
-<p>对于eMBB场景来说，有了华为这位主力，外加高通的扶持，相信能够将无线通讯技术提升到新的高度。</p>
-<h2 id="4g-">4G移动通信网络体系架构</h2>
-<p>UE (用户设备)<br>E-UTRAN（接入网）<br>EPC（核心网络）</p>
-<hr>
-<div style="float:left;margin:20px;"><img src="https://i.imgur.com/R6We5EX.jpg"  width="" height="230" ></div><div style="float:left;margin:20px;"><img src="https://i.imgur.com/CeM6e4h.jpg"  width="" height="230" ></div><div style="float:left;border:margin:20px;"><img src="https://i.imgur.com/emCLEWe.png"  width="" height="230" ></div><div style="float:left;margin:20px;"><img src="https://i.imgur.com/q8TotHR.jpg"  width="" height="230" ></div>
-
-
-
-<hr>
-<p>MME: Mobility Management Entity<br>S-GW: Serving GateWay,服务网关<br>P-GW: PDN GateWay,PDN 网关<br>E-UTRAN: Evolved Universal Terrestrial Radio Access Network<br>EPC: Evlved Packet Core 演进分组核心网<br>RRC: Radio Resource Control 是指无线资源控制<br>PDCP: Packet Data Convergence Protocol 分组数据汇聚协议<br>RLC: Radio Link Control 无线链路控制层协议<br>PHY: Physical Layer Protocol 物理层协议  </p>
-<h3 id="-">用户面和控制面</h3>
-<p><a href="https://blog.csdn.net/wowricky/article/details/6907715">https://blog.csdn.net/wowricky/article/details/6907715</a><br>用户面走数据<br>控制面走信令  </p>
-<h3 id="enodeb-">eNodeB功能</h3>
-<p>包括物理层功能(HARQ等),MAC,RRC,调度,无线接入控制，移动性管理。</p>
-<h3 id="-">网关</h3>
-<p>大家都知道，从一个房间走到另一个房间，必然要经过一扇门。同样，从一个网络向另一个网络发送信息，也必须经过一道“关口”，这道关口就是网关。顾名思义，网关(Gateway)就是一个网络连接到另一个网络的“关口”。  </p>
-<p>假设你的名字叫小不点(很小)，你住在一个大院子里，你的邻居有很多小伙伴，父母是你的<strong>网关</strong>。当你想跟院子里的某个小伙伴玩，只要你在院子里大喊一声他的名字，他听到了就会回应你，并且跑出来跟你玩。</p>
-<p>但是你家长不允许你走出大门，你想与外界发生的一切联系，都必须由父母（网关）用电话帮助你联系。假如你想找你的同学小明聊天，小明家住在很远的另外一个院子里，他家里也有父母（小明的网关）。但是你不知道小明家的电话号码，不过你的班主任老师有一份你们班全体同学的名单和电话号码对照表，你的老师就是你的DNS服务器。于是你在家里和父母有了下面的对话：</p>
-<p>小不点：妈妈(或爸爸),我想找班主任查一下小明的电话号码行吗？<br>家长：好，你等着。（接着你家长给你的班主任挂了一个电话，问清楚了小明的电话）问到了，他家的号码是211.99.99.99
-小不点：太好了！妈(或爸),我想找小明，你再帮我联系一下小明吧。<br>家长：没问题。（接着家长向电话局发出了请求接通小明家电话的请求，最后一关当然是被转接到了小明家家长那里，然后他家长把电话给转到小明）</p>
-<p>就这样你和小明取得了联系。</p>
-<p>如果搞清了什么是网关，默认网关也就好理解了。就好像一个房间可以有多扇门一样，一台主机可以有多个网关。默认网关的意思是一台主机如果找不到可用的网关，就把数据包发给默认指定的网关，由这个网关来处理数据包。默认网关。默认网关一般填写192.168.x.1</p>
-<h2 id="-">重传机制</h2>
-<p><strong>ARQ</strong>和<strong>HARQ </strong><br>HARQ: 混合自动重传请求(Hybrid Automatic Repeat reQuest,HARQ)
-<a href="https://www.jianshu.com/p/f8650640660b">https://www.jianshu.com/p/f8650640660b</a>  </p>
-<h2 id="bbu-rru">BBU与RRU</h2>
-<p>RRU是Remote Radio Unit 远端射频模块，BBU是Building Baseband Unit 室内基带处理单元。  </p>
-<p>基带BBU集中放置在机房，RRU可安装至楼层，BBU与RRU之间采用光纤传输，RRU再通过同轴电缆及功分器(耦合器)等连接至天线，即主干采用光纤，支路采用同轴电缆。  </p>
-<p>对于下行方向：光纤从BBU直接连到RRU，BBU和RRU之间传输的是基带数字信号，这样基站可以控制某个用户的信号从指定的RRU通道发射出去，这样可以大大降低对本小区其他通道上用户的干扰。<br>对于上行方向：用户手机信号被距离最近的通道收到，然后从这个通道经过光纤传到基站，这样也可以大大降低不同通道上用户之间的干扰。</p>
-<h2 id="-">有源天线与无源天线</h2>
-<p>无源天线：它纯粹是一个金属体，是平常看到很普通的各种天线。<br>有源天线：是在这普通的天线后加放大器，提高灵敏度，降低信噪比。  </p>
-<p>使用GPS天线有源和无源的区别<br><a href="http://www.arsgps.com/changjianwenti/30-80.html">http://www.arsgps.com/changjianwenti/30-80.html</a></p>
-<h2 id="qos">QoS</h2>
 <p></br></br></br></br></br></br></br></br>
 </br></br></br></br></br></br></br></br>
 </br></br></br></br></br></br></br></br></p>
