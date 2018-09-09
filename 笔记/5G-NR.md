@@ -384,6 +384,18 @@ The modulation order of a digital communication scheme is determined by the numb
 
 调制阶数可以用来计算每个调制符号所能代表的比特数，log2(调制阶数) = n bit/symbol
 
+## 术语 ##
+
+- PSS (Primiary Synchronization Signal)
+http://www.sharetechnote.com/html/5G/5G_PSS.html
+- SSS (Secondary Synchronization Signal)
+http://www.sharetechnote.com/html/5G/5G_SSS.html
+- PBCH (Physical Broadcast Channel) 
+http://www.sharetechnote.com/html/Handbook_LTE_PBCH.html
+http://rfmw.em.keysight.com/wireless/helpfiles/89600b/webhelp/subsystems/lte/content/lte_sym_tbl_framesummary_pbch.htm
+-  PRACH Channel (Physical Random Access Channel)
+http://www.sharetechnote.com/html/5G/5G_RACH.html
+http://www.sharetechnote.com/html/RACH_LTE.html
 
 </br></br></br></br></br></br></br></br>
 </br></br></br></br></br></br></br></br>
