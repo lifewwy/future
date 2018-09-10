@@ -294,9 +294,7 @@ Physical Resource Blocks (PRB)
 <p>此外，LDPC本质上采用并行的处理方式，而Turbo码本质上是串行的，因而<strong>LDPC更适合支持低时延应用</strong>。</p>
 <p>至于Polar码，尽管提出较晚，但其兼具编码和解码复杂度低的特点，且非常灵活，在任何码长和码率下都具有良好的性能，当然成为了控制信道的不二选择。</p>
 <h3 id="-">初始接入与波束管理</h3>
-<p><a href="https://www.keysight.com/upload/cmc_upload/All/Understanding_the_5G_NR_Physical_Layer.pdf#page=32">Understanding the 5G NR Physical Layer</a>
-(转成网页文件可打开链接)
-(使用相对路径)</p>
+<p><a href="https://www.keysight.com/upload/cmc_upload/All/Understanding_the_5G_NR_Physical_Layer.pdf#page=32">Understanding the 5G NR Physical Layer</a></p>
 <center class="half">
     <img src="https://i.imgur.com/wmvrHiW.png" height="200" style="margin-right:45px"><img src="https://i.imgur.com/evGncgf.png" height="200">
 </center>
@@ -305,6 +303,43 @@ Physical Resource Blocks (PRB)
     <img src="https://i.imgur.com/JsqYk0A.png" height="200" style="margin-left:80px">
 </left>
 
+
+<p><a href="https://www.keysight.com/upload/cmc_upload/All/Understanding_the_5G_NR_Physical_Layer.pdf#page=44">Physical Channels and Signals</a></p>
+<center class="half">
+    <img src="https://i.imgur.com/ImL7jKo.png" height="160" style="margin-left:0px">
+</center>
+
+<p><strong>
+SS Block
+SS Burst
+SS Burst Set</strong></p>
+<center class="half">
+    <img src="https://i.imgur.com/kWimhm9.png" height="230" style="margin-left:0px"><img src="https://i.imgur.com/2FG1stS.png" height="230" style="margin-left:0px">
+</center>
+
+
+
+
+
+<h2 id="5g-nr-synchronization">5G/NR - Synchronization</h2>
+<p><a href="http://www.sharetechnote.com/html/5G/5G_Phy_Synchronization.html">http://www.sharetechnote.com/html/5G/5G_Phy_Synchronization.html</a></p>
+<h3 id="nr-synchronization-process">NR Synchronization Process</h3>
+<p>When we say &#39;<strong>Synchronization</strong>&#39; in communication technology, it usually mean &#39;<strong>synchronization for transmission</strong>&#39; and &#39;<strong>synchronization for reception</strong>&#39;.</p>
+<p>In UE&#39;s point of view, &#39;transmitting direction&#39; is called &#39;Uplink&#39; and &#39;receiving direction&#39; is called &#39;Downlink&#39;. Applying this terms to synchronization process, we have two types of synchronization in cellular communication including 5G/NR called &#39;<strong>Downlink Synchronization</strong>&#39; and &#39;<strong>Uplink Synchronization</strong>&#39;.</p>
+<p>Donwlink Synchronization : This is the process in which UE detect the radio boundary (i.e, the exact timing when a radio frame starts) and OFDM symbo boundary(i.e, the exact timing when an OFDM symbol starts). This process is done by detecting and analyzing SS Block. This is a pretty complicated process and follow through <a href="http://www.sharetechnote.com/html/5G/5G_SS_Block.html">SS Block Page</a> for the detailed understanding.</p>
+<p>Uplink Synchronization : This is the process in which UE figure out the exact timing when it should send uplink data (i.e, PUSCH / PUCCH).  Usually a network (gNB) is handling multiple UEs and the network has to ensure that the uplink signal from every UE should be aligned with a common receiver timer of the network. So this involves much more complicated process and sometimes it has to adjust UE Tx timing (uplink timing) of each UE. This is called <strong>RACH process</strong>. Of course, you need to go through much longer pages of reading. Read through <a href="http://www.sharetechnote.com/html/5G/5G_RACH.html">RACH page</a> for the details.</p>
+<h3 id="overal-procedure-of-synchronization-and-initial-access">Overal Procedure of Synchronization and Initial Access</h3>
+<p><a href="http://www.sharetechnote.com/html/5G/5G_Phy_Synchronization.html#Overal_Procedure_of_Synch_InitialAccess">Overal Procedure of Synchronization and Initial Access</a>
+when we just say &quot;Synchronization&quot;, it usually mean Downlink Synchronization. Of course, Uplink Synchronization is very important as well, but usually the uplink process is regarded as part of RACH process and normaly treated under &quot;RACH Procedure&quot; or &quot;Initial Access&quot; process.</p>
+<h3 id="how-synchronization-work-">How Synchronization work ?</h3>
+<p>The most common way to implement the Synchronization is</p>
+<p>i) Create a predefined signal (a predefined data sequence : This signal is called Sync signal)
+ii) Put the signal into a specific OFDMA symbol in a specific subframe and transmit</p>
+<p>Since UE already have (or can derive) all the details of the predefined sync signal, it can search and detect the data from the stream of data reaching the UE. Because the sync signal is located in the predefined location in time, UE can detect the exact timing from the decoded sync signal.</p>
+<h3 id="what-kind-of-information-can-be-derived-from-the-synchronizaiton-signal-">What kind of Information can be derived from the Synchronizaiton Signal ?</h3>
+<p><a href="http://www.sharetechnote.com/html/5G/5G_Phy_Synchronization.html#InformationInSyncSignal">What kind of Information can be derived from the Synchronizaiton Signal ?</a></p>
+<h3 id="synchronization-signal-in-frame-structure">Synchronization Signal in Frame Structure</h3>
+<p><a href="http://www.sharetechnote.com/html/5G/5G_Phy_Synchronization.html#Synchronization_Signal_in_Frame_Structure">Synchronization Signal in Frame Structure</a></p>
 <h2 id="-">调制的阶数</h2>
 <p>Modulation Order</p>
 <p>Wikipedia
@@ -315,6 +350,44 @@ The modulation order of a digital communication scheme is determined by the numb
 <li>16QAM: 16阶调制</li>
 </ol>
 <p>调制阶数可以用来计算每个调制符号所能代表的比特数，log2(调制阶数) = n bit/symbol</p>
+<h2 id="lte-">LTE 随机接入</h2>
+<p>随机接入本质上说就是<strong>实现终端跟基站之间的上行同步</strong>，是空口层面的。
+附着的本质是在让终端成功接入核心网，成功拿到IP地址，是核心网层面的。</p>
+<p><a href="http://www.sharetechnote.com/html/RACH_LTE.html">http://www.sharetechnote.com/html/RACH_LTE.html</a></p>
+<ul>
+<li>RACH stands for Random Access Channel.   </li>
+<li>This is the first message from UE to eNB when you power it on.  </li>
+<li>In terms of eNB point of view, it would seem that it is getting this initial UE signal in almost random fashion (e.g, in Random timing , Random Frequency and in Random Identification) because it has no idea when a user turn on the UE (Actually it is not completely random, there are a certain range of agreement between UE and Network about the timing, frequency location and possible indentification, but in large scale it would look like working in random fashion). </li>
+</ul>
+<h3 id="why-rach-rach-">Why RACH ? (为什么需要 RACH)</h3>
+<p>The <strong>main purpose</strong> of RACH can be described as follows.
+i) Achieve<strong> UP link synchronization</strong> between UE and eNB
+ii) Obtain the resource for Message 3 (e.g, RRC Connection Request)</p>
+<p>In most of the communication (especially digital comunication regardless of whether it is wired or wireless), the most important precondition is to establish the <strong>timing synchronization</strong> between the reciever and transmitter. So whatever communication technology you would study, you would see some kind of synchronization mechanism that is specially designed for the specific communication.</p>
+<p><strong>synchronization in downlink</strong>: In LTE, the synchronization in downlink (Transmitter = eNB, Reciever = UE), this synchronization is achieved by the special synchronization channel (special physical signal pattern). Refer to <a href="http://www.sharetechnote.com/html/BasicProcedure_LTE_TimeSync.html">Time Sync Process</a> page for the details. This downlink sync signal gets <strong>broadcasted</strong> to everybody and it is get transmitted all the time with a certain interval.</p>
+<p><strong>synchronization in uplink</strong>: However in Uplink(Transmitter = UE, Reciever = eNB), it is not efficient (actually waste of energy and causing a lot of interference to other UEs) if UE is using this kind of broadcasting/always-on synchronization mechanism. In case of uplink, this synchronization process should meet following criteria
+i) The synchronization process should happen only when there is immediate necessity
+ii) The synchronization should be dedicated to only a specific UE
+All the complicated/confusing stories in this page is mostly about the process specially designed mechanism to meet these criteria.</p>
+<p>Another purpose of RACH process is to obtain the resource for Msg3 (Message 3). RRC Connection Request is one example of Msg3 and there are several different types of Msg3 depending on situation. </p>
+<h3 id="two-types-of-rach-process">Two types of RACH process</h3>
+<p>(<a href="http://www.sharetechnote.com/html/RACH_LTE.html#Two_types_of_RACH_process">http://www.sharetechnote.com/html/RACH_LTE.html#Two_types_of_RACH_process</a>)<br>Two types of RACH process : Contention-based and Contention-free</p>
+<h3 id="rach-process-overview-in-diagrams">RACH Process Overview In Diagrams</h3>
+<p><a href="http://www.sharetechnote.com/html/RACH_LTE.html#RACH_Process_Overview_In_Diagrams">http://www.sharetechnote.com/html/RACH_LTE.html#RACH_Process_Overview_In_Diagrams</a></p>
+<h2 id="-">术语</h2>
+<ul>
+<li>PSS (Primiary Synchronization Signal)
+<a href="http://www.sharetechnote.com/html/5G/5G_PSS.html">http://www.sharetechnote.com/html/5G/5G_PSS.html</a></li>
+<li>SSS (Secondary Synchronization Signal)
+<a href="http://www.sharetechnote.com/html/5G/5G_SSS.html">http://www.sharetechnote.com/html/5G/5G_SSS.html</a></li>
+<li>PBCH (Physical Broadcast Channel) 
+<a href="http://www.sharetechnote.com/html/Handbook_LTE_PBCH.html">http://www.sharetechnote.com/html/Handbook_LTE_PBCH.html</a>
+<a href="http://rfmw.em.keysight.com/wireless/helpfiles/89600b/webhelp/subsystems/lte/content/lte_sym_tbl_framesummary_pbch.htm">http://rfmw.em.keysight.com/wireless/helpfiles/89600b/webhelp/subsystems/lte/content/lte_sym_tbl_framesummary_pbch.htm</a></li>
+<li>PRACH Channel (Physical Random Access Channel)
+<a href="http://www.sharetechnote.com/html/5G/5G_RACH.html">http://www.sharetechnote.com/html/5G/5G_RACH.html</a>
+<a href="http://www.sharetechnote.com/html/RACH_LTE.html">http://www.sharetechnote.com/html/RACH_LTE.html</a></li>
+<li>MIB (Essential system information) </li>
+</ul>
 <p></br></br></br></br></br></br></br></br>
 </br></br></br></br></br></br></br></br>
 </br></br></br></br></br></br></br></br></p>

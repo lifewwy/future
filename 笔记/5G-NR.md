@@ -359,8 +359,6 @@ Turbo码的特点是**编码复杂度低，但解码复杂度高**，而**LDPC�
 ### 初始接入与波束管理 ###
 
 [Understanding the 5G NR Physical Layer](https://www.keysight.com/upload/cmc_upload/All/Understanding_the_5G_NR_Physical_Layer.pdf#page=32)
-(转成网页文件可打开链接)
-(使用相对路径)
 
 
 <center class="half">
@@ -370,6 +368,57 @@ Turbo码的特点是**编码复杂度低，但解码复杂度高**，而**LDPC�
 <left class="half">
     <img src="https://i.imgur.com/JsqYk0A.png" height="200" style="margin-left:80px">
 </left>
+
+
+[Physical Channels and Signals](https://www.keysight.com/upload/cmc_upload/All/Understanding_the_5G_NR_Physical_Layer.pdf#page=44)
+<center class="half">
+    <img src="https://i.imgur.com/ImL7jKo.png" height="160" style="margin-left:0px">
+</center>
+
+**
+SS Block
+SS Burst
+SS Burst Set**
+<center class="half">
+    <img src="https://i.imgur.com/kWimhm9.png" height="230" style="margin-left:0px"><img src="https://i.imgur.com/2FG1stS.png" height="230" style="margin-left:0px">
+</center>
+
+
+
+
+
+## 5G/NR - Synchronization   ##
+http://www.sharetechnote.com/html/5G/5G_Phy_Synchronization.html
+
+### NR Synchronization Process ###
+When we say '**Synchronization**' in communication technology, it usually mean '**synchronization for transmission**' and '**synchronization for reception**'.
+
+In UE's point of view, 'transmitting direction' is called 'Uplink' and 'receiving direction' is called 'Downlink'. Applying this terms to synchronization process, we have two types of synchronization in cellular communication including 5G/NR called '**Downlink Synchronization**' and '**Uplink Synchronization**'.
+
+
+Donwlink Synchronization : This is the process in which UE detect the radio boundary (i.e, the exact timing when a radio frame starts) and OFDM symbo boundary(i.e, the exact timing when an OFDM symbol starts). This process is done by detecting and analyzing SS Block. This is a pretty complicated process and follow through [SS Block Page](http://www.sharetechnote.com/html/5G/5G_SS_Block.html) for the detailed understanding.
+
+
+Uplink Synchronization : This is the process in which UE figure out the exact timing when it should send uplink data (i.e, PUSCH / PUCCH).  Usually a network (gNB) is handling multiple UEs and the network has to ensure that the uplink signal from every UE should be aligned with a common receiver timer of the network. So this involves much more complicated process and sometimes it has to adjust UE Tx timing (uplink timing) of each UE. This is called **RACH process**. Of course, you need to go through much longer pages of reading. Read through [RACH page](http://www.sharetechnote.com/html/5G/5G_RACH.html) for the details.
+
+### Overal Procedure of Synchronization and Initial Access ###
+[Overal Procedure of Synchronization and Initial Access](http://www.sharetechnote.com/html/5G/5G_Phy_Synchronization.html#Overal_Procedure_of_Synch_InitialAccess)  
+when we just say "Synchronization", it usually mean Downlink Synchronization. Of course, Uplink Synchronization is very important as well, but usually the uplink process is regarded as part of RACH process and normaly treated under "RACH Procedure" or "Initial Access" process.
+
+### How Synchronization work ? ###
+The most common way to implement the Synchronization is
+
+i) Create a predefined signal (a predefined data sequence : This signal is called Sync signal)  
+ii) Put the signal into a specific OFDMA symbol in a specific subframe and transmit
+
+Since UE already have (or can derive) all the details of the predefined sync signal, it can search and detect the data from the stream of data reaching the UE. Because the sync signal is located in the predefined location in time, UE can detect the exact timing from the decoded sync signal.
+
+### What kind of Information can be derived from the Synchronizaiton Signal ? ###
+[What kind of Information can be derived from the Synchronizaiton Signal ?](http://www.sharetechnote.com/html/5G/5G_Phy_Synchronization.html#InformationInSyncSignal)
+
+### Synchronization Signal in Frame Structure ###
+[Synchronization Signal in Frame Structure](http://www.sharetechnote.com/html/5G/5G_Phy_Synchronization.html#Synchronization_Signal_in_Frame_Structure)
+
 
 ## 调制的阶数 ##
 Modulation Order
@@ -384,6 +433,43 @@ The modulation order of a digital communication scheme is determined by the numb
 
 调制阶数可以用来计算每个调制符号所能代表的比特数，log2(调制阶数) = n bit/symbol
 
+
+## LTE 随机接入 ##
+随机接入本质上说就是**实现终端跟基站之间的上行同步**，是空口层面的。
+附着的本质是在让终端成功接入核心网，成功拿到IP地址，是核心网层面的。
+
+http://www.sharetechnote.com/html/RACH_LTE.html
+
+- RACH stands for Random Access Channel.   
+- This is the first message from UE to eNB when you power it on.  
+- In terms of eNB point of view, it would seem that it is getting this initial UE signal in almost random fashion (e.g, in Random timing , Random Frequency and in Random Identification) because it has no idea when a user turn on the UE (Actually it is not completely random, there are a certain range of agreement between UE and Network about the timing, frequency location and possible indentification, but in large scale it would look like working in random fashion). 
+
+### Why RACH ? (为什么需要 RACH) ###
+The **main purpose** of RACH can be described as follows.
+i) Achieve** UP link synchronization** between UE and eNB
+ii) Obtain the resource for Message 3 (e.g, RRC Connection Request)
+
+In most of the communication (especially digital comunication regardless of whether it is wired or wireless), the most important precondition is to establish the **timing synchronization** between the reciever and transmitter. So whatever communication technology you would study, you would see some kind of synchronization mechanism that is specially designed for the specific communication.
+
+**synchronization in downlink**: In LTE, the synchronization in downlink (Transmitter = eNB, Reciever = UE), this synchronization is achieved by the special synchronization channel (special physical signal pattern). Refer to [Time Sync Process](http://www.sharetechnote.com/html/BasicProcedure_LTE_TimeSync.html) page for the details. This downlink sync signal gets **broadcasted** to everybody and it is get transmitted all the time with a certain interval.
+
+**synchronization in uplink**: However in Uplink(Transmitter = UE, Reciever = eNB), it is not efficient (actually waste of energy and causing a lot of interference to other UEs) if UE is using this kind of broadcasting/always-on synchronization mechanism. In case of uplink, this synchronization process should meet following criteria
+i) The synchronization process should happen only when there is immediate necessity
+ii) The synchronization should be dedicated to only a specific UE
+All the complicated/confusing stories in this page is mostly about the process specially designed mechanism to meet these criteria.
+
+ 
+Another purpose of RACH process is to obtain the resource for Msg3 (Message 3). RRC Connection Request is one example of Msg3 and there are several different types of Msg3 depending on situation. 
+
+### Two types of RACH process ###
+(http://www.sharetechnote.com/html/RACH_LTE.html#Two_types_of_RACH_process)  
+Two types of RACH process : Contention-based and Contention-free
+
+### RACH Process Overview In Diagrams ###
+http://www.sharetechnote.com/html/RACH_LTE.html#RACH_Process_Overview_In_Diagrams
+
+
+
 ## 术语 ##
 
 - PSS (Primiary Synchronization Signal)
@@ -396,6 +482,7 @@ http://rfmw.em.keysight.com/wireless/helpfiles/89600b/webhelp/subsystems/lte/con
 -  PRACH Channel (Physical Random Access Channel)
 http://www.sharetechnote.com/html/5G/5G_RACH.html
 http://www.sharetechnote.com/html/RACH_LTE.html
+- MIB (Essential system information) 
 
 </br></br></br></br></br></br></br></br>
 </br></br></br></br></br></br></br></br>
