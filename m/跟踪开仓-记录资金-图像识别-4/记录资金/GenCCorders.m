@@ -14,6 +14,7 @@ if nargin==0
 end
 %% 账户选择
 AccountSelection = get(handles.TradeAccout,'value');
+% AccountSelection = 1;
 switch AccountSelection
     case 1
         adInfo = '国贸期货';
@@ -29,22 +30,39 @@ fp  = mfilename('fullpath');
 pp = strfind(fp,'\');
 folder1 = fp(1:pp(end));
 
+listing = dir([folder1,'订单*.csv']);
+% fileName = [folder1,listing(i).name];
 % folder1 = 'C:\D\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\';
-filename = [folder1,'订单-',adInfo,'.csv'];
+% filename = [folder1,'订单-',adInfo,'.csv'];
 
-fid = fopen(filename,'a+');
-fprintf(fid, '\n');
 
-fprintf(fid, '%s,', datestr(now,'yyyy/mm/dd'));
-fprintf(fid, '%s,', contract1);
-fprintf(fid, '%s,', '(换合约)');
-fprintf(fid, '%d\n', NaN);
-fprintf(fid, '%s,', datestr(now,'yyyy/mm/dd'));
-fprintf(fid, '%s,', contract2);
-fprintf(fid, '%s,', '(换合约)');
-fprintf(fid, '%d\n', NaN);
+nOrderFile = length(listing);
+if isempty(nOrderFile)
+    filename = {[folder1,'订单-',adInfo,'.csv']};
+else
+    filename = cell(1,nOrderFile);
+    for i = 1:nOrderFile
+        filename(i) = {[folder1,listing(i).name]};
+    end
+end
 
-fclose(fid);
+for i = 1:length(filename)
+    
+    fid = fopen(filename{i},'a+');
+    fprintf(fid, '\n');
+    
+    fprintf(fid, '%s,', datestr(now,'yyyy/mm/dd'));
+    fprintf(fid, '%s,', contract1);
+    fprintf(fid, '%s,', '(换合约)');
+    fprintf(fid, '%d\n', NaN);
+    fprintf(fid, '%s,', datestr(now,'yyyy/mm/dd'));
+    fprintf(fid, '%s,', contract2);
+    fprintf(fid, '%s,', '(换合约)');
+    fprintf(fid, '%d\n', NaN);
+    
+    fclose(fid);
+    
+end
 disp('订单文件更新成功！');
 
 %% 写 txt 文件
