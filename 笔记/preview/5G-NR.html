@@ -97,6 +97,10 @@
 
 <hr>
 <p>MME: Mobility Management Entity<br>S-GW: Serving GateWay,服务网关<br>P-GW: PDN GateWay,PDN 网关<br>E-UTRAN: Evolved Universal Terrestrial Radio Access Network<br>EPC: Evlved Packet Core 演进分组核心网<br>RRC: Radio Resource Control 是指无线资源控制<br>PDCP: Packet Data Convergence Protocol 分组数据汇聚协议<br>RLC: Radio Link Control 无线链路控制层协议<br>PHY: Physical Layer Protocol 物理层协议  </p>
+<center class="half">
+    <img src="https://i.imgur.com/77IhjuG.jpg" height="400" style="margin-left:80px">
+</center>
+
 <h3 id="-">用户面和控制面</h3>
 <p><a href="https://blog.csdn.net/wowricky/article/details/6907715">https://blog.csdn.net/wowricky/article/details/6907715</a><br>用户面走数据<br>控制面走信令  </p>
 <h3 id="enodeb-">eNodeB功能</h3>
@@ -265,8 +269,6 @@ Physical Resource Blocks (PRB)
 </center>
 
 
-
-
 <h3 id="resource-grid">Resource Grid</h3>
 <p><a href="https://www.keysight.com/upload/cmc_upload/All/Understanding_the_5G_NR_Physical_Layer.pdf#page=25">Understanding the 5G NR Physical Layer</a></p>
 <ul>
@@ -278,7 +280,7 @@ Physical Resource Blocks (PRB)
     <img src="https://i.imgur.com/1vOLXx9.png" height="500" style="margin-left:0px">
 </center>
 
-
+<p>☆ <a href="http://niviuk.free.fr/lte_resource_grid.html">http://niviuk.free.fr/lte_resource_grid.html</a> ☆</p>
 <h3 id="slot">Slot</h3>
 <h4 id="slot-structure">Slot Structure</h4>
 <p><a href="https://www.keysight.com/upload/cmc_upload/All/Understanding_the_5G_NR_Physical_Layer.pdf#page=27">Understanding the 5G NR Physical Layer</a></p>
@@ -329,12 +331,10 @@ SS Burst Set</strong></p>
 <p>Donwlink Synchronization : This is the process in which UE detect the radio boundary (i.e, the exact timing when a radio frame starts) and OFDM symbo boundary(i.e, the exact timing when an OFDM symbol starts). This process is done by detecting and analyzing SS Block. This is a pretty complicated process and follow through <a href="http://www.sharetechnote.com/html/5G/5G_SS_Block.html">SS Block Page</a> for the detailed understanding.</p>
 <p>Uplink Synchronization : This is the process in which UE figure out the exact timing when it should send uplink data (i.e, PUSCH / PUCCH).  Usually a network (gNB) is handling multiple UEs and the network has to ensure that the uplink signal from every UE should be aligned with a common receiver timer of the network. So this involves much more complicated process and sometimes it has to adjust UE Tx timing (uplink timing) of each UE. This is called <strong>RACH process</strong>. Of course, you need to go through much longer pages of reading. Read through <a href="http://www.sharetechnote.com/html/5G/5G_RACH.html">RACH page</a> for the details.</p>
 <h3 id="overal-procedure-of-synchronization-and-initial-access">Overal Procedure of Synchronization and Initial Access</h3>
-<p><a href="http://www.sharetechnote.com/html/5G/5G_Phy_Synchronization.html#Overal_Procedure_of_Synch_InitialAccess">Overal Procedure of Synchronization and Initial Access</a>
-when we just say &quot;Synchronization&quot;, it usually mean Downlink Synchronization. Of course, Uplink Synchronization is very important as well, but usually the uplink process is regarded as part of RACH process and normaly treated under &quot;RACH Procedure&quot; or &quot;Initial Access&quot; process.</p>
+<p><a href="http://www.sharetechnote.com/html/5G/5G_Phy_Synchronization.html#Overal_Procedure_of_Synch_InitialAccess">Overal Procedure of Synchronization and Initial Access</a><br>when we just say &quot;Synchronization&quot;, it usually mean Downlink Synchronization. Of course, Uplink Synchronization is very important as well, but usually the uplink process is regarded as part of RACH process and normaly treated under &quot;RACH Procedure&quot; or &quot;Initial Access&quot; process.</p>
 <h3 id="how-synchronization-work-">How Synchronization work ?</h3>
 <p>The most common way to implement the Synchronization is</p>
-<p>i) Create a predefined signal (a predefined data sequence : This signal is called Sync signal)
-ii) Put the signal into a specific OFDMA symbol in a specific subframe and transmit</p>
+<p>i) Create a predefined signal (a predefined data sequence : This signal is called Sync signal)<br>ii) Put the signal into a specific OFDMA symbol in a specific subframe and transmit</p>
 <p>Since UE already have (or can derive) all the details of the predefined sync signal, it can search and detect the data from the stream of data reaching the UE. Because the sync signal is located in the predefined location in time, UE can detect the exact timing from the decoded sync signal.</p>
 <h3 id="what-kind-of-information-can-be-derived-from-the-synchronizaiton-signal-">What kind of Information can be derived from the Synchronizaiton Signal ?</h3>
 <p><a href="http://www.sharetechnote.com/html/5G/5G_Phy_Synchronization.html#InformationInSyncSignal">What kind of Information can be derived from the Synchronizaiton Signal ?</a></p>
@@ -374,6 +374,9 @@ All the complicated/confusing stories in this page is mostly about the process s
 <p>(<a href="http://www.sharetechnote.com/html/RACH_LTE.html#Two_types_of_RACH_process">http://www.sharetechnote.com/html/RACH_LTE.html#Two_types_of_RACH_process</a>)<br>Two types of RACH process : Contention-based and Contention-free</p>
 <h3 id="rach-process-overview-in-diagrams">RACH Process Overview In Diagrams</h3>
 <p><a href="http://www.sharetechnote.com/html/RACH_LTE.html#RACH_Process_Overview_In_Diagrams">http://www.sharetechnote.com/html/RACH_LTE.html#RACH_Process_Overview_In_Diagrams</a></p>
+<h2 id="crc">CRC</h2>
+<p>CRC即循环冗余校验码（Cyclic Redundancy Check）：是数据通信领域中最常用的一种查错校验码，其特征是信息字段和校验字段的长度可以任意选定。循环冗余检查（CRC）是一种数据传输检错功能，对数据进行多项式计算，并将得到的结果附在帧的后面，接收设备也执行类似的算法，以保证数据传输的正确性和完整性。</p>
+<p><a href="https://blog.csdn.net/weicao1990/article/details/51669853">https://blog.csdn.net/weicao1990/article/details/51669853</a></p>
 <h2 id="-">术语</h2>
 <ul>
 <li>PSS (Primiary Synchronization Signal)
@@ -387,7 +390,77 @@ All the complicated/confusing stories in this page is mostly about the process s
 <a href="http://www.sharetechnote.com/html/5G/5G_RACH.html">http://www.sharetechnote.com/html/5G/5G_RACH.html</a>
 <a href="http://www.sharetechnote.com/html/RACH_LTE.html">http://www.sharetechnote.com/html/RACH_LTE.html</a></li>
 <li>MIB (Essential system information) </li>
+<li>Downlink <strong>physical channels</strong>:
+• Physical Broadcast channel (PBCH)(物理广播信道)。承载小区ID等系统信息，用于小区搜索过程。
+• Physical Downlink Control Channel (PDCCH)(物理下行控制信道)。承载导呼和用户数据的资源分配信息，以及与用户数据相关的HARQ信息。
+• Physical Downlink Shared Channel (PDSCH)(物理下行共享信道) 。 主要用于传输业务数据，也可以传输信令。</li>
+<li>Downlink <strong>physical signals</strong>:
+• Primary Synchronization Signal (PSS)
+• Secondary Synchronization Signal (SSS)
+• Channel State Information Reference Signal (CSI-RS)
+• Tracking Reference Signal (TRS)</li>
+<li>上行物理信道
+• PRACH: Physical Random Access Channel(物理随机接入信道) 承载随机接入前导。Carries random access preamble.
+• PUSCH: Physical Uplink Shared Channel(物理上行共享信道) 承载上行用户数据。
+• PUCCH: Physical Uplink Control Channel(物理上行共享信道) 承载HARQACK/NACK，调度请求，信道质量指示等信息。Carries ACK/NACKs in response to downlink transmission. Carries CQI (Channel Quality Indicator) report and SR (Scheduling Request).  </li>
+<li>Uplink physical signals:
+• Demodulation Reference Signal (UL-RS), associated with transmission of PUSCH and PUCCH.
+• Sounding Reference Signal (SRS), not associated with transmission of PUSCH and PUCCH.<br><a href="http://www.artizanetworks.com/resources/tutorials/phy_cha.html">http://www.artizanetworks.com/resources/tutorials/phy_cha.html</a><br><a href="https://www.mathworks.com/help/lte/physical-channels.html">https://www.mathworks.com/help/lte/physical-channels.html</a>  </li>
 </ul>
+<h2 id="-">物理信道与物理信号</h2>
+<p><strong>物理信道(physical channels)</strong>: 对应于一系列资源粒子(RE: Resource Elements)的集合， 用于承载来自高层的信息。<br><strong>物理信号(physical signals)</strong>: 对应于物理层使用的一系列RE，但这些 RE 不传递任何来自高层的信息。如参考信号(RS)，同步信号。RS(Reference Signal)：参考信号，通常也称为导频信号；SCH(PSCH,SSCH)：同步信号，分为主同步信号和辅同步信号。</p>
+<h2 id="-">逻辑信道与传输信道</h2>
+<p>逻辑信道(Logical Channel)<br>传输信道(Transport Channe)<br><a href="http://www.techplayon.com/2411-2/">http://www.techplayon.com/2411-2/</a><br><a href="https://www.tutorialspoint.com/lte/lte_communication_channels.htm">https://www.tutorialspoint.com/lte/lte_communication_channels.htm</a><br><a href="http://www.rfwireless-world.com/Tutorials/LTE-logical-transport-physical-channels.html">http://www.rfwireless-world.com/Tutorials/LTE-logical-transport-physical-channels.html</a>  </p>
+<center class="half">
+    <img src="https://i.imgur.com/nnrRuH5.jpg" height="260" style="margin-left:0px"><img src="https://i.imgur.com/yqpmUHC.jpg" height="300" style="margin-left:0px">
+</center>
+
+
+
+<h2 id="lte-">LTE的同步信号</h2>
+<center class="half">
+    <img src="https://i.imgur.com/4WZK0Yu.png" height="300" style="margin-left:0px">
+</center>
+
+<h2 id="csi">CSI</h2>
+<p>CSI(Channel State Information ) : 信道状态信息  </p>
+<p><a href="https://blog.csdn.net/m_052148/article/details/72824979">https://blog.csdn.net/m_052148/article/details/72824979</a><br>在LTE里，我们通常所说的信道状态信息CSI（Channel State Information），主要包括PMI、RI和CQI。PMI的意思是预编码矩阵，UE通过PMI告诉eNB当前DL-SCH传输的最佳预编码矩阵。RI是秩指示的意思，告诉eNB当前DL-SCH传输的最佳层数。CQI是信道质量指示，表示在采用了建议的RI和PMI之后，为确保下行DL-SCH接收的误码率不超过10%，可用的最高调制编码方案，也就是说，CQI的值将影响下行MCS的取值。</p>
+<h3 id="what-is-csi">What is CSI</h3>
+<p><a href="http://www.sharetechnote.com/html/Handbook_LTE_CSI.html#What_is_CSI">http://www.sharetechnote.com/html/Handbook_LTE_CSI.html#What_is_CSI</a></p>
+<p>CSI is a kind of collective name of several different type of indicators (UE report) as listed below.</p>
+<ul>
+<li>Channel Quality Indicator(CQI)</li>
+<li>precoding matrix indicator (PMI)</li>
+<li>precoding type indicator (PTI)</li>
+<li>rank indication (RI)</li>
+</ul>
+<h2 id="-">层映射 与 预编码</h2>
+<h3 id="-">层映射</h3>
+<center class="half">
+    <img src="https://i.imgur.com/yc3HWA8.png" height="150" style="margin-left:0px">
+</center>
+
+<p><a href="http://www.sharetechnote.com/html/PhyProcessing_LTE.html">http://www.sharetechnote.com/html/PhyProcessing_LTE.html</a><br><a href="http://www.sharetechnote.com/html/BasicProcedure_LTE_PHY_Precoding.html">http://www.sharetechnote.com/html/BasicProcedure_LTE_PHY_Precoding.html</a><br><a href="https://blog.csdn.net/zhihuiyu123/article/details/81461189">https://blog.csdn.net/zhihuiyu123/article/details/81461189</a><br><a href="https://blog.csdn.net/cun_yun/article/details/45580965">https://blog.csdn.net/cun_yun/article/details/45580965</a><br><a href="https://blog.csdn.net/zhihuiyu123/article/details/79264513">https://blog.csdn.net/zhihuiyu123/article/details/79264513</a><br><a href="http://blog.sina.com.cn/s/blog_65a28d8a0102x9g1.html">http://blog.sina.com.cn/s/blog_65a28d8a0102x9g1.html</a><br><a href="https://link.springer.com/content/pdf/10.1155/2009/302092.pdf">https://link.springer.com/content/pdf/10.1155/2009/302092.pdf</a>  </p>
+<p>在LTE里面，空间复用的模式下，层数等于信道矩阵的秩，也就是说能够独立并行传输的数据流数。
+<a href="https://communities.theiet.org/blogs/426/430">https://communities.theiet.org/blogs/426/430</a><br>There are mainly <strong>two types</strong> of layer mapping: one for <strong>spatial multiplexing</strong> and the other for <strong>transmit diversity</strong>.  </p>
+<ul>
+<li>In case of <strong>spatial multiplexing</strong>, there may be one or two code-words. But the number of layers is restricted. On one hand, it should be equal to or more than the number of codewords. On the other hand, the number of layers cannot exceed the number of antenna ports. The most important concept is ‘layer’. The layers in spatial multiplexing have the same meaning as ‘streams’. They are used to transmit multiple data streams in parallel, so the number of layers here is often referred to as the transmission rank. In spatial multiplexing, the number of layers may be adapted to the transmission rank, by means of the feedback of a Rank Indicator (RI) to the layer mapping.</li>
+<li>In case of <strong>transmit diversity</strong>, there is only one codeword and the number of layers is equal to the number of antenna ports. The number of layers in this case is<strong> not related </strong>to the transmission rank, because transmit-diversity schemes are always single-rank transmission schemes. The layers in transmit diversity are used to conveniently carry out the following precoding by some pre-defined matrices.</li>
+</ul>
+<p><a href="https://www.commsys.isy.liu.se/MIMO/frenger_slides.pdf">MIMO in LTE and LTE-Advanced</a></p>
+<center class="half">
+    <img src="https://i.imgur.com/JnDwgmG.png" height="400" style="margin-left:0px">
+</center>
+
+
+<h3 id="-">预编码</h3>
+<p><a href="http://rfmw.em.keysight.com/wireless/helpfiles/89600b/webhelp/subsystems/lte/content/lte_overview.htm">http://rfmw.em.keysight.com/wireless/helpfiles/89600b/webhelp/subsystems/lte/content/lte_overview.htm</a><br><a href="https://www.mathworks.com/help/lte/examples/lte-dl-sch-and-pdsch-processing-chain.html">https://www.mathworks.com/help/lte/examples/lte-dl-sch-and-pdsch-processing-chain.html</a>  </p>
+<h2 id="-vs-">空间分集 VS 空间复用</h2>
+<h2 id="-vs-">发射分集 VS 波束赋形</h2>
+<h2 id="lte-mimo-modes">LTE MIMO modes</h2>
+<p><a href="https://www.radio-electronics.com/info/cellulartelecomms/lte-long-term-evolution/lte-mimo.php">https://www.radio-electronics.com/info/cellulartelecomms/lte-long-term-evolution/lte-mimo.php</a><br><a href="http://www.sharetechnote.com/html/BasicProcedure_LTE_MIMO.html">http://www.sharetechnote.com/html/BasicProcedure_LTE_MIMO.html</a>  </p>
+<h2 id="sharetechnote">sharetechnote</h2>
+<p>☆ <a href="http://www.sharetechnote.com/html/">http://www.sharetechnote.com/html/</a> ☆</p>
 <p></br></br></br></br></br></br></br></br>
 </br></br></br></br></br></br></br></br>
 </br></br></br></br></br></br></br></br></p>

@@ -65,6 +65,10 @@ PDCP: Packet Data Convergence Protocol 分组数据汇聚协议
 RLC: Radio Link Control 无线链路控制层协议  
 PHY: Physical Layer Protocol 物理层协议  
 
+<center class="half">
+    <img src="https://i.imgur.com/77IhjuG.jpg" height="400" style="margin-left:80px">
+</center>
+
 ### 用户面和控制面 ###
 https://blog.csdn.net/wowricky/article/details/6907715  
 用户面走数据   
@@ -318,8 +322,6 @@ http://niviuk.free.fr/store_fiveg.php
 </center>
 
 
-
-
 ### Resource Grid ###
 [Understanding the 5G NR Physical Layer](https://www.keysight.com/upload/cmc_upload/All/Understanding_the_5G_NR_Physical_Layer.pdf#page=25)
 
@@ -332,6 +334,8 @@ http://www.sharetechnote.com/html/5G/5G_FrameStructure.html#Resource_Grid
 <center class="half">
     <img src="https://i.imgur.com/1vOLXx9.png" height="500" style="margin-left:0px">
 </center>
+
+☆ http://niviuk.free.fr/lte_resource_grid.html ☆
 
 
 ### Slot ###
@@ -469,6 +473,12 @@ Two types of RACH process : Contention-based and Contention-free
 http://www.sharetechnote.com/html/RACH_LTE.html#RACH_Process_Overview_In_Diagrams
 
 
+## CRC ##
+CRC即循环冗余校验码（Cyclic Redundancy Check）：是数据通信领域中最常用的一种查错校验码，其特征是信息字段和校验字段的长度可以任意选定。循环冗余检查（CRC）是一种数据传输检错功能，对数据进行多项式计算，并将得到的结果附在帧的后面，接收设备也执行类似的算法，以保证数据传输的正确性和完整性。
+
+https://blog.csdn.net/weicao1990/article/details/51669853  
+http://www.sharetechnote.com/html/Handbook_Communication_CRC.html  
+
 
 ## 术语 ##
 
@@ -483,6 +493,115 @@ http://rfmw.em.keysight.com/wireless/helpfiles/89600b/webhelp/subsystems/lte/con
 http://www.sharetechnote.com/html/5G/5G_RACH.html
 http://www.sharetechnote.com/html/RACH_LTE.html
 - MIB (Essential system information) 
+- Downlink **physical channels**:
+• Physical Broadcast channel (PBCH)(物理广播信道)。承载小区ID等系统信息，用于小区搜索过程。
+• Physical Downlink Control Channel (PDCCH)(物理下行控制信道)。承载导呼和用户数据的资源分配信息，以及与用户数据相关的HARQ信息。
+• Physical Downlink Shared Channel (PDSCH)(物理下行共享信道) 。 主要用于传输业务数据，也可以传输信令。
+- Downlink **physical signals**:
+• Primary Synchronization Signal (PSS)
+• Secondary Synchronization Signal (SSS)
+• Channel State Information Reference Signal (CSI-RS)
+• Tracking Reference Signal (TRS)
+- 上行物理信道
+• PRACH: Physical Random Access Channel(物理随机接入信道) 承载随机接入前导。Carries random access preamble.
+• PUSCH: Physical Uplink Shared Channel(物理上行共享信道) 承载上行用户数据。
+• PUCCH: Physical Uplink Control Channel(物理上行共享信道) 承载HARQACK/NACK，调度请求，信道质量指示等信息。Carries ACK/NACKs in response to downlink transmission. Carries CQI (Channel Quality Indicator) report and SR (Scheduling Request).  
+- Uplink physical signals:
+• Demodulation Reference Signal (UL-RS), associated with transmission of PUSCH and PUCCH.
+• Sounding Reference Signal (SRS), not associated with transmission of PUSCH and PUCCH.  
+http://www.artizanetworks.com/resources/tutorials/phy_cha.html  
+https://www.mathworks.com/help/lte/physical-channels.html  
+- RRC (Radio Resource Control) protocol 
+
+
+## 物理信道与物理信号 ##
+**物理信道(physical channels)**: 对应于一系列资源粒子(RE: Resource Elements)的集合， 用于承载来自高层的信息。  
+**物理信号(physical signals)**: 对应于物理层使用的一系列RE，但这些 RE 不传递任何来自高层的信息。如参考信号(RS)，同步信号。RS(Reference Signal)：参考信号，通常也称为导频信号；SCH(PSCH,SSCH)：同步信号，分为主同步信号和辅同步信号。
+
+## 逻辑信道与传输信道 ##
+逻辑信道(Logical Channel)  
+传输信道(Transport Channe)  
+http://www.techplayon.com/2411-2/  
+https://www.tutorialspoint.com/lte/lte_communication_channels.htm  
+http://www.rfwireless-world.com/Tutorials/LTE-logical-transport-physical-channels.html  
+
+<center class="half">
+    <img src="https://i.imgur.com/nnrRuH5.jpg" height="260" style="margin-left:0px"><img src="https://i.imgur.com/yqpmUHC.jpg" height="300" style="margin-left:0px">
+</center>
+
+
+
+## LTE的同步信号 ##
+
+<center class="half">
+    <img src="https://i.imgur.com/4WZK0Yu.png" height="300" style="margin-left:0px">
+</center>
+
+## CSI ##
+CSI(Channel State Information ) : 信道状态信息  
+
+https://blog.csdn.net/m_052148/article/details/72824979  
+在LTE里，我们通常所说的信道状态信息CSI（Channel State Information），主要包括PMI、RI和CQI。PMI的意思是预编码矩阵，UE通过PMI告诉eNB当前DL-SCH传输的最佳预编码矩阵。RI是秩指示的意思，告诉eNB当前DL-SCH传输的最佳层数。CQI是信道质量指示，表示在采用了建议的RI和PMI之后，为确保下行DL-SCH接收的误码率不超过10%，可用的最高调制编码方案，也就是说，CQI的值将影响下行MCS的取值。
+
+### What is CSI ###
+http://www.sharetechnote.com/html/Handbook_LTE_CSI.html#What_is_CSI
+
+CSI is a kind of collective name of several different type of indicators (UE report) as listed below.
+- Channel Quality Indicator(CQI)
+- precoding matrix indicator (PMI)
+- precoding type indicator (PTI)
+- rank indication (RI)
+
+## 层映射 与 预编码 ##
+### 层映射 ###
+<center class="half">
+    <img src="https://i.imgur.com/yc3HWA8.png" height="150" style="margin-left:0px">
+</center>
+
+http://www.sharetechnote.com/html/PhyProcessing_LTE.html  
+http://www.sharetechnote.com/html/BasicProcedure_LTE_PHY_Precoding.html  
+https://blog.csdn.net/zhihuiyu123/article/details/81461189  
+https://blog.csdn.net/cun_yun/article/details/45580965  
+https://blog.csdn.net/zhihuiyu123/article/details/79264513  
+http://blog.sina.com.cn/s/blog_65a28d8a0102x9g1.html  
+https://link.springer.com/content/pdf/10.1155/2009/302092.pdf  
+
+
+在LTE里面，空间复用的模式下，层数等于信道矩阵的秩，也就是说能够独立并行传输的数据流数。
+https://communities.theiet.org/blogs/426/430  
+There are mainly **two types** of layer mapping: one for **spatial multiplexing** and the other for **transmit diversity**.  
+
+- In case of **spatial multiplexing**, there may be one or two code-words. But the number of layers is restricted. On one hand, it should be equal to or more than the number of codewords. On the other hand, the number of layers cannot exceed the number of antenna ports. The most important concept is ‘layer’. The layers in spatial multiplexing have the same meaning as ‘streams’. They are used to transmit multiple data streams in parallel, so the number of layers here is often referred to as the transmission rank. In spatial multiplexing, the number of layers may be adapted to the transmission rank, by means of the feedback of a Rank Indicator (RI) to the layer mapping.
+- In case of **transmit diversity**, there is only one codeword and the number of layers is equal to the number of antenna ports. The number of layers in this case is** not related **to the transmission rank, because transmit-diversity schemes are always single-rank transmission schemes. The layers in transmit diversity are used to conveniently carry out the following precoding by some pre-defined matrices.
+
+
+
+[MIMO in LTE and LTE-Advanced](https://www.commsys.isy.liu.se/MIMO/frenger_slides.pdf)
+<center class="half">
+    <img src="https://i.imgur.com/JnDwgmG.png" height="400" style="margin-left:0px">
+</center>
+
+
+###  预编码 ###
+http://rfmw.em.keysight.com/wireless/helpfiles/89600b/webhelp/subsystems/lte/content/lte_overview.htm  
+https://www.mathworks.com/help/lte/examples/lte-dl-sch-and-pdsch-processing-chain.html  
+
+## 空间分集 VS 空间复用 ##
+
+## 发射分集 VS 波束赋形 ##
+
+## LTE MIMO modes ##
+https://www.radio-electronics.com/info/cellulartelecomms/lte-long-term-evolution/lte-mimo.php  
+http://www.sharetechnote.com/html/BasicProcedure_LTE_MIMO.html  
+
+## sharetechnote ##
+☆ http://www.sharetechnote.com/ ☆
+
+  
+
+
+
+
 
 </br></br></br></br></br></br></br></br>
 </br></br></br></br></br></br></br></br>
