@@ -1,0 +1,137 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20180914T192027.txt
+
+读TB策略输出文件...
+读风险配置文件...
+{Improper assignment with rectangular empty matrix.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('GenOrders1', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\GenOrders1.m', 126)" style="font-weight:bold">GenOrders1</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\GenOrders1.m',126,0)">line 126</a>)
+    riskPCT(n) = d2.data(strcmpi(d2.textdata,contract{n}(1:end-4)));
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel>pushbutton41_Callback', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 2793)" style="font-weight:bold">panel>pushbutton41_Callback</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2793,0)">line 2793</a>)
+IsSuccessful = GenOrders1(handles,TBStrategyFlg);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gui_mainfcn', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
+        feval(varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 42)" style="font-weight:bold">panel</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',42,0)">line 42</a>)
+    gui_mainfcn(gui_State, varargin{:});
+
+Error in
+<a href="matlab:matlab.internal.language.introspective.errorDocCallback('@(hObject,eventdata)panel(''pushbutton41_Callback'',hObject,eventdata,guidata(hObject))')" style="font-weight:bold">@(hObject,eventdata)panel('pushbutton41_Callback',hObject,eventdata,guidata(hObject))</a>
+
+} 
+Error while evaluating UIControl Callback
+
+读TB策略输出文件...
+读风险配置文件...
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\GenOrders1.m',125,1)">125 </a>for n = 1:nOrders
+d2.textdata
+
+ans = 
+
+    'a'
+    'c'
+    'rb'
+    'm'
+    'p'
+    'j'
+    'zn'
+    'y'
+    'l'
+    'ag'
+    'ta'
+    'sr'
+    'au'
+    'fg'
+    'ma'
+    'ru'
+    'al'
+    'oi'
+    'rm'
+    'cf'
+    'i'
+    'jm'
+    'cu'
+    'ri'
+    'v'
+    'if'
+
+if system_dependent('IsDebugMode')==1, dbquit; end
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\readStrategyOutputFile1.m',17,1)">17  </a>folder2 = pp(1:i(end-3));
+if system_dependent('IsDebugMode')==1, dbcont; end
+读TB策略输出文件...
+if system_dependent('IsDebugMode')==1, dbcont; end
+d1{n}(pos1(2)+1:pos1(3)-1)
+{Undefined function or variable 'pos1'.
+} 
+if system_dependent('IsDebugMode')==1, dbcont; end
+{d1{n}(pos1(2)+1:pos1(3)-1)}
+
+ans = 
+
+    'TA1901'
+
+if system_dependent('IsDebugMode')==1, dbstep; end
+contract{n}(1:end-4)
+
+ans =
+
+TA
+
+cy(:,1)
+
+ans = 
+
+    '豆一'
+    '沪铝'
+    '黄金'
+    '玉米'
+    '棉花'
+    '沪铜'
+    '玻璃'
+    '股指'
+    '焦炭'
+    '塑料'
+    '豆粕'
+    '甲醇'
+    '菜籽油'
+    '棕榈油'
+    '螺纹钢'
+    '橡胶'
+    '白糖'
+    'PTA'
+    'PVC'
+    '豆油'
+    '沪锌'
+    'A'
+    'AL'
+    'AU'
+    'C'
+    'CF'
+    'CU'
+    'FG'
+    'IF'
+    'J'
+    'L'
+    'M'
+    'MA'
+    'OI'
+    'P'
+    'RB'
+    'RU'
+    'SR'
+    'Y'
+    'ZN'
+
+dbstep
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\readStrategyOutputFile1.m',71,1)">71  </a>    contract(n) = {[cy{p1,2},contract{n}(end-3:end)]};
+dbstep
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\readStrategyOutputFile1.m',73,1)">73  </a>    pos2 = strfind( d1{n}, '每手风险：');
+cy{p1,2}
+if system_dependent('IsDebugMode')==1, dbquit; end
+clear all
+读TB策略输出文件...
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\readStrategyOutputFile1.m',71,1)">71  </a>    contract(n) = {[cy{p1,2},contract{n}(end-3:en

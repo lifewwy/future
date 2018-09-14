@@ -68,7 +68,9 @@ for n = 1:nOrders
     
     contract(n) = {d1{n}(pos1(2)+1:pos1(3)-1)};
     [p1,~] = find(strcmp(contract{n}(1:end-4),cy(:,1)) == 1);
-    contract(n) = {[cy{p1,2},contract{n}(end-3:end)]};
+    if ~isempty(p1)
+        contract(n) = {[cy{p1,2},contract{n}(end-3:end)]};
+    end
     
     pos2 = strfind( d1{n}, '√ø ÷∑Áœ’£∫');
     risk(n) = str2double(d1{n}(pos2+5:end));
