@@ -14,9 +14,9 @@ http://news.mydrivers.com/1/562/562043.htm
 在5G的第一阶段，eLTE与NR将沿用和共用4G的核心网。然后网络慢慢演进，NR将接入到自己的核心网，这可能发生在5G的第二阶段。
 
 ## 5G的3大场景 ##
-1. eMBB: 增强型移动宽带(6GHz以下及以上频段)
-2. URLLC: 超可靠低时延通信(6GHz以下频段)，例如无人驾驶等业务。
-3. mMTC: 大规模机器通信/大规模物联网(6GHz以下频段)
+1. eMBB (Enhanced Mobile Broadband): 增强型移动宽带(6GHz以下及以上频段)  
+2. URLLC (Ultra-Reliable Low-Latency Communications): 超可靠低时延通信(6GHz以下频段)，例如无人驾驶等业务。  
+3. mMTC (massive Machine Type Communications): 大规模机器通信/大规模物联网(6GHz以下频段)    
 
 注意这3个术语，在未来通信中将广泛使用。
 
@@ -226,8 +226,7 @@ http://www.eefocus.com/communication/408007/p4
 DFT-s-OFDM targeted at power limited scenarios
 
 [Understanding the 5G NR Physical Layer](https://www.keysight.com/upload/cmc_upload/All/Understanding_the_5G_NR_Physical_Layer.pdf#page=17)
-(转成网页文件可打开链接)
-(使用相对路径)
+
 
 ### Multiple Access 多址接入方案 ###
 
@@ -482,36 +481,36 @@ http://www.sharetechnote.com/html/Handbook_Communication_CRC.html
 
 ## 术语 ##
 
-- PSS (Primiary Synchronization Signal)
-http://www.sharetechnote.com/html/5G/5G_PSS.html
-- SSS (Secondary Synchronization Signal)
-http://www.sharetechnote.com/html/5G/5G_SSS.html
-- PBCH (Physical Broadcast Channel) 
-http://www.sharetechnote.com/html/Handbook_LTE_PBCH.html
-http://rfmw.em.keysight.com/wireless/helpfiles/89600b/webhelp/subsystems/lte/content/lte_sym_tbl_framesummary_pbch.htm
--  PRACH Channel (Physical Random Access Channel)
-http://www.sharetechnote.com/html/5G/5G_RACH.html
-http://www.sharetechnote.com/html/RACH_LTE.html
-- MIB (Essential system information) 
-- Downlink **physical channels**:
-• Physical Broadcast channel (PBCH)(物理广播信道)。承载小区ID等系统信息，用于小区搜索过程。
-• Physical Downlink Control Channel (PDCCH)(物理下行控制信道)。承载导呼和用户数据的资源分配信息，以及与用户数据相关的HARQ信息。
-• Physical Downlink Shared Channel (PDSCH)(物理下行共享信道) 。 主要用于传输业务数据，也可以传输信令。
-- Downlink **physical signals**:
-• Primary Synchronization Signal (PSS)
-• Secondary Synchronization Signal (SSS)
-• Channel State Information Reference Signal (CSI-RS)
-• Tracking Reference Signal (TRS)
-- 上行物理信道
-• PRACH: Physical Random Access Channel(物理随机接入信道) 承载随机接入前导。Carries random access preamble.
-• PUSCH: Physical Uplink Shared Channel(物理上行共享信道) 承载上行用户数据。
-• PUCCH: Physical Uplink Control Channel(物理上行共享信道) 承载HARQACK/NACK，调度请求，信道质量指示等信息。Carries ACK/NACKs in response to downlink transmission. Carries CQI (Channel Quality Indicator) report and SR (Scheduling Request).  
-- Uplink physical signals:
-• Demodulation Reference Signal (UL-RS), associated with transmission of PUSCH and PUCCH.
+- PSS (Primiary Synchronization Signal)  
+http://www.sharetechnote.com/html/5G/5G_PSS.html  
+- SSS (Secondary Synchronization Signal)  
+http://www.sharetechnote.com/html/5G/5G_SSS.html  
+- PBCH (Physical Broadcast Channel)   
+http://www.sharetechnote.com/html/Handbook_LTE_PBCH.html    
+http://rfmw.em.keysight.com/wireless/helpfiles/89600b/webhelp/subsystems/lte/content/ lte_sym_tbl_framesummary_pbch.htm  
+-  PRACH Channel (Physical Random Access Channel)  
+http://www.sharetechnote.com/html/5G/5G_RACH.html   
+http://www.sharetechnote.com/html/RACH_LTE.html   
+- MIB (Essential system information)   
+- Downlink **physical channels**:    
+• Physical Broadcast channel (PBCH)(物理广播信道)。承载小区ID等系统信息，用于小区搜索过程。  
+• Physical Downlink Control Channel (PDCCH)(物理下行控制信道)。承载导呼和用户数据的资源分配信息，以及与用户数据相关的HARQ信息。  
+• Physical Downlink Shared Channel (PDSCH)(物理下行共享信道) 。 主要用于传输业务数据，也可以传输信令。  
+- Downlink **physical signals**:  
+• Primary Synchronization Signal (PSS)  
+• Secondary Synchronization Signal (SSS)  
+• Channel State Information Reference Signal (CSI-RS)  
+• Tracking Reference Signal (TRS)  
+- 上行物理信道  
+• PRACH: Physical Random Access Channel(物理随机接入信道) 承载随机接入前导。Carries random access preamble.  
+• PUSCH: Physical Uplink Shared Channel(物理上行共享信道) 承载上行用户数据。  
+• PUCCH: Physical Uplink Control Channel(物理上行共享信道) 承载HARQACK/NACK，调度请求，信道质量指示等信息。Carries ACK/NACKs in response to downlink transmission. Carries CQI (Channel Quality Indicator) report and SR (Scheduling Request).    
+- Uplink physical signals:   
+• Demodulation Reference Signal (UL-RS), associated with transmission of PUSCH and PUCCH.  
 • Sounding Reference Signal (SRS), not associated with transmission of PUSCH and PUCCH.  
-http://www.artizanetworks.com/resources/tutorials/phy_cha.html  
-https://www.mathworks.com/help/lte/physical-channels.html  
-- RRC (Radio Resource Control) protocol 
+http://www.artizanetworks.com/resources/tutorials/phy_cha.html   
+https://www.mathworks.com/help/lte/physical-channels.html     
+- RRC (Radio Resource Control) protocol  
 
 
 ## 物理信道与物理信号 ##
@@ -598,6 +597,45 @@ http://www.sharetechnote.com/html/BasicProcedure_LTE_MIMO.html
 ☆ http://www.sharetechnote.com/ ☆
 
   
+
+## 5G NR physical layer ##
+[5G physical layer specifications](https://medium.com/5g-nr/5g-physical-layer-specifications-e025f8654981)  
+[5G New Radio: Unveiling the Essentials of the Next Generation Wireless Access Technology](https://arxiv.org/ftp/arxiv/papers/1806/1806.06898.pdf)  
+[5G New Radio - Unveiling the Essentials of the Next Generation Wireless Access Technology](../笔记/5G-NR/5G_New_Radio_Unveiling_the_Essentials_of_the_Next_Generation_Wireless_Access_Technology.pdf#page=3)（本地文件）
+
+
+子载波间隔、CP长度以及每个子帧的时隙个数都受**同一个参数**控制。
+\\(\mu (0,1,2,3,4)\\)  
+>子载波间隔：\\(2^\mu\cdot 15kHz\\)  
+CP时长：\\(2^{-\mu}\cdot 4.7{\mu}s\\)  
+每个子帧的时隙个数：\\(2^\mu \\)   
+
+每个时隙(slot)包含14个OFDM符号。  
+一个资源块包含12个连续子载波。(A resource block (RB) consists of 12 consecutive subcarriers in the frequency domain.)   
+
+**SSB**
+
+<center class="half">
+    <img src="https://i.imgur.com/oC8tRpl.png" height="430" style="margin-left:0px">
+</center>
+
+The combination of SS and PBCH is referred to as SSB in NR.  
+NR SS consists of primary SS (PSS) and secondary SS (SSS).   
+
+By detecting SS, a UE can  
+>obtain the physical cell identity,   
+>achieve downlink synchronization in both time and frequency domain,   
+>and acquire the timing for PBCH. PBCH carries the very basic system information.  
+
+
+**物理层的起点**是MAC层传下来的传输块(TB: Transport Block)，终点是生成基带OFDM信号。然后上变频或下变频将基带OFDM信号变成射频信号，通过天线发射出去。  
+**TB(传输块)**是供物理层处理的MAC层和物理层之间数据交换的基本单元。物理层为每一个TB加上CRC校验信息。  
+[5G New Radio: Unveiling the Essentials of the Next Generation Wireless Access Technology](https://arxiv.org/ftp/arxiv/papers/1806/1806.06898.pdf#page=5)   
+
+
+
+
+
 
 
 

@@ -73,9 +73,9 @@
 <p>4G的无线接入称为eLTE，5G基站的无线接入叫 <strong>New Radio</strong>，简称 <strong>NR</strong>。<br>在5G的第一阶段，eLTE与NR将沿用和共用4G的核心网。然后网络慢慢演进，NR将接入到自己的核心网，这可能发生在5G的第二阶段。</p>
 <h2 id="5g-3-">5G的3大场景</h2>
 <ol>
-<li>eMBB: 增强型移动宽带(6GHz以下及以上频段)</li>
-<li>URLLC: 超可靠低时延通信(6GHz以下频段)，例如无人驾驶等业务。</li>
-<li>mMTC: 大规模机器通信/大规模物联网(6GHz以下频段)</li>
+<li>eMBB (Enhanced Mobile Broadband): 增强型移动宽带(6GHz以下及以上频段)  </li>
+<li>URLLC (Ultra-Reliable Low-Latency Communications): 超可靠低时延通信(6GHz以下频段)，例如无人驾驶等业务。  </li>
+<li>mMTC (massive Machine Type Communications): 大规模机器通信/大规模物联网(6GHz以下频段)    </li>
 </ol>
 <p>注意这3个术语，在未来通信中将广泛使用。</p>
 <h2 id="5g-nr">5G NR</h2>
@@ -199,9 +199,7 @@
 <p>CP-OFDM targeted at high throughput scenarios
 DFT-s-OFDM targeted at power limited scenarios</p>
 </blockquote>
-<p><a href="https://www.keysight.com/upload/cmc_upload/All/Understanding_the_5G_NR_Physical_Layer.pdf#page=17">Understanding the 5G NR Physical Layer</a>
-(转成网页文件可打开链接)
-(使用相对路径)</p>
+<p><a href="https://www.keysight.com/upload/cmc_upload/All/Understanding_the_5G_NR_Physical_Layer.pdf#page=17">Understanding the 5G NR Physical Layer</a></p>
 <h3 id="multiple-access-">Multiple Access 多址接入方案</h3>
 <ul>
 <li>Orthogonal Multiple Access</li>
@@ -376,36 +374,19 @@ All the complicated/confusing stories in this page is mostly about the process s
 <p><a href="http://www.sharetechnote.com/html/RACH_LTE.html#RACH_Process_Overview_In_Diagrams">http://www.sharetechnote.com/html/RACH_LTE.html#RACH_Process_Overview_In_Diagrams</a></p>
 <h2 id="crc">CRC</h2>
 <p>CRC即循环冗余校验码（Cyclic Redundancy Check）：是数据通信领域中最常用的一种查错校验码，其特征是信息字段和校验字段的长度可以任意选定。循环冗余检查（CRC）是一种数据传输检错功能，对数据进行多项式计算，并将得到的结果附在帧的后面，接收设备也执行类似的算法，以保证数据传输的正确性和完整性。</p>
-<p><a href="https://blog.csdn.net/weicao1990/article/details/51669853">https://blog.csdn.net/weicao1990/article/details/51669853</a></p>
+<p><a href="https://blog.csdn.net/weicao1990/article/details/51669853">https://blog.csdn.net/weicao1990/article/details/51669853</a><br><a href="http://www.sharetechnote.com/html/Handbook_Communication_CRC.html">http://www.sharetechnote.com/html/Handbook_Communication_CRC.html</a>  </p>
 <h2 id="-">术语</h2>
 <ul>
-<li>PSS (Primiary Synchronization Signal)
-<a href="http://www.sharetechnote.com/html/5G/5G_PSS.html">http://www.sharetechnote.com/html/5G/5G_PSS.html</a></li>
-<li>SSS (Secondary Synchronization Signal)
-<a href="http://www.sharetechnote.com/html/5G/5G_SSS.html">http://www.sharetechnote.com/html/5G/5G_SSS.html</a></li>
-<li>PBCH (Physical Broadcast Channel) 
-<a href="http://www.sharetechnote.com/html/Handbook_LTE_PBCH.html">http://www.sharetechnote.com/html/Handbook_LTE_PBCH.html</a>
-<a href="http://rfmw.em.keysight.com/wireless/helpfiles/89600b/webhelp/subsystems/lte/content/lte_sym_tbl_framesummary_pbch.htm">http://rfmw.em.keysight.com/wireless/helpfiles/89600b/webhelp/subsystems/lte/content/lte_sym_tbl_framesummary_pbch.htm</a></li>
-<li>PRACH Channel (Physical Random Access Channel)
-<a href="http://www.sharetechnote.com/html/5G/5G_RACH.html">http://www.sharetechnote.com/html/5G/5G_RACH.html</a>
-<a href="http://www.sharetechnote.com/html/RACH_LTE.html">http://www.sharetechnote.com/html/RACH_LTE.html</a></li>
-<li>MIB (Essential system information) </li>
-<li>Downlink <strong>physical channels</strong>:
-• Physical Broadcast channel (PBCH)(物理广播信道)。承载小区ID等系统信息，用于小区搜索过程。
-• Physical Downlink Control Channel (PDCCH)(物理下行控制信道)。承载导呼和用户数据的资源分配信息，以及与用户数据相关的HARQ信息。
-• Physical Downlink Shared Channel (PDSCH)(物理下行共享信道) 。 主要用于传输业务数据，也可以传输信令。</li>
-<li>Downlink <strong>physical signals</strong>:
-• Primary Synchronization Signal (PSS)
-• Secondary Synchronization Signal (SSS)
-• Channel State Information Reference Signal (CSI-RS)
-• Tracking Reference Signal (TRS)</li>
-<li>上行物理信道
-• PRACH: Physical Random Access Channel(物理随机接入信道) 承载随机接入前导。Carries random access preamble.
-• PUSCH: Physical Uplink Shared Channel(物理上行共享信道) 承载上行用户数据。
-• PUCCH: Physical Uplink Control Channel(物理上行共享信道) 承载HARQACK/NACK，调度请求，信道质量指示等信息。Carries ACK/NACKs in response to downlink transmission. Carries CQI (Channel Quality Indicator) report and SR (Scheduling Request).  </li>
-<li>Uplink physical signals:
-• Demodulation Reference Signal (UL-RS), associated with transmission of PUSCH and PUCCH.
-• Sounding Reference Signal (SRS), not associated with transmission of PUSCH and PUCCH.<br><a href="http://www.artizanetworks.com/resources/tutorials/phy_cha.html">http://www.artizanetworks.com/resources/tutorials/phy_cha.html</a><br><a href="https://www.mathworks.com/help/lte/physical-channels.html">https://www.mathworks.com/help/lte/physical-channels.html</a>  </li>
+<li>PSS (Primiary Synchronization Signal)<br><a href="http://www.sharetechnote.com/html/5G/5G_PSS.html">http://www.sharetechnote.com/html/5G/5G_PSS.html</a>  </li>
+<li>SSS (Secondary Synchronization Signal)<br><a href="http://www.sharetechnote.com/html/5G/5G_SSS.html">http://www.sharetechnote.com/html/5G/5G_SSS.html</a>  </li>
+<li>PBCH (Physical Broadcast Channel)<br><a href="http://www.sharetechnote.com/html/Handbook_LTE_PBCH.html">http://www.sharetechnote.com/html/Handbook_LTE_PBCH.html</a><br><a href="http://rfmw.em.keysight.com/wireless/helpfiles/89600b/webhelp/subsystems/lte/content/">http://rfmw.em.keysight.com/wireless/helpfiles/89600b/webhelp/subsystems/lte/content/</a> lte_sym_tbl_framesummary_pbch.htm  </li>
+<li>PRACH Channel (Physical Random Access Channel)<br><a href="http://www.sharetechnote.com/html/5G/5G_RACH.html">http://www.sharetechnote.com/html/5G/5G_RACH.html</a><br><a href="http://www.sharetechnote.com/html/RACH_LTE.html">http://www.sharetechnote.com/html/RACH_LTE.html</a>   </li>
+<li>MIB (Essential system information)   </li>
+<li>Downlink <strong>physical channels</strong>:<br>• Physical Broadcast channel (PBCH)(物理广播信道)。承载小区ID等系统信息，用于小区搜索过程。<br>• Physical Downlink Control Channel (PDCCH)(物理下行控制信道)。承载导呼和用户数据的资源分配信息，以及与用户数据相关的HARQ信息。<br>• Physical Downlink Shared Channel (PDSCH)(物理下行共享信道) 。 主要用于传输业务数据，也可以传输信令。  </li>
+<li>Downlink <strong>physical signals</strong>:<br>• Primary Synchronization Signal (PSS)<br>• Secondary Synchronization Signal (SSS)<br>• Channel State Information Reference Signal (CSI-RS)<br>• Tracking Reference Signal (TRS)  </li>
+<li>上行物理信道<br>• PRACH: Physical Random Access Channel(物理随机接入信道) 承载随机接入前导。Carries random access preamble.<br>• PUSCH: Physical Uplink Shared Channel(物理上行共享信道) 承载上行用户数据。<br>• PUCCH: Physical Uplink Control Channel(物理上行共享信道) 承载HARQACK/NACK，调度请求，信道质量指示等信息。Carries ACK/NACKs in response to downlink transmission. Carries CQI (Channel Quality Indicator) report and SR (Scheduling Request).    </li>
+<li>Uplink physical signals:<br>• Demodulation Reference Signal (UL-RS), associated with transmission of PUSCH and PUCCH.<br>• Sounding Reference Signal (SRS), not associated with transmission of PUSCH and PUCCH.<br><a href="http://www.artizanetworks.com/resources/tutorials/phy_cha.html">http://www.artizanetworks.com/resources/tutorials/phy_cha.html</a><br><a href="https://www.mathworks.com/help/lte/physical-channels.html">https://www.mathworks.com/help/lte/physical-channels.html</a>     </li>
+<li>RRC (Radio Resource Control) protocol  </li>
 </ul>
 <h2 id="-">物理信道与物理信号</h2>
 <p><strong>物理信道(physical channels)</strong>: 对应于一系列资源粒子(RE: Resource Elements)的集合， 用于承载来自高层的信息。<br><strong>物理信号(physical signals)</strong>: 对应于物理层使用的一系列RE，但这些 RE 不传递任何来自高层的信息。如参考信号(RS)，同步信号。RS(Reference Signal)：参考信号，通常也称为导频信号；SCH(PSCH,SSCH)：同步信号，分为主同步信号和辅同步信号。</p>
@@ -460,7 +441,24 @@ All the complicated/confusing stories in this page is mostly about the process s
 <h2 id="lte-mimo-modes">LTE MIMO modes</h2>
 <p><a href="https://www.radio-electronics.com/info/cellulartelecomms/lte-long-term-evolution/lte-mimo.php">https://www.radio-electronics.com/info/cellulartelecomms/lte-long-term-evolution/lte-mimo.php</a><br><a href="http://www.sharetechnote.com/html/BasicProcedure_LTE_MIMO.html">http://www.sharetechnote.com/html/BasicProcedure_LTE_MIMO.html</a>  </p>
 <h2 id="sharetechnote">sharetechnote</h2>
-<p>☆ <a href="http://www.sharetechnote.com/html/">http://www.sharetechnote.com/html/</a> ☆</p>
+<p>☆ <a href="http://www.sharetechnote.com/">http://www.sharetechnote.com/</a> ☆</p>
+<h2 id="5g-nr-physical-layer">5G NR physical layer</h2>
+<p><a href="https://medium.com/5g-nr/5g-physical-layer-specifications-e025f8654981">5G physical layer specifications</a><br><a href="https://arxiv.org/ftp/arxiv/papers/1806/1806.06898.pdf">5G New Radio: Unveiling the Essentials of the Next Generation Wireless Access Technology</a><br><a href="../笔记/5G-NR/5G_New_Radio_Unveiling_the_Essentials_of_the_Next_Generation_Wireless_Access_Technology.pdf#page=3">5G New Radio - Unveiling the Essentials of the Next Generation Wireless Access Technology</a>（本地文件）</p>
+<p>子载波间隔、CP长度以及每个子帧的时隙个数都受<strong>同一个参数</strong>控制。
+\(\mu (0,1,2,3,4)\)  </p>
+<blockquote>
+<p>子载波间隔：\(2^\mu\cdot 15kHz\)<br>CP时长：\(2^{-\mu}\cdot 4.7{\mu}s\)<br>每个子帧的时隙个数：\(2^\mu \)   </p>
+</blockquote>
+<p>每个时隙(slot)包含14个OFDM符号。<br>一个资源块包含12个连续子载波。(A resource block (RB) consists of 12 consecutive subcarriers in the frequency domain.)   </p>
+<center class="half">
+    <img src="https://i.imgur.com/oC8tRpl.png" height="430" style="margin-left:0px">
+</center>
+
+<p>The combination of SS and PBCH is referred to as SSB in NR.<br>NR SS consists of primary SS (PSS) and secondary SS (SSS).   </p>
+<p>By detecting SS, a UE can  </p>
+<blockquote>
+<p>obtain the physical cell identity,<br>achieve downlink synchronization in both time and frequency domain,<br>and acquire the timing for PBCH. PBCH carries the very basic system information.  </p>
+</blockquote>
 <p></br></br></br></br></br></br></br></br>
 </br></br></br></br></br></br></br></br>
 </br></br></br></br></br></br></br></br></p>
