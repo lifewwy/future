@@ -134,4 +134,78 @@ cy{p1,2}
 if system_dependent('IsDebugMode')==1, dbquit; end
 clear all
 读TB策略输出文件...
-<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\readStrategyOutputFile1.m',71,1)">71  </a>    contract(n) = {[cy{p1,2},contract{n}(end-3:en
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\readStrategyOutputFile1.m',71,1)">71  </a>    contract(n) = {[cy{p1,2},contract{n}(end-3:end)]};
+contract{n}(1:end-4)
+
+ans =
+
+TA
+
+if system_dependent('IsDebugMode')==1, dbquit; end
+读TB策略输出文件...
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\readStrategyOutputFile1.m',70,1)">70  </a>    [p1,~] = find(strcmp(contract{n}(1:end-4),cy(:,1)) == 1);
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+{Undefined function 'empty' for input arguments of type 'double'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('readStrategyOutputFile1', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\readStrategyOutputFile1.m', 71)" style="font-weight:bold">readStrategyOutputFile1</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\readStrategyOutputFile1.m',71,0)">line 71</a>)
+    if ~empty(p1)
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('GenOrders1', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\GenOrders1.m', 97)" style="font-weight:bold">GenOrders1</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\GenOrders1.m',97,0)">line 97</a>)
+[contract,action,risk] = readStrategyOutputFile1(TBStrategyFlg);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel>pushbutton41_Callback', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 2793)" style="font-weight:bold">panel>pushbutton41_Callback</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',2793,0)">line 2793</a>)
+IsSuccessful = GenOrders1(handles,TBStrategyFlg);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gui_mainfcn', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
+        feval(varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 42)" style="font-weight:bold">panel</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',42,0)">line 42</a>)
+    gui_mainfcn(gui_State, varargin{:});
+
+Error in
+<a href="matlab:matlab.internal.language.introspective.errorDocCallback('@(hObject,eventdata)panel(''pushbutton41_Callback'',hObject,eventdata,guidata(hObject))')" style="font-weight:bold">@(hObject,eventdata)panel('pushbutton41_Callback',hObject,eventdata,guidata(hObject))</a>
+
+} 
+Error while evaluating UIControl Callback
+
+读TB策略输出文件...
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\readStrategyOutputFile1.m',71,1)">71  </a>    if ~empty(p1)
+~empty(p1)
+{Undefined function 'empty' for input arguments of type 'double'.
+} 
+~isempty(p1)
+
+ans =
+
+     0
+
+if system_dependent('IsDebugMode')==1, dbquit; end
+读TB策略输出文件...
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\记录资金\readStrategyOutputFile1.m',71,1)">71  </a>    if ~isempty(p1)
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+读风险配置文件...
+读资金文件...
+输出订单文件...
+2018/09/14,TA1901,平多,NaN
+订单文件更新成功！
+
+orders = 
+
+    '2018/09/14'    'TA1901'    '平多'    [24]
+
+Elapsed time is 5.161863 seconds.
+>>>>>>>>>>调用成功！
+未登录成功!
+
+少开的：
+    'IF1809空'
+
+多开的：
+    'AU1812多'
+    'CU1811空'
+    'M1901空'
+    'TA1901多'
+
+
