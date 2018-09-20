@@ -143,8 +143,8 @@
 <h2 id="fdd-tdd-sdl-sul">FDD/TDD/SDL/SUL</h2>
 <p><a href="https://zhidao.baidu.com/question/91344791.html">https://zhidao.baidu.com/question/91344791.html</a></p>
 <ol>
-<li>TDD表示时分双工</li>
-<li>FDD表示频分双工</li>
+<li>TDD表示时分双工。(<strong>指双工方式</strong>)TDD<strong>用时间来分离接收和发送信道</strong>。在TDD方式的移动通信系统中, 接收和发送使用同一频率载波的不同时隙作为信道的承载，时间资源在两个方向上进行了分配。在某个时间段由基站发送信号给移动台，而中间的时间间隙由移动台发送信号给基站，基站和移动台之间必须协同一致才能顺利工作。</li>
+<li>FDD表示频分双工。(<strong>指双工方式，及收发采用不同的频率</strong>)FDD是在分离的两个对称频率信道上进行接收和发送，用保护频段来分离接收和发送信道。FDD的缺点就是必须采用成对的频率，依靠频率来区分上下行链路，其单方向的资源在时间上是连续的。</li>
 <li>SDL只能用于下行传输</li>
 <li>SUL只能用于上行传输</li>
 </ol>
@@ -450,6 +450,7 @@ All the complicated/confusing stories in this page is mostly about the process s
 <p>子载波间隔：\(2^\mu\cdot 15kHz\)<br>CP时长：\(2^{-\mu}\cdot 4.7{\mu}s\)<br>每个子帧的时隙个数：\(2^\mu \)   </p>
 </blockquote>
 <p>每个时隙(slot)包含14个OFDM符号。<br>一个资源块包含12个连续子载波。(A resource block (RB) consists of 12 consecutive subcarriers in the frequency domain.)   </p>
+<p><strong>SSB</strong></p>
 <center class="half">
     <img src="https://i.imgur.com/oC8tRpl.png" height="430" style="margin-left:0px">
 </center>
@@ -459,6 +460,7 @@ All the complicated/confusing stories in this page is mostly about the process s
 <blockquote>
 <p>obtain the physical cell identity,<br>achieve downlink synchronization in both time and frequency domain,<br>and acquire the timing for PBCH. PBCH carries the very basic system information.  </p>
 </blockquote>
+<p><strong>物理层的起点</strong>是MAC层传下来的传输块(TB: Transport Block)，终点是生成基带OFDM信号。然后上变频或下变频将基带OFDM信号变成射频信号，通过天线发射出去。<br><strong>TB(传输块)</strong>是供物理层处理的MAC层和物理层之间数据交换的基本单元。物理层为每一个TB加上CRC校验信息。<br><a href="https://arxiv.org/ftp/arxiv/papers/1806/1806.06898.pdf#page=5">5G New Radio: Unveiling the Essentials of the Next Generation Wireless Access Technology</a>   </p>
 <p></br></br></br></br></br></br></br></br>
 </br></br></br></br></br></br></br></br>
 </br></br></br></br></br></br></br></br></p>
