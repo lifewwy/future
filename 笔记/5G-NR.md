@@ -610,8 +610,13 @@ http://www.sharetechnote.com/html/BasicProcedure_LTE_MIMO.html
 CP时长：\\(2^{-\mu}\cdot 4.7{\mu}s\\)  
 每个子帧的时隙个数：\\(2^\mu \\)   
 
-每个时隙(slot)包含14个OFDM符号。  
+每个时隙(slot)包含14或7个OFDM符号。  
+However, the number of symbols within a slot does not change with the numberology, it only changes with slot configuration type. For slot configuration 0, the number of symbols for a slot is always 14 and for slot configuration 1, the number of symbols for a slot is always 7.  
 一个资源块包含12个连续子载波。(A resource block (RB) consists of 12 consecutive subcarriers in the frequency domain.)   
+
+**思考：**
+Numerology 配置的最小级别是什么，是子帧么？子帧内的不同时隙或者不同OFDM符号可以配置不同的Numerology么？   
+
 
 **SSB**
 
@@ -634,6 +639,89 @@ By detecting SS, a UE can
 
 
 
+
+
+## 帧结构 ##
+
+SFN  
+[SFN System Frame Number 系统帧号](http://www.txrjy.com/thread-532340-1-1.html)   
+LTE中用10bit承载该数据，在MIB中承载，在PBCH中传输。SFN位长为10bit，也就是取值从0-1023循环。在PBCH的MIB广播中只广播前8位，剩下的两位根据该帧在PBCH 40ms周期窗口的位置确定，第一个10ms帧为00，第二帧为01，第三帧为10，第四帧为11。PBCH的40ms窗口手机可以通过盲检确定。   
+
+
+[LTE物理传输资源（1）-帧结构和OFDM符号](https://blog.csdn.net/m_052148/article/details/51305338)  
+3.TDD帧结构  
+协议上对LTE-TDD的帧结构模式，一般又称为Frame structure type 2，这里为了指代明确，还是称呼为TDD帧结构。  
+在TDD里，每个无线帧的长度Tf=10ms，由2个**“半帧”**组成，每个“半帧”的长度等于5ms，由5个连续的子帧组成，每个子帧长度等于1ms。  
+
+相同的子帧在不同的上下行配置（Uplink-downlink configuration）时，可能会发送不同方向的数据。下图是各种上下行子帧配置下，所有子帧发送数据的方向。D表示该子帧只能发送下行数据，U表示该子帧只能发送上行数据，S表示特殊子帧，一般用作下行数据发送。  
+
+<center class="half">
+    <img src="https://i.imgur.com/6iMAxeC.png" height="160" style="margin-left:0px">
+</center>  
+
+下行-上行切换周期(downlink-to-uplink switch-point periodicity)  
+**下行-上行切换周期与10ms内特殊子帧的个数有关**，计算方式参考下图。
+<center class="half">
+    <img src="https://i.imgur.com/3BwDIBa.png" height="260" style="margin-left:0px">
+</center>  
+
+**在5G NR中，上行和下行分配的变换是OFDM符号级的，而在LTE中是子帧级别的。**
+[☆ In 5G NR, DL and UL assignment changes at a symbol level (in LTE TDD the UL/DL assignment is done in a subframe level)](http://www.sharetechnote.com/html/5G/5G_FrameStructure.html#Slot_Format) 
+
+<center class="half">
+    <img src="https://i.imgur.com/bjgd2Rc.png" height="260" style="margin-left:0px">
+</center>   
+
+
+## TD-LTE系统为何需要时间同步 ##
+### 基站(BTS)、小区(CELL)、扇区(SECTOR) ###
+小区是个逻辑的概念，基站和扇区都是物理的概念，是实实在在存在的。  
+ 
+基站可设在小区的中心，用全向天线形成圆形的覆盖区，这就是“中心激励”方式。也可将基站设在每个小区六边形的三个顶点上，每个基站采用三副120度扇形辐射的定向天线，分别覆盖三个相邻小区的各三分之一的区域，每个小区由三副120度扇形天线共同覆盖，这就是“顶点激励”方式，而每副天线覆盖的区域就是一个基站扇区。  
+
+与小区相比，扇区是一个具有地理意义的概念，而小区是一种逻辑概念，主要是为了方便移动交换中心进行参数配置以及控制用，因此一个扇区可能包含几个小区，通常扇区与基站的天线方向对应，对于全向天线的基站就只有一个扇区，而只具有定向天线的基站就会包含有多个扇区。**一般只要无线参数上有不同就是不同的小区，例如频率不同或者频率相同但扰码不同都分成不同的小区。**
+  
+全向基站本身就是一个小区，没有扇区的概念了。  
+
+
+### 同频组网 VS 异频组网 ###
+
+
+同频组网 
+同频组网指的是 LTE系统网覆盖的所有小区都使用相同的频点。LTE一般采用同频组网的方式进行组网。  
+<center class="half">
+    <img src="https://i.imgur.com/yddbtif.png" height="260" style="margin-left:0px">
+</center> 
+
+### TDD系统同步方式(同频组网) ###
+
+基站的同步是靠 GPS/北斗等来实现的，GPS/北斗的作用是实现基站的时间同步，**时间同步的作用是在距离较近的周围基站实现“大家一起发，大家一起收”**，这样可以增加频谱的利用率，这也就是 TD 典型的“同步技术”。TD 在这种同步的技术下完全可以用同一个频点进行上行和下行传输，因为在上行的时候不会下行，在下行的时候不会上行。也就是说，n个UE一起上发，m个小区一起下发。
+
+因此，在TD-LTE组网时，各基站必须保持严格的时间同步，才能保证各个基站间的上下行链路不会相互干扰。
+
+
+[LTE 中的上行时间同步](http://blog.sina.com.cn/s/blog_673b30dd0100lhty.html)  
+
+LTE中，不同UE的上行信号到达eNodeB时要时间对齐，以保证UE之间上行信号的正交性，从而有助于消除小区内的干扰。
+
+信号在空间传输是有延迟的，如果UE在呼叫期间向远离基站的方向移动，则从基站发出的信号将“越来越迟”的到达UE，与此同时，UE的信号也会“越来越迟”的到达基站，延迟过长会导致基站收到的UE在本时隙上的信号与基站收下一个其它UE信号的时隙相互重叠，引起码间干扰。
+  
+
+上行传输的时间对齐是通过在UE发送侧应用TA（Timing Advance）来实现的。TA的主要目的就是为了**消除UE之间不同的传输时延**。  
+
+UE在获得初始同步以后，随着时间的推移，由于信道情况的改变或者UE（以及eNodeB）的时钟漂移，UE可能重新变为失步状态。为此eNodeB会周期性的为UE发送TA命令，指导UE进行上行的同步，并且eNodeB为每个UE配置了一个Time Alignment Timer，规定了TA的有效期，为此eNodeB需要在UE的能力和系统的开销之间进行折中。UE在每次接收到eNodeB的TA命令后，都将此定时器重置为零。在Time Alignment Timer超时以后，如果UE未能收到任何的TA命令，那么UE认为上行已经失步，此时UE不能再进行任何的上行数据传输，而必须通过随机接入的过程来对上行的TA进行重新初始化。  
+
+[为什么TDD-LTE上行时隙转下行时隙不需要保护间隔？而下行时隙转上行时隙需要保护间隔？](https://zhidao.baidu.com/question/1381930293850184180.html)  
+
+在一个小区中，所有UE要保持上行同步。  
+下行即eNodeB发送给UE，无线电波从eNodeB到UE需要一段时间，由于各个UE和eNodeB的距离不同，因此距离eNodeB近的UE会先接收到下行信号，而距离eNodeB远的UE后接收到下行信号。在一段下行时隙后，需要留出来一段保护间隔，在该保护间隔内，保证所有UE都接收到了下行信号，并对信号进行处理。然后，所有UE才能在即将到来的上行时隙同时发送上行信号，即小区内UE同步。    
+保护间隔大部分的时间是用于无线信号传播，还有一小部分是UE为即将到来的上行发送做准备，如启动功放电路等。  
+若没有保护间隔，显而易见各个UE会在不同时刻进行上行信号的发送，从而导致UE间失步。  
+
+[LTE的上行同步过程](https://www.pttcn.net/plus/m_view.php?aid=23716)   
+为了保证上行传输的正交性，避免小区内（intra-cell）干扰，eNodeB要求来自同一子帧但不同频域资源(不同的RB)的不同UE的信号到达eNodeB的时间基本上是对齐的。eNodeB只要在循环前缀（Cyclic Prefix）范围内接收到UE所发送的上行数据，就能够正确地解码上行数据，因此上行同步要求来自同一子帧的不同UE的信号到达eNodeB的时间都落在循环前缀范围之内。  
+
+为了保证接收侧（eNodeB侧）的时间同步，LTE提出了上行定时提前（Uplink Timing Advance）的机制。  
 
 
 

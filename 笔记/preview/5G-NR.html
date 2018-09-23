@@ -461,6 +461,22 @@ All the complicated/confusing stories in this page is mostly about the process s
 <p>obtain the physical cell identity,<br>achieve downlink synchronization in both time and frequency domain,<br>and acquire the timing for PBCH. PBCH carries the very basic system information.  </p>
 </blockquote>
 <p><strong>物理层的起点</strong>是MAC层传下来的传输块(TB: Transport Block)，终点是生成基带OFDM信号。然后上变频或下变频将基带OFDM信号变成射频信号，通过天线发射出去。<br><strong>TB(传输块)</strong>是供物理层处理的MAC层和物理层之间数据交换的基本单元。物理层为每一个TB加上CRC校验信息。<br><a href="https://arxiv.org/ftp/arxiv/papers/1806/1806.06898.pdf#page=5">5G New Radio: Unveiling the Essentials of the Next Generation Wireless Access Technology</a>   </p>
+<h2 id="-">帧结构</h2>
+<p>SFN<br><a href="http://www.txrjy.com/thread-532340-1-1.html">SFN System Frame Number 系统帧号</a><br>LTE中用10bit承载该数据，在MIB中承载，在PBCH中传输。SFN位长为10bit，也就是取值从0-1023循环。在PBCH的MIB广播中只广播前8位，剩下的两位根据该帧在PBCH 40ms周期窗口的位置确定，第一个10ms帧为00，第二帧为01，第三帧为10，第四帧为11。PBCH的40ms窗口手机可以通过盲检确定。   </p>
+<p><a href="https://blog.csdn.net/m_052148/article/details/51305338">LTE物理传输资源（1）-帧结构和OFDM符号</a><br>3.TDD帧结构<br>协议上对LTE-TDD的帧结构模式，一般又称为Frame structure type 2，这里为了指代明确，还是称呼为TDD帧结构。<br>在TDD里，每个无线帧的长度Tf=10ms，由2个<strong>“半帧”</strong>组成，每个“半帧”的长度等于5ms，由5个连续的子帧组成，每个子帧长度等于1ms。  </p>
+<p>相同的子帧在不同的上下行配置（Uplink-downlink configuration）时，可能会发送不同方向的数据。下图是各种上下行子帧配置下，所有子帧发送数据的方向。D表示该子帧只能发送下行数据，U表示该子帧只能发送上行数据，S表示特殊子帧，一般用作下行数据发送。  </p>
+<center class="half">
+    <img src="https://i.imgur.com/6iMAxeC.png" height="160" style="margin-left:0px">
+</center>  
+
+<p>下行-上行切换周期(downlink-to-uplink switch-point periodicity)<br><strong>下行-上行切换周期与10ms内特殊子帧的个数有关</strong>，计算方式参考下图。</p>
+<center class="half">
+    <img src="https://i.imgur.com/3BwDIBa.png" height="260" style="margin-left:0px">
+</center>  
+
+
+
+
 <p></br></br></br></br></br></br></br></br>
 </br></br></br></br></br></br></br></br>
 </br></br></br></br></br></br></br></br></p>
