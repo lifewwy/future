@@ -616,6 +616,9 @@ However, the number of symbols within a slot does not change with the numberolog
 
 **思考：**
 Numerology 配置的最小级别是什么，是子帧么？子帧内的不同时隙或者不同OFDM符号可以配置不同的Numerology么？   
+**BWP is configured with a single numerology.  ** 
+Each BWP is associated with a specific numerology, i.e., SCS and CP type. Therefore, the BWP is also a means to reconfigure a UE with a certain numerology. 
+
 
 
 **SSB**
@@ -723,11 +726,160 @@ UE在获得初始同步以后，随着时间的推移，由于信道情况的改
 
 为了保证接收侧（eNodeB侧）的时间同步，LTE提出了上行定时提前（Uplink Timing Advance）的机制。  
 
+[上行定时提前（Uplink Timing Advance）](http://blog.sina.com.cn/s/blog_927cff010101cwju.html)  
+为了保证上行传输的正交性，避免小区内（intra-cell）干扰，eNodeB要求来自同一子帧但不同频域资源（不同的RB）的不同UE的信号到达eNodeB的时间基本上是对齐的。eNodeB只要在CP（Cyclic Prefix）范围内接收到UE所发送的上行数据，就能够正确地解码上行数据，因此上行同步要求来自同一子帧的不同UE的信号到达eNodeB的时间都落在CP之内。  
+
+为了保证接收侧（eNodeB侧）的时间同步，LTE提出了上行定时提前（Uplink Timing Advance）的机制。  
 
 
 
+## BWP ##
+**BWP is configured with a single numerology.  **    
+
+Each BWP is associated with a specific numerology, i.e., SCS and CP type. Therefore, the BWP is also a means to reconfigure a UE with a certain numerology.    
+
+A BW Part (BWP) is a new term that defines a fixed band over which the communication taking place uses the same numerology throughout the existence of the BWP.  
+
+5G的带宽最小可以是5MHz，最大能到400MHz。如果要求所有终端UE都支持最大的400MHz，无疑会对UE的性能提出较高的要求，不利于降低UE的成本。同时，一个UE不可能同时占满整个400M带宽，如果UE采用400M带宽对应的采样率，无疑是对性能的浪费。   
+
+BWP，英文全称为Bandwidth Part，即**一部分带宽**。我们有时也用Bandwidth Adaptation指代这个技术，即带宽自适应变化。 
+
+在LTE中，UE的带宽跟系统的带宽保持一致，解码MIB信息配置带宽后便保持不变。  
+
+在NR中，UE的带宽可以动态的变化。第一个时刻，UE的业务量较大，系统给UE配置一个大带宽（BWP1）；第二时刻，UE的业务量较小，系统给UE配置了一个小带宽（BWP2），满足基本的通信需求即可；第三时刻，系统发现BWP1所在带宽内有大范围频率选择性衰落，或者BWP1所在频率范围内资源较为紧缺，于是给UE配置了一个新的带宽（BWP3）。  
+
+[5G/NR - Carrier Bandwith Part](http://www.sharetechnote.com/html/5G/5G_CarrrierBandwidthPart.html)    
+38.211中是这样定义Carrier Bandwith Part的
+>A bandwidth part is a subset of **contiguous** common resource blocks for a given numerology (u) in bandwidth part on a given carrier.
+
+大概翻译一下就是一个bwp是给定载波带宽上连续资源块的子集。
+
+NOTE : **CRB** in this illustration stands for Carrier Resource Block which is numbered from the one end through the other end of Carrier Band (this is a kind of global resource block), the **PRB** stands for Physical Resource Block is the resource blocks numbered within each BWP. 下图中的 CRB 指的是 Carrier Resource Block
+<center class="half">
+    <img src="https://i.imgur.com/rxgdpdk.png" height="360" style="margin-left:0px">
+</center> 
+
+<center class="half">
+    <img src="https://i.imgur.com/y7N8SwB.png" height="100" style="margin-left:0px">
+</center> 
 
 
+<center class="half">
+    <img src="https://i.imgur.com/RoVoFh5.png" height="270" style="margin-left:0px">
+</center> 
+
+
+[NR Wide Bandwidth Operations](https://arxiv.org/ftp/arxiv/papers/1712/1712.09724.pdf)  
+
+[BWP Switch Transition Time](http://ziyubiti.github.io/2018/03/07/5gnrbwt/)  
+对于带宽配置改变后，需要重新进行RF retuning，设置ADC/DAC。
+
+
+### 参考资源块、公共资源块、物理资源块、虚拟资源块 ###
+http://marshallcomm.cn/2017/12/17/nr-v200-l1-channel-modulation/
+
+资源块（resource block）定义为12个连续频域子载波。  
+
+参考资源块（reference resource block）在频域上从0开始编号。参考资源块0的子载波0对于所有的子载波配置 是公共的，也被称为“参考点A”，并且用作其他资源块格的公共参考点。参考点A从以下高层参数获得。  
+
+物理资源块（physical resource block）在BWP中定义。
+
+## EVM ##
+误差向量幅度（Error Vector Magnitude，简称：EVM），是在一个给定时刻理想无误差基准信号与实际发射信号的向量差，能全面衡量调制信号的幅度误差和相位误差。
+
+以百分比的形式表示。EVM越小，信号质量越好。  
+
+误差矢量幅度是实际测量到的波形和理论调制波形之间的偏差。  
+
+<center class="half">
+    <img src="https://i.imgur.com/BIEsQzU.jpgg" height="270" style="margin-left:0px">
+</center> 
+
+
+## Carrier Bandwidth VS Channel Bandwidth ##
+Carrier Aggregation 载波聚合  
+One of the major features of LTE-Advanced is Carrier Aggregation.
+
+## 上行调度 VS 下行调度 ##
+Scheduling 
+
+[上行调度请求（Scheduling Request，SR）](http://blog.sina.com.cn/s/blog_927cff010101a7yh.html)  
+如果UE没有上行数据要传输，eNodeB并不需要为该UE分配上行资源，否则会造成资源的浪费。因此， UE需要告诉eNodeB自己是否有上行数据需要传输，以便eNodeB决定是否给UE分配上行资源。为此LTE提供了一个上行调度请求（Scheduling Request，SR）的机制。  
+
+UE通过SR告诉eNodeB是否需要上行资源以便用于UL-SCH传输。  
+
+eNodeB不知道UE什么时候需要发送上行数据，即不知道UE什么时候会发送SR。因此，eNodeB需要在已经分配的SR资源上检测是否有SR上报。  
+
+ 由于SR资源是UE专用且由eNodeB分配的，因此SR资源与UE一一对应且eNodeB知道具体的对应关系。也就是说，UE在发送SR信息时，并不需要指定自己的ID（C-RNTI），eNodeB通过SR资源的位置，就知道是哪个UE请求上行资源。  
+
+ UE在某些情况下可能没有SR资源。
+>场景一：  
+场景二：当UE丢失了上行同步，它也会释放SR资源，如果此时有上行数据要发送，也需要触发随机接入过程。  
+
+从上面的描述可以看出，当UE没有被分配SR资源时，基于竞争的随机接入过程可以替代SR的功能用于申请上行资源。但这只适用于低密集度的上行资源请求的情况。
+
+UE发送SR以后，无法确定eNodeB什么时候会下发UL Grant，这取决于上行资源的调度以及优先级等。如果UE等待超时（超时时间由sr-ProhibitTimer决定）就重发SR，重发次数超过了SR的最大重传次数（由IE：SchedulingRequestConfig的dsr-TransMax决定）就会触发随机接入。（见36.321的5.4.4节）
+
+
+[LTE 调度机制](https://wenku.baidu.com/view/68692868e87101f69e319599.html)    
+由于 LTE 系统中资源调度和链路自适应完全由 eNodeB 控制，因此上行信道CQI 的测量值可以由 eNodeB 直接获取并使用，也不需要标准化；而下行信道的 CQI 值需要在 UE 侧获取，并由 UE 反馈给 eNodeB。
+
+**下行链路调度**
+当 UE 能够进行下行链路数据接收时，为了得到可能分配给该 UE 的下行资源，**UE 需要一直监视 PDCCH**。
+
+
+下行资源的分配方案通过 PDCCH 信道发下去，通知某个 UE 在什么时频资源块、以什么样的调制编码方案、什么样的 MIMO 工作模式向该 UE 发送下行数据； 随后，下行数据通过 PDSCH 信道发送给该 UE，UE 则根据 PDCCH 信道上的指示找到 eNodeB 发给自己的数据，如下图所示。
+<center class="half">
+    <img src="https://i.imgur.com/TKuUohf.png" height="330" style="margin-left:0px">
+</center> 
+
+UE 的 CQI 报告是下行资源调度的重要依据，但不是唯一的依据。eNodeB 还有其它考虑，比如 UE 能力（Capability）、业务 QoS 要求、公平性等。CQI 信息不仅仅用于下行资源调度，还用于干扰协调、功率控制、AMC 等重要过程。UE 测量 eNodeB 的导频信号，得到不同频域的资源块的信噪比，然后以 CQI 报告的形式上报 eNodeB。CQI 报告周期可以调整，如果周期过小，则信令开销太大；如 果周期过大，则下行调度器就不能全面了解下行信道的质量信息。  
+下行调度控制指令指导 UE 对下行发送信号进行接收处理，包括三种指示（如下表）：
+<center class="half">
+    <img src="https://i.imgur.com/eSxB1OP.png" height="280" style="margin-left:0px">
+</center> 
+
+**上行链路调度**
+在上行方向，UE 不能随时随意地发送自己的数据，必须服从 eNodeB 的安排。上行资源的调度由 eNodeB 的 MAC 层的上行调度器决定。
+
+由于无线资源调度由 eNodeB 完成，因此 UE 需要适时向 eNodeB 发送调度请求（SR），用于请求 UL-SCH 资源。UE 发送调度请求的规则是：
+>如果在当前 TTI 配置由 PUCCH 来发送调度请求，且没有可用的 UL-SCH 资源，则 UE 的 MAC 层将指示物理层在 PUCCH 上发送调度请求；  
+如果 UE 在任何 TTI 都没有配置 PUCCH来发送调度请求，则 UE 将发起随机接入过程；  
+如果一个调度请求已经被触发， UE 将在每个 TTI 进行请求，直到获得 UL-SCH 资源。  
+
+UE 还需要向 eNodeB 发送缓冲区状态报告（BSR），用于为 eNodeB 提供 UE 上行链路缓冲区中数据量的信息。  
+
+eNodeB 的上行调度器根据 UE 缓存状态报告 BAR、上行调度请求 SR、上行信道状况决定给 UE 调度什么样的无线资源，把调度结果通过 PDCCH 信道的上行调度准许（UL Grant）告知 UE；UE 根据 eNodeB 的指示，在 PUSCH 信道发送业务数据。
+<center class="half">
+    <img src="https://i.imgur.com/7bVogfb.png" height="330" style="margin-left:0px">
+</center> 
+
+
+根据反馈的信道质量条件，调度器可以决定每一个调度周期内无线资源采取的调制编码方案（MCS）和混合自动重传（HARQ）方式。调度算法有两个重要的设计参数：一个是吞吐量，另一个是公平性。调度算法是数据业务系统的一个特色，目的是充分利用信道的时变特性，得到多用户分集增益，提供系统的吞吐量。吞吐量用小区单位时间内传输的数据量来衡量。公平性指小区所有用户是否都获得一定的服务机会，最公平的算法是所有用户享有相同的服务机会。好的调度算法应该兼顾吞吐量和公平性。  
+
+根据算法的特点，调度算法可以分为：轮询（Round Robin, RR）算法、最大 C/I 算法（Max C/I）、比例公平算法（Proporonal Fair，PF）等。
+
+## PDSCH 物理下行共享信道 ##
+需要注意的是PDSCH的资源是基于VRB而非PRB的。VRB是逻辑概念，需要经过一定的映射关系才能转换到PRB。  
+
+LTE下行除了MIB外，所有高层控制信息及用户数据最终都通过PDSCH信道传输，也就是说，UE所需的绝大部分信息都直接来源于PDSCH信道，因此PDSCH信道的接收质量就代表了LTE下行的服务质量。  
+
+PDSCH信道由PDCCH信道进行调度，UE需要首先解调PDCCH，以确定是否需要进行PDSCH信道的接收。  
+
+[PDSCH (Physical Downlink Shared Channel)](http://www.sharetechnote.com/html/Handbook_LTE_PDSCH.html)  
+In terms of channel processing, PDSCH is going through the most complicated process. If you understand full details of PDSCH channel processing, you can say you have understood almost everything of LTE Physical Layer.
+
+[LTE PDSCH allocation calculator](http://niviuk.free.fr/lte_pdsch_calc.html) 
+
+
+[Frame Structure - Downlink](http://www.sharetechnote.com/html/FrameStructure_DL.html)  
+http://dhagle.in/LTE  
+<center class="half">
+    <img src="https://i.imgur.com/JG2kjFn.png" height="430" style="margin-left:0px">
+</center> 
+
+
+ 
 
 </br></br></br></br></br></br></br></br>
 </br></br></br></br></br></br></br></br>
