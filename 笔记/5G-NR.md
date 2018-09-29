@@ -1017,8 +1017,7 @@ Active Antenna (“有源天线”或“主动天线”)
 Base station antenna architectures are currently evolving. Active antennas are an important trend that allow seamless integration of beamforming concepts, e.g. by implementing dedicated transceivers for the required number of antenna elements.（基站天线架构目前正在发展。 有源天线是一种重要的趋势，它允许波束成形概念的无缝集成，例如， 通过为所需数量的天线元件实现专用收发器。谷歌翻译。）
 
 
-
-[☆ 波束赋形 vs. 预编码](http://www.txrjy.com/thread-784438-1-1.html)    
+  
 
 **TM1**
 
@@ -1043,6 +1042,8 @@ Dual layer beamforming (antenna ports 7 and 8)
 </center>
 
 
+
+[☆ 波束赋形 vs. 预编码](http://www.txrjy.com/thread-784438-1-1.html)  
 
 **Angle Spread**
 由于多径反射、散射，信号在接收天线上的到达角度会展宽，称为角度扩展。
