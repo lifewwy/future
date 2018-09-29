@@ -973,7 +973,7 @@ We recognize that currently hand held terminals are limited by power and cost to
 
 <div style="float:right;margin:20px;"><img src="https://i.imgur.com/VlaWc4z.png"  width="" height="280" ></div>
 (波束赋形适用的场景) Angle of Arrival (AoA) beamforming schemes form beams which work well **when the base station is clearly above the clutter** and when the angular spread of the arrival is small, corresponding to users that are well localized in the field of view of the sector; in rural areas, for example.   
-(波束赋形使用的列必须是：极化方向相同的列，而且间距不能太大，一般在二分之一左右;  MIMO 使用的列必须是：极化方式不同的列，或者极化方式相同但是间距较远的列)To form a beam, one uses co-polarized antenna elements spaced rather closely together, typically wavelength/2, while the spatial diversity required of MIMO requires either cross-polarized antenna columns or columns that are relatively far apart.Path diversity will couple more when the antennas columns are farther apart, often about 10 wavelengths (1.5m or 5’ at 2 GHz). That is why most 2G and 3G tower sites have two receive antennas located at far ends of the sector’s platform, as seen in the photo to the right.   
+(**波束赋形使用的列必须是：极化方向相同的列，而且间距不能太大，一般在二分之一左右;  MIMO 使用的列必须是：极化方式不同的列，或者极化方式相同但是间距较远的列**)To form a beam, one uses co-polarized antenna elements spaced rather closely together, typically wavelength/2, while the spatial diversity required of MIMO requires either cross-polarized antenna columns or columns that are relatively far apart.Path diversity will couple more when the antennas columns are farther apart, often about 10 wavelengths (1.5m or 5’ at 2 GHz). That is why most 2G and 3G tower sites have two receive antennas located at far ends of the sector’s platform, as seen in the photo to the right.   
 (波束形成的权向量可以通过反馈获得)The signals to be transmitted are multiplied by complex-valued precoding weights from standardized codebooks to form the antenna patterns with their beam-like main lobes and their nulls that can be directed toward sources of interference. The beamforming can be created, for example, by the **UE PMI feedback pointing out the preferred precoder (fixed beam)** to use when operating in the closed loop MIMO mode TM4.   
 
 
@@ -1035,11 +1035,24 @@ This mode uses UE-specific reference signals (RS). Both the data and the UE-spec
 
 
 **TM8**
-Dual layer beamforming (antenna ports 7 and 8)
+[3.2.8 TM 8 – Dual layer beamforming (antenna ports 7 and 8)](https://cdn.rohde-schwarz.com/pws/dl_downloads/dl_application/application_notes/1ma186/1MA186_2e_LTE_TMs_and_beamforming.pdf#page=18)  
+Specification of beamforming in LTE continues. While Release 8 of the LTE specification defines beamforming with one layer (as described in the above section), Release 9 specifies dual-layer beamforming. This will permit the base station to weight two layers individually at the antennas so that beamforming can be combined with spatial multiplexing for **one or more UEs**. 
 
 <center class="half">
     <img src="https://i.imgur.com/roRKecD.png" height="430" style="margin-left:0px">
 </center>
+
+<center class="half">
+    <img src="https://i.imgur.com/SgjpyRg.png" height="230" style="margin-left:0px"><img src="https://i.imgur.com/0UiHrFa.png" height="150" style="margin-left:0px">
+</center>
+
+注意（wwy）：
+>1.每个波束对应一个天线端口，每个波束承载着1层数据流。  
+2.如果两层都指定给一个用户，该用户必须至少有两个天线。这样才能将传输的两层分开，进而进行合并。如果两层是相同的信息，则是空间分集，合并后会有分集增益； 如果两层是不同的信息，则是空间复用。  
+3.如果两个波束分别分给两个UE，那么每个UE需要几个天线呢？ 如果两个UE不位于同一个波束内，并且在波束赋形时能保证主瓣和零陷的位置，这种情况下似乎UE只有一个天线也可以。否则，UE应该需要两个天线，从而将两层分开，从而取出自己的一层。  
+
+
+
 
 
 
