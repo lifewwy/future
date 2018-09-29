@@ -879,7 +879,175 @@ http://dhagle.in/LTE
 </center> 
 
 
+## 3GPP 文档命名 ##
+
+[3GPP文档命名规则](http://www.cnblogs.com/hesicong/archive/2005/08/21/219616.html)  
+
+每份3GPP技术文档，技术报告(TR)或者技术规范(TR)，都被一个Reference唯一标示。  
+这个Reference以3GPP前缀开始，后跟两个字符表示文档的类型(TS为技术报告，TR为技术规范）。  
+在文档类型之后紧接着是规范的号码。规范号码具有aa.bbb或者aa.bb两种形式。其中aa指示文档的适用范围（见表1）。  
+规范号码后面是版本Vx.y.z，其中x表示release，y表示技术版本，z表示修订版本。    
+另外注意每个release都有一个冻结日期，一般3GPP协议在冻结以后就不再修改。一般冻结日期为1年。
+
+规范号（aa.bbb） = 规范系列号.文档号，其中 aa 为规范系列号，指示文档的适用范围（见表 1），bbb 是文档号。规范号后面是版本号 Vx.y.z，其中 x 表示 release，y 表示技术版本，z 表示修订版本。
+
+
+[3GPP TR 38.912 version 14.1.0 Release 14](https://www.etsi.org/deliver/etsi_tr/138900_138999/138912/14.01.00_60/tr_138912v140100p.pdf)   
+Study on new radio access technology    
+[Multi-antenna scheme - Downlink transmission scheme ](https://www.etsi.org/deliver/etsi_tr/138900_138999/138912/14.01.00_60/tr_138912v140100p.pdf#page=22)    
+[Multi-antenna scheme - Uplink transmission scheme](https://www.etsi.org/deliver/etsi_tr/138900_138999/138912/14.01.00_60/tr_138912v140100p.pdf#page=36)    
+  
  
+## 参考信号的正交性(orthogonality) ##
+参考信号(Reference Signal,RS),就是常说的“导频”信号,是由发射端提供给接收端用于信道估计或信道探测的一种已知信号。
+
+## Channel Hardening in Massive MIMO ##
+[Channel Hardening in Massive MIMO - A Measurement Based Analysis](https://arxiv.org/abs/1804.01690)
+
+More specifically, when increasing the number of base station antennas in a massive MIMO systems the channel variations decrease and the so-called channel hardening effect appears. This means that the variations of the channel gain in time and frequency decrease. 
+
+## TM (Transmission Modes) ##
+[MIMO in (4G) cellular systems](https://web.stanford.edu/~apaulraj/workshop70/pdf/MIMO_Cellular_Gorokhov.pdf)  
+
+[LTE DL Transmission Modes](https://www.keysight.com/upload/cmc_upload/All/25April2013WebcastSlides.pdf#page=19)  
+
+[PDSCH Throughput for Non-Codebook Based Precoding Schemes: Port 5 (TM7), Port 7 or 8 or Port 7-8 (TM8), Port 7-14 (TM9 and TM10)](https://www.mathworks.com/help/lte/examples/pdsch-throughput-for-non-codebook-based-precoding-schemes-port-5-tm7-port-7-or-8-or-port-7-8-tm8-port-7-14-tm9-and-tm10.html)  
+
+[3GPP LTE Release 9 and 10 requirement analysis to physical layer UE testing](https://core.ac.uk/download/pdf/18617020.pdf)  
+
+[BeamForming](http://www.sharetechnote.com/html/Handbook_LTE_BeamForming.html#Beamforming_in_LTE)  
+
+
+[OFDM VS OFDMA](https://www.slideshare.net/peichechang/lte-introduction-part1)  
+
+[Antenna Port](http://www.sharetechnote.com/html/Handbook_LTE_AntennaPort.html)   
+
+[RS (Reference Signal ) - Cell Specific](http://www.sharetechnote.com/html/FrameStructure_DL.html#RS)   
+
+
+[RS (Reference Signal ) - UE Specific](http://www.sharetechnote.com/html/FrameStructure_DL.html#RS_UE_Specific)  
+
+[36.211 6.3.3 Layer mapping](https://www.etsi.org/deliver/etsi_ts/136200_136299/136211/14.02.00_60/ts_136211v140200p.pdf#Ppage=86)   
+
+[36.101 B.4 Beamforming Model](https://www.etsi.org/deliver/etsi_ts/136100_136199/136101/14.03.00_60/ts_136101v140300p.pdf#page=1305)
+
+[MIMO(Multiple Input Multiple Output)](http://www.sharetechnote.com/html/BasicProcedure_LTE_MIMO.html)   
+
+[Precoding](http://www.sharetechnote.com/html/BasicProcedure_LTE_PHY_Precoding.html)  
+
+
+[Design of Simulation System for LTE-U Using 5 GHz Band in MATLAB](https://link.springer.com/article/10.1007/s11277-018-5660-2)    
+<center class="half">
+    <img src="https://i.imgur.com/Ds97WJJ.gif" height="230" style="margin-left:0px">
+</center> 
+
+首先理解端口的实质：端口是从接受者的角度定义的（下行的接受是UE，上行的接受是基站），一个端口对于接受者来说就认为是一个独立的天线信道；如发送端有4根天线，且是相干的小间距天线，所以只能将这个4个天线定义为一个端口，对于接受端来说，这4根天线与一根没有区别。
+
+在发送端，物理天线（阵元）与逻辑端口之间的对应关系属于内部实现。如上面说，这种映射关系的定义存在一个准则，即：非相干的物理天线（阵元）定义为不同的端口才有意义。  
+
+空间间距大于10波长的阵元可视为非相干天线，对于2G左右的载波，10波长意味着1.5米左右。间距小于0.5波长的阵元视为相干天线，这些天线只能归到一个端口做动态赋型。  
+
+[MIMO and Smart Antennas for Mobile Broadband Systems](http://www.5gamericas.org/files/4614/0622/2152/MIMO_and_Smart_Antennas_July_2013_FINAL.pdf#page=9)  
+
+** “4x2 MIMO” VS “2T4R”   两种表示形式**
+MIMO schemes are characterized by the number of antennas transmitting into the air, M, and the number of antennas receiving those same signals at the receiver(s), N; designated as “MxN.” So, for example, the downlink may use, for example, 4 transmit antennas at the base station, and two receive antennas in the terminal, which is referred to as “4x2 MIMO.” The uplink might use one single transmit antenna in the terminal and 4 receive antennas at the base station, for “1x4 SIMO” operation. **The “MxN” refers to the number of antennas in each end of the link (downlink or uplink) and not to the number of antennas at just one end of the link**. As another typical example, an operator uses 2 transmit antennas and 4 receive antennas in the base stations while the terminal uses two receive antennas and one transmit antenna, so the downlink is 2x2 MIMO and the uplink is 1x4 SIMO. The base station is said to have 2T4R and the terminal, 1T2R.  
+下行 “4x2 MIMO” ： 基站使用4个发射天线，用户端使用2个接收天线。  
+上行 “1x4 SIMO” ： 用户端使用1个发射天线，基站使用4个接收天线。  
+这种情况下，我们说  
+基站端：4T4R（基站发射时使用4个天线，接收时也使用4个天线）
+用户端：1T2R（用户端发射时使用1个天线，接收时使用2个天线）
+
+
+
+  
+The base station’s scheduler dynamically adapts the modes to adjust the number of streams as the rank of the channel changes with time, and the terminals may be requested to signal back channel state information; or open loop transmit diversity can be used if spatial multiplexing is less effective. The rank refers to how many **separate signal paths** can be **recognized by the receiver**(**接收端**能辨识的独立路径数). Mathematically, this corresponds to the rank of the matrix representing the connectivity of the input to the output antennas – the number of independent paths.  
+
+If all antennas are co-polarized, **in free space or in an anechoic chamber** where there are **no reflections**, the rank collapses to 1 and no MIMO gains can be had.（相同极化的发射天线发射的信号在自由空间中传播， the rank collapses to 1）   
+
+**Polarization diversity increases the rank to the extent to which the channel sustains the independence of the signals transmitted on separate polarizations**. Thus, a cross-polarized transmission pair in the same anechoic chamber can communicate with a cross-polarized pair of receive antennas with a rank of 2.  
+
+We say that the channel is rich in multipath when the rank is high. Mathematically, the rank is limited to the minimum of the number of rows and columns corresponding to the lesser of the number of transmit and receive antennas. Therefore, a 4x2 MIMO system can have a rank of no more than 2, and we can transmit no more than 2 streams to that receive terminal.  
+
+We recognize that currently hand held terminals are limited by power and cost to having a single transmit antenna (at least for a particular carrier frequency) limiting uplink to 1xN SIMO, consequently we **focus on the downlink MIMO operation**.  
+
+
+<div style="float:right;margin:20px;"><img src="https://i.imgur.com/VlaWc4z.png"  width="" height="280" ></div>
+(波束赋形适用的场景) Angle of Arrival (AoA) beamforming schemes form beams which work well **when the base station is clearly above the clutter** and when the angular spread of the arrival is small, corresponding to users that are well localized in the field of view of the sector; in rural areas, for example.   
+(波束赋形使用的列必须是：极化方向相同的列，而且间距不能太大，一般在二分之一左右;  MIMO 使用的列必须是：极化方式不同的列，或者极化方式相同但是间距较远的列)To form a beam, one uses co-polarized antenna elements spaced rather closely together, typically wavelength/2, while the spatial diversity required of MIMO requires either cross-polarized antenna columns or columns that are relatively far apart.Path diversity will couple more when the antennas columns are farther apart, often about 10 wavelengths (1.5m or 5’ at 2 GHz). That is why most 2G and 3G tower sites have two receive antennas located at far ends of the sector’s platform, as seen in the photo to the right.   
+(波束形成的权向量可以通过反馈获得)The signals to be transmitted are multiplied by complex-valued precoding weights from standardized codebooks to form the antenna patterns with their beam-like main lobes and their nulls that can be directed toward sources of interference. The beamforming can be created, for example, by the **UE PMI feedback pointing out the preferred precoder (fixed beam)** to use when operating in the closed loop MIMO mode TM4.   
+
+
+
+
+<center class="half">
+    <img src="https://i.imgur.com/DBJ8CpB.png" height="380" style="margin-left:0px"><img src="https://i.imgur.com/ntG1Njy.png" height="380" style="margin-left:0px">
+</center>   
+<center class="half">
+    <img src="https://i.imgur.com/t0Nln2N.jpg" height="480" style="margin-left:0px">
+</center> 
+
+
+In the closed loop MIMO mode, the terminals provide channel feedback to the eNodeB with **Channel Quality Information (CQI), Rank Indications (RI) and Precoder Matrix Indications (PMI)**. These mechanisms enable channel state information at the transmitter which improves the peak data rates, and is the most commonly used scheme in current deployments. However, this scheme provides the best performance only when the channel information is accurate and when there is a rich multi-path environment. Thus, closed loop MIMO is most appropriate in low mobility environments such as with fixed terminals or at pedestrian speeds. 
+
+In the case of high vehicular speeds, Open Loop MIMO may be used, but because the channel state information is not timely, the PMI is not considered reliable and is typically not used. 
+
+[Multiple Antenna Technologies](https://arxiv.org/ftp/arxiv/papers/0909/0909.3342.pdf)   
+
+<center class="half">
+    <img src="https://i.imgur.com/hvV67X3.png" height="330" style="margin-left:0px">
+</center> 
+
+[LTE Transmission Modes and Beamforming White Paper](https://cdn.rohde-schwarz.com/pws/dl_downloads/dl_application/application_notes/1ma186/1MA186_2e_LTE_TMs_and_beamforming.pdf)  
+2.3 Base Station Antennas
+<center class="half">
+    <img src="https://i.imgur.com/FH0mOI4.png" height="330" style="margin-left:0px">
+</center>
+At present, conventional **passive** base station antennas are typically made up of multiple **cross-polarized** elements. In the y-axis, multiple elements are combined in order to set the illumination (cell radius).** All elements that have the same polarity radiate the same signal (shown in color at the left antenna of Figure 5)**. Especially relevant for MIMO and beamforming is the arrangement of the cross-polarized elements and the columns in the x-axis. 
+看最左边的图：红色的天线单元发射相同的信号。蓝色的天线单元发射相同的信号。相同颜色的4个阵元组成了传统意义上的波束赋形来保证小区的覆盖半径（阵列方向图在垂直方向上被压扁）。
+
+The antenna at the left consists of two elements arranged at 90° to each other (crosspolarized). Each "polarization column" (blue or red) represents an antenna element that can transmit a different signal. This makes it possible to transmit two signals with a compact antenna arrangement, such as for 2x2 MIMO or TX diversity. Analogously, the antenna at the middle can radiate four independent signals (4xN MIMO), while the antenna at the right can radiate eight independent signals (8xN MIMO).
+
+The antennas shown in Figure 5 could also be used for beamforming. However, beamforming requires correlated channels; that is, elements with the same polarization (+45° or –45°) must be used. Also the distance between the columns should not be too large. Beamforming could be carried out with two antenna elements (columns with the same polarization) in the antenna layout in the middle, or with four antenna elements in the layout on the right.  
+图5中所示的天线也可用于波束赋形（传统意义上的）。 然而，波束赋形需要相关信道，也就是说，必须使用具有相同极化（+ 45°或-45°）的元件。 列之间的距离也不应太大。 中间的子图，具有相同极化的列为2列，右边的图中具有相同极化的列为4列。每列是一个固定波束，可以看成一个天线单元，所以中间的图就可以看出2阵元的波束赋形，右边的图可以看成4阵元的波束赋形。
+
+
+>Passive Antenna（“无源天线”或“被动天线”）
+Active Antenna (“有源天线”或“主动天线”) 
+
+Base station antenna architectures are currently evolving. Active antennas are an important trend that allow seamless integration of beamforming concepts, e.g. by implementing dedicated transceivers for the required number of antenna elements.（基站天线架构目前正在发展。 有源天线是一种重要的趋势，它允许波束成形概念的无缝集成，例如， 通过为所需数量的天线元件实现专用收发器。谷歌翻译。）
+
+
+
+[☆ 波束赋形 vs. 预编码](http://www.txrjy.com/thread-784438-1-1.html)    
+
+**TM1**
+
+**TM7**
+Beamforming (antenna port 5)
+This mode uses UE-specific reference signals (RS). Both the data and the UE-specific RS are transmitted using the same antenna weightings. Because the UE requires only the UE-specific RS for demodulation of the PDSCH, the data transmission for the UE appears to have been received from only one transmit antenna, and the UE does not see the actual number of transmit antennas. Therefore, this transmission mode is also called "single antenna port; port 5". The transmission appears to be transmitted from a single "virtual" antenna port 5.
+在这里，用户端收到的 UE-specific RS 只能用来评估波束赋形的效果，因为 UE-specific RS 也经历了相同的波束赋形的加权。发射端形成波束时使用什么样的权向量则需要通过其他的途径得到。
+
+(发射端获得波束赋形矢量的方式1：通过收到的上行信号来估计用户方向，这种方法存在一定的困难) There are different algorithms for calculating the optimum beamforming weightings. For example, it is possible to determine the direction of the received uplink signal (DoA or angle of arrival (AoA)), and from that calculate the beamforming weightings.  However, this requires an antenna array with a distance between the individual antenna elements of d ≤ λ/2. It can be difficult to determine the DoA if the angular spread is not small or if there is no dominant direction in the DoA.
+
+(发射端获得波束赋形矢量的方式2：通过上行的 sounding reference signals) Alternatively, it is possible to determine the optimum beamforming weighting from the channel estimation. Because the uplink and downlink take place on the same frequency in a TD-LTE system, the uplink sounding reference signals can be used directly to estimate the channel, which can then be used to derive the weighting for the downlink beamforming. In this case, the beamforming vector is determined by channel estimation, and not from the DoA calculation.
+
+(LTE没有指定用于确定波束成形参数的任何方法) LTE does not specify any methods for determining the beamforming parameters. Other methods, such as beamswitching, are also possible. Also the number of antennas and the antenna architecture are left up to implementation.
+
+
+
+**TM8**
+Dual layer beamforming (antenna ports 7 and 8)
+
+<center class="half">
+    <img src="https://i.imgur.com/roRKecD.png" height="430" style="margin-left:0px">
+</center>
+
+
+
+**Angle Spread**
+由于多径反射、散射，信号在接收天线上的到达角度会展宽，称为角度扩展。
+
+
 
 </br></br></br></br></br></br></br></br>
 </br></br></br></br></br></br></br></br>
