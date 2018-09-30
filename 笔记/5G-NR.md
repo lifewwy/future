@@ -1053,7 +1053,7 @@ Specification of beamforming in LTE continues. While Release 8 of the LTE specif
 4.如果两个波束分别分给两个UE，那么每个UE需要几个天线呢？ 如果两个UE不位于同一个波束内，并且在波束赋形时能保证主瓣和零陷的位置，这种情况下似乎UE只有一个天线也可以。否则，UE应该需要两个天线，从而将两层分开，从而取出自己的一层。  
 
 
-**TM 9**
+### **TM 9** ###
 [3.2.9 TM 9 – Up to 8 layer transmission (antenna ports 7 - 14)](https://cdn.rohde-schwarz.com/pws/dl_downloads/dl_application/application_notes/1ma186/1MA186_2e_LTE_TMs_and_beamforming.pdf#page=25)  
 (最多可以到8层，实际使用的层数可以动态定义) Release 10 adds Transmission Mode 9. In this mode up to eight layers can be used, so up to eight physical transmit antennas are needed, this leads to up to 8x8 MIMO configurations. The number of used layers may be defined dynamically. The virtual antenna ports 7…14 are used.
 
@@ -1071,15 +1071,31 @@ Specification of beamforming in LTE continues. While Release 8 of the LTE specif
 >1. 每个端口**可能**对应一个传统方式赋形的波束，该波束的赋形方法不在LTE的规范中。每个波束可以由若干个天线加权形成，对接收端UE来说，每个波束的加权矢量不可分辨，每个波束为最小的分辨单位，相当于一个发射天线(天线端口)。如果基站的物理天线个数跟逻辑的天线端口数相同，则不在存在传统的波束赋行过程。
 2. 如果天线端口数和物理天线个数相同，并且所有的层都分配给同一个用户，并且每层上面传相同的信息，这时预编码的效果跟传统的波束赋形基本相同。比如发射端4个天线，接收端4个天线，发射层数为4层，接收端接收到信号后将4层数据分开并进行最大合并，这就相当于发射波束和接收波束对准形成了波束增益。略微不同的是，传统波束赋形对天线间距的要求，不同天线端口对应的物理天线的间距一般会远远大于传统波束赋形的天线间距。这时，通过预编码形成的阵列方向图可能会有很多的波峰，从而形成对其他用户的干扰。所以在这种模式下，预编码矩阵必须要经过仔细设计。   
 
+<center class="half">
+    <img src="https://i.imgur.com/e4Ws8Lq.png" height="260" style="margin-left:0px"><img src="https://i.imgur.com/sJxWkzQ.png" height="260" style="margin-left:0px">
+</center>
 
+### TM 10 ###
+3.2.10 TM 10 – Up to 8 layer transmission (antenna ports 7 - 14)  
 
+**Release 11** adds Transmission Mode 10. **This mode is similar to TM9** (see 3.2.9). Again, up to eight layers can be used, so up to eight physical transmit antennas are needed, this leads to up to 8x8 MIMO configurations. The number of used layers may be defined dynamically. The virtual antenna ports 7…14 are used. TM10 uses the same reference signals like TM9, see figure 18.
 
+**The main difference to TM9 is the used DCI format (2D)**. With TM10** Coordinated Multi Point Transmission (CoMP, see [10]) is supported**. CoMP uses in principle the same MIMO technique like TM9, but **the transmit antennas may be physically on different base station sites**. DCI format 2D allows to tell the UE, that it can assume a quasi colocation of the antenna ports with respect to Doppler shift, Doppler spread, average delay, and delay spread.
+
+跟TM9类似，不同是TM10增加了多点协同传输功能。
+
+[MIMO十年之路](http://www.52rd.com/S_TXT/2017_7/TXT97484.HTM?WebShieldDRSessionVerify=scY2toB3WIlVBo0lmclK)  
+
+[LTE-Advanced Release 13 Multiple Antenna Technologies and ...](https://www.nttdocomo.co.jp/english/binary/pdf/corporate/technology/rd/technical_journal/bn/vol18_2/vol18_2_010en.pdf)  
 
 
 [☆ 波束赋形 vs. 预编码](http://www.txrjy.com/thread-784438-1-1.html)  
 
 **Angle Spread**
 由于多径反射、散射，信号在接收天线上的到达角度会展宽，称为角度扩展。
+
+[LTE Channel State Information (CSI)](https://www.keysight.com/upload/cmc_upload/All/31May2012_LTE.pdf)  
+
 
 
 
