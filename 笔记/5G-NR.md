@@ -1096,7 +1096,148 @@ Specification of beamforming in LTE continues. While Release 8 of the LTE specif
 
 [LTE Channel State Information (CSI)](https://www.keysight.com/upload/cmc_upload/All/31May2012_LTE.pdf)  
 
+[5G;Study on New Radio (NR) access technology (3GPP TR 38.912 version 14.0.0 Release 14 8.3.1.6 Multi-antenna scheme)](https://www.etsi.org/deliver/etsi_tr/138900_138999/138912/14.00.00_60/tr_138912v140000p.pdf)   
 
+## 3GPP: 组织结构和协议 ##
+[3GPP: 组织结构和协议查找小技巧](https://blog.csdn.net/milkbusy/article/details/80834014)   
+
+[[通信标准] 3GPP 如何查询及常用规范列表！（下载方法）](http://txrjy.com/thread-1032340-1-1.html)   
+
+[3GPP资源使用、查找教程](https://blog.csdn.net/jxwxg/article/details/73520841)   
+
+## 5G NR 码本 ##
+[码本](https://blog.csdn.net/zhihuiyu123/article/details/79294251)  
+
+[5G NR详解，看完秒变大神](http://op.inews.qq.com/m/20180116A0R15Y00?refer=100000355&chl_code=kb_news_tech&h=0)
+
+增强的多天线技术
+
+5G NR引入了多项多天线增强技术，大幅提高了频谱效率、小区覆盖和系统灵活性。
+
+提高频谱效率：
+
+对于单用户而言，**基于非码本的上行传输机制**，减少了前代通信技术使用码本进行预编码，所产生的量化误差，可提供更精确的信道信息，有效的增强上行频谱效率；
+
+对于多用户而言，相对于LTE所支持的4流，5G NR上下行支持正交12流的多用户配对，并且通过增强的干扰测量和反馈技术，可显著提高上下行频谱效率。
+
+对于TDD来说，探测参考信号 （SRS） 可以在不同的载波之间，或者同一载波的不同天线之间切换发送，利用信道互易性，进一步提升TDD系统的信道反馈精度和频谱效率；  
+
+增强小区覆盖：
+
+**5G NR采用波束赋型的测量和反馈机制**，可同时应用于初始接入、控制和数据信道。波束赋型（Beamforming）是多天线技术的一种，是指gNodeB/UE对PDSCH/PUSCH（Physical Downlink /Uplink Shared CHannel）上/下行信号进行加权，形成对准UE/gNodeB的窄波束，将发射能量对准目标用户，从而提高目标UE/gNodeB的解调信噪比。
+
+**对于初始接入来说，改进了LTE时期基于广播的机制，升级为基于波束赋型的机制**，从而提高了系统覆盖率；采用波束赋形，可增强控制信道的覆盖范围，从而扩大了小区半径，也可以提高传输成功率，尤其适应于高频传输。
+
+此外，还有增强的导频设计，如解调导频、相位跟踪导频和时频跟踪导频，相对于LTE来说，可以有效地减小开销，提供更精确信道的信息。
+
+[5G New Radio –Technology and Performance](http://mmwrcn.ece.wisc.edu/wp-uploads/2017/05/5G-NR-Ghosh-Nokia-Keynote.pdf) 
+<center class="half">
+    <img src="https://i.imgur.com/zK9hhAF.png" height="230" style="margin-left:0px"><img src="https://i.imgur.com/FS5sSQ6.png" height="230" style="margin-left:0px">
+</center> 
+<center class="half">
+    <img src="https://i.imgur.com/zLhbtmC.png" height="230" style="margin-left:0px"><img src="https://i.imgur.com/7YDvlRH.png" height="230" style="margin-left:0px">
+</center>   
+
+<center class="half">
+    <img src="https://i.imgur.com/HDYWWV9.png" height="230" style="margin-left:0px">
+</center>  
+
+
+[5G New Radio Design](http://www.ieeevtc.org/conf-admin/vtc2017fall/51.pdf)  
+<center class="half">
+    <img src="https://i.imgur.com/XHvcgQN.png" height="330" style="margin-left:0px">
+</center>  
+
+
+
+[Full Dimension MIMO for LTE-Advanced and 5G](http://www.ita.ucsd.edu/workshop/15/files/paper/paper_3822.pdf)  
+This paper will give introduction on newly developed 3D channel models , current development of FD-MIMO scenarios, antenna and RF (radio frequency) transceiver architecutres and potential performance benefits. In addition, **challenges related to channel state information (CSI) feedback** will be discussed. Candidate methods for reducing CSI feedback overhead will be introduced.
+
+<center class="half">
+    <img src="https://i.imgur.com/Vl07gMA.png" height="480" style="margin-left:0px">
+</center>
+
+[Understanding 5G Standards](https://wireless.engineering.nyu.edu/presentations/5GStandards_IEEE.pdf)   
+
+http://www.5gsummit.org/hawaii/docs/slides/Amitava-Ghosh.pdf
+http://www.microwavejournal.com/ext/resources/pdf-downloads/chapter1-Spirent.pdf#page=15
+
+[5G NR: Key features and enhancements](https://www.slideshare.net/3G4GLtd/5g-nr-key-features-and-enhancements)  
+
+![](https://i.imgur.com/9LMLo1l.png)
+![](https://i.imgur.com/OM0YAco.jpg)
+![](https://i.imgur.com/3HUFNpy.jpg)
+![](https://i.imgur.com/WRqLW6x.jpg)
+![](https://i.imgur.com/xnzamu6.png)
+![](https://i.imgur.com/8v73usn.jpg)
+
+
+https://books.google.com/books?id=SKtTDwAAQBAJ&pg=PA295&lpg=PA295&dq=TRP+(Tx/Rx+Point)&source=bl&ots=nUOv_0ENky&sig=LzW0IOq5J4C3OO87HcsMWJw5SrI&hl=en&sa=X&ved=2ahUKEwj_u5e3huPdAhVihOAKHWW0A1YQ6AEwBXoECAMQAQ#v=onepage&q=TRP%20(Tx%2FRx%20Point)&f=false
+![](https://i.imgur.com/om0KBDA.png)
+![](https://i.imgur.com/prxB5Qj.png)
+![](https://i.imgur.com/UW468Tp.png)
+
+[解读Ericsson的3GPP LTE Release 13技术白皮书](http://www.istis.sh.cn/list/list.aspx?id=8681)   
+
+
+[Release 13 Multiple Antenna Technologies](https://www.nttdocomo.co.jp/english/binary/pdf/corporate/technology/rd/technical_journal/bn/vol18_2/vol18_2_010en.pdf)
+
+**搜索关键词：CSI n1 n2 o1 o2**
+[MIMO Status in 3GPP](http://std-share.itri.org.tw/Content/Files/Event/Files/1.Elevation%20Beamforming%20and%20Full%20Dimension.pdf)   
+
+[](http://qaistc.com/2017/wp-content/uploads/2017/09/test_strategy_towards_massive_mimo.pptx)
+
+![](https://i.imgur.com/x5JpFco.png)
+![](https://i.imgur.com/aYmRcHB.png)
+
+Two types of CSI-RS transmission,  
+>CLASS-A (Non-Precoded)  
+CLASS-B (Beamformed)  
+
+Class-A  or Class-B is configurable by higher layers  
+
+**Class-A**
+
+Codebook Config for Non-precoded type  
+Number of CSI-RS ports determined by codebookconfig  
+>(N1, N2) corresponds to number of antenna ports **per polarization**
+(O1, O2) corresponds to spatial over-sampling rate in dimension x
+
+(N1, N2) 天线端口为N1行N2列，即垂直方向的天线端口为N1个，水平方向的天线端口为N2个。
+(O1, O2) 确定扫描波束的个数，垂直方向用O1个波束扫描，水平方向由O2个波束扫描。
+
+![](https://i.imgur.com/doYe6t9.png)
+
+Class-A type supports total upto 32 CSI-RS Antenna ports.
+
+
+**Class-B **
+
+Beamformed CSI-RS transmission (Class-B)   
+**Precoded like DMRS**    
+Dedicated to selected UEs(专用于选定的UE 谷歌翻译)   
+UE通过测量多个Beamformed CSI-RS来选择波束，并反馈给基站   
+Base station schedules data based on CRI+CSI feedback(基站根据CRI + CSI反馈来调度数据)   
+![](https://i.imgur.com/dtSbFVF.jpg)
+
+Scenario of Class-A and Class-B transmission  
+1. Class-A: (当基站不知道UE信道条件时) Applicable when base station does not have current awareness of UE channel condition (during scheduling request for DL traffic). This is applicable for cell-center UEs.   
+2. Class-B: (基站和UE已经建立连接，基站已经知道该UE的信道条件，当UE移动时，用作波束切换的测量；或者UE收到class-A CSI-RS后上报了较差的CSI，这时基站发送Class-B CSI-RS，以便UE来选择较好的波束，并反馈给基站) Applicable when base station has current awareness of UE channel condition (during on-going traffic with moving users) or UE reporting bad CSI in class-A because of cell edge. This also increases cell coverage area.   
+
+
+
+
+![](https://i.imgur.com/LMZzFC4.png)
+
+
+**transceiver unit (TXRU)**
+**TX---发**
+**RX---收**
+**ISD (Inter-site distance) **
+intersite distance: 站点间距离
+TRP - Total Radiated Power
+**TRP (Tx/Rx Point)**
+**TRP Transmission Reception Point**
 
 
 </br></br></br></br></br></br></br></br>
