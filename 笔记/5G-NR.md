@@ -1008,7 +1008,7 @@ At present, conventional **passive** base station antennas are typically made up
 The antenna at the left consists of two elements arranged at 90° to each other (crosspolarized). Each "polarization column" (blue or red) represents an antenna element that can transmit a different signal. This makes it possible to transmit two signals with a compact antenna arrangement, such as for 2x2 MIMO or TX diversity. Analogously, the antenna at the middle can radiate four independent signals (4xN MIMO), while the antenna at the right can radiate eight independent signals (8xN MIMO).
 
 The antennas shown in Figure 5 could also be used for beamforming. However, beamforming requires correlated channels; that is, elements with the same polarization (+45° or –45°) must be used. Also the distance between the columns should not be too large. Beamforming could be carried out with two antenna elements (columns with the same polarization) in the antenna layout in the middle, or with four antenna elements in the layout on the right.  
-图5中所示的天线也可用于波束赋形（传统意义上的）。 然而，波束赋形需要相关信道，也就是说，必须使用具有相同极化（+ 45°或-45°）的元件。 列之间的距离也不应太大。 中间的子图，具有相同极化的列为2列，右边的图中具有相同极化的列为4列。每列是一个固定波束，可以看成一个天线单元，所以中间的图就可以看出2阵元的波束赋形，右边的图可以看成4阵元的波束赋形。
+图5中所示的天线也可用于波束赋形（传统意义上的）。 然而，波束赋形需要相关信道，也就是说，必须使用具有相同极化（+ 45°或-45°）的元件。 列之间的距离也不应太大。 中间的子图，具有相同极化的列为2列，右边的图中具有相同极化的列为4列。每列相同极化的阵元形成一个固定方向图，可以看成一个天线单元，所以中间的图就可以看成2阵元的波束赋形(两个天线端口，每个天线端口对应着一个由2阵元赋形的波束)，右边的图可以看成4阵元的波束赋形(两个天线端口，每个天线端口对应着一个由4阵元赋形的波束)。
 
 
 >Passive Antenna（“无源天线”或“被动天线”）
@@ -1023,7 +1023,7 @@ Base station antenna architectures are currently evolving. Active antennas are a
 
 **TM7**
 Beamforming (antenna port 5)
-This mode uses UE-specific reference signals (RS). Both the data and the UE-specific RS are transmitted using the same antenna weightings. Because the UE requires only the UE-specific RS for demodulation of the PDSCH, the data transmission for the UE appears to have been received from only one transmit antenna, and the UE does not see the actual number of transmit antennas. Therefore, this transmission mode is also called "single antenna port; port 5". The transmission appears to be transmitted from a single "virtual" antenna port 5.
+This mode uses UE-specific reference signals (RS). **Both the data and the UE-specific RS are transmitted using the same antenna weightings**. Because the UE requires only the UE-specific RS for demodulation of the PDSCH, the data transmission for the UE appears to have been received from only one transmit antenna, and the UE does not see the actual number of transmit antennas. Therefore, this transmission mode is also called "single antenna port; port 5". The transmission appears to be transmitted from a single "virtual" antenna port 5.
 在这里，用户端收到的 UE-specific RS 只能用来评估波束赋形的效果，因为 UE-specific RS 也经历了相同的波束赋形的加权。发射端形成波束时使用什么样的权向量则需要通过其他的途径得到。
 
 (发射端获得波束赋形矢量的方式1：通过收到的上行信号来估计用户方向，这种方法存在一定的困难) There are different algorithms for calculating the optimum beamforming weightings. For example, it is possible to determine the direction of the received uplink signal (DoA or angle of arrival (AoA)), and from that calculate the beamforming weightings.  However, this requires an antenna array with a distance between the individual antenna elements of d ≤ λ/2. It can be difficult to determine the DoA if the angular spread is not small or if there is no dominant direction in the DoA.
@@ -1046,11 +1046,30 @@ Specification of beamforming in LTE continues. While Release 8 of the LTE specif
     <img src="https://i.imgur.com/SgjpyRg.png" height="230" style="margin-left:0px"><img src="https://i.imgur.com/0UiHrFa.png" height="150" style="margin-left:0px">
 </center>
 
-注意（wwy）：
+**注意（wwy）**：
 >1.每个波束对应一个天线端口，每个波束承载着1层数据流。  
-2.如果两层都指定给一个用户，该用户必须至少有两个天线。这样才能将传输的两层分开，进而进行合并。如果两层是相同的信息，则是空间分集，合并后会有分集增益； 如果两层是不同的信息，则是空间复用。  
-3.如果两个波束分别分给两个UE，那么每个UE需要几个天线呢？ 如果两个UE不位于同一个波束内，并且在波束赋形时能保证主瓣和零陷的位置，这种情况下似乎UE只有一个天线也可以。否则，UE应该需要两个天线，从而将两层分开，从而取出自己的一层。  
+2.每个天线端口的波束怎么形成，似乎不在LTE规范中，这跟TM7一样。
+3.如果两层都指定给一个用户，该用户必须至少有两个天线。这样才能将传输的两层分开，进而进行合并。如果两层是相同的信息，则是空间分集，合并后会有分集增益； 如果两层是不同的信息，则是空间复用。  
+4.如果两个波束分别分给两个UE，那么每个UE需要几个天线呢？ 如果两个UE不位于同一个波束内，并且在波束赋形时能保证主瓣和零陷的位置，这种情况下似乎UE只有一个天线也可以。否则，UE应该需要两个天线，从而将两层分开，从而取出自己的一层。  
 
+
+**TM 9**
+[3.2.9 TM 9 – Up to 8 layer transmission (antenna ports 7 - 14)](https://cdn.rohde-schwarz.com/pws/dl_downloads/dl_application/application_notes/1ma186/1MA186_2e_LTE_TMs_and_beamforming.pdf#page=25)  
+(最多可以到8层，实际使用的层数可以动态定义) Release 10 adds Transmission Mode 9. In this mode up to eight layers can be used, so up to eight physical transmit antennas are needed, this leads to up to 8x8 MIMO configurations. The number of used layers may be defined dynamically. The virtual antenna ports 7…14 are used.
+
+(可以是 SU-MIMO，也可以是 MU-MIMO) Both single user (SU) and multi user (MU) MIMO is possible, dynamic switching between both modes is possible without special signaling by higher layers.  
+
+
+<center class="half">
+    <img src="https://i.imgur.com/m9NkPqr.png" height="430" style="margin-left:0px">
+</center>
+
+
+(UE不需要在上行信号中发送PMI来指示基站选择哪个预编码矩阵，UE也不需要提前知道基站使用的预编码。UE能够从UE-specific DM-RS推断出预编码矩阵。UE-specific DM-RS**在预编码之前**被插入数据流，UE将收到的UE-specific DM-RS与本地已知的UE-specific DM-RS进行对比即可知道基站发送信号时使用的预编码矩阵。) The UE-specific DM-RS is applied to the data streams **before the precoding**. That means the UE receives the known RS which is precoded and transmitted via the channel. Thus the **receiver does not need to know the used precoding in advance**. There is no need to use special codebooks anymore, **the UE does not send back the the PMI**. In other words the spatial multiplexing is able to use the full range of weighting (precoding) for beamforming now, not only discrete precoding via the codebook like in TM3…6.  
+
+**注意（wwy）**：
+>1. 每个端口**可能**对应一个传统方式赋形的波束，该波束的赋形方法不在LTE的规范中。每个波束可以由若干个天线加权形成，对接收端UE来说，每个波束的加权矢量不可分辨，每个波束为最小的分辨单位，相当于一个发射天线(天线端口)。如果基站的物理天线个数跟逻辑的天线端口数相同，则不在存在传统的波束赋行过程。
+2. 如果天线端口数和物理天线个数相同，并且所有的层都分配给同一个用户，并且每层上面传相同的信息，这时预编码的效果跟传统的波束赋形基本相同。比如发射端4个天线，接收端4个天线，发射层数为4层，接收端接收到信号后将4层数据分开并进行最大合并，这就相当于发射波束和接收波束对准形成了波束增益。略微不同的是，传统波束赋形对天线间距的要求，不同天线端口对应的物理天线的间距一般会远远大于传统波束赋形的天线间距。这时，通过预编码形成的阵列方向图可能会有很多的波峰，从而形成对其他用户的干扰。所以在这种模式下，预编码矩阵必须要经过仔细设计。   
 
 
 
