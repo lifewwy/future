@@ -1075,6 +1075,7 @@ Specification of beamforming in LTE continues. While Release 8 of the LTE specif
 
 
 
+
 [☆ 波束赋形 vs. 预编码](http://www.txrjy.com/thread-784438-1-1.html)  
 
 **Angle Spread**
