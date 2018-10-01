@@ -356,8 +356,12 @@ UPLINK SIGNAL MEASUREMENTS FOR BEAM MANAGEMENT
 
 
 ## 发射分集 ##
-接收端可以**单天线接收**。
-[无线通信中的发射分集技术](https://wenku.baidu.com/view/721a5a2158fb770bf78a555f.html)  
+**接收端可以单天线接收**。
+[无线通信中的发射分集技术](https://wenku.baidu.com/view/721a5a2158fb770bf78a555f.html)     
+
+[36.211 6.3.4.3 Transmit diversity](https://www.etsi.org/deliver/etsi_ts/136200_136299/136211/14.02.00_60/ts_136211v140200p.pdf#page=91)   
+
+[Diversity Schemes In LTE](https://communities.theiet.org/blogs/426/419)   
 
 
 </br></br></br></br></br></br></br></br>
