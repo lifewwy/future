@@ -355,6 +355,11 @@ UPLINK SIGNAL MEASUREMENTS FOR BEAM MANAGEMENT
 ![](https://i.imgur.com/LnLLw8X.png)
 
 
+## 发射分集 ##
+接收端可以**单天线接收**。
+[无线通信中的发射分集技术](https://wenku.baidu.com/view/721a5a2158fb770bf78a555f.html)  
+
+
 </br></br></br></br></br></br></br></br>
 </br></br></br></br></br></br></br></br>
 </br></br></br></br></br></br></br></br>
