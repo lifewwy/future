@@ -449,7 +449,10 @@ All the complicated/confusing stories in this page is mostly about the process s
 <blockquote>
 <p>子载波间隔：\(2^\mu\cdot 15kHz\)<br>CP时长：\(2^{-\mu}\cdot 4.7{\mu}s\)<br>每个子帧的时隙个数：\(2^\mu \)   </p>
 </blockquote>
-<p>每个时隙(slot)包含14个OFDM符号。<br>一个资源块包含12个连续子载波。(A resource block (RB) consists of 12 consecutive subcarriers in the frequency domain.)   </p>
+<p>每个时隙(slot)包含14或7个OFDM符号。<br>However, the number of symbols within a slot does not change with the numberology, it only changes with slot configuration type. For slot configuration 0, the number of symbols for a slot is always 14 and for slot configuration 1, the number of symbols for a slot is always 7.<br>一个资源块包含12个连续子载波。(A resource block (RB) consists of 12 consecutive subcarriers in the frequency domain.)   </p>
+<p><strong>思考：</strong>
+Numerology 配置的最小级别是什么，是子帧么？子帧内的不同时隙或者不同OFDM符号可以配置不同的Numerology么？<br><strong>BWP is configured with a single numerology.  </strong> 
+Each BWP is associated with a specific numerology, i.e., SCS and CP type. Therefore, the BWP is also a means to reconfigure a UE with a certain numerology. </p>
 <p><strong>SSB</strong></p>
 <center class="half">
     <img src="https://i.imgur.com/oC8tRpl.png" height="430" style="margin-left:0px">
@@ -474,9 +477,464 @@ All the complicated/confusing stories in this page is mostly about the process s
     <img src="https://i.imgur.com/3BwDIBa.png" height="260" style="margin-left:0px">
 </center>  
 
+<p><strong>在5G NR中，上行和下行分配的变换是OFDM符号级的，而在LTE中是子帧级别的。</strong>
+<a href="http://www.sharetechnote.com/html/5G/5G_FrameStructure.html#Slot_Format">☆ In 5G NR, DL and UL assignment changes at a symbol level (in LTE TDD the UL/DL assignment is done in a subframe level)</a> </p>
+<center class="half">
+    <img src="https://i.imgur.com/bjgd2Rc.png" height="260" style="margin-left:0px">
+</center>   
+
+
+<h2 id="td-lte-">TD-LTE系统为何需要时间同步</h2>
+<h3 id="-bts-cell-sector-">基站(BTS)、小区(CELL)、扇区(SECTOR)</h3>
+<p>小区是个逻辑的概念，基站和扇区都是物理的概念，是实实在在存在的。  </p>
+<p>基站可设在小区的中心，用全向天线形成圆形的覆盖区，这就是“中心激励”方式。也可将基站设在每个小区六边形的三个顶点上，每个基站采用三副120度扇形辐射的定向天线，分别覆盖三个相邻小区的各三分之一的区域，每个小区由三副120度扇形天线共同覆盖，这就是“顶点激励”方式，而每副天线覆盖的区域就是一个基站扇区。  </p>
+<p>与小区相比，扇区是一个具有地理意义的概念，而小区是一种逻辑概念，主要是为了方便移动交换中心进行参数配置以及控制用，因此一个扇区可能包含几个小区，通常扇区与基站的天线方向对应，对于全向天线的基站就只有一个扇区，而只具有定向天线的基站就会包含有多个扇区。<strong>一般只要无线参数上有不同就是不同的小区，例如频率不同或者频率相同但扰码不同都分成不同的小区。</strong></p>
+<p>全向基站本身就是一个小区，没有扇区的概念了。  </p>
+<h3 id="-vs-">同频组网 VS 异频组网</h3>
+<p>同频组网 
+同频组网指的是 LTE系统网覆盖的所有小区都使用相同的频点。LTE一般采用同频组网的方式进行组网。  </p>
+<center class="half">
+    <img src="https://i.imgur.com/yddbtif.png" height="260" style="margin-left:0px">
+</center> 
+
+<h3 id="tdd-">TDD系统同步方式(同频组网)</h3>
+<p>基站的同步是靠 GPS/北斗等来实现的，GPS/北斗的作用是实现基站的时间同步，<strong>时间同步的作用是在距离较近的周围基站实现“大家一起发，大家一起收”</strong>，这样可以增加频谱的利用率，这也就是 TD 典型的“同步技术”。TD 在这种同步的技术下完全可以用同一个频点进行上行和下行传输，因为在上行的时候不会下行，在下行的时候不会上行。也就是说，n个UE一起上发，m个小区一起下发。</p>
+<p>因此，在TD-LTE组网时，各基站必须保持严格的时间同步，才能保证各个基站间的上下行链路不会相互干扰。</p>
+<p><a href="http://blog.sina.com.cn/s/blog_673b30dd0100lhty.html">LTE 中的上行时间同步</a>  </p>
+<p>LTE中，不同UE的上行信号到达eNodeB时要时间对齐，以保证UE之间上行信号的正交性，从而有助于消除小区内的干扰。</p>
+<p>信号在空间传输是有延迟的，如果UE在呼叫期间向远离基站的方向移动，则从基站发出的信号将“越来越迟”的到达UE，与此同时，UE的信号也会“越来越迟”的到达基站，延迟过长会导致基站收到的UE在本时隙上的信号与基站收下一个其它UE信号的时隙相互重叠，引起码间干扰。</p>
+<p>上行传输的时间对齐是通过在UE发送侧应用TA（Timing Advance）来实现的。TA的主要目的就是为了<strong>消除UE之间不同的传输时延</strong>。  </p>
+<p>UE在获得初始同步以后，随着时间的推移，由于信道情况的改变或者UE（以及eNodeB）的时钟漂移，UE可能重新变为失步状态。为此eNodeB会周期性的为UE发送TA命令，指导UE进行上行的同步，并且eNodeB为每个UE配置了一个Time Alignment Timer，规定了TA的有效期，为此eNodeB需要在UE的能力和系统的开销之间进行折中。UE在每次接收到eNodeB的TA命令后，都将此定时器重置为零。在Time Alignment Timer超时以后，如果UE未能收到任何的TA命令，那么UE认为上行已经失步，此时UE不能再进行任何的上行数据传输，而必须通过随机接入的过程来对上行的TA进行重新初始化。  </p>
+<p><a href="https://zhidao.baidu.com/question/1381930293850184180.html">为什么TDD-LTE上行时隙转下行时隙不需要保护间隔？而下行时隙转上行时隙需要保护间隔？</a>  </p>
+<p>在一个小区中，所有UE要保持上行同步。<br>下行即eNodeB发送给UE，无线电波从eNodeB到UE需要一段时间，由于各个UE和eNodeB的距离不同，因此距离eNodeB近的UE会先接收到下行信号，而距离eNodeB远的UE后接收到下行信号。在一段下行时隙后，需要留出来一段保护间隔，在该保护间隔内，保证所有UE都接收到了下行信号，并对信号进行处理。然后，所有UE才能在即将到来的上行时隙同时发送上行信号，即小区内UE同步。<br>保护间隔大部分的时间是用于无线信号传播，还有一小部分是UE为即将到来的上行发送做准备，如启动功放电路等。<br>若没有保护间隔，显而易见各个UE会在不同时刻进行上行信号的发送，从而导致UE间失步。  </p>
+<p><a href="https://www.pttcn.net/plus/m_view.php?aid=23716">LTE的上行同步过程</a><br>为了保证上行传输的正交性，避免小区内（intra-cell）干扰，eNodeB要求来自同一子帧但不同频域资源(不同的RB)的不同UE的信号到达eNodeB的时间基本上是对齐的。eNodeB只要在循环前缀（Cyclic Prefix）范围内接收到UE所发送的上行数据，就能够正确地解码上行数据，因此上行同步要求来自同一子帧的不同UE的信号到达eNodeB的时间都落在循环前缀范围之内。  </p>
+<p>为了保证接收侧（eNodeB侧）的时间同步，LTE提出了上行定时提前（Uplink Timing Advance）的机制。  </p>
+<p><a href="http://blog.sina.com.cn/s/blog_927cff010101cwju.html">上行定时提前（Uplink Timing Advance）</a><br>为了保证上行传输的正交性，避免小区内（intra-cell）干扰，eNodeB要求来自同一子帧但不同频域资源（不同的RB）的不同UE的信号到达eNodeB的时间基本上是对齐的。eNodeB只要在CP（Cyclic Prefix）范围内接收到UE所发送的上行数据，就能够正确地解码上行数据，因此上行同步要求来自同一子帧的不同UE的信号到达eNodeB的时间都落在CP之内。  </p>
+<p>为了保证接收侧（eNodeB侧）的时间同步，LTE提出了上行定时提前（Uplink Timing Advance）的机制。  </p>
+<h2 id="bwp">BWP</h2>
+<p><strong>BWP is configured with a single numerology.  </strong>    </p>
+<p>Each BWP is associated with a specific numerology, i.e., SCS and CP type. Therefore, the BWP is also a means to reconfigure a UE with a certain numerology.    </p>
+<p>A BW Part (BWP) is a new term that defines a fixed band over which the communication taking place uses the same numerology throughout the existence of the BWP.  </p>
+<p>5G的带宽最小可以是5MHz，最大能到400MHz。如果要求所有终端UE都支持最大的400MHz，无疑会对UE的性能提出较高的要求，不利于降低UE的成本。同时，一个UE不可能同时占满整个400M带宽，如果UE采用400M带宽对应的采样率，无疑是对性能的浪费。   </p>
+<p>BWP，英文全称为Bandwidth Part，即<strong>一部分带宽</strong>。我们有时也用Bandwidth Adaptation指代这个技术，即带宽自适应变化。 </p>
+<p>在LTE中，UE的带宽跟系统的带宽保持一致，解码MIB信息配置带宽后便保持不变。  </p>
+<p>在NR中，UE的带宽可以动态的变化。第一个时刻，UE的业务量较大，系统给UE配置一个大带宽（BWP1）；第二时刻，UE的业务量较小，系统给UE配置了一个小带宽（BWP2），满足基本的通信需求即可；第三时刻，系统发现BWP1所在带宽内有大范围频率选择性衰落，或者BWP1所在频率范围内资源较为紧缺，于是给UE配置了一个新的带宽（BWP3）。  </p>
+<p><a href="http://www.sharetechnote.com/html/5G/5G_CarrrierBandwidthPart.html">5G/NR - Carrier Bandwith Part</a><br>38.211中是这样定义Carrier Bandwith Part的</p>
+<blockquote>
+<p>A bandwidth part is a subset of <strong>contiguous</strong> common resource blocks for a given numerology (u) in bandwidth part on a given carrier.</p>
+</blockquote>
+<p>大概翻译一下就是一个bwp是给定载波带宽上连续资源块的子集。</p>
+<p>NOTE : <strong>CRB</strong> in this illustration stands for Carrier Resource Block which is numbered from the one end through the other end of Carrier Band (this is a kind of global resource block), the <strong>PRB</strong> stands for Physical Resource Block is the resource blocks numbered within each BWP. 下图中的 CRB 指的是 Carrier Resource Block</p>
+<center class="half">
+    <img src="https://i.imgur.com/rxgdpdk.png" height="360" style="margin-left:0px">
+</center> 
+
+<center class="half">
+    <img src="https://i.imgur.com/y7N8SwB.png" height="100" style="margin-left:0px">
+</center> 
+
+
+<center class="half">
+    <img src="https://i.imgur.com/RoVoFh5.png" height="270" style="margin-left:0px">
+</center> 
+
+
+<p><a href="https://arxiv.org/ftp/arxiv/papers/1712/1712.09724.pdf">NR Wide Bandwidth Operations</a>  </p>
+<p><a href="http://ziyubiti.github.io/2018/03/07/5gnrbwt/">BWP Switch Transition Time</a><br>对于带宽配置改变后，需要重新进行RF retuning，设置ADC/DAC。</p>
+<h3 id="-">参考资源块、公共资源块、物理资源块、虚拟资源块</h3>
+<p><a href="http://marshallcomm.cn/2017/12/17/nr-v200-l1-channel-modulation/">http://marshallcomm.cn/2017/12/17/nr-v200-l1-channel-modulation/</a></p>
+<p>资源块（resource block）定义为12个连续频域子载波。  </p>
+<p>参考资源块（reference resource block）在频域上从0开始编号。参考资源块0的子载波0对于所有的子载波配置 是公共的，也被称为“参考点A”，并且用作其他资源块格的公共参考点。参考点A从以下高层参数获得。  </p>
+<p>物理资源块（physical resource block）在BWP中定义。</p>
+<h2 id="evm">EVM</h2>
+<p>误差向量幅度（Error Vector Magnitude，简称：EVM），是在一个给定时刻理想无误差基准信号与实际发射信号的向量差，能全面衡量调制信号的幅度误差和相位误差。</p>
+<p>以百分比的形式表示。EVM越小，信号质量越好。  </p>
+<p>误差矢量幅度是实际测量到的波形和理论调制波形之间的偏差。  </p>
+<center class="half">
+    <img src="https://i.imgur.com/BIEsQzU.jpgg" height="270" style="margin-left:0px">
+</center> 
+
+
+<h2 id="carrier-bandwidth-vs-channel-bandwidth">Carrier Bandwidth VS Channel Bandwidth</h2>
+<p>Carrier Aggregation 载波聚合<br>One of the major features of LTE-Advanced is Carrier Aggregation.</p>
+<h2 id="-vs-">上行调度 VS 下行调度</h2>
+<p>Scheduling </p>
+<p><a href="http://blog.sina.com.cn/s/blog_927cff010101a7yh.html">上行调度请求（Scheduling Request，SR）</a><br>如果UE没有上行数据要传输，eNodeB并不需要为该UE分配上行资源，否则会造成资源的浪费。因此， UE需要告诉eNodeB自己是否有上行数据需要传输，以便eNodeB决定是否给UE分配上行资源。为此LTE提供了一个上行调度请求（Scheduling Request，SR）的机制。  </p>
+<p>UE通过SR告诉eNodeB是否需要上行资源以便用于UL-SCH传输。  </p>
+<p>eNodeB不知道UE什么时候需要发送上行数据，即不知道UE什么时候会发送SR。因此，eNodeB需要在已经分配的SR资源上检测是否有SR上报。  </p>
+<p> 由于SR资源是UE专用且由eNodeB分配的，因此SR资源与UE一一对应且eNodeB知道具体的对应关系。也就是说，UE在发送SR信息时，并不需要指定自己的ID（C-RNTI），eNodeB通过SR资源的位置，就知道是哪个UE请求上行资源。  </p>
+<p> UE在某些情况下可能没有SR资源。</p>
+<blockquote>
+<p>场景一：<br>场景二：当UE丢失了上行同步，它也会释放SR资源，如果此时有上行数据要发送，也需要触发随机接入过程。  </p>
+</blockquote>
+<p>从上面的描述可以看出，当UE没有被分配SR资源时，基于竞争的随机接入过程可以替代SR的功能用于申请上行资源。但这只适用于低密集度的上行资源请求的情况。</p>
+<p>UE发送SR以后，无法确定eNodeB什么时候会下发UL Grant，这取决于上行资源的调度以及优先级等。如果UE等待超时（超时时间由sr-ProhibitTimer决定）就重发SR，重发次数超过了SR的最大重传次数（由IE：SchedulingRequestConfig的dsr-TransMax决定）就会触发随机接入。（见36.321的5.4.4节）</p>
+<p><a href="https://wenku.baidu.com/view/68692868e87101f69e319599.html">LTE 调度机制</a><br>由于 LTE 系统中资源调度和链路自适应完全由 eNodeB 控制，因此上行信道CQI 的测量值可以由 eNodeB 直接获取并使用，也不需要标准化；而下行信道的 CQI 值需要在 UE 侧获取，并由 UE 反馈给 eNodeB。</p>
+<p><strong>下行链路调度</strong>
+当 UE 能够进行下行链路数据接收时，为了得到可能分配给该 UE 的下行资源，<strong>UE 需要一直监视 PDCCH</strong>。</p>
+<p>下行资源的分配方案通过 PDCCH 信道发下去，通知某个 UE 在什么时频资源块、以什么样的调制编码方案、什么样的 MIMO 工作模式向该 UE 发送下行数据； 随后，下行数据通过 PDSCH 信道发送给该 UE，UE 则根据 PDCCH 信道上的指示找到 eNodeB 发给自己的数据，如下图所示。</p>
+<center class="half">
+    <img src="https://i.imgur.com/TKuUohf.png" height="330" style="margin-left:0px">
+</center> 
+
+<p>UE 的 CQI 报告是下行资源调度的重要依据，但不是唯一的依据。eNodeB 还有其它考虑，比如 UE 能力（Capability）、业务 QoS 要求、公平性等。CQI 信息不仅仅用于下行资源调度，还用于干扰协调、功率控制、AMC 等重要过程。UE 测量 eNodeB 的导频信号，得到不同频域的资源块的信噪比，然后以 CQI 报告的形式上报 eNodeB。CQI 报告周期可以调整，如果周期过小，则信令开销太大；如 果周期过大，则下行调度器就不能全面了解下行信道的质量信息。<br>下行调度控制指令指导 UE 对下行发送信号进行接收处理，包括三种指示（如下表）：</p>
+<center class="half">
+    <img src="https://i.imgur.com/eSxB1OP.png" height="280" style="margin-left:0px">
+</center> 
+
+<p><strong>上行链路调度</strong>
+在上行方向，UE 不能随时随意地发送自己的数据，必须服从 eNodeB 的安排。上行资源的调度由 eNodeB 的 MAC 层的上行调度器决定。</p>
+<p>由于无线资源调度由 eNodeB 完成，因此 UE 需要适时向 eNodeB 发送调度请求（SR），用于请求 UL-SCH 资源。UE 发送调度请求的规则是：</p>
+<blockquote>
+<p>如果在当前 TTI 配置由 PUCCH 来发送调度请求，且没有可用的 UL-SCH 资源，则 UE 的 MAC 层将指示物理层在 PUCCH 上发送调度请求；<br>如果 UE 在任何 TTI 都没有配置 PUCCH来发送调度请求，则 UE 将发起随机接入过程；<br>如果一个调度请求已经被触发， UE 将在每个 TTI 进行请求，直到获得 UL-SCH 资源。  </p>
+</blockquote>
+<p>UE 还需要向 eNodeB 发送缓冲区状态报告（BSR），用于为 eNodeB 提供 UE 上行链路缓冲区中数据量的信息。  </p>
+<p>eNodeB 的上行调度器根据 UE 缓存状态报告 BAR、上行调度请求 SR、上行信道状况决定给 UE 调度什么样的无线资源，把调度结果通过 PDCCH 信道的上行调度准许（UL Grant）告知 UE；UE 根据 eNodeB 的指示，在 PUSCH 信道发送业务数据。</p>
+<center class="half">
+    <img src="https://i.imgur.com/7bVogfb.png" height="330" style="margin-left:0px">
+</center> 
+
+
+<p>根据反馈的信道质量条件，调度器可以决定每一个调度周期内无线资源采取的调制编码方案（MCS）和混合自动重传（HARQ）方式。调度算法有两个重要的设计参数：一个是吞吐量，另一个是公平性。调度算法是数据业务系统的一个特色，目的是充分利用信道的时变特性，得到多用户分集增益，提供系统的吞吐量。吞吐量用小区单位时间内传输的数据量来衡量。公平性指小区所有用户是否都获得一定的服务机会，最公平的算法是所有用户享有相同的服务机会。好的调度算法应该兼顾吞吐量和公平性。  </p>
+<p>根据算法的特点，调度算法可以分为：轮询（Round Robin, RR）算法、最大 C/I 算法（Max C/I）、比例公平算法（Proporonal Fair，PF）等。</p>
+<h2 id="pdsch-">PDSCH 物理下行共享信道</h2>
+<p>需要注意的是PDSCH的资源是基于VRB而非PRB的。VRB是逻辑概念，需要经过一定的映射关系才能转换到PRB。  </p>
+<p>LTE下行除了MIB外，所有高层控制信息及用户数据最终都通过PDSCH信道传输，也就是说，UE所需的绝大部分信息都直接来源于PDSCH信道，因此PDSCH信道的接收质量就代表了LTE下行的服务质量。  </p>
+<p>PDSCH信道由PDCCH信道进行调度，UE需要首先解调PDCCH，以确定是否需要进行PDSCH信道的接收。  </p>
+<p><a href="http://www.sharetechnote.com/html/Handbook_LTE_PDSCH.html">PDSCH (Physical Downlink Shared Channel)</a><br>In terms of channel processing, PDSCH is going through the most complicated process. If you understand full details of PDSCH channel processing, you can say you have understood almost everything of LTE Physical Layer.</p>
+<p><a href="http://niviuk.free.fr/lte_pdsch_calc.html">LTE PDSCH allocation calculator</a> </p>
+<p><a href="http://www.sharetechnote.com/html/FrameStructure_DL.html">Frame Structure - Downlink</a><br><a href="http://dhagle.in/LTE">http://dhagle.in/LTE</a>  </p>
+<center class="half">
+    <img src="https://i.imgur.com/JG2kjFn.png" height="430" style="margin-left:0px">
+</center> 
+
+
+<h2 id="3gpp-">3GPP 文档命名</h2>
+<p><a href="http://www.cnblogs.com/hesicong/archive/2005/08/21/219616.html">3GPP文档命名规则</a>  </p>
+<p>每份3GPP技术文档，技术报告(TR)或者技术规范(TR)，都被一个Reference唯一标示。<br>这个Reference以3GPP前缀开始，后跟两个字符表示文档的类型(TS为技术报告，TR为技术规范）。<br>在文档类型之后紧接着是规范的号码。规范号码具有aa.bbb或者aa.bb两种形式。其中aa指示文档的适用范围（见表1）。<br>规范号码后面是版本Vx.y.z，其中x表示release，y表示技术版本，z表示修订版本。<br>另外注意每个release都有一个冻结日期，一般3GPP协议在冻结以后就不再修改。一般冻结日期为1年。</p>
+<p>规范号（aa.bbb） = 规范系列号.文档号，其中 aa 为规范系列号，指示文档的适用范围（见表 1），bbb 是文档号。规范号后面是版本号 Vx.y.z，其中 x 表示 release，y 表示技术版本，z 表示修订版本。</p>
+<p><a href="https://www.etsi.org/deliver/etsi_tr/138900_138999/138912/14.01.00_60/tr_138912v140100p.pdf">3GPP TR 38.912 version 14.1.0 Release 14</a><br>Study on new radio access technology<br><a href="https://www.etsi.org/deliver/etsi_tr/138900_138999/138912/14.01.00_60/tr_138912v140100p.pdf#page=22">Multi-antenna scheme - Downlink transmission scheme </a><br><a href="https://www.etsi.org/deliver/etsi_tr/138900_138999/138912/14.01.00_60/tr_138912v140100p.pdf#page=36">Multi-antenna scheme - Uplink transmission scheme</a>    </p>
+<h2 id="-orthogonality-">参考信号的正交性(orthogonality)</h2>
+<p>参考信号(Reference Signal,RS),就是常说的“导频”信号,是由发射端提供给接收端用于信道估计或信道探测的一种已知信号。</p>
+<h2 id="channel-hardening-in-massive-mimo">Channel Hardening in Massive MIMO</h2>
+<p><a href="https://arxiv.org/abs/1804.01690">Channel Hardening in Massive MIMO - A Measurement Based Analysis</a></p>
+<p>More specifically, when increasing the number of base station antennas in a massive MIMO systems the channel variations decrease and the so-called channel hardening effect appears. This means that the variations of the channel gain in time and frequency decrease. </p>
+<h2 id="tm-transmission-modes-">TM (Transmission Modes)</h2>
+<p><a href="https://web.stanford.edu/~apaulraj/workshop70/pdf/MIMO_Cellular_Gorokhov.pdf">MIMO in (4G) cellular systems</a>  </p>
+<p><a href="https://www.keysight.com/upload/cmc_upload/All/25April2013WebcastSlides.pdf#page=19">LTE DL Transmission Modes</a>  </p>
+<p><a href="https://www.mathworks.com/help/lte/examples/pdsch-throughput-for-non-codebook-based-precoding-schemes-port-5-tm7-port-7-or-8-or-port-7-8-tm8-port-7-14-tm9-and-tm10.html">PDSCH Throughput for Non-Codebook Based Precoding Schemes: Port 5 (TM7), Port 7 or 8 or Port 7-8 (TM8), Port 7-14 (TM9 and TM10)</a>  </p>
+<p><a href="https://core.ac.uk/download/pdf/18617020.pdf">3GPP LTE Release 9 and 10 requirement analysis to physical layer UE testing</a>  </p>
+<p><a href="http://www.sharetechnote.com/html/Handbook_LTE_BeamForming.html#Beamforming_in_LTE">BeamForming</a>  </p>
+<p><a href="https://www.slideshare.net/peichechang/lte-introduction-part1">OFDM VS OFDMA</a>  </p>
+<p><a href="http://www.sharetechnote.com/html/Handbook_LTE_AntennaPort.html">Antenna Port</a>   </p>
+<p><a href="http://www.sharetechnote.com/html/FrameStructure_DL.html#RS">RS (Reference Signal ) - Cell Specific</a>   </p>
+<p><a href="http://www.sharetechnote.com/html/FrameStructure_DL.html#RS_UE_Specific">RS (Reference Signal ) - UE Specific</a>  </p>
+<p><a href="https://www.etsi.org/deliver/etsi_ts/136200_136299/136211/14.02.00_60/ts_136211v140200p.pdf#Ppage=86">36.211 6.3.3 Layer mapping</a>   </p>
+<p><a href="https://www.etsi.org/deliver/etsi_ts/136100_136199/136101/14.03.00_60/ts_136101v140300p.pdf#page=1305">36.101 B.4 Beamforming Model</a></p>
+<p><a href="http://www.sharetechnote.com/html/BasicProcedure_LTE_MIMO.html">MIMO(Multiple Input Multiple Output)</a>   </p>
+<p><a href="http://www.sharetechnote.com/html/BasicProcedure_LTE_PHY_Precoding.html">Precoding</a>  </p>
+<p><a href="https://link.springer.com/article/10.1007/s11277-018-5660-2">Design of Simulation System for LTE-U Using 5 GHz Band in MATLAB</a>    </p>
+<center class="half">
+    <img src="https://i.imgur.com/Ds97WJJ.gif" height="230" style="margin-left:0px">
+</center> 
+
+<p>首先理解端口的实质：端口是从接受者的角度定义的（下行的接受是UE，上行的接受是基站），一个端口对于接受者来说就认为是一个独立的天线信道；如发送端有4根天线，且是相干的小间距天线，所以只能将这个4个天线定义为一个端口，对于接受端来说，这4根天线与一根没有区别。</p>
+<p>在发送端，物理天线（阵元）与逻辑端口之间的对应关系属于内部实现。如上面说，这种映射关系的定义存在一个准则，即：非相干的物理天线（阵元）定义为不同的端口才有意义。  </p>
+<p>空间间距大于10波长的阵元可视为非相干天线，对于2G左右的载波，10波长意味着1.5米左右。间距小于0.5波长的阵元视为相干天线，这些天线只能归到一个端口做动态赋型。  </p>
+<p><a href="http://www.5gamericas.org/files/4614/0622/2152/MIMO_and_Smart_Antennas_July_2013_FINAL.pdf#page=9">MIMO and Smart Antennas for Mobile Broadband Systems</a>  </p>
+<p><strong> “4x2 MIMO” VS “2T4R”   两种表示形式</strong>
+MIMO schemes are characterized by the number of antennas transmitting into the air, M, and the number of antennas receiving those same signals at the receiver(s), N; designated as “MxN.” So, for example, the downlink may use, for example, 4 transmit antennas at the base station, and two receive antennas in the terminal, which is referred to as “4x2 MIMO.” The uplink might use one single transmit antenna in the terminal and 4 receive antennas at the base station, for “1x4 SIMO” operation. <strong>The “MxN” refers to the number of antennas in each end of the link (downlink or uplink) and not to the number of antennas at just one end of the link</strong>. As another typical example, an operator uses 2 transmit antennas and 4 receive antennas in the base stations while the terminal uses two receive antennas and one transmit antenna, so the downlink is 2x2 MIMO and the uplink is 1x4 SIMO. The base station is said to have 2T4R and the terminal, 1T2R.<br>下行 “4x2 MIMO” ： 基站使用4个发射天线，用户端使用2个接收天线。<br>上行 “1x4 SIMO” ： 用户端使用1个发射天线，基站使用4个接收天线。<br>这种情况下，我们说<br>基站端：4T4R（基站发射时使用4个天线，接收时也使用4个天线）
+用户端：1T2R（用户端发射时使用1个天线，接收时使用2个天线）</p>
+<p>The base station’s scheduler dynamically adapts the modes to adjust the number of streams as the rank of the channel changes with time, and the terminals may be requested to signal back channel state information; or open loop transmit diversity can be used if spatial multiplexing is less effective. The rank refers to how many <strong>separate signal paths</strong> can be <strong>recognized by the receiver</strong>(<strong>接收端</strong>能辨识的独立路径数). Mathematically, this corresponds to the rank of the matrix representing the connectivity of the input to the output antennas – the number of independent paths.  </p>
+<p>If all antennas are co-polarized, <strong>in free space or in an anechoic chamber</strong> where there are <strong>no reflections</strong>, the rank collapses to 1 and no MIMO gains can be had.（相同极化的发射天线发射的信号在自由空间中传播， the rank collapses to 1）   </p>
+<p><strong>Polarization diversity increases the rank to the extent to which the channel sustains the independence of the signals transmitted on separate polarizations</strong>. Thus, a cross-polarized transmission pair in the same anechoic chamber can communicate with a cross-polarized pair of receive antennas with a rank of 2.  </p>
+<p>We say that the channel is rich in multipath when the rank is high. Mathematically, the rank is limited to the minimum of the number of rows and columns corresponding to the lesser of the number of transmit and receive antennas. Therefore, a 4x2 MIMO system can have a rank of no more than 2, and we can transmit no more than 2 streams to that receive terminal.  </p>
+<p>We recognize that currently hand held terminals are limited by power and cost to having a single transmit antenna (at least for a particular carrier frequency) limiting uplink to 1xN SIMO, consequently we <strong>focus on the downlink MIMO operation</strong>.  </p>
+<div style="float:right;margin:20px;"><img src="https://i.imgur.com/VlaWc4z.png"  width="" height="280" ></div>
+(波束赋形适用的场景) Angle of Arrival (AoA) beamforming schemes form beams which work well <strong>when the base station is clearly above the clutter</strong> and when the angular spread of the arrival is small, corresponding to users that are well localized in the field of view of the sector; in rural areas, for example.<br>(<strong>波束赋形使用的列必须是：极化方向相同的列，而且间距不能太大，一般在二分之一左右;  MIMO 使用的列必须是：极化方式不同的列，或者极化方式相同但是间距较远的列</strong>)To form a beam, one uses co-polarized antenna elements spaced rather closely together, typically wavelength/2, while the spatial diversity required of MIMO requires either cross-polarized antenna columns or columns that are relatively far apart.Path diversity will couple more when the antennas columns are farther apart, often about 10 wavelengths (1.5m or 5’ at 2 GHz). That is why most 2G and 3G tower sites have two receive antennas located at far ends of the sector’s platform, as seen in the photo to the right.<br>(波束形成的权向量可以通过反馈获得)The signals to be transmitted are multiplied by complex-valued precoding weights from standardized codebooks to form the antenna patterns with their beam-like main lobes and their nulls that can be directed toward sources of interference. The beamforming can be created, for example, by the <strong>UE PMI feedback pointing out the preferred precoder (fixed beam)</strong> to use when operating in the closed loop MIMO mode TM4.<br>
 
 
 
+<center class="half">
+    <img src="https://i.imgur.com/DBJ8CpB.png" height="380" style="margin-left:0px"><img src="https://i.imgur.com/ntG1Njy.png" height="380" style="margin-left:0px">
+</center><br><center class="half">
+    <img src="https://i.imgur.com/t0Nln2N.jpg" height="480" style="margin-left:0px">
+</center> 
+
+
+In the closed loop MIMO mode, the terminals provide channel feedback to the eNodeB with <strong>Channel Quality Information (CQI), Rank Indications (RI) and Precoder Matrix Indications (PMI)</strong>. These mechanisms enable channel state information at the transmitter which improves the peak data rates, and is the most commonly used scheme in current deployments. However, this scheme provides the best performance only when the channel information is accurate and when there is a rich multi-path environment. Thus, closed loop MIMO is most appropriate in low mobility environments such as with fixed terminals or at pedestrian speeds. 
+
+In the case of high vehicular speeds, Open Loop MIMO may be used, but because the channel state information is not timely, the PMI is not considered reliable and is typically not used. 
+
+<a href="https://arxiv.org/ftp/arxiv/papers/0909/0909.3342.pdf">Multiple Antenna Technologies</a><br>
+<center class="half">
+    <img src="https://i.imgur.com/hvV67X3.png" height="330" style="margin-left:0px">
+</center> 
+
+<a href="https://cdn.rohde-schwarz.com/pws/dl_downloads/dl_application/application_notes/1ma186/1MA186_2e_LTE_TMs_and_beamforming.pdf">LTE Transmission Modes and Beamforming White Paper</a><br>2.3 Base Station Antennas
+<center class="half">
+    <img src="https://i.imgur.com/FH0mOI4.png" height="330" style="margin-left:0px">
+</center>
+At present, conventional <strong>passive</strong> base station antennas are typically made up of multiple <strong>cross-polarized</strong> elements. In the y-axis, multiple elements are combined in order to set the illumination (cell radius).<strong> All elements that have the same polarity radiate the same signal (shown in color at the left antenna of Figure 5)</strong>. Especially relevant for MIMO and beamforming is the arrangement of the cross-polarized elements and the columns in the x-axis. 
+看最左边的图：红色的天线单元发射相同的信号。蓝色的天线单元发射相同的信号。相同颜色的4个阵元组成了传统意义上的波束赋形来保证小区的覆盖半径（阵列方向图在垂直方向上被压扁）。
+
+The antenna at the left consists of two elements arranged at 90° to each other (crosspolarized). Each &quot;polarization column&quot; (blue or red) represents an antenna element that can transmit a different signal. This makes it possible to transmit two signals with a compact antenna arrangement, such as for 2x2 MIMO or TX diversity. Analogously, the antenna at the middle can radiate four independent signals (4xN MIMO), while the antenna at the right can radiate eight independent signals (8xN MIMO).
+
+The antennas shown in Figure 5 could also be used for beamforming. However, beamforming requires correlated channels; that is, elements with the same polarization (+45° or –45°) must be used. Also the distance between the columns should not be too large. Beamforming could be carried out with two antenna elements (columns with the same polarization) in the antenna layout in the middle, or with four antenna elements in the layout on the right.<br>图5中所示的天线也可用于波束赋形（传统意义上的）。 然而，波束赋形需要相关信道，也就是说，必须使用具有相同极化（+ 45°或-45°）的元件。 列之间的距离也不应太大。 中间的子图，具有相同极化的列为2列，右边的图中具有相同极化的列为4列。每列相同极化的阵元形成一个固定方向图，可以看成一个天线单元，所以中间的图就可以看成2阵元的波束赋形(两个天线端口，每个天线端口对应着一个由2阵元赋形的波束)，右边的图可以看成4阵元的波束赋形(两个天线端口，每个天线端口对应着一个由4阵元赋形的波束)。
+
+
+&gt;Passive Antenna（“无源天线”或“被动天线”）
+Active Antenna (“有源天线”或“主动天线”) 
+
+Base station antenna architectures are currently evolving. Active antennas are an important trend that allow seamless integration of beamforming concepts, e.g. by implementing dedicated transceivers for the required number of antenna elements.（基站天线架构目前正在发展。 有源天线是一种重要的趋势，它允许波束成形概念的无缝集成，例如， 通过为所需数量的天线元件实现专用收发器。谷歌翻译。）
+
+
+
+
+<strong>TM1</strong>
+
+<strong>TM7</strong>
+Beamforming (antenna port 5)
+This mode uses UE-specific reference signals (RS). <strong>Both the data and the UE-specific RS are transmitted using the same antenna weightings</strong>. Because the UE requires only the UE-specific RS for demodulation of the PDSCH, the data transmission for the UE appears to have been received from only one transmit antenna, and the UE does not see the actual number of transmit antennas. Therefore, this transmission mode is also called &quot;single antenna port; port 5&quot;. The transmission appears to be transmitted from a single &quot;virtual&quot; antenna port 5.
+在这里，用户端收到的 UE-specific RS 只能用来评估波束赋形的效果，因为 UE-specific RS 也经历了相同的波束赋形的加权。发射端形成波束时使用什么样的权向量则需要通过其他的途径得到。
+
+(发射端获得波束赋形矢量的方式1：通过收到的上行信号来估计用户方向，这种方法存在一定的困难) There are different algorithms for calculating the optimum beamforming weightings. For example, it is possible to determine the direction of the received uplink signal (DoA or angle of arrival (AoA)), and from that calculate the beamforming weightings.  However, this requires an antenna array with a distance between the individual antenna elements of d ≤ λ/2. It can be difficult to determine the DoA if the angular spread is not small or if there is no dominant direction in the DoA.
+
+(发射端获得波束赋形矢量的方式2：通过上行的 sounding reference signals) Alternatively, it is possible to determine the optimum beamforming weighting from the channel estimation. Because the uplink and downlink take place on the same frequency in a TD-LTE system, the uplink sounding reference signals can be used directly to estimate the channel, which can then be used to derive the weighting for the downlink beamforming. In this case, the beamforming vector is determined by channel estimation, and not from the DoA calculation.
+
+(LTE没有指定用于确定波束成形参数的任何方法) LTE does not specify any methods for determining the beamforming parameters. Other methods, such as beamswitching, are also possible. Also the number of antennas and the antenna architecture are left up to implementation.
+
+
+
+<strong>TM8</strong>
+<a href="https://cdn.rohde-schwarz.com/pws/dl_downloads/dl_application/application_notes/1ma186/1MA186_2e_LTE_TMs_and_beamforming.pdf#page=18">3.2.8 TM 8 – Dual layer beamforming (antenna ports 7 and 8)</a><br>Specification of beamforming in LTE continues. While Release 8 of the LTE specification defines beamforming with one layer (as described in the above section), Release 9 specifies dual-layer beamforming. This will permit the base station to weight two layers individually at the antennas so that beamforming can be combined with spatial multiplexing for <strong>one or more UEs</strong>. 
+
+<center class="half">
+    <img src="https://i.imgur.com/roRKecD.png" height="430" style="margin-left:0px">
+</center>
+
+<center class="half">
+    <img src="https://i.imgur.com/SgjpyRg.png" height="230" style="margin-left:0px"><img src="https://i.imgur.com/0UiHrFa.png" height="150" style="margin-left:0px">
+</center>
+
+<strong>注意（wwy）</strong>：
+&gt;1.每个波束对应一个天线端口，每个波束承载着1层数据流。<br>2.每个天线端口的波束怎么形成，似乎不在LTE规范中，这跟TM7一样。
+3.如果两层都指定给一个用户，该用户必须至少有两个天线。这样才能将传输的两层分开，进而进行合并。如果两层是相同的信息，则是空间分集，合并后会有分集增益； 如果两层是不同的信息，则是空间复用。<br>4.如果两个波束分别分给两个UE，那么每个UE需要几个天线呢？ 如果两个UE不位于同一个波束内，并且在波束赋形时能保证主瓣和零陷的位置，这种情况下似乎UE只有一个天线也可以。否则，UE应该需要两个天线，从而将两层分开，从而取出自己的一层。<br>
+
+### <strong>TM 9</strong> ###
+<a href="https://cdn.rohde-schwarz.com/pws/dl_downloads/dl_application/application_notes/1ma186/1MA186_2e_LTE_TMs_and_beamforming.pdf#page=25">3.2.9 TM 9 – Up to 8 layer transmission (antenna ports 7 - 14)</a><br>(最多可以到8层，实际使用的层数可以动态定义) Release 10 adds Transmission Mode 9. In this mode up to eight layers can be used, so up to eight physical transmit antennas are needed, this leads to up to 8x8 MIMO configurations. The number of used layers may be defined dynamically. The virtual antenna ports 7…14 are used.
+
+(可以是 SU-MIMO，也可以是 MU-MIMO) Both single user (SU) and multi user (MU) MIMO is possible, dynamic switching between both modes is possible without special signaling by higher layers.<br>
+
+<center class="half">
+    <img src="https://i.imgur.com/m9NkPqr.png" height="430" style="margin-left:0px">
+</center>
+
+
+(UE不需要在上行信号中发送PMI来指示基站选择哪个预编码矩阵，UE也不需要提前知道基站使用的预编码。UE能够从UE-specific DM-RS推断出预编码矩阵。UE-specific DM-RS<strong>在预编码之前</strong>被插入数据流，UE将收到的UE-specific DM-RS与本地已知的UE-specific DM-RS进行对比即可知道基站发送信号时使用的预编码矩阵。) The UE-specific DM-RS is applied to the data streams <strong>before the precoding</strong>. That means the UE receives the known RS which is precoded and transmitted via the channel. Thus the <strong>receiver does not need to know the used precoding in advance</strong>. There is no need to use special codebooks anymore, <strong>the UE does not send back the the PMI</strong>. In other words the spatial multiplexing is able to use the full range of weighting (precoding) for beamforming now, not only discrete precoding via the codebook like in TM3…6.<br>
+<strong>注意（wwy）</strong>：
+&gt;1. 每个端口<strong>可能</strong>对应一个传统方式赋形的波束，该波束的赋形方法不在LTE的规范中。每个波束可以由若干个天线加权形成，对接收端UE来说，每个波束的加权矢量不可分辨，每个波束为最小的分辨单位，相当于一个发射天线(天线端口)。如果基站的物理天线个数跟逻辑的天线端口数相同，则不在存在传统的波束赋行过程。
+2. 如果天线端口数和物理天线个数相同，并且所有的层都分配给同一个用户，并且每层上面传相同的信息，这时预编码的效果跟传统的波束赋形基本相同。比如发射端4个天线，接收端4个天线，发射层数为4层，接收端接收到信号后将4层数据分开并进行最大合并，这就相当于发射波束和接收波束对准形成了波束增益。略微不同的是，传统波束赋形对天线间距的要求，不同天线端口对应的物理天线的间距一般会远远大于传统波束赋形的天线间距。这时，通过预编码形成的阵列方向图可能会有很多的波峰，从而形成对其他用户的干扰。所以在这种模式下，预编码矩阵必须要经过仔细设计。<br>
+<center class="half">
+    <img src="https://i.imgur.com/e4Ws8Lq.png" height="260" style="margin-left:0px"><img src="https://i.imgur.com/sJxWkzQ.png" height="260" style="margin-left:0px">
+</center>
+
+### TM 10 ###
+3.2.10 TM 10 – Up to 8 layer transmission (antenna ports 7 - 14)<br>
+<strong>Release 11</strong> adds Transmission Mode 10. <strong>This mode is similar to TM9</strong> (see 3.2.9). Again, up to eight layers can be used, so up to eight physical transmit antennas are needed, this leads to up to 8x8 MIMO configurations. The number of used layers may be defined dynamically. The virtual antenna ports 7…14 are used. TM10 uses the same reference signals like TM9, see figure 18.
+
+<strong>The main difference to TM9 is the used DCI format (2D)</strong>. With TM10<strong> Coordinated Multi Point Transmission (CoMP, see [10]) is supported</strong>. CoMP uses in principle the same MIMO technique like TM9, but <strong>the transmit antennas may be physically on different base station sites</strong>. DCI format 2D allows to tell the UE, that it can assume a quasi colocation of the antenna ports with respect to Doppler shift, Doppler spread, average delay, and delay spread.
+
+跟TM9类似，不同是TM10增加了多点协同传输功能。
+
+<a href="http://www.52rd.com/S_TXT/2017_7/TXT97484.HTM?WebShieldDRSessionVerify=scY2toB3WIlVBo0lmclK">MIMO十年之路</a><br>
+<a href="https://www.nttdocomo.co.jp/english/binary/pdf/corporate/technology/rd/technical_journal/bn/vol18_2/vol18_2_010en.pdf">LTE-Advanced Release 13 Multiple Antenna Technologies and ...</a><br>
+
+<a href="http://www.txrjy.com/thread-784438-1-1.html">☆ 波束赋形 vs. 预编码</a><br>
+<strong>Angle Spread</strong>
+由于多径反射、散射，信号在接收天线上的到达角度会展宽，称为角度扩展。
+
+<a href="https://www.keysight.com/upload/cmc_upload/All/31May2012_LTE.pdf">LTE Channel State Information (CSI)</a><br>
+<a href="https://www.etsi.org/deliver/etsi_tr/138900_138999/138912/14.00.00_60/tr_138912v140000p.pdf">5G;Study on New Radio (NR) access technology (3GPP TR 38.912 version 14.0.0 Release 14 8.3.1.6 Multi-antenna scheme)</a><br>
+## 3GPP: 组织结构和协议 ##
+<a href="https://blog.csdn.net/milkbusy/article/details/80834014">3GPP: 组织结构和协议查找小技巧</a><br>
+<a href="http://txrjy.com/thread-1032340-1-1.html">[通信标准] 3GPP 如何查询及常用规范列表！（下载方法）</a><br>
+<a href="https://blog.csdn.net/jxwxg/article/details/73520841">3GPP资源使用、查找教程</a><br>
+## 5G NR 码本 ##
+<a href="https://blog.csdn.net/zhihuiyu123/article/details/79294251">码本</a><br>
+<a href="http://op.inews.qq.com/m/20180116A0R15Y00?refer=100000355&amp;chl_code=kb_news_tech&amp;h=0">5G NR详解，看完秒变大神</a>
+
+增强的多天线技术
+
+5G NR引入了多项多天线增强技术，大幅提高了频谱效率、小区覆盖和系统灵活性。
+
+提高频谱效率：
+
+对于单用户而言，<strong>基于非码本的上行传输机制</strong>，减少了前代通信技术使用码本进行预编码，所产生的量化误差，可提供更精确的信道信息，有效的增强上行频谱效率；
+
+对于多用户而言，相对于LTE所支持的4流，5G NR上下行支持正交12流的多用户配对，并且通过增强的干扰测量和反馈技术，可显著提高上下行频谱效率。
+
+对于TDD来说，探测参考信号 （SRS） 可以在不同的载波之间，或者同一载波的不同天线之间切换发送，利用信道互易性，进一步提升TDD系统的信道反馈精度和频谱效率；<br>
+增强小区覆盖：
+
+<strong>5G NR采用波束赋型的测量和反馈机制</strong>，可同时应用于初始接入、控制和数据信道。波束赋型（Beamforming）是多天线技术的一种，是指gNodeB/UE对PDSCH/PUSCH（Physical Downlink /Uplink Shared CHannel）上/下行信号进行加权，形成对准UE/gNodeB的窄波束，将发射能量对准目标用户，从而提高目标UE/gNodeB的解调信噪比。
+
+<strong>对于初始接入来说，改进了LTE时期基于广播的机制，升级为基于波束赋型的机制</strong>，从而提高了系统覆盖率；采用波束赋形，可增强控制信道的覆盖范围，从而扩大了小区半径，也可以提高传输成功率，尤其适应于高频传输。
+
+此外，还有增强的导频设计，如解调导频、相位跟踪导频和时频跟踪导频，相对于LTE来说，可以有效地减小开销，提供更精确信道的信息。
+
+<a href="http://mmwrcn.ece.wisc.edu/wp-uploads/2017/05/5G-NR-Ghosh-Nokia-Keynote.pdf">5G New Radio –Technology and Performance</a> 
+<center class="half">
+    <img src="https://i.imgur.com/zK9hhAF.png" height="230" style="margin-left:0px"><img src="https://i.imgur.com/FS5sSQ6.png" height="230" style="margin-left:0px">
+</center> 
+<center class="half">
+    <img src="https://i.imgur.com/zLhbtmC.png" height="230" style="margin-left:0px"><img src="https://i.imgur.com/7YDvlRH.png" height="230" style="margin-left:0px">
+</center><br>
+<center class="half">
+    <img src="https://i.imgur.com/HDYWWV9.png" height="230" style="margin-left:0px">
+</center><br>
+
+<a href="http://www.ieeevtc.org/conf-admin/vtc2017fall/51.pdf">5G New Radio Design</a><br><center class="half">
+    <img src="https://i.imgur.com/XHvcgQN.png" height="330" style="margin-left:0px">
+</center><br>
+
+
+<a href="http://www.ita.ucsd.edu/workshop/15/files/paper/paper_3822.pdf">Full Dimension MIMO for LTE-Advanced and 5G</a><br>This paper will give introduction on newly developed 3D channel models , current development of FD-MIMO scenarios, antenna and RF (radio frequency) transceiver architecutres and potential performance benefits. In addition, <strong>challenges related to channel state information (CSI) feedback</strong> will be discussed. Candidate methods for reducing CSI feedback overhead will be introduced.
+
+<center class="half">
+    <img src="https://i.imgur.com/Vl07gMA.png" height="480" style="margin-left:0px">
+</center>
+
+<a href="https://wireless.engineering.nyu.edu/presentations/5GStandards_IEEE.pdf">Understanding 5G Standards</a><br>
+<a href="http://www.5gsummit.org/hawaii/docs/slides/Amitava-Ghosh.pdf">http://www.5gsummit.org/hawaii/docs/slides/Amitava-Ghosh.pdf</a>
+<a href="http://www.microwavejournal.com/ext/resources/pdf-downloads/chapter1-Spirent.pdf#page=15">http://www.microwavejournal.com/ext/resources/pdf-downloads/chapter1-Spirent.pdf#page=15</a>
+
+<a href="https://www.slideshare.net/3G4GLtd/5g-nr-key-features-and-enhancements">5G NR: Key features and enhancements</a><br>
+<img src="https://i.imgur.com/9LMLo1l.png" alt="">
+<img src="https://i.imgur.com/OM0YAco.jpg" alt="">
+<img src="https://i.imgur.com/3HUFNpy.jpg" alt="">
+<img src="https://i.imgur.com/WRqLW6x.jpg" alt="">
+<img src="https://i.imgur.com/xnzamu6.png" alt="">
+<img src="https://i.imgur.com/8v73usn.jpg" alt="">
+
+
+<a href="https://books.google.com/books?id=SKtTDwAAQBAJ&amp;pg=PA295&amp;lpg=PA295&amp;dq=TRP+(Tx/Rx+Point)&amp;source=bl&amp;ots=nUOv_0ENky&amp;sig=LzW0IOq5J4C3OO87HcsMWJw5SrI&amp;hl=en&amp;sa=X&amp;ved=2ahUKEwj_u5e3huPdAhVihOAKHWW0A1YQ6AEwBXoECAMQAQ#v=onepage&amp;q=TRP%20(Tx%2FRx%20Point)&amp;f=false">https://books.google.com/books?id=SKtTDwAAQBAJ&amp;pg=PA295&amp;lpg=PA295&amp;dq=TRP+(Tx/Rx+Point)&amp;source=bl&amp;ots=nUOv_0ENky&amp;sig=LzW0IOq5J4C3OO87HcsMWJw5SrI&amp;hl=en&amp;sa=X&amp;ved=2ahUKEwj_u5e3huPdAhVihOAKHWW0A1YQ6AEwBXoECAMQAQ#v=onepage&amp;q=TRP%20(Tx%2FRx%20Point)&amp;f=false</a>
+<img src="https://i.imgur.com/om0KBDA.png" alt="">
+<img src="https://i.imgur.com/prxB5Qj.png" alt="">
+<img src="https://i.imgur.com/UW468Tp.png" alt="">
+
+<a href="http://www.istis.sh.cn/list/list.aspx?id=8681">解读Ericsson的3GPP LTE Release 13技术白皮书</a><br>
+
+<a href="https://www.nttdocomo.co.jp/english/binary/pdf/corporate/technology/rd/technical_journal/bn/vol18_2/vol18_2_010en.pdf">Release 13 Multiple Antenna Technologies</a>
+
+<strong>搜索关键词：CSI n1 n2 o1 o2</strong>
+<a href="http://std-share.itri.org.tw/Content/Files/Event/Files/1.Elevation%20Beamforming%20and%20Full%20Dimension.pdf">MIMO Status in 3GPP</a><br>
+<a href="http://qaistc.com/2017/wp-content/uploads/2017/09/test_strategy_towards_massive_mimo.pptx"></a>
+
+<img src="https://i.imgur.com/x5JpFco.png" alt="">
+<img src="https://i.imgur.com/aYmRcHB.png" alt="">
+
+Two types of CSI-RS transmission,<br>&gt;CLASS-A (Non-Precoded)<br>CLASS-B (Beamformed)<br>
+Class-A  or Class-B is configurable by higher layers<br>
+<strong>Class-A</strong>
+
+Codebook Config for Non-precoded type<br>Number of CSI-RS ports determined by codebookconfig<br>&gt;(N1, N2) corresponds to number of antenna ports <strong>per polarization</strong>
+(O1, O2) corresponds to spatial over-sampling rate in dimension x
+
+(N1, N2) 天线端口为N1行N2列，即垂直方向的天线端口为N1个，水平方向的天线端口为N2个。
+(O1, O2) 确定扫描波束的个数，垂直方向用O1个波束扫描，水平方向由O2个波束扫描。
+
+<img src="https://i.imgur.com/doYe6t9.png" alt="">
+
+Class-A type supports total upto 32 CSI-RS Antenna ports.
+
+
+<strong>Class-B </strong>
+
+Beamformed CSI-RS transmission (Class-B)<br><strong>Precoded like DMRS</strong><br>Dedicated to selected UEs(专用于选定的UE 谷歌翻译)<br>UE通过测量多个Beamformed CSI-RS来选择波束（可能是分时发送的），并反馈给基站<br>Base station schedules data based on CRI+CSI feedback(基站根据CRI + CSI反馈来调度数据)<br><img src="https://i.imgur.com/dtSbFVF.jpg" alt="">
+
+Scenario of Class-A and Class-B transmission<br>1. Class-A: (当基站不知道UE信道条件时) Applicable when base station does not have current awareness of UE channel condition (during scheduling request for DL traffic). This is applicable for cell-center UEs.<br>2. Class-B: (基站和UE已经建立连接，基站已经知道该UE的信道条件，当UE移动时，用作波束切换的测量；或者UE收到class-A CSI-RS后上报了较差的CSI，这时基站发送Class-B CSI-RS，以便UE来选择较好的波束，并反馈给基站) Applicable when base station has current awareness of UE channel condition (during on-going traffic with moving users) or UE reporting bad CSI in class-A because of cell edge. This also increases cell coverage area.<br>
+<img src="https://i.imgur.com/LMZzFC4.png" alt="">
+
+<a href="https://www.eurasip.org/Proceedings/Eusipco/Eusipco2011/papers/1569422769.pdf">MIMO ADAPTIVE CODEBOOK FOR CLOSELY SPACED ANTENNA ARRAYS</a><br>
+We discuss the design of a double structure codebook, in which the final precoding codeword is obtained as the product of codewords from two separate codebooks.<br>&gt;1. The first codeword W1, representing long-term and wideband channel properties.<br>2. the second one W2, representing short-term and narrowband properties.
+
+We study optimization of both codebooks, and discuss low complexity codeword selection algorithms to allow increased quantization granularity (量化粒度) for the first codeword.<br>
+Closed-loop MIMO transmission schemes are currently widely used in wireless industrial standards.<br>
+
+However, <strong>the large number of antennas brings new challenges</strong> for closed-loop MIMO systems. The precoding space is growing with the increasing number of antennas while feedback remains limited to a small number of bits.<br>
+Such large antenna arrays are typically implemented with closely spaced antennas, for example as uniform linear arrays (ULA) or cross-polarized (XP) linear antenna arrays, both of which have the advantage of being compact and therefore easy to deploy. The properties of such <strong>closely spaced arrays may be taken into account</strong> in the feedback design. Specifically, such arrays impose certain kind of <strong>spatial correlation effectively limiting the precoding space</strong>.<br>
+
+Several techniques have been developed that employ the spatial covariance matrix R or the long-term channel mean to <strong>adjust the codebook according to the correlation</strong>.<br>
+we feedback <strong>codeword W1 consisting of M beams</strong> such that the beams cover almost the full signal space over the wideband with closely spaced arrays, hence capturing the  correlation properties of the channel. Then, <strong>the second codeword W2 combines the beams for each sub-band</strong>. This double structure codeword W = W1W2 is simple and can adapt to angular spread of the channel by covering the instantaneous subspace over the entire band.
+
+wwy:
+1. 波束方向图是还有一维频率参数，所以有宽带波束赋形的概念。
+2. <strong>W1和W2都是矩阵</strong>。
+
+
+
+<strong>transceiver unit (TXRU)</strong>
+<strong>TX---发</strong>
+<strong>RX---收</strong>
+<strong>ISD (Inter-site distance) </strong>
+intersite distance: 站点间距离
+<strong>TRP (Tx/Rx Point)</strong>
+<strong>TRP Transmission Reception Point</strong>
+
+## MIMO 参考信号 ##
+<strong>Multiple orthogonal DMRSs</strong> can be allocated to support MIMO transmission.
+<strong>Sounding Reference Signal (SRS)</strong>
+As a UL-only signal, the SRS is transmitted by the UE to help the gNB obtain the channel state information (CSI) for each user. Channel State Information describes how the NR signal propagates from the UE to the gNB and represents the combined effect of scattering, fading, and power decay with distance. The system uses the SRS for resource scheduling, link adaptation, Massive MIMO, and beam management.
+<strong>Channel State Information Reference Signal (CSI-RS)</strong>
+As a DL-only signal, the CSI-RS the UE receives is used to estimate the channel and report channel quality information back to the gNB. During MIMO operations, NR uses different antenna approaches based on the carrier frequency.
+
+### CSI reference signals ###
+<a href="https://www.etsi.org/deliver/etsi_ts/138200_138299/138211/15.02.00_60/ts_138211v150200p.pdf#page=90">3GPP TS 38.211 7.4.1.5 CSI reference signals </a><br>
+The UE <strong>is not expected</strong> to receive CSI-RS and DM-RS on the same resource elements.
+
+The UE shall assume that a CSI-RS is transmitted using antenna ports p numbered according to<br>
+&gt;p=3000+s+j*L;<br>j=0,1,...,N/L-1<br>s=0,1,...,L-1<br>
+L∈{1,2,4,8} is the CDM group size, and N is the number of CSI-RS ports.<br>The CDM groups are numbered in order of increasing frequency domain allocation first and then increasing time domain allocation.
+
+## Beam Management Implementation in 5G NR ##
+<a href="http://www.rfwireless-world.com/5G/5G-NR-Beam-Management.html">5G NR Beam Managament SA, NSA | Beam Management in 5G NR</a><br>This page describes 5G NR Beam Management basics in <strong>IDLE and CONNECTED modes</strong>. It mentions Beam management operations viz. beam sweeping, beam measurement, beam determination and beam reporting. It mentions 5G NR beam management frameworks for <strong>NSA (Non StandAlone) and SA (StandAlone) modes</strong>.
+&gt; beam sweeping,<br>&gt; beam measurement,<br>&gt; beam determination and<br>&gt; beam reporting
+
+5G NR supports FR1 and FR2 frequency bands. FR1 is sub-6 GHz, from 450 to 6000 MHz where as FR2 is mmwave band (from 24.25 GHz to 52.6 GHz).<br>
+(在毫米波频段，天线阵列的作用: 提供阵列增益和空间复用) As the <strong>mmwave band </strong>uses very high frequency, it leads to propagation loss and other losses. To compensate for the losses, directional communication is essential at such frequencies. Antenna arrays with large number of antenna elements make it possible due to smaller wavelengths. This concept provide <strong>beamforming gain to the RF link budget which helps in compensation of propagation loss</strong>. Moreover, large antenna array helps to achieve higher data rate due to <strong>spatial multiplexing</strong> technique.
+
+These directional links require accurate alignment of transmitted and received beams. In order to achieve alignment(对准) of beam pair and to have required end to end performance with desired delay, beam management operations are introduced in the 5G NR. Beam management operations are essential during <strong>Initial Access (i.e. IDLE mode)</strong> when UE is not in connection with gNB and during <strong>tracking (i.e. CONNECTED mode)</strong> when UE is exchanging data with the gNB (i.e. network).
+
+Beam management procedure is used in 5G NR in order to <strong>acquire and maintain a set of TRxP (s) and/or UE beams</strong> which can be used for DL and UL transmission/reception. <strong>TRxP stands for Transmission Reception Point</strong>.(什么是Transmission Reception Point？似乎与多点协同传输的概念有关)
+
+&gt;Coordinated Multi-Point (CoMP) transmission and reception: By coordinating and combining signals from <strong>multiple antennas</strong>, CoMP, will make it possible for mobile users to ...
+
+
+<center class="half">
+    <img src="https://i.imgur.com/RrdZeBz.png" height="380" style="margin-left:0px">
+</center>
+
+
+
+<div style="float:right;margin:20px;"><img src="https://i.imgur.com/Wio9vff.jpg"  width="" height="280" ></div>
+
+<p>Following operations are performed in 5G NR beam management procedure. They are applied to both the modes viz. SA (StandAlone) and NSA (Non StandAlone).   </p>
+<blockquote>
+<ol>
+<li>Beam Sweeping: It refers to covering a spatial area with a set of beams transmitted and received according to pre-specified intervals and directions.    </li>
+<li>Beam measurement: It refers to evaluation of the quality of the received signal at the gNB or at the UE. Different metrics(指标) could be used such as RSRP, RSRQ and SINR or SNR for this purpose.    </li>
+<li>Beam determination: It refers to the selection of the suitable beam or beams either at the gNB or at the UE, according to the measurements obtained with the beam measurement procedure.    </li>
+<li>Beam reporting: It refers to the procedure used by the UE to send beam quality and beam decision information to the Radio Access Network (RAN).  </li>
+</ol>
+</blockquote>
+<hr>
+<p>• It uses PSS/SSS/PBCH DMRS (i.e. SSB) during <strong>IDLE mode</strong>.
+• It uses <strong>CSI-RS</strong> (in the downlink) and <strong>SRS</strong> (in the uplink) during <strong>CONNECTED mode</strong>.</p>
+<p>DOWNLINK SIGNAL MEASUREMENTS FOR BEAM MANAGEMENT</p>
+<blockquote>
+<p>Using SS Blocks: Here DMRS (Demodulation Reference Signal) associated with PBCH channel is used to estimate <strong>RSRP (Reference signal received power)</strong> is calculated from the received SS blocks at the UE.</p>
+</blockquote>
 <p></br></br></br></br></br></br></br></br>
 </br></br></br></br></br></br></br></br>
 </br></br></br></br></br></br></br></br></p>
