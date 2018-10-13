@@ -1,0 +1,36 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20181004T154149.txt
+
+Elapsed time is 7.022449 seconds.
+>>>>>>>>>>调用成功！
+未登录成功!
+Elapsed time is 5.149325 seconds.
+>>>>>>>>>>调用成功！
+未登录成功!
+Elapsed time is 5.155021 seconds.
+>>>>>>>>>>调用成功！
+未登录成功!
+Elapsed time is 5.149236 seconds.
+>>>>>>>>>>调用成功！
+未登录成功!
+Elapsed time is 5.186261 seconds.
+>>>>>>>>>>调用成功！
+未登录成功!
+Elapsed time is 5.136054 seconds.
+>>>>>>>>>>调用成功！
+未登录成功!
+Elapsed time is 5.112603 seconds.
+>>>>>>>>>>调用成功！
+未登录成功!
+Elapsed time is 5.076399 seconds.
+>>>>>>>>>>调用成功！
+未登录成功!
+Elapsed time is 5.121647 seconds.
+>>>>>>>>>>调用成功！
+未登录成功!
+Elapsed time is 5.119198 seconds.
+>>>>>>>>>>调用成功！
+未登录成功!
+账户查询失败！

@@ -363,6 +363,63 @@ UPLINK SIGNAL MEASUREMENTS FOR BEAM MANAGEMENT
 
 [Diversity Schemes In LTE](https://communities.theiet.org/blogs/426/419)   
 
+## 为什么要进行预编码 ##
+既然通过导频可以估计出信道矩阵 **H**，为什么还要进行预编码？
+
+目前正在看数字通信相关的书，但一直没有搞懂均衡器的作用是什么。以及为什么要预编码。请高手解答啊！
+
+在无线通信中，信号经过无线信道后发生畸变，需要在接收端对畸变信号进行均衡处理，恢复成发射信号。但是由于在MIMO系统中，信道环境复杂多变，下行链路的接收端（用户）的处理能力有限，因此需要把这部分均衡工作放到发射端（基站）来完成，这就相当于对信号进行预均衡，即预编码。
+
+使发射信号和空间信道相匹配，降低了符号间的干扰，减少了接收机的复杂度，达到了提高系统性能的作用。
+
+[预编码的目的](https://wenku.baidu.com/view/91731dc7d5bbfd0a795673bc.html)    
+
+[Precoding and Spatially Multiplexed MIMO in 3GPP Long-Term Evolution](http://www.summittechmedia.com/highfreqelec/Oct09/HFE1009_Becker.pdf)    
+
+![](https://i.imgur.com/o4QhZsM.png)
+![](https://i.imgur.com/T9V62Du.png)
+
+With the two receive channels properly equalized, the MIMO receiver can easily recover the original  ransmitted signals.
+
+在功率受限时,求 MIMO 信道容量的最大值可推导出“注水原理” (water-filling)。
+
+## static or fading channel ##
+MIMO Channel Capacity
+• Capacity depends on whether the channel is static or fading, and what is known about the channel at the transmitter and receiver. 
+
+## 分集 ##
+Transmit or receive diversity is a means to **combat fading**.  
+
+Each pair of transmit and receive antennas provides a signal path from the transmitter to the receiver.  
+
+[slow flat Rayleigh fading channel]  
+
+[MIMO系统的空间复用增益和分集增益](http://blog.sina.com.cn/s/blog_6ce60fed0101e9sf.html)  
+MIMO信道容量C(SNR)：在非相关衰落信道下，无论是平均功率分配还是最佳功率分配，MIMO系统都可等效地看成min(Nt,Nr)个并行SISO系统的叠加，信道容量随logSNR线性增加，是SISO系统信道容量的min(Nt,Nr)倍。Nt为发射天线数量，Nr为接收天线数量。  
+
+[Lecture 3. Diversity ](http://www.ee.cityu.edu.hk/~lindai/6603_Lecture3.pdf)  
+  
+
+[Diversity combining](https://en.wikipedia.org/wiki/Diversity_combining)  
+
+**ergodic channel capacity**
+When Channel state information (CSI) is not available at transmitter then transmitted data experienced fading then effective channel  capacity is reduced.
+ergodic channel capacity is   
+C=E{B log2(1+SNR)}          
+where E belong to expectation w.r to SNR.
+
+Does diversity increase capacity?  
+Diversity cannot increase the ergodic capacity.  
+Outage capacity is improved by diversity, since the diversity decreases the probability of outage.    
+
+[Ergodic (Shannon) capacity](https://www.unilim.fr/pages_perso/vahid/notes/capacity_note.html)   
+ 
+
+[MIMO Systems](https://slideplayer.com/slide/5954156/)
+
+
+
+
 
 </br></br></br></br></br></br></br></br>
 </br></br></br></br></br></br></br></br>

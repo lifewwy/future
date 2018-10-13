@@ -1,0 +1,714 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20181010T195412.txt
+
+clc
+array = phased.URA('Size',[3 2]);
+clc
+clear
+Kronecker_Product-based_Codebook
+{Undefined function or variable 'Kronecker_Product'.
+} 
+Kronecker_Product_based_Codebook
+Kronecker_Product_based_Codebook
+array
+
+array = 
+
+  System: <a href="matlab:help('phased.URA')" style="font-weight:bold;">phased.URA</a>
+
+  Properties:
+           Element: [1x1 phased.IsotropicAntennaElement]
+              Size: [3 2]                               
+    ElementSpacing: [0.5 0.5]                           
+           Lattice: 'Rectangular'                       
+             Taper: 1                                   
+                                                        
+Kronecker_Product_based_Codebook
+{Array formation and parentheses-style indexing with objects of class 'phased.URA' is
+not allowed.  Use objects of class 'phased.URA' only as scalars or use a cell array.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Kronecker_Product_based_Codebook', 'C:\D\CasaWork\Kronecker_Product_based_Codebook.m', 15)" style="font-weight:bold">Kronecker_Product_based_Codebook</a> (<a href="matlab: opentoline('C:\D\CasaWork\Kronecker_Product_based_Codebook.m',15,0)">line 15</a>)
+resp = array(fc,ang);
+} 
+Kronecker_Product_based_Codebook
+{Array formation and parentheses-style indexing with objects of class 'phased.URA' is
+not allowed.  Use objects of class 'phased.URA' only as scalars or use a cell array.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Kronecker_Product_based_Codebook', 'C:\D\CasaWork\Kronecker_Product_based_Codebook.m', 15)" style="font-weight:bold">Kronecker_Product_based_Codebook</a> (<a href="matlab: opentoline('C:\D\CasaWork\Kronecker_Product_based_Codebook.m',15,0)">line 15</a>)
+resp = array(fc,ang);
+} 
+array
+
+array = 
+
+  System: <a href="matlab:help('phased.URA')" style="font-weight:bold;">phased.URA</a>
+
+  Properties:
+           Element: [1x1 phased.IsotropicAntennaElement]
+              Size: [3 2]                               
+    ElementSpacing: [0.5 0.5]                           
+           Lattice: 'Rectangular'                       
+             Taper: 1                                   
+                                                        
+clc
+Kronecker_Product_based_Codebook
+{Undefined function or variable 'FREQ'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Kronecker_Product_based_Codebook', 'C:\D\CasaWork\Kronecker_Product_based_Codebook.m', 15)" style="font-weight:bold">Kronecker_Product_based_Codebook</a> (<a href="matlab: opentoline('C:\D\CasaWork\Kronecker_Product_based_Codebook.m',15,0)">line 15</a>)
+SV = step(array,FREQ,ANG)
+} 
+Kronecker_Product_based_Codebook
+{Undefined function or variable 'FREQ'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Kronecker_Product_based_Codebook', 'C:\D\CasaWork\Kronecker_Product_based_Codebook.m', 15)" style="font-weight:bold">Kronecker_Product_based_Codebook</a> (<a href="matlab: opentoline('C:\D\CasaWork\Kronecker_Product_based_Codebook.m',15,0)">line 15</a>)
+SV = step(array,FREQ,ANG)
+} 
+Kronecker_Product_based_Codebook
+
+SV =
+
+     1
+     1
+     1
+     1
+     1
+     1
+
+Kronecker_Product_based_Codebook
+
+SV =
+
+     1     1
+     1     1
+     1     1
+     1     1
+     1     1
+     1     1
+
+Kronecker_Product_based_Codebook
+
+SV =
+
+  -0.8669 - 0.4984i  -0.9745 + 0.2244i
+  -0.8669 - 0.4984i  -0.9745 + 0.2244i
+  -0.8669 - 0.4984i  -0.9745 + 0.2244i
+  -0.8669 + 0.4984i  -0.9745 - 0.2244i
+  -0.8669 + 0.4984i  -0.9745 - 0.2244i
+  -0.8669 + 0.4984i  -0.9745 - 0.2244i
+
+Kronecker_Product_based_Codebook
+
+SV =
+
+   0.0166 - 0.9999i
+  -0.4224 - 0.9064i
+  -0.7763 - 0.6303i
+  -0.7763 + 0.6303i
+  -0.4224 + 0.9064i
+   0.0166 + 0.9999i
+
+DFT_codebook
+DFT_codebook
+DFT_codebook1
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sigdatatypes.validateIndex', 'C:\Program Files\MATLAB\R2015a\toolbox\shared\siglib\+sigdatatypes\validateIndex.m', 22)" style="font-weight:bold">sigdatatypes.validateIndex</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\shared\siglib\+sigdatatypes\validateIndex.m',22,0)">line 22</a>)
+Expected NumElements to be one of these types:
+
+double
+
+Instead its type was char.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('phased.ULA/set.NumElements', 'C:\Program Files\MATLAB\R2015a\toolbox\phased\phased\+phased\ULA.m', 133)" style="font-weight:bold">phased.ULA/set.NumElements</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\phased\phased\+phased\ULA.m',133,0)">line 133</a>)
+            sigdatatypes.validateIndex(value,...
+
+Error in matlab.system.SystemProp/parseInputs (line 44)
+
+
+
+Error in matlab.system.SystemProp/sysObjSetProperties (line 43)
+
+
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('phased.internal.AbstractArray', 'C:\Program Files\MATLAB\R2015a\toolbox\phased\phased\+phased\+internal\AbstractArray.m', 99)" style="font-weight:bold">phased.internal.AbstractArray</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\phased\phased\+phased\+internal\AbstractArray.m',99,0)">line 99</a>)
+            setProperties(obj, varargin{1}, varargin{2:end});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('phased.internal.AbstractHomogeneousArray', 'C:\Program Files\MATLAB\R2015a\toolbox\phased\phased\+phased\+internal\AbstractHomogeneousArray.m', 33)" style="font-weight:bold">phased.internal.AbstractHomogeneousArray</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\phased\phased\+phased\+internal\AbstractHomogeneousArray.m',33,0)">line 33</a>)
+            obj@phased.internal.AbstractArray(varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('phased.ULA', 'C:\Program Files\MATLAB\R2015a\toolbox\phased\phased\+phased\ULA.m', 159)" style="font-weight:bold">phased.ULA</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\phased\phased\+phased\ULA.m',159,0)">line 159</a>)
+            obj@phased.internal.AbstractHomogeneousArray(nargin, ...
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('DFT_codebook1', 'C:\D\CasaWork\DFT_codebook1.m', 8)" style="font-weight:bold">DFT_codebook1</a> (<a href="matlab: opentoline('C:\D\CasaWork\DFT_codebook1.m',8,0)">line 8</a>)
+array = phased.ULA('Size',M,'ElementSpacing',2);
+} 
+DFT_codebook1
+if system_dependent('IsDebugMode')==1, dbquit; end
+DFT_codebook1
+if system_dependent('IsDebugMode')==1, dbquit; end
+DFT_codebook1
+if system_dependent('IsDebugMode')==1, dbquit; end
+DFT_codebook1
+if system_dependent('IsDebugMode')==1, dbquit; end
+hULA
+
+hULA = 
+
+  System: <a href="matlab:help('phased.ULA')" style="font-weight:bold;">phased.ULA</a>
+
+  Properties:
+           Element: [1x1 phased.IsotropicAntennaElement]
+       NumElements: 8                                   
+    ElementSpacing: 0.5                                 
+             Taper: 1                                   
+                                                        
+DFT_codebook1
+if system_dependent('IsDebugMode')==1, dbcont; end
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('pvParse')" style="font-weight:bold">pvParse</a>
+Property ElementSpacing does not exist for class phased.SteeringVector.
+
+Error in matlab.system.SystemProp/parseInputs (line 48)
+
+
+
+Error in matlab.system.SystemProp/sysObjSetProperties (line 43)
+
+
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('phased.internal.AbstractArrayOperation', 'C:\Program Files\MATLAB\R2015a\toolbox\phased\phased\+phased\+internal\AbstractArrayOperation.m', 68)" style="font-weight:bold">phased.internal.AbstractArrayOperation</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\phased\phased\+phased\+internal\AbstractArrayOperation.m',68,0)">line 68</a>)
+            setProperties(obj, nargin, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('phased.SteeringVector', 'C:\Program Files\MATLAB\R2015a\toolbox\phased\phased\+phased\SteeringVector.m', 165)" style="font-weight:bold">phased.SteeringVector</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\phased\phased\+phased\SteeringVector.m',165,0)">line 165</a>)
+            obj@phased.internal.AbstractArrayOperation(varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('DFT_codebook1', 'C:\D\CasaWork\DFT_codebook1.m', 12)" style="font-weight:bold">DFT_codebook1</a> (<a href="matlab: opentoline('C:\D\CasaWork\DFT_codebook1.m',12,0)">line 12</a>)
+hsv = phased.SteeringVector('SensorArray',hULA,'ElementSpacing',0.5);
+} 
+DFT_codebook1
+if system_dependent('IsDebugMode')==1, dbquit; end
+DFT_codebook1
+if system_dependent('IsDebugMode')==1, dbquit; end
+DFT_codebook1
+if system_dependent('IsDebugMode')==1, dbcont; end
+DFT_codebook1
+{Undefined function or variable 'k'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('DFT_codebook1', 'C:\D\CasaWork\DFT_codebook1.m', 22)" style="font-weight:bold">DFT_codebook1</a> (<a href="matlab: opentoline('C:\D\CasaWork\DFT_codebook1.m',22,0)">line 22</a>)
+    w = exp(-1i*(0:M-1)'*k*sin(deg2rad(50))); % beamforming vector
+} 
+DFT_codebook1
+DFT_codebook1
+Kronecker_Product_based_Codebook
+
+a =
+
+   1.0000 + 0.0000i
+   1.0000 - 0.0000i
+   1.0000 - 0.0000i
+   1.0000 + 0.0000i
+   1.0000 + 0.0000i
+   1.0000 - 0.0000i
+
+Kronecker_Product_based_Codebook
+
+a =
+
+   0.8206 - 0.5715i
+  -0.7430 - 0.6693i
+  -0.4831 + 0.8756i
+  -0.4831 - 0.8756i
+  -0.7430 + 0.6693i
+   0.8206 + 0.5715i
+
+Kronecker_Product_based_Codebook
+
+a =
+
+   0.8206 - 0.5715i
+  -0.7430 - 0.6693i
+  -0.4831 + 0.8756i
+  -0.4831 - 0.8756i
+  -0.7430 + 0.6693i
+   0.8206 + 0.5715i
+
+Kronecker_Product_based_Codebook
+{Undefined function or variable 'c'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Kronecker_Product_based_Codebook', 'C:\D\CasaWork\Kronecker_Product_based_Codebook.m', 20)" style="font-weight:bold">Kronecker_Product_based_Codebook</a> (<a href="matlab: opentoline('C:\D\CasaWork\Kronecker_Product_based_Codebook.m',20,0)">line 20</a>)
+pattern(array,fc,[-180:180],[-90:90],...
+} 
+Kronecker_Product_based_Codebook
+Kronecker_Product_based_Codebook
+Kronecker_Product_based_Codebook
+Kronecker_Product_based_Codebook
+a
+
+a =
+
+   0.9273 - 0.3742i
+  -0.5750 - 0.8181i
+  -0.6661 + 0.7458i
+   0.8776 + 0.4793i
+   0.2675 - 0.9636i
+  -0.9991 - 0.0417i
+   0.1863 + 0.9825i
+   0.9145 - 0.4046i
+  -0.6017 - 0.7987i
+  -0.6412 + 0.7674i
+   0.8930 + 0.4501i
+   0.2355 - 0.9719i
+  -1.0000 - 0.0087i
+   0.2187 + 0.9758i
+   0.9006 - 0.4346i
+  -0.6278 - 0.7784i
+  -0.6155 + 0.7882i
+   0.9074 + 0.4204i
+   0.2033 - 0.9791i
+  -0.9997 + 0.0244i
+  -0.2758 - 0.9612i
+  -0.8735 + 0.4869i
+   0.6725 + 0.7401i
+   0.5680 - 0.8230i
+  -0.9305 - 0.3662i
+  -0.1453 + 0.9894i
+   0.9965 - 0.0832i
+  -0.3074 - 0.9516i
+  -0.8569 + 0.5155i
+   0.6966 + 0.7175i
+   0.5405 - 0.8413i
+  -0.9421 - 0.3353i
+  -0.1126 + 0.9936i
+   0.9932 - 0.1161i
+  -0.3386 - 0.9409i
+  -0.8394 + 0.5435i
+   0.7199 + 0.6941i
+   0.5124 - 0.8587i
+  -0.9527 - 0.3040i
+  -0.0797 + 0.9968i
+  -0.9847 + 0.1744i
+   0.3934 + 0.9194i
+   0.8060 - 0.5920i
+  -0.7595 - 0.6505i
+  -0.4610 + 0.8874i
+   0.9689 + 0.2474i
+   0.0208 - 0.9998i
+  -0.9784 + 0.2068i
+   0.4236 + 0.9059i
+   0.7860 - 0.6182i
+  -0.7806 - 0.6250i
+  -0.4314 + 0.9022i
+   0.9766 + 0.2152i
+  -0.0122 - 0.9999i
+  -0.9710 + 0.2390i
+   0.4533 + 0.8914i
+   0.7651 - 0.6439i
+  -0.8008 - 0.5989i
+  -0.4014 + 0.9159i
+   0.9831 + 0.1829i
+   0.0710 + 0.9975i
+   0.9553 - 0.2957i
+  -0.5050 - 0.8631i
+  -0.7259 + 0.6878i
+   0.8347 + 0.5507i
+   0.3468 - 0.9380i
+  -0.9922 - 0.1247i
+   0.1039 + 0.9946i
+   0.9450 - 0.3271i
+  -0.5332 - 0.8460i
+  -0.7028 + 0.7114i
+   0.8524 + 0.5229i
+   0.3156 - 0.9489i
+  -0.9958 - 0.0918i
+   0.1367 + 0.9906i
+   0.9337 - 0.3581i
+  -0.5608 - 0.8279i
+  -0.6789 + 0.7342i
+   0.8692 + 0.4944i
+   0.2841 - 0.9588i
+   0.9995 + 0.0330i
+  -0.1948 - 0.9808i
+  -0.9110 + 0.4125i
+   0.6086 + 0.7935i
+   0.6345 - 0.7729i
+  -0.8968 - 0.4424i
+  -0.2271 + 0.9739i
+   1.0000 + 0.0000i
+  -0.2271 - 0.9739i
+  -0.8968 + 0.4424i
+   0.6345 + 0.7729i
+   0.6086 - 0.7935i
+  -0.9109 - 0.4125i
+  -0.1948 + 0.9808i
+   0.9995 - 0.0330i
+  -0.2591 - 0.9658i
+  -0.8817 + 0.4717i
+   0.6597 + 0.7516i
+   0.5821 - 0.8131i
+  -0.9241 - 0.3822i
+   0.1368 - 0.9906i
+  -0.9958 + 0.0918i
+   0.3156 + 0.9489i
+   0.8524 - 0.5228i
+  -0.7028 - 0.7114i
+  -0.5332 + 0.8460i
+   0.9450 + 0.3271i
+   0.1040 - 0.9946i
+  -0.9922 + 0.1246i
+   0.3467 + 0.9380i
+   0.8347 - 0.5507i
+  -0.7259 - 0.6878i
+  -0.5050 + 0.8631i
+   0.9553 + 0.2958i
+   0.0711 - 0.9975i
+  -0.9875 + 0.1573i
+   0.3775 + 0.9260i
+   0.8161 - 0.5780i
+  -0.7482 - 0.6635i
+  -0.4762 + 0.8793i
+  -0.9710 - 0.2390i
+  -0.0122 + 0.9999i
+   0.9766 - 0.2152i
+  -0.4314 - 0.9022i
+  -0.7806 + 0.6250i
+   0.7860 + 0.6183i
+   0.4236 - 0.9059i
+  -0.9784 - 0.2068i
+   0.0208 + 0.9998i
+   0.9689 - 0.2473i
+  -0.4609 - 0.8874i
+  -0.7596 + 0.6504i
+   0.8060 + 0.5920i
+   0.3935 - 0.9193i
+  -0.9847 - 0.1744i
+   0.0538 + 0.9986i
+   0.9602 - 0.2792i
+  -0.4900 - 0.8717i
+  -0.7377 + 0.6752i
+   0.8251 + 0.5650i
+  -0.3386 + 0.9409i
+   0.9932 + 0.1161i
+  -0.1125 - 0.9936i
+  -0.9421 + 0.3353i
+   0.5405 + 0.8414i
+   0.6966 - 0.7174i
+  -0.8569 - 0.5155i
+  -0.3074 + 0.9516i
+   0.9965 + 0.0832i
+  -0.1453 - 0.9894i
+  -0.9305 + 0.3662i
+   0.5680 + 0.8231i
+   0.6725 - 0.7401i
+  -0.8735 - 0.4869i
+  -0.2758 + 0.9612i
+   0.9987 + 0.0503i
+  -0.1779 - 0.9841i
+  -0.9179 + 0.3967i
+   0.5948 + 0.8038i
+   0.6477 - 0.7619i
+   0.9006 + 0.4346i
+   0.2187 - 0.9758i
+  -1.0000 + 0.0086i
+   0.2355 + 0.9719i
+   0.8930 - 0.4501i
+  -0.6411 - 0.7674i
+  -0.6018 + 0.7987i
+   0.9145 + 0.4046i
+   0.1864 - 0.9825i
+  -0.9991 + 0.0416i
+   0.2675 + 0.9636i
+   0.8776 - 0.4793i
+  -0.6661 - 0.7458i
+  -0.5751 + 0.8181i
+   0.9273 + 0.3742i
+   0.1538 - 0.9881i
+  -0.9972 + 0.0746i
+   0.2991 + 0.9542i
+   0.8613 - 0.5080i
+  -0.6904 - 0.7234i
+   0.5259 - 0.8506i
+  -0.9478 - 0.3190i
+  -0.0954 + 0.9954i
+   0.9911 - 0.1332i
+  -0.3548 - 0.9349i
+  -0.8299 + 0.5579i
+   0.7318 + 0.6815i
+   0.4975 - 0.8675i
+  -0.9578 - 0.2875i
+  -0.0624 + 0.9980i
+   0.9861 - 0.1659i
+  -0.3855 - 0.9227i
+  -0.8110 + 0.5850i
+   0.7539 + 0.6570i
+   0.4686 - 0.8834i
+  -0.9668 - 0.2557i
+  -0.0295 + 0.9996i
+   0.9801 - 0.1983i
+  -0.4158 - 0.9095i
+  -0.7913 + 0.6115i
+  -0.7913 - 0.6115i
+  -0.4158 + 0.9095i
+   0.9801 + 0.1983i
+  -0.0295 - 0.9996i
+  -0.9668 + 0.2557i
+   0.4686 + 0.8834i
+   0.7539 - 0.6570i
+  -0.8110 - 0.5850i
+  -0.3855 + 0.9227i
+   0.9861 + 0.1659i
+  -0.0624 - 0.9980i
+  -0.9578 + 0.2875i
+   0.4975 + 0.8675i
+   0.7318 - 0.6815i
+  -0.8299 - 0.5579i
+  -0.3548 + 0.9349i
+   0.9911 + 0.1332i
+  -0.0954 - 0.9954i
+  -0.9478 + 0.3190i
+   0.5259 + 0.8506i
+  -0.6904 + 0.7234i
+   0.8613 + 0.5080i
+   0.2991 - 0.9542i
+  -0.9972 - 0.0746i
+   0.1538 + 0.9881i
+   0.9273 - 0.3742i
+  -0.5751 - 0.8181i
+  -0.6661 + 0.7458i
+   0.8776 + 0.4793i
+   0.2675 - 0.9636i
+  -0.9991 - 0.0416i
+   0.1864 + 0.9825i
+   0.9145 - 0.4046i
+  -0.6018 - 0.7987i
+  -0.6411 + 0.7674i
+   0.8930 + 0.4501i
+   0.2355 - 0.9719i
+  -1.0000 - 0.0086i
+   0.2187 + 0.9758i
+   0.9006 - 0.4346i
+   0.6477 + 0.7619i
+   0.5948 - 0.8038i
+  -0.9179 - 0.3967i
+  -0.1779 + 0.9841i
+   0.9987 - 0.0503i
+  -0.2758 - 0.9612i
+  -0.8735 + 0.4869i
+   0.6725 + 0.7401i
+   0.5680 - 0.8231i
+  -0.9305 - 0.3662i
+  -0.1453 + 0.9894i
+   0.9965 - 0.0832i
+  -0.3074 - 0.9516i
+  -0.8569 + 0.5155i
+   0.6966 + 0.7174i
+   0.5405 - 0.8414i
+  -0.9421 - 0.3353i
+  -0.1125 + 0.9936i
+   0.9932 - 0.1161i
+  -0.3386 - 0.9409i
+   0.8251 - 0.5650i
+  -0.7377 - 0.6752i
+  -0.4900 + 0.8717i
+   0.9602 + 0.2792i
+   0.0538 - 0.9986i
+  -0.9847 + 0.1744i
+   0.3935 + 0.9193i
+   0.8060 - 0.5920i
+  -0.7596 - 0.6504i
+  -0.4609 + 0.8874i
+   0.9689 + 0.2473i
+   0.0208 - 0.9998i
+  -0.9784 + 0.2068i
+   0.4236 + 0.9059i
+   0.7860 - 0.6183i
+  -0.7806 - 0.6250i
+  -0.4314 + 0.9022i
+   0.9766 + 0.2152i
+  -0.0122 - 0.9999i
+  -0.9710 + 0.2390i
+  -0.4762 - 0.8793i
+  -0.7482 + 0.6635i
+   0.8161 + 0.5780i
+   0.3775 - 0.9260i
+  -0.9875 - 0.1573i
+   0.0711 + 0.9975i
+   0.9553 - 0.2958i
+  -0.5050 - 0.8631i
+  -0.7259 + 0.6878i
+   0.8347 + 0.5507i
+   0.3467 - 0.9380i
+  -0.9922 - 0.1246i
+   0.1040 + 0.9946i
+   0.9450 - 0.3271i
+  -0.5332 - 0.8460i
+  -0.7028 + 0.7114i
+   0.8524 + 0.5228i
+   0.3156 - 0.9489i
+  -0.9958 - 0.0918i
+   0.1368 + 0.9906i
+  -0.9241 + 0.3822i
+   0.5821 + 0.8131i
+   0.6597 - 0.7516i
+  -0.8817 - 0.4717i
+  -0.2591 + 0.9658i
+   0.9995 + 0.0330i
+  -0.1948 - 0.9808i
+  -0.9109 + 0.4125i
+   0.6086 + 0.7935i
+   0.6345 - 0.7729i
+  -0.8968 - 0.4424i
+  -0.2271 + 0.9739i
+   1.0000 - 0.0000i
+  -0.2271 - 0.9739i
+  -0.8968 + 0.4424i
+   0.6345 + 0.7729i
+   0.6086 - 0.7935i
+  -0.9110 - 0.4125i
+  -0.1948 + 0.9808i
+   0.9995 - 0.0330i
+   0.2841 + 0.9588i
+   0.8692 - 0.4944i
+  -0.6789 - 0.7342i
+  -0.5608 + 0.8279i
+   0.9337 + 0.3581i
+   0.1367 - 0.9906i
+  -0.9958 + 0.0918i
+   0.3156 + 0.9489i
+   0.8524 - 0.5229i
+  -0.7028 - 0.7114i
+  -0.5332 + 0.8460i
+   0.9450 + 0.3271i
+   0.1039 - 0.9946i
+  -0.9922 + 0.1247i
+   0.3468 + 0.9380i
+   0.8347 - 0.5507i
+  -0.7259 - 0.6878i
+  -0.5050 + 0.8631i
+   0.9553 + 0.2957i
+   0.0710 - 0.9975i
+   0.9831 - 0.1829i
+  -0.4014 - 0.9159i
+  -0.8008 + 0.5989i
+   0.7651 + 0.6439i
+   0.4533 - 0.8914i
+  -0.9710 - 0.2390i
+  -0.0122 + 0.9999i
+   0.9766 - 0.2152i
+  -0.4314 - 0.9022i
+  -0.7806 + 0.6250i
+   0.7860 + 0.6182i
+   0.4236 - 0.9059i
+  -0.9784 - 0.2068i
+   0.0208 + 0.9998i
+   0.9689 - 0.2474i
+  -0.4610 - 0.8874i
+  -0.7595 + 0.6505i
+   0.8060 + 0.5920i
+   0.3934 - 0.9194i
+  -0.9847 - 0.1744i
+  -0.0797 - 0.9968i
+  -0.9527 + 0.3040i
+   0.5124 + 0.8587i
+   0.7199 - 0.6941i
+  -0.8394 - 0.5435i
+  -0.3386 + 0.9409i
+   0.9932 + 0.1161i
+  -0.1126 - 0.9936i
+  -0.9421 + 0.3353i
+   0.5405 + 0.8413i
+   0.6966 - 0.7175i
+  -0.8569 - 0.5155i
+  -0.3074 + 0.9516i
+   0.9965 + 0.0832i
+  -0.1453 - 0.9894i
+  -0.9305 + 0.3662i
+   0.5680 + 0.8230i
+   0.6725 - 0.7401i
+  -0.8735 - 0.4869i
+  -0.2758 + 0.9612i
+  -0.9997 - 0.0244i
+   0.2033 + 0.9791i
+   0.9074 - 0.4204i
+  -0.6155 - 0.7882i
+  -0.6278 + 0.7784i
+   0.9006 + 0.4346i
+   0.2187 - 0.9758i
+  -1.0000 + 0.0087i
+   0.2355 + 0.9719i
+   0.8930 - 0.4501i
+  -0.6412 - 0.7674i
+  -0.6017 + 0.7987i
+   0.9145 + 0.4046i
+   0.1863 - 0.9825i
+  -0.9991 + 0.0417i
+   0.2675 + 0.9636i
+   0.8776 - 0.4793i
+  -0.6661 - 0.7458i
+  -0.5750 + 0.8181i
+   0.9273 + 0.3742i
+
+Kronecker_Product_based_Codebook
+{Undefined function or variable 'c'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Kronecker_Product_based_Codebook', 'C:\D\CasaWork\Kronecker_Product_based_Codebook.m', 29)" style="font-weight:bold">Kronecker_Product_based_Codebook</a> (<a href="matlab: opentoline('C:\D\CasaWork\Kronecker_Product_based_Codebook.m',29,0)">line 29</a>)
+plotResponse(array,fc,c,'Format','Line','Weight',w);
+} 
+Kronecker_Product_based_Codebook
+Kronecker_Product_based_Codebook
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('phased.internal.parsePlotResponseInputs', 'C:\Program Files\MATLAB\R2015a\toolbox\phased\phased\+phased\+internal\parsePlotResponseInputs.m', 118)" style="font-weight:bold">phased.internal.parsePlotResponseInputs</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\phased\phased\+phased\+internal\parsePlotResponseInputs.m',118,0)">line 118</a>)
+ElevationAngles is not an available option when RespCut is Az.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('phased.internal.AbstractArray/plotResponse', 'C:\Program Files\MATLAB\R2015a\toolbox\phased\phased\+phased\+internal\AbstractArray.m', 679)" style="font-weight:bold">phased.internal.AbstractArray/plotResponse</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\phased\phased\+phased\+internal\AbstractArray.m',679,0)">line 679</a>)
+                [freq,v,plotArgs] = phased.internal.parsePlotResponseInputs(...
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Kronecker_Product_based_Codebook', 'C:\D\CasaWork\Kronecker_Product_based_Codebook.m', 29)" style="font-weight:bold">Kronecker_Product_based_Codebook</a> (<a href="matlab: opentoline('C:\D\CasaWork\Kronecker_Product_based_Codebook.m',29,0)">line 29</a>)
+plotResponse(array,fc,3e8,'AzimuthAngles',-180:180, ...
+} 
+plotResponse(array,fc,3e8,'AzimuthAngles',60, ...
+    'ElevationAngles',-90:90,'Format','Line','Weight',w);
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('phased.internal.parsePlotResponseInputs', 'C:\Program Files\MATLAB\R2015a\toolbox\phased\phased\+phased\+internal\parsePlotResponseInputs.m', 118)" style="font-weight:bold">phased.internal.parsePlotResponseInputs</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\phased\phased\+phased\+internal\parsePlotResponseInputs.m',118,0)">line 118</a>)
+ElevationAngles is not an available option when RespCut is Az.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('phased.internal.AbstractArray/plotResponse', 'C:\Program Files\MATLAB\R2015a\toolbox\phased\phased\+phased\+internal\AbstractArray.m', 679)" style="font-weight:bold">phased.internal.AbstractArray/plotResponse</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\phased\phased\+phased\+internal\AbstractArray.m',679,0)">line 679</a>)
+                [freq,v,plotArgs] = phased.internal.parsePlotResponseInputs(...
+} 
+plotResponse(array,fc,3e8,'AzimuthAngles',-180:180, ...
+    'ElevationAngles',60,'Format','Line','Weight',w);
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('phased.internal.parsePlotResponseInputs', 'C:\Program Files\MATLAB\R2015a\toolbox\phased\phased\+phased\+internal\parsePlotResponseInputs.m', 118)" style="font-weight:bold">phased.internal.parsePlotResponseInputs</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\phased\phased\+phased\+internal\parsePlotResponseInputs.m',118,0)">line 118</a>)
+ElevationAngles is not an available option when RespCut is Az.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('phased.internal.AbstractArray/plotResponse', 'C:\Program Files\MATLAB\R2015a\toolbox\phased\phased\+phased\+internal\AbstractArray.m', 679)" style="font-weight:bold">phased.internal.AbstractArray/plotResponse</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\phased\phased\+phased\+internal\AbstractArray.m',679,0)">line 679</a>)
+                [freq,v,plotArgs] = phased.internal.parsePlotResponseInputs(...
+} 
+plotResponse(array,fc,3e8,'Format','Line','Weight',w);
+Kronecker_Product_based_Codebook
+Kronecker_Product_based_Codebook
+Kronecker_Product_based_Codebook
+Kronecker_Product_based_Codebook
+Kronecker_Product_based_Codebook
+Kronecker_Product_based_Codebook
+Kronecker_Product_based_Codebook
+Kronecker_Product_based_Codebook
+Kronecker_Product_based_Codebook
+Kronecker_Product_based_Codebook
+if system_dependent('IsDebugMode')==1, dbquit; end
+kron([1,2];[3;4;5])
+ kron([1,2];[3;4;5])
+           |
+{Error: Unbalanced or unexpected parenthesis or bracket.
+} 
+kron([1,2],[3;4;5])
+
+ans =
+
+     3     6
+     4     8
+     5    10
+
+Kronecker_Product_based_Codebook
+if system_dependent('IsDebugMode')==1, dbcont; end
+Kronecker_Product_based_Codebook
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('phased.internal.parsePatternInputs', 'C:\Program Files\MATLAB\R2015a\toolbox\phased\phased\+phased\+internal\parsePatternInputs.m', 25)" style="font-weight:bold">phased.internal.parsePatternInputs</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\phased\phased\+phased\+internal\parsePatternInputs.m',25,0)">line 25</a>)
+'Unit' is not a recognized parameter. For a list of valid name-value pair arguments,
+see the documentation for this function.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('phased.internal.AbstractArray/pattern', 'C:\Program Files\MATLAB\R2015a\toolbox\phased\phased\+phased\+internal\AbstractArray.m', 236)" style="font-weight:bold">phased.internal.AbstractArray/pattern</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\phased\phased\+phased\+internal
