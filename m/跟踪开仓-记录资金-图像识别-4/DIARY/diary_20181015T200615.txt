@@ -1,0 +1,78 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20181015T200615.txt
+
+上次更新日期为: 2018-10-15 Monday
+
+status: 0
+result: auth success
+JoinQuantData文件存储完成！
+
+开始数据更新...
+
+C:\D\xyz\future\数据维护\A888.csv 已经是最新文件！
+C:\D\xyz\future\数据维护\A888.csv 更新成功！
+C:\D\xyz\future\数据维护\C888.csv 已经是最新文件！
+C:\D\xyz\future\数据维护\C888.csv 更新成功！
+C:\D\xyz\future\数据维护\RB888.csv 已经是最新文件！
+C:\D\xyz\future\数据维护\RB888.csv 更新成功！
+C:\D\xyz\future\数据维护\M888.csv 已经是最新文件！
+C:\D\xyz\future\数据维护\M888.csv 更新成功！
+C:\D\xyz\future\数据维护\P888.csv 已经是最新文件！
+C:\D\xyz\future\数据维护\P888.csv 更新成功！
+C:\D\xyz\future\数据维护\J888.csv 已经是最新文件！
+数据源冲突!
+C:\D\xyz\future\数据维护\J888.csv 更新成功！
+C:\D\xyz\future\数据维护\ZN888.csv 已经是最新文件！
+C:\D\xyz\future\数据维护\ZN888.csv 更新成功！
+C:\D\xyz\future\数据维护\Y888.csv 已经是最新文件！
+C:\D\xyz\future\数据维护\Y888.csv 更新成功！
+C:\D\xyz\future\数据维护\L888.csv 已经是最新文件！
+C:\D\xyz\future\数据维护\L888.csv 更新成功！
+C:\D\xyz\future\数据维护\AG888.csv 已经是最新文件！
+C:\D\xyz\future\数据维护\AG888.csv 更新成功！
+C:\D\xyz\future\数据维护\TA888.csv 已经是最新文件！
+C:\D\xyz\future\数据维护\TA888.csv 更新成功！
+C:\D\xyz\future\数据维护\SR888.csv 已经是最新文件！
+C:\D\xyz\future\数据维护\SR888.csv 更新成功！
+C:\D\xyz\future\数据维护\AU888.csv 已经是最新文件！
+C:\D\xyz\future\数据维护\AU888.csv 更新成功！
+C:\D\xyz\future\数据维护\FG888.csv 已经是最新文件！
+C:\D\xyz\future\数据维护\FG888.csv 更新成功！
+C:\D\xyz\future\数据维护\MA888.csv 已经是最新文件！
+数据源冲突!
+C:\D\xyz\future\数据维护\MA888.csv 更新成功！
+C:\D\xyz\future\数据维护\RU888.csv 已经是最新文件！
+C:\D\xyz\future\数据维护\RU888.csv 更新成功！
+C:\D\xyz\future\数据维护\AL888.csv 已经是最新文件！
+C:\D\xyz\future\数据维护\AL888.csv 更新成功！
+C:\D\xyz\future\数据维护\OI888.csv 已经是最新文件！
+C:\D\xyz\future\数据维护\OI888.csv 更新成功！
+C:\D\xyz\future\数据维护\RM888.csv 更新成功！
+C:\D\xyz\future\数据维护\CF888.csv 更新成功！
+数据源冲突!
+C:\D\xyz\future\数据维护\I888.csv 更新成功！
+数据源冲突!
+C:\D\xyz\future\数据维护\JM888.csv 更新成功！
+C:\D\xyz\future\数据维护\CU888.csv 更新成功！
+C:\D\xyz\future\数据维护\V888.csv 更新成功！
+C:\D\xyz\future\数据维护\IF888.csv 更新成功！
+
+数据更新完成！
+更新TB批量导入文件...！
+{Attempted to access ib(3393); index out of bounds because numel(ib)=3392.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('GenerateImportFile', 'C:\D\xyz\future\数据维护\TB批量导入导出\GenerateImportFile.m', 25)" style="font-weight:bold">GenerateImportFile</a> (<a href="matlab: opentoline('C:\D\xyz\future\数据维护\TB批量导入导出\GenerateImportFile.m',25,0)">line 25</a>)
+        dt = dateAnd12bytes(ib(k),2:end);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main_csv888Refresh_daily', 'C:\D\xyz\future\数据维护\main_csv888Refresh_daily.m', 92)" style="font-weight:bold">main_csv888Refresh_daily</a> (<a href="matlab: opentoline('C:\D\xyz\future\数据维护\main_csv888Refresh_daily.m',92,0)">line 92</a>)
+GenerateImportFile;
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel>pushbutton25_Callback', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 1751)" style="font-weight:bold">panel>pushbutton25_Callback</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',1751,0)">line 1751</a>)
+IsDataUpdateCompleted = main_csv888Refresh_daily(handles);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gui_mainfcn', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
+        feval(varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 42)
