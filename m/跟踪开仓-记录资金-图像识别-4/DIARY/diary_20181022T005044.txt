@@ -1,0 +1,8 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20181022T005044.txt
+
+Elapsed time is 1.373173 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
