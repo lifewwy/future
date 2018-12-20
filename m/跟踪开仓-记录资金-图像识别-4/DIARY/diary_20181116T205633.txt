@@ -1,0 +1,9 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20181116T205633.txt
+
+set(h.TradeAccout,'value',TradeAccout);
+panel('pushbutton25_Callback',h.pushbutton25,[],guidata(h.pushbutton25));
+请在正确时段进行数据维护！
+if system_dependent('IsDebugMode')==1, dbquit; end

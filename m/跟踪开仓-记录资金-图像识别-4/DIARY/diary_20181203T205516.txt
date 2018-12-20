@@ -1,0 +1,196 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20181203T205516.txt
+
+读MATLAB策略输出文件...
+读风险配置文件...
+读资金文件...
+输出订单文件...
+2018/12/03,CU1901,平空,NaN
+2018/12/03,CU1901,开多,2
+2018/12/03,J1901,平空,NaN
+订单文件更新成功！
+
+orders = 
+
+    '2018/12/03'    'CU1901'    '平空'         [  2]
+    '2018/12/03'    'CU1901'    '开多'         [  2]
+    '2018/12/03'    'I1901'     '(换合约)'      [NaN]
+    '2018/12/03'    'I1905'     '(换合约)'      [NaN]
+    '2018/12/03'    'J1901'     '平空'         [  2]
+    '2018/12/03'    'SR1901'    '平多(换合约)'    [ 10]
+    '2018/12/03'    'SR1905'    '开多(换合约)'    [ 10]
+
+
+ans = 
+
+    contract: 'CU1901'
+      action: 'Buy EvenUp'
+       hands: '2'
+           n: 1
+
+
+ans = 
+
+    contract: 'CU1901'
+      action: 'Buy Open'
+       hands: '2'
+           n: 2
+
+
+ans = 
+
+    contract: 'V1901'
+      action: 'Buy EvenUp'
+       hands: '11'
+           n: 3
+
+
+ans = 
+
+    contract: 'V1901'
+      action: 'Buy Open'
+       hands: '13'
+           n: 4
+
+
+ans = 
+
+    contract: 'J1901'
+      action: 'Buy EvenUp'
+       hands: '2'
+           n: 5
+
+
+ans = 
+
+    contract: 'SR1901'
+      action: 'Sell EvenUp'
+       hands: '10'
+           n: 6
+
+
+ans = 
+
+    contract: 'SR1905'
+      action: 'Buy Open'
+       hands: '10'
+           n: 7
+
+
+ans = 
+
+    contract: 'CU1901'
+      action: 'Buy EvenUp'
+       hands: '2'
+           n: 1
+
+
+ans = 
+
+    contract: 'CU1901'
+      action: 'Buy Open'
+       hands: '2'
+           n: 2
+
+
+ans = 
+
+    contract: 'J1901'
+      action: 'Buy EvenUp'
+       hands: '2'
+           n: 5
+
+
+ans = 
+
+    contract: 'SR1901'
+      action: 'Sell EvenUp'
+       hands: '10'
+           n: 6
+
+
+ans = 
+
+    contract: 'SR1905'
+      action: 'Buy Open'
+       hands: '10'
+           n: 7
+
+
+orderParameters = 
+
+    'SR1901'    'Sell EvenUp'    '10'
+
+Elapsed time is 1.309433 seconds.
+>>>>>>>>>>调用成功！
+Elapsed time is 5.631475 seconds.
+>>>>>>>>>>调用成功！
+全部成交
+
+ActionDoneFlg =
+
+     0     0     0     1     0
+
+
+orderParameters = 
+
+    'J1901'    'Buy EvenUp'    '2'
+
+Elapsed time is 0.949153 seconds.
+>>>>>>>>>>调用成功！
+Elapsed time is 1.993775 seconds.
+>>>>>>>>>>调用成功！
+全部成交
+
+ActionDoneFlg =
+
+     0     0     1     1     0
+
+
+orderParameters = 
+
+    'SR1905'    'Buy Open'    '10'
+
+Elapsed time is 1.877378 seconds.
+>>>>>>>>>>调用成功！
+Elapsed time is 5.694240 seconds.
+>>>>>>>>>>调用成功！
+全部成交
+
+ActionDoneFlg =
+
+     0     0     1     1     1
+
+
+orderParameters = 
+
+    'CU1901'    'Buy EvenUp'    '2'
+
+Elapsed time is 1.121980 seconds.
+>>>>>>>>>>调用成功！
+Elapsed time is 2.867319 seconds.
+>>>>>>>>>>调用成功！
+全部成交
+
+ActionDoneFlg =
+
+     1     0     1     1     1
+
+
+orderParameters = 
+
+    'CU1901'    'Buy Open'    '2'
+
+Elapsed time is 1.114648 seconds.
+>>>>>>>>>>调用成功！
+Elapsed time is 2.085817 seconds.
+>>>>>>>>>>调用成功！
+全部成交
+
+ActionDoneFlg =
+
+     1     1     1     1     1
+
+--------------- 定时器关闭 01！--------------- 

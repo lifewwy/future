@@ -78,6 +78,10 @@ end
 
 fprintf('开始数据更新...\n\n');
 
+% h = 111;
+% fc = 111;
+% kDataJoinQuant = 111;
+
 futureCode = {'A','C','RB','M','P','J','ZN','Y','L','AG','TA' ...
     ,'SR','AU','FG','MA','RU','AL','OI','RM','CF','I','JM','CU','V','IF'};
 

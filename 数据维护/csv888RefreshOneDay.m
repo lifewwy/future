@@ -139,12 +139,12 @@ csvData =  [csvData ; kData(pos,:)];
 
 %% 比较 Sina Data 和 JoinQuant Data 20180905
 
-if ~isempty(fc)
-    commonData = intersect(kDataJoinQuant{strcmp(fc,futureCode)},kData(pos,:),'rows');
-    if isempty(commonData)
-        fprintf(2,'数据源冲突!\n');
-    end
-end
+% if ~isempty(fc)
+%     commonData = intersect(kDataJoinQuant{strcmp(fc,futureCode)},kData(pos,:),'rows');
+%     if isempty(commonData)
+%         fprintf(2,'数据源冲突!\n');
+%     end
+% end
 
 %% 写 csv 文件
 % directory = 'C:\D\future\数据维护\';

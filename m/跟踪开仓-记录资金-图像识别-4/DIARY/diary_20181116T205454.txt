@@ -1,0 +1,12 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20181116T205454.txt
+
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\runCallbackFunc2.m',11,1)">11  </a>wt1 = 30; % testTraderApi.exe 退出时间为 20s
+set(h.TradeAccout,'value',TradeAccout);
+set(h.TradeAccout,'value',TradeAccout);
+if system_dependent('IsDebugMode')==1, dbquit; end
+runCallbackFunc2(1)
+<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\runCallbackFunc2.m',8,1)">8   </a>h = panel;
+if system_dependent('IsDebugMode')==1, dbcont; end

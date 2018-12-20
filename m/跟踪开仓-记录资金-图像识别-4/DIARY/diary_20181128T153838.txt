@@ -1,0 +1,104 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20181128T153838.txt
+
+Elapsed time is 5.270086 seconds.
+>>>>>>>>>>调用成功！
+未登录成功!
+Elapsed time is 5.160372 seconds.
+>>>>>>>>>>调用成功！
+未登录成功!
+Elapsed time is 1.343315 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 20.262305 seconds.
+>>>>>>>>>>调用成功！
+账户资金查询失败！
+Elapsed time is 4.396439 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 20.123836 seconds.
+>>>>>>>>>>调用成功！
+账户资金查询失败！
+Elapsed time is 4.728332 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 9.652371 seconds.
+>>>>>>>>>>调用成功！
+账户资金:2333800
+持仓文件更新成功！
+资金文件更新成功！
+上次更新日期为: 2018-11-27 Tuesday
+
+status: 1
+[Warning: Control Character '\D' is not valid. See 'doc sprintf' for control
+characters valid in the format string.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('getJoinQuantData', 'C:\D\xyz\future\m\mCallPy\getJoinQuantData.m', 21)" style="font-weight:bold">getJoinQuantData</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\mCallPy\getJoinQuantData.m',21,0)">line 21</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('JoinQuantData', 'C:\D\xyz\future\数据维护\JoinQuantData\JoinQuantData.m', 21)" style="font-weight:bold">JoinQuantData</a> (<a href="matlab: opentoline('C:\D\xyz\future\数据维护\JoinQuantData\JoinQuantData.m',21,0)">line 21</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main_csv888Refresh_daily', 'C:\D\xyz\future\数据维护\main_csv888Refresh_daily.m', 77)" style="font-weight:bold">main_csv888Refresh_daily</a> (<a href="matlab: opentoline('C:\D\xyz\future\数据维护\main_csv888Refresh_daily.m',77,0)">line 77</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel>pushbutton25_Callback', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 1751)" style="font-weight:bold">panel>pushbutton25_Callback</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',1751,0)">line 1751</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gui_mainfcn', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 42)" style="font-weight:bold">panel</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',42,0)">line 42</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('runCallbackFunc2', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\runCallbackFunc2.m', 64)" style="font-weight:bold">runCallbackFunc2</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\runCallbackFunc2.m',64,0)">line 64</a>)
+  In %1283936432>@(myTimerObj,thisEvent)runCallbackFunc2(TradeAccout)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('timer/timercb', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\iofun\@timer\timercb.m', 30)" style="font-weight:bold">timer/timercb</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\iofun\@timer\timercb.m',30,0)">line 30</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('timercb', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\iofun\timercb.m', 13)" style="font-weight:bold">timercb</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\iofun\timercb.m',13,0)">line 13</a>)] 
+result: Traceback (most recent call last):
+  File "C:开始数据更新...
+
+C:\D\xyz\future\数据维护\A888.csv 更新成功！
+C:\D\xyz\future\数据维护\C888.csv 更新成功！
+C:\D\xyz\future\数据维护\RB888.csv 更新成功！
+C:\D\xyz\future\数据维护\M888.csv 更新成功！
+C:\D\xyz\future\数据维护\P888.csv 更新成功！
+C:\D\xyz\future\数据维护\J888.csv 更新成功！
+C:\D\xyz\future\数据维护\ZN888.csv 更新成功！
+C:\D\xyz\future\数据维护\Y888.csv 更新成功！
+C:\D\xyz\future\数据维护\L888.csv 更新成功！
+C:\D\xyz\future\数据维护\AG888.csv 更新成功！
+C:\D\xyz\future\数据维护\TA888.csv 更新成功！
+C:\D\xyz\future\数据维护\SR888.csv 更新成功！
+C:\D\xyz\future\数据维护\AU888.csv 更新成功！
+C:\D\xyz\future\数据维护\FG888.csv 更新成功！
+C:\D\xyz\future\数据维护\MA888.csv 更新成功！
+C:\D\xyz\future\数据维护\RU888.csv 更新成功！
+C:\D\xyz\future\数据维护\AL888.csv 更新成功！
+C:\D\xyz\future\数据维护\OI888.csv 更新成功！
+C:\D\xyz\future\数据维护\RM888.csv 更新成功！
+C:\D\xyz\future\数据维护\CF888.csv 更新成功！
+C:\D\xyz\future\数据维护\I888.csv 更新成功！
+C:\D\xyz\future\数据维护\JM888.csv 更新成功！
+C:\D\xyz\future\数据维护\CU888.csv 更新成功！
+C:\D\xyz\future\数据维护\V888.csv 更新成功！
+C:\D\xyz\future\数据维护\IF888.csv 更新成功！
+
+数据更新完成！
+更新TB批量导入文件...！
+TB批量导入文件更新成功！
+
+策略加载完成！
+Elapsed time is 1.353353 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 6.808683 seconds.
+>>>>>>>>>>调用成功！
+账户资金:2333800
+持仓文件更新成功！
+
+少开的：
+    'IF1812多'
+    'ZN1901空'
+
+多开的：
+    'SR1901多'
+    'V1901空'
+    'ZN1901多'
+
+
+读MATLAB策略输出文件...
+------------ 无交易！------------
+今日无订单！
+最终订单文件还未生成！
+TB主窗口加载成功！
+超级图表全部打开成功！

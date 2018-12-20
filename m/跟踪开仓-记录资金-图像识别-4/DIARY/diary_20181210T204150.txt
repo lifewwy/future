@@ -1,0 +1,118 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20181210T204150.txt
+
+上次更新日期为: 2018-12-07 Friday
+
+status: 1
+[Warning: Control Character '\D' is not valid. See 'doc sprintf' for control
+characters valid in the format string.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('getJoinQuantData', 'C:\D\xyz\future\m\mCallPy\getJoinQuantData.m', 21)" style="font-weight:bold">getJoinQuantData</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\mCallPy\getJoinQuantData.m',21,0)">line 21</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('JoinQuantData', 'C:\D\xyz\future\数据维护\JoinQuantData\JoinQuantData.m', 21)" style="font-weight:bold">JoinQuantData</a> (<a href="matlab: opentoline('C:\D\xyz\future\数据维护\JoinQuantData\JoinQuantData.m',21,0)">line 21</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main_csv888Refresh_daily', 'C:\D\xyz\future\数据维护\main_csv888Refresh_daily.m', 77)" style="font-weight:bold">main_csv888Refresh_daily</a> (<a href="matlab: opentoline('C:\D\xyz\future\数据维护\main_csv888Refresh_daily.m',77,0)">line 77</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel>pushbutton25_Callback', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 1751)" style="font-weight:bold">panel>pushbutton25_Callback</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',1751,0)">line 1751</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gui_mainfcn', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 42)" style="font-weight:bold">panel</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',42,0)">line 42</a>)
+  In @(hObject,eventdata)panel('pushbutton25_Callback',hObject,eventdata,guidata(hObject))] 
+result: Traceback (most recent call last):
+  File "C:开始数据更新...
+
+{Attempted to access pos(1); index out of bounds because numel(pos)=0.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('csv888RefreshOneDay', 'C:\D\xyz\future\数据维护\csv888RefreshOneDay.m', 27)" style="font-weight:bold">csv888RefreshOneDay</a> (<a href="matlab: opentoline('C:\D\xyz\future\数据维护\csv888RefreshOneDay.m',27,0)">line 27</a>)
+    KLineData = KLineData(pos(1)+1:pos(2)-1);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main_csv888Refresh_daily', 'C:\D\xyz\future\数据维护\main_csv888Refresh_daily.m', 85)" style="font-weight:bold">main_csv888Refresh_daily</a> (<a href="matlab: opentoline('C:\D\xyz\future\数据维护\main_csv888Refresh_daily.m',85,0)">line 85</a>)
+    csv888RefreshOneDay(futureCode{i},h,fc,kDataJoinQuant);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel>pushbutton25_Callback', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 1751)" style="font-weight:bold">panel>pushbutton25_Callback</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',1751,0)">line 1751</a>)
+IsDataUpdateCompleted = main_csv888Refresh_daily(handles);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gui_mainfcn', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
+        feval(varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 42)" style="font-weight:bold">panel</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',42,0)">line 42</a>)
+    gui_mainfcn(gui_State, varargin{:});
+
+Error in
+<a href="matlab:matlab.internal.language.introspective.errorDocCallback('@(hObject,eventdata)panel(''pushbutton25_Callback'',hObject,eventdata,guidata(hObject))')" style="font-weight:bold">@(hObject,eventdata)panel('pushbutton25_Callback',hObject,eventdata,guidata(hObject))</a>
+
+} 
+Error while evaluating UIControl Callback
+
+fprintf('开始数据更新...\n\n');
+开始数据更新...
+
+
+h = 111;
+fc = 111;
+kDataJoinQuant = 111;
+
+futureCode = {'A','C','RB','M','P','J','ZN','Y','L','AG','TA' ...
+    ,'SR','AU','FG','MA','RU','AL','OI','RM','CF','I','JM','CU','V','IF'};
+
+for i = 1:length(futureCode)-1
+    csv888RefreshOneDay(futureCode{i},h,fc,kDataJoinQuant);
+end
+{Attempted to access pos(1); index out of bounds because numel(pos)=0.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('csv888RefreshOneDay', 'C:\D\xyz\future\数据维护\csv888RefreshOneDay.m', 27)" style="font-weight:bold">csv888RefreshOneDay</a> (<a href="matlab: opentoline('C:\D\xyz\future\数据维护\csv888RefreshOneDay.m',27,0)">line 27</a>)
+    KLineData = KLineData(pos(1)+1:pos(2)-1);
+} 
+上次更新日期为: 2018-12-07 Friday
+
+status: 1
+[Warning: Control Character '\D' is not valid. See 'doc sprintf' for control
+characters valid in the format string.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('getJoinQuantData', 'C:\D\xyz\future\m\mCallPy\getJoinQuantData.m', 21)" style="font-weight:bold">getJoinQuantData</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\mCallPy\getJoinQuantData.m',21,0)">line 21</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('JoinQuantData', 'C:\D\xyz\future\数据维护\JoinQuantData\JoinQuantData.m', 21)" style="font-weight:bold">JoinQuantData</a> (<a href="matlab: opentoline('C:\D\xyz\future\数据维护\JoinQuantData\JoinQuantData.m',21,0)">line 21</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main_csv888Refresh_daily', 'C:\D\xyz\future\数据维护\main_csv888Refresh_daily.m', 77)" style="font-weight:bold">main_csv888Refresh_daily</a> (<a href="matlab: opentoline('C:\D\xyz\future\数据维护\main_csv888Refresh_daily.m',77,0)">line 77</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel>pushbutton25_Callback', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 1751)" style="font-weight:bold">panel>pushbutton25_Callback</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',1751,0)">line 1751</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gui_mainfcn', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 42)" style="font-weight:bold">panel</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',42,0)">line 42</a>)
+  In @(hObject,eventdata)panel('pushbutton25_Callback',hObject,eventdata,guidata(hObject))] 
+result: Traceback (most recent call last):
+  File "C:开始数据更新...
+
+{Attempted to access pos(1); index out of bounds because numel(pos)=0.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('csv888RefreshOneDay', 'C:\D\xyz\future\数据维护\csv888RefreshOneDay.m', 27)" style="font-weight:bold">csv888RefreshOneDay</a> (<a href="matlab: opentoline('C:\D\xyz\future\数据维护\csv888RefreshOneDay.m',27,0)">line 27</a>)
+    KLineData = KLineData(pos(1)+1:pos(2)-1);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main_csv888Refresh_daily', 'C:\D\xyz\future\数据维护\main_csv888Refresh_daily.m', 89)" style="font-weight:bold">main_csv888Refresh_daily</a> (<a href="matlab: opentoline('C:\D\xyz\future\数据维护\main_csv888Refresh_daily.m',89,0)">line 89</a>)
+    csv888RefreshOneDay(futureCode{i},h,fc,kDataJoinQuant);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel>pushbutton25_Callback', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 1751)" style="font-weight:bold">panel>pushbutton25_Callback</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',1751,0)">line 1751</a>)
+IsDataUpdateCompleted = main_csv888Refresh_daily(handles);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gui_mainfcn', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
+        feval(varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 42)" style="font-weight:bold">panel</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',42,0)">line 42</a>)
+    gui_mainfcn(gui_State, varargin{:});
+
+Error in
+<a href="matlab:matlab.internal.language.introspective.errorDocCallback('@(hObject,eventdata)panel(''pushbutton25_Callback'',hObject,eventdata,guidata(hObject))')" style="font-weight:bold">@(hObject,eventdata)panel('pushbutton25_Callback',hObject,eventdata,guidata(hObject))</a>
+
+} 
+Error while evaluating UIControl Callback
+
+上次更新日期为: 2018-12-07 Friday
+
+status: 1
+[Warning: Control Character '\D' is not valid. See 'doc sprintf' for control
+characters valid in the format string.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('getJoinQuantData', 'C:\D\xyz\future\m\mCallPy\getJoinQuantData.m', 21)" style="font-weight:bold">getJoinQuantData</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\mCallPy\getJoinQuantData.m',21,0)">line 21</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('JoinQuantData', 'C:\D\xyz\future\数据维护\JoinQuantData\JoinQuantData.m', 21)" style="font-weight:bold">JoinQuantData</a> (<a href="matlab: opentoline('C:\D\xyz\future\数据维护\JoinQuantData\JoinQuantData.m',21,0)">line 21</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main_csv888Refresh_daily', 'C:\D\xyz\future\数据维护\main_csv888Refresh_daily.m', 77)" style="font-weight:bold">main_csv888Refresh_daily</a> (<a href="matlab: opentoline('C:\D\xyz\future\数据维护\main_csv888Refresh_daily.m',77,0)">line 77</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel>pushbutton25_Callback', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 1751)" style="font-weight:bold">panel>pushbutton25_Callback</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',1751,0)">line 1751</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gui_mainfcn', 'C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2015a\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('panel', 'C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m', 42)" style="font-weight:bold">panel</a> (<a href="matlab: opentoline('C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\跟踪开仓\panel.m',42,0)">line 42</a>)
+  In @(hObject,eventdata)panel('pushbutton25_Callback',hObject,eventdata,guidata(hObject))] 
+result: Traceback (most recent call last):
+  File "C:开始数据更新...
+
+{Attempted to access pos(1); index out of bounds because numel(pos)=0.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('
