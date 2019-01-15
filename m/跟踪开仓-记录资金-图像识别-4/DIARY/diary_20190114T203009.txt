@@ -1,0 +1,42 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20190114T203009.txt
+
+读MATLAB策略输出文件...
+------------ 无交易！------------
+读TB策略输出文件...
+读风险配置文件...
+读资金文件...
+输出订单文件...
+2019/01/14,J1905,开空,3
+订单文件更新成功！
+
+orders = 
+
+    '2019/01/14'    'J1905'    '开空'    [3]
+
+
+ans = 
+
+    contract: 'J1905'
+      action: 'Sell Open'
+       hands: '3'
+           n: 1
+
+
+orderParameters = 
+
+    'J1905'    'Sell Open'    '3'
+
+Elapsed time is 1.153715 seconds.
+>>>>>>>>>>调用成功！
+Elapsed time is 2.123065 seconds.
+>>>>>>>>>>调用成功！
+全部成交
+
+ActionDoneFlg =
+
+     1
+
+--------------- 定时器关闭 01！--------------- 

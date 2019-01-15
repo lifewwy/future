@@ -1,0 +1,40 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20181220T102010.txt
+
+
+ans = 
+
+    contract: 'A1905'
+      action: 'Buy Open'
+       hands: '1'
+           n: 1
+
+
+orderParameters = 
+
+    'A1905'    'Buy Open'    '1'
+
+Elapsed time is 20.295125 seconds.
+>>>>>>>>>>调用成功！
+Error while evaluating TimerFcn for timer 'myMainTimer' 
+
+Attempted to access pos1(0); index must be a positive integer or logical.
+
+
+成功: 已终止 PID 3988 (属于 PID 1752 子进程)的进程。 
+Elapsed time is 53.621343 seconds.
+成功: 已终止 PID 3736 (属于 PID 4548 子进程)的进程。 
+Elapsed time is 9.674999 seconds.
+成功: 已终止 PID 4588 (属于 PID 6124 子进程)的进程。 
+Elapsed time is 24.473067 seconds.
+load('TradableContract.mat')
+Elapsed time is 5.262096 seconds.
+>>>>>>>>>>调用成功！
+未登录成功!
+load('TradableContract.mat')
+panel('radiobutton17_Callback',h.radiobutton17,[],guidata(h.radiobutton17));
+{Undefined variable "h" or function "h.radiobutton17".
+} 
+h = panel;

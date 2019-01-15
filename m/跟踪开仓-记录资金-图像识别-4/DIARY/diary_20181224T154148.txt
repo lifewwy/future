@@ -1,0 +1,98 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20181224T154148.txt
+
+Elapsed time is 2.489226 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 2.344598 seconds.
+>>>>>>>>>>调用成功！
+账户资金:2314060
+持仓文件更新成功！
+资金文件更新成功！
+上次更新日期为: 2018-12-21 Friday
+
+status: 0
+result: auth success
+JoinQuantData文件存储完成！
+
+开始数据更新...
+
+C:\D\xyz\future\数据维护\A888.csv 更新成功！
+C:\D\xyz\future\数据维护\C888.csv 更新成功！
+C:\D\xyz\future\数据维护\RB888.csv 更新成功！
+C:\D\xyz\future\数据维护\M888.csv 更新成功！
+C:\D\xyz\future\数据维护\P888.csv 更新成功！
+C:\D\xyz\future\数据维护\J888.csv 更新成功！
+C:\D\xyz\future\数据维护\ZN888.csv 更新成功！
+C:\D\xyz\future\数据维护\Y888.csv 更新成功！
+C:\D\xyz\future\数据维护\L888.csv 更新成功！
+C:\D\xyz\future\数据维护\AG888.csv 更新成功！
+C:\D\xyz\future\数据维护\TA888.csv 更新成功！
+C:\D\xyz\future\数据维护\SR888.csv 更新成功！
+C:\D\xyz\future\数据维护\AU888.csv 更新成功！
+C:\D\xyz\future\数据维护\FG888.csv 更新成功！
+C:\D\xyz\future\数据维护\MA888.csv 更新成功！
+C:\D\xyz\future\数据维护\RU888.csv 更新成功！
+C:\D\xyz\future\数据维护\AL888.csv 更新成功！
+C:\D\xyz\future\数据维护\OI888.csv 更新成功！
+C:\D\xyz\future\数据维护\RM888.csv 更新成功！
+C:\D\xyz\future\数据维护\CF888.csv 更新成功！
+C:\D\xyz\future\数据维护\I888.csv 更新成功！
+C:\D\xyz\future\数据维护\JM888.csv 更新成功！
+C:\D\xyz\future\数据维护\CU888.csv 更新成功！
+C:\D\xyz\future\数据维护\V888.csv 更新成功！
+C:\D\xyz\future\数据维护\IF888.csv 更新成功！
+
+数据更新完成！
+更新TB批量导入文件...！
+TB批量导入文件更新成功！
+
+策略加载完成！
+Elapsed time is 1.561766 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 2.337997 seconds.
+>>>>>>>>>>调用成功！
+账户资金:2314060
+持仓文件更新成功！
+
+少开的：
+    'IF1901空'
+    'L1905多'
+    'MA1905空'
+    'RB1905多'
+    'SR1905空'
+
+多开的：
+    'J1905空'
+    'L1905空'
+    'RB1905空'
+    'SR1905多'
+    'V1905多'
+
+
+读MATLAB策略输出文件...
+读风险配置文件...
+读资金文件...
+输出订单文件...
+2018/12/24,MA1905,开空,18
+2018/12/24,SR1905,开空,25
+订单文件更新成功！
+
+orders = 
+
+  Columns 1 through 3
+
+    '2018/12/24'    'MA1905'    '开空'
+    '2018/12/24'    'SR1905'    '开空'
+
+  Column 4
+
+    [18]
+    [25]
+
+1...TB主窗口加载失败！
+TB主窗口加载成功！
+超级图表全部打开成功！
