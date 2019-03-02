@@ -1,0 +1,60 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20190301T204436.txt
+
+main_csv888Refresh
+status: 0
+result: auth success
+JoinQuantData文件存储完成！
+
+C:\D\xyz\future\数据维护\A888.csv 更新成功！
+C:\D\xyz\future\数据维护\C888.csv 更新成功！
+C:\D\xyz\future\数据维护\RB888.csv 更新成功！
+C:\D\xyz\future\数据维护\M888.csv 更新成功！
+C:\D\xyz\future\数据维护\P888.csv 更新成功！
+数据源冲突!
+C:\D\xyz\future\数据维护\J888.csv 更新成功！
+C:\D\xyz\future\数据维护\ZN888.csv 更新成功！
+C:\D\xyz\future\数据维护\Y888.csv 更新成功！
+C:\D\xyz\future\数据维护\L888.csv 更新成功！
+C:\D\xyz\future\数据维护\AG888.csv 更新成功！
+数据源冲突!
+数据源冲突!
+C:\D\xyz\future\数据维护\TA888.csv 更新成功！
+C:\D\xyz\future\数据维护\SR888.csv 更新成功！
+C:\D\xyz\future\数据维护\AU888.csv 更新成功！
+数据源冲突!
+C:\D\xyz\future\数据维护\FG888.csv 更新成功！
+C:\D\xyz\future\数据维护\MA888.csv 更新成功！
+C:\D\xyz\future\数据维护\RU888.csv 更新成功！
+C:\D\xyz\future\数据维护\AL888.csv 更新成功！
+C:\D\xyz\future\数据维护\OI888.csv 更新成功！
+C:\D\xyz\future\数据维护\RM888.csv 更新成功！
+数据源冲突!
+C:\D\xyz\future\数据维护\CF888.csv 更新成功！
+数据源冲突!
+C:\D\xyz\future\数据维护\I888.csv 更新成功！
+数据源冲突!
+数据源冲突!
+C:\D\xyz\future\数据维护\JM888.csv 更新成功！
+C:\D\xyz\future\数据维护\CU888.csv 更新成功！
+C:\D\xyz\future\数据维护\V888.csv 更新成功！
+C:\D\xyz\future\数据维护\IF888.csv 更新成功！
+
+策略加载完成！
+读MATLAB策略输出文件...
+读风险配置文件...
+读资金文件...
+输出订单文件...
+2019/03/01,MA1905,开多,24
+2019/03/01,RB1905,平空,NaN
+订单文件更新成功！
+
+orders = 
+
+    '2019/03/01'    'MA1905'    '开多'    [24]
+
+GenerateImportFile
+更新TB批量导入文件...！
+TB批量导入文件更新成功！

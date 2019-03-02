@@ -1,0 +1,279 @@
+
+ans =
+
+C:\D\xyz\future\m\跟踪开仓-记录资金-图像识别-4\DIARY\diary_20190121T154007.txt
+
+Elapsed time is 1.801680 seconds.
+>>>>>>>>>>调用成功！
+登录成功!
+Elapsed time is 2.316330 seconds.
+>>>>>>>>>>调用成功！
+账户资金:2288760
+持仓文件更新成功！
+资金文件更新成功！
+上次更新日期为: 2019-01-18 Friday
+
+status: 0
+result: auth success
+JoinQuantData文件存储完成！
+
+Error while evaluating TimerFcn for timer 'timer-1' 
+
+Subscripted assignment dimension mismatch.
+
+
+main_csv888Refresh
+status: 0
+result: auth success
+JoinQuantData文件存储完成！
+
+{Subscripted assignment dimension mismatch.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('JoinQuantData', 'C:\D\xyz\future\数据维护\JoinQuantData\JoinQuantData.m', 59)" style="font-weight:bold">JoinQuantData</a> (<a href="matlab: opentoline('C:\D\xyz\future\数据维护\JoinQuantData\JoinQuantData.m',59,0)">line 59</a>)
+kDataTmp(:,7:7:end) = Digits;
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main_csv888Refresh', 'C:\D\xyz\future\数据维护\main_csv888Refresh.m', 7)" style="font-weight:bold">main_csv888Refresh</a> (<a href="matlab: opentoline('C:\D\xyz\future\数据维护\main_csv888Refresh.m',7,0)">line 7</a>)
+[fc,kDataJoinQuant] = JoinQuantData(10,1);
+} 
+futureCode = {'A','C','RB','M','P','J','ZN','Y','L','AG','TA' ...
+    ,'SR','AU','FG','MA','RU','AL','OI','RM','CF','I','JM','CU','V','IF'};
+h = 0;
+for i = 1:length(futureCode)
+    csv888Refresh(futureCode{i},h,fc,kDataJoinQuant);
+end
+{Undefined function or variable 'fc'.
+} 
+fc = 0
+
+fc =
+
+     0
+
+h = 0;
+for i = 1:length(futureCode)
+    csv888Refresh(futureCode{i},h,fc,kDataJoinQuant);
+end
+{Undefined function or variable 'kDataJoinQuant'.
+} 
+kDataJoinQuant = 0
+
+kDataJoinQuant =
+
+     0
+
+h = 0;
+for i = 1:length(futureCode)
+    csv888Refresh(futureCode{i},h,fc,kDataJoinQuant);
+end
+{Cell contents reference from a non-cell array object.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('csv888Refresh', 'C:\D\xyz\future\数据维护\csv888Refresh.m', 83)" style="font-weight:bold">csv888Refresh</a> (<a href="matlab: opentoline('C:\D\xyz\future\数据维护\csv888Refresh.m',83,0)">line 83</a>)
+            commonData =
+            intersect(kDataJoinQuant{strcmp(fc,futureCode)},kData(pos,:),'rows');} 
+main_csv888Refresh
+status: 0
+result: auth success
+JoinQuantData文件存储完成！
+
+{Subscripted assignment dimension mismatch.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('JoinQuantData', 'C:\D\xyz\future\数据维护\JoinQuantData\JoinQuantData.m', 59)" style="font-weight:bold">JoinQuantData</a> (<a href="matlab: opentoline('C:\D\xyz\future\数据维护\JoinQuantData\JoinQuantData.m',59,0)">line 59</a>)
+kDataTmp(:,7:7:end) = Digits;
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main_csv888Refresh', 'C:\D\xyz\future\数据维护\main_csv888Refresh.m', 7)" style="font-weight:bold">main_csv888Refresh</a> (<a href="matlab: opentoline('C:\D\xyz\future\数据维护\main_csv888Refresh.m',7,0)">line 7</a>)
+[fc,kDataJoinQuant] = JoinQuantData(10,1);
+} 
+JoinQuantData
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('JoinQuantData', 'C:\D\xyz\future\数据维护\JoinQuantData\JoinQuantData.m', 17)" style="font-weight:bold">JoinQuantData</a> (<a href="matlab: opentoline('C:\D\xyz\future\数据维护\JoinQuantData\JoinQuantData.m',17,0)">line 17</a>)
+Not enough input arguments.
+} 
+main_csv888Refresh
+status: 0
+result: auth success
+JoinQuantData文件存储完成！
+
+7:7:1694
+
+ans =
+
+  Columns 1 through 6
+
+           7          14          21          28          35          42
+
+  Columns 7 through 12
+
+          49          56          63          70          77          84
+
+  Columns 13 through 18
+
+          91          98         105         112         119         126
+
+  Columns 19 through 24
+
+         133         140         147         154         161         168
+
+  Columns 25 through 30
+
+         175         182         189         196         203         210
+
+  Columns 31 through 36
+
+         217         224         231         238         245         252
+
+  Columns 37 through 42
+
+         259         266         273         280         287         294
+
+  Columns 43 through 48
+
+         301         308         315         322         329         336
+
+  Columns 49 through 54
+
+         343         350         357         364         371         378
+
+  Columns 55 through 60
+
+         385         392         399         406         413         420
+
+  Columns 61 through 66
+
+         427         434         441         448         455         462
+
+  Columns 67 through 72
+
+         469         476         483         490         497         504
+
+  Columns 73 through 78
+
+         511         518         525         532         539         546
+
+  Columns 79 through 84
+
+         553         560         567         574         581         588
+
+  Columns 85 through 90
+
+         595         602         609         616         623         630
+
+  Columns 91 through 96
+
+         637         644         651         658         665         672
+
+  Columns 97 through 102
+
+         679         686         693         700         707         714
+
+  Columns 103 through 108
+
+         721         728         735         742         749         756
+
+  Columns 109 through 114
+
+         763         770         777         784         791         798
+
+  Columns 115 through 120
+
+         805         812         819         826         833         840
+
+  Columns 121 through 126
+
+         847         854         861         868         875         882
+
+  Columns 127 through 132
+
+         889         896         903         910         917         924
+
+  Columns 133 through 138
+
+         931         938         945         952         959         966
+
+  Columns 139 through 144
+
+         973         980         987         994        1001        1008
+
+  Columns 145 through 150
+
+        1015        1022        1029        1036        1043        1050
+
+  Columns 151 through 156
+
+        1057        1064        1071        1078        1085        1092
+
+  Columns 157 through 162
+
+        1099        1106        1113        1120        1127        1134
+
+  Columns 163 through 168
+
+        1141        1148        1155        1162        1169        1176
+
+  Columns 169 through 174
+
+        1183        1190        1197        1204        1211        1218
+
+  Columns 175 through 180
+
+        1225        1232        1239        1246        1253        1260
+
+  Columns 181 through 186
+
+        1267        1274        1281        1288        1295        1302
+
+  Columns 187 through 192
+
+        1309        1316        1323        1330        1337        1344
+
+  Columns 193 through 198
+
+        1351        1358        1365        1372        1379        1386
+
+  Columns 199 through 204
+
+        1393        1400        1407        1414        1421        1428
+
+  Columns 205 through 210
+
+        1435        1442        1449        1456        1463        1470
+
+  Columns 211 through 216
+
+        1477        1484        1491        1498        1505        1512
+
+  Columns 217 through 222
+
+        1519        1526        1533        1540        1547        1554
+
+  Columns 223 through 228
+
+        1561        1568        1575        1582        1589        1596
+
+  Columns 229 through 234
+
+        1603        1610        1617        1624        1631        1638
+
+  Columns 235 through 240
+
+        1645        1652        1659        1666        1673        1680
+
+  Columns 241 through 242
+
+        1687        1694
+
+if system_dependent('IsDebugMode')==1, dbquit; end
+main_csv888Refresh
+status: 0
+result: auth success
+请在正确的时间段运行！
+未存储JoinQuantData文件！
+
+C:\D\xyz\future\数据维护\A888.csv 更新成功！
+C:\D\xyz\future\数据维护\C888.csv 更新成功！
+C:\D\xyz\future\数据维护\RB888.csv 更新成功！
+C:\D\xyz\future\数据维护\M888.csv 更新成功！
+C:\D\xyz\future\数据维护\P888.csv 更新成功！
+C:\D\xyz\future\数据维护\J888.csv 更新成功！
+C:\D\xyz\future\数据维护\ZN888.csv 更新成功！
+C:\D\xyz\future\数据维护\Y888.csv 更新成功！
+C:\D\xyz\future\数据维护\L888.csv 更新成功！
+C
